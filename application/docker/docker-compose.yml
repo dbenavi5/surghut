@@ -1,8 +1,19 @@
 version: '3'
 services:
+  db:
+    image: mysql:8.0.21
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
   nextjs:
     build: ./
   nginx:
     build: ./nginx
     ports:
       - 80:80
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
