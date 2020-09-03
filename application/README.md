@@ -7,3 +7,29 @@ You are free to organize the contents of the folder as you see fit. But remember
 
 ## Please use the rest of the README.md to store important information for your team's application.
 
+
+## server installation
+
+instruction to do when you are login to the server
+
+### step 1 clone the project
+
+    git clone https://github.com/CSC-648-SFSU/csc648-02-fa20-team03.git
+
+### step 2 install docker
+
+    cd csc648-02-fa20-team03/application/
+
+    ./installDocker.sh
+
+### step 3 run docker on server
+
+    cd docker
+
+    sudo docker-compose up
+
+### step 4 Test
+
+Go to http:// + serverIPv4 + :80
+
+You will get a page with a house and a link
