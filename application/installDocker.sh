@@ -33,4 +33,4 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 sudo docker run hello-world
 
-docker–compose –version
+docker–compose --version
