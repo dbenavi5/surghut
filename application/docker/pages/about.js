@@ -1,14 +1,46 @@
 import React from 'react'
 import Link from 'next/link'
 
+import styles from './about.module.css'
+
 function About() {
   return (
     <>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      <h1>About</h1>
-      <img src="/static/about.png" />
+      <div className={styles.box}>
+        <h1 className={styles.center}>Software Engineering Class SFSU</h1>
+        <h1 className={styles.center}>Fall 2020</h1>
+        <h1 className={styles.center}>Section 02</h1>
+        <h1 className={styles.center}>Team 3</h1>
+      </div>
+
+      <div className={styles.box}>
+        <div>
+          <Link href="/about/pierre_antoine">
+            <a>Pierre ANTOINE</a>
+          </Link>
+        </div>
+        <div>
+          <Link href="/">
+            <a>Diana BENAVIDES</a>
+          </Link>
+        </div>
+        <div>
+          <Link href="/">
+            <a>Kevin CHEN</a>
+          </Link>
+        </div>
+        <div>
+          <Link href="/">
+            <a>Josue CARREO</a>
+          </Link>
+        </div>
+        <div>
+          <Link href="/">
+            <a>Harsimra NANDHRA</a>
+          </Link>
+        </div>
+      </div>
+
     </>
   )
 }
