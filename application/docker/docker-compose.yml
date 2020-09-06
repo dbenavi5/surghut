@@ -2,6 +2,7 @@ version: '3'
 services:
   db:
     image: mysql/mysql-server:8.0.21
+    container_name: mySQL
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
@@ -20,12 +21,15 @@ services:
       - my-db:/var/lib/mysql
   nextjs:
     build: ./
+    container_name: nextApp
   nginx:
     build: ./nginx
+    container_name: nginxServer    
     ports:
       - 80:80
   adminer:
     image: adminer
+    container_name: adminer
     restart: always
     ports:
       - 8080:8080
