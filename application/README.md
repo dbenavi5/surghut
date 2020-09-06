@@ -25,9 +25,15 @@ instruction to do when you are login to the server
 
 ### step 3 run docker on server
 
+# Check that a dockers is already running with 'sudo docker ps' before starting a new instance PLEASE. the server will crash because there is not enough RAM
+
     cd docker
 
     sudo docker-compose up
+
+if you want to run in background and logout
+
+    sudo docker-compose up -d
 
 ### step 4 Test
 
