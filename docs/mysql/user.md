@@ -11,3 +11,11 @@ or
 or
 
     GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' WITH GRANT OPTION;
+
+# How to show user privileges ?
+
+    SHOW GRANTS FOR username;
+
+# How to flush priviledges ?
+
+    FLUSH PRIVILEGES;
