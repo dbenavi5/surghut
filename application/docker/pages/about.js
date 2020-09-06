@@ -14,27 +14,27 @@ function About() {
       </div>
 
       <div className={styles.box}>
-        <div>
+        <div className={styles.button}>
           <Link href="/about/pierre_antoine">
             <a>Pierre ANTOINE</a>
           </Link>
         </div>
-        <div>
+        <div className={styles.button}>
           <Link href="/">
             <a>Diana BENAVIDES</a>
           </Link>
         </div>
-        <div>
+        <div className={styles.button}>
           <Link href="/">
             <a>Kevin CHEN</a>
           </Link>
         </div>
-        <div>
+        <div className={styles.button}>
           <Link href="/">
             <a>Josue CARREO</a>
           </Link>
         </div>
-        <div>
+        <div className={styles.button}>
           <Link href="/">
             <a>Harsimra NANDHRA</a>
           </Link>
