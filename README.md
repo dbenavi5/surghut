@@ -16,7 +16,7 @@
 |     Student Name   |        Student Email            |    GitHub Username    |
 |      :---:         |            :---:                |         :---:         |
 | Diana Benavides    |  dbenavides@mail.sfsu.edu       |       dbenavi5        |
-| Josue Carreo       |  jcarreo1@sfsu.edu              |       j0sue98         |
+| Josue Carreon       |  jcarreo1@sfsu.edu              |       j0sue98         |
 | Pierre Antoine     |  pantoine@mail.sfsu.edu         |       docmurloc       |
 | Harsimran Nandhra  |  simrankaur1435@gmail.com       |       hnandhra1       |
 | Kevin Chen         |  kxchen95@gmail.com             |       kevinchen95     |
