@@ -37,10 +37,10 @@ DNS(IPv4)
 
 ## port exposed
 
-- 80 : App
+- 80 : App (http://18.218.216.63/)
 - 22 : ssh
 - 3306 : mySQL
-- 8080 : adminer
+- 8080 : adminer (http://18.218.216.63:8080/)
 
 ## user : key : password
 
@@ -70,7 +70,7 @@ exemple:
 
     ssh -i "rootUserTeam3.pem" ubuntu@ec2-18-218-216-63.us-east-2.compute.amazonaws.com
 
-# How to access mySQL
+# How to access mySQL ?
 
 ## With commande line
 
@@ -161,3 +161,7 @@ enter in 'Password' your database user password
 you can enter in 'Database' the database you want to access (team3)
 
 ![adminer home ](../docs/images/adminer_home.png)
+
+## How to access about page ?
+
+got to http://18.218.216.63/about
