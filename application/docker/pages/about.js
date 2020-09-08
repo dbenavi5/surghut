@@ -36,7 +36,7 @@ function About() {
         </div>
         <div className={styles.button}>
           <Link href="/about/harsimran_nandhra">
-            <a>Harsimra NANDHRA</a>
+            <a>Harsimran NANDHRA</a>
           </Link>
         </div>
       </div>

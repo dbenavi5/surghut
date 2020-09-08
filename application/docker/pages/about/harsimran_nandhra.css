@@ -1,0 +1,15 @@
+.center {
+    text-align: center;
+}
+
+.box {
+    background-color: gray;
+}
+
+.button {
+    background-color: chocolate;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+}
