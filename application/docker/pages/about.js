@@ -30,12 +30,12 @@ function About() {
           </Link>
         </div>
         <div className={styles.button}>
-          <Link href="/">
+          <Link href="/about/josue_carreo">
             <a>Josue CARREO</a>
           </Link>
         </div>
         <div className={styles.button}>
-          <Link href="/">
+          <Link href="/about/harsimran_nandhra">
             <a>Harsimra NANDHRA</a>
           </Link>
         </div>
