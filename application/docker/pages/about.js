@@ -20,7 +20,7 @@ function About() {
           </Link>
         </div>
         <div className={styles.button}>
-          <Link href="/">
+          <Link href="/about/diana_benavides">
             <a>Diana BENAVIDES</a>
           </Link>
         </div>
