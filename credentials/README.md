@@ -174,4 +174,4 @@ you can enter in 'Database' the database you want to access (team3)
 
 ## How to access about page ?
 
-got to http://18.218.216.63/about
+go to http://18.218.216.63/about
