@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import styles from './kevin_chen.module.css'
 
-function pierre_antoine() {
+function kevin_chen() {
   return (
     <>
       <div className={styles.box}>
