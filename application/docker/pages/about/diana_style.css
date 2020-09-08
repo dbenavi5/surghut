@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #00B285;
+    color: #fff;
+    background-position: 0 1000px;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-top: 0;
+    text-align: center;
+    background: #fff;
+}
+
+h1 {
+    color: #398f51;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #777;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.img_of_me {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+p {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 2.7rem 7.5rem;
+    background: #f6f6f6;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #398f51;
+    border-radius: 20px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #dadada;
+}
