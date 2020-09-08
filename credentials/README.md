@@ -64,6 +64,16 @@ DNS(IPv4)
 
 # How to access the server ?
 
+## step 1 give key permission
+
+    chmod 400 [key.pem]
+
+exemple:
+
+    chmod 400 rootUserTeam3.pem
+
+## step 2 log in
+
     ssh -i [userKey.pem] [user]@[IP_SERVER or DNS]
 
 exemple:
