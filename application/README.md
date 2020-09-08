@@ -40,3 +40,18 @@ if you want to run in background and logout
 Go to http:// + serverIPv4 + :80
 
 You will get a page with a house and a link
+
+### step 5 stop docker
+
+    docker ps
+
+    ubuntu@ip-172-31-46-206:~/csc648-02-fa20-team03$ docker ps
+    CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS                  PORTS                               NAMES
+    99273cc959d6        docker_nextjs               "docker-entrypoint.s…"   33 hours ago        Up 33 hours             3000/tcp                            nextApp
+    90636f202be1        docker_nginx                "/docker-entrypoint.…"   39 hours ago        Up 33 hours             0.0.0.0:80->80/tcp                     nginxServer
+    6a4787410f57        mysql/mysql-server:8.0.21   "/entrypoint.sh --de…"   39 hours ago        Up 33 hours (healthy)   0.0.0.0:3306->3306/tcp, 33060/tcp   mySQL
+    5aea12f2731c        adminer                     "entrypoint.sh docke…"   39 hours ago        Up 33 hours             0.0.0.0:8080->8080/tcp              adminer
+
+    docker stop nextApp nginxServer mySQL adminer
+
+this operation can take 1 minute
