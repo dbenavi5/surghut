@@ -12,7 +12,8 @@ function harsimran_nandhra() {
        <div>
         <h2>Role:</h2>
         <p>I will work on the front-end and help with the back-end</p>
-        <h2>Link </h2>
+        
+        <h2>Link</h2>
         <a href="https://github.com/hnandhra1"> my Github</a>
         <div>
           <Link href="/about">
