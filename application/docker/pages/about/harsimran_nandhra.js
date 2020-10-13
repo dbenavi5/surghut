@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import styles from './harsimran.css'
+//import styles from './harsimran.css'
 function harsimran_nandhra() {
   return (
     <>
