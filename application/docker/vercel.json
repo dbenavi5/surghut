@@ -1,0 +1,8 @@
+{
+    "env": {
+      "MYSQL_HOST": "db:3306",
+      "MYSQL_USER": "pierre",
+      "MYSQL_PASSWORD": "test",
+      "MYSQL_DATABASE": "team3"
+    }
+}
