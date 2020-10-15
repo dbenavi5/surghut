@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
+import Map from '../component/Map';
+
 function Home() {
   return (
     <>
@@ -9,6 +11,7 @@ function Home() {
       </Link>
       <h1>Home</h1>
       <img src="/static/home.png" />
+      <Map/>
     </>
   )
 }
