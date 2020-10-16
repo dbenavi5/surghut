@@ -12,6 +12,7 @@
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-ga": "^3.2.0",
     "react-geolocated": "^3.0.1",
     "serverless-mysql": "^1.5.4",
     "sql-template-strings": "^2.2.2"
