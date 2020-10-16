@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import { geolocated } from "react-geolocated";
 
-const Mark = ({ src }) => <img src={src}/>;
+const Position = ({ src }) => <img src={src}/>;
 
 function Map(props) {
 
@@ -22,21 +22,22 @@ function Map(props) {
                 defaultCenter={center}
                 defaultZoom={zoom}
                 >
-                    <Mark
+                    <Position
                       lat={props.coords.latitude}
                       lng={props.coords.longitude}
                       src="https://image.flaticon.com/icons/png/128/3603/3603850.png"
                     />
+                    {props.children}
                 </GoogleMapReact>
             </div>
         )
     }
 
-    if (!props.isGeolocationAvailable) {
-        return (
-            <div>Your browser does not support Geolocation</div>
-        )
-    }
+    //if (!props.isGeolocationAvailable) {
+    //    return (
+    //        <div>Your browser does not support Geolocation</div>
+    //    )
+    //}
 
     return (
         <div>Geolocation is not enabled</div>
