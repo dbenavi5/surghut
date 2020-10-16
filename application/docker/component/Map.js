@@ -6,7 +6,7 @@ const Position = ({ src }) => <img src={src}/>;
 
 function Map(props) {
 
-    const [zoom, setZoom] = useState(11);
+    const [zoom, setZoom] = useState(15);
 
     
     if (props.coords) {
