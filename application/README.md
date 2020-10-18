@@ -15,7 +15,7 @@ instruction to do when you are login to the server
 
 ### step 1 clone the project
 
-    git clone https://github.com/CSC-648-SFSU/csc648-02-fa20-team03.git
+    git clone https://github.com/practice.git
 
 ### step 2 install docker
 

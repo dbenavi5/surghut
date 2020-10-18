@@ -19,9 +19,9 @@ services:
     container_name: nextApp
   nginx:
     build: ./nginx
-    container_name: nginxServer    
+    container_name: mynginx    
     ports:
-      - 80:80
+      - 32768:80
   adminer:
     image: adminer
     container_name: adminer
