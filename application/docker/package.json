@@ -3,24 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-<<<<<<< HEAD
     "dev": "next",
-=======
-    "dev": "node server.js",
->>>>>>> d55ed0fa51fd2620cad42e7fdd143abef8a74ff7
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^0.20.0",
     "next": "^9.5.5",
     "node-fetch": "^2.6.1",
-=======
     "cross-env": "^7.0.2",
     "google-map-react": "^2.1.8",
-    "next": "9.5.3",
->>>>>>> d55ed0fa51fd2620cad42e7fdd143abef8a74ff7
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-geolocated": "^3.0.1",
