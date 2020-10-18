@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head';
 import Navbar from './Navbar';
+import BottomNav from './BottomNav';
+
 
 const Layout = (props) => (
   
@@ -12,11 +14,14 @@ const Layout = (props) => (
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     </Head>
     <Navbar/>
+   <bottom><BottomNav/></bottom>
+    
     <center>
       <div className="container">
         {props.children}
       </div>
     </center>
+    
     
   </div>
 );

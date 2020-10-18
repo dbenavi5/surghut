@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import BottomNav from '../components/BottomNav';
 
 const Wildfires = () =>(
         <div>
@@ -29,6 +30,7 @@ const Wildfires = () =>(
                     <p>in CA</p>
                 </div>
             </center>
+            <BottomNav/>
         </div>
     
 );

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 import Head from 'next/head';
+import BottomNav from '../components/BottomNav';
 
 const Registration = () => (
     
@@ -71,7 +72,7 @@ const Registration = () => (
             </center>
         </div>
 
-
+        <BottomNav/>
     </div>
         
 );

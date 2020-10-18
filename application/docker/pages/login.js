@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import Head from 'next/head';
 import GoogleSignIn from '../components/GoogleSignIn';
+import BottomNav from '../components/BottomNav';
 
 const Login = () => (
 
@@ -56,6 +57,7 @@ const Login = () => (
                 </form>
                 
             </center>
+            <BottomNav/>
         </div>
     </div>
 );
