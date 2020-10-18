@@ -1,6 +1,23 @@
 import Layout from '../components/Layout';
 
+<<<<<<< HEAD
 const Index = () => (
+=======
+import Map from '../component/Map';
+
+function Home() {
+  return (
+    <>
+      <Link href="/about">
+        <a>About</a>
+      </Link>
+      <h1>Home</h1>
+      <img src="/static/home.png" />
+      <Map/>
+    </>
+  )
+}
+>>>>>>> d55ed0fa51fd2620cad42e7fdd143abef8a74ff7
 
     <Layout>
         <div>
