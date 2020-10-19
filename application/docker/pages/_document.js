@@ -1,5 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
+import BottomNav from '../components/BottomNav';
+import Navbar from '../components/Navbar';
+
+
 import { GA_TRACKING_ID } from '../lib/gtag'
 
 export default class MyDocument extends Document {
@@ -9,13 +13,24 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>SurgeHut</title>
+          <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css"/>
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           
         </Head>
         <body>
+          <Navbar/>
+          <center>
           <Main />
+          </center>
           <NextScript />
         </body>
+        <bottom>
+          <BottomNav/>
+        </bottom>
       </Html>
     )
   }

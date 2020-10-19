@@ -1,8 +1,6 @@
-import Layout from '../components/Layout';
 import Link from 'next/link';
 
 const About = () =>(
-    <Layout>
         <div>
             <h1>About This Project</h1>
             <p>Public Safety Web App for California residents facing wildfire surges and monitoring the coronavirus within the users county.</p>
@@ -28,7 +26,6 @@ const About = () =>(
                 </ul>
             </div>
         </div>
-    </Layout>
 );
 
 export default About;
