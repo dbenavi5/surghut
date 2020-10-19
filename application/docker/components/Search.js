@@ -1,6 +1,31 @@
 import React from 'react';
 import axios from 'axios';
 
+function SearchV2 (props) {
+    return (
+        <div id= "searchWrapper">     
+            <label className="search-label" htmlFor="search-input" >
+                <input 
+                    type="text" 
+                    //value={query}
+                    name="query"
+                    id= "search-input" 
+                    placeholder="Search..."
+                    //onChange={this.handleOnIputChange}
+                />
+                <i className="fa fa-search search-icon" aria-hidden="true"></i>
+            </label> 
+
+            {/* Error Message */}
+            {/* {message && <p className="message">{ message }</p>} */}
+
+            {/* Results */}
+            { /*this.renderSearchResults()*/ }
+            
+        </div> 
+    )
+}
+
 class Search extends React.Component {
 
     constructor (props) {
@@ -115,4 +140,4 @@ class Search extends React.Component {
 
 }
 
-export default Search;
+export default SearchV2;
