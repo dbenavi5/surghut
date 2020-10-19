@@ -22,6 +22,7 @@ services:
     container_name: mynginx    
     ports:
       - 80:80
+      - 443:443
   adminer:
     image: adminer
     container_name: adminer
