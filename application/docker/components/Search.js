@@ -1,19 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
+import {TextInput} from './Input';
+import Button from './Button';
+
+const IP_SERVER = "localhost";
+const PORT_SERVER = "80";
+
+async function GetInfo() {
+    console.log("getInfo init");
+    let answer = await fetch(
+      'https://' + IP_SERVER + '/api/county',
+      {
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        method: 'GET',
+      },
+    );
+    console.log("getInfo: ", answer);  
+    answer = await answer.json();
+    console.log("getInfo json: ", answer);
+    //return answer;
+}
+
+
 function SearchV2 (props) {
+
+    const [text, setText] = useState("");
+
     return (
         <div id= "searchWrapper">     
             <label className="search-label" htmlFor="search-input" >
-                <input 
-                    type="text" 
-                    //value={query}
-                    name="query"
-                    id= "search-input" 
-                    placeholder="Search..."
-                    //onChange={this.handleOnIputChange}
+                <TextInput
+                placeHolder={"Search..."}
+                value={text}
+                onTextChange={setText}
                 />
-                <i className="fa fa-search search-icon" aria-hidden="true"></i>
+                <Button
+                onClick={() => {
+                    console.log("test");
+                    GetInfo();
+                }}
+                >
+                Test
+                </Button>
             </label> 
 
             {/* Error Message */}

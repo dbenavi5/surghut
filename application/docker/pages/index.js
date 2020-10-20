@@ -1,11 +1,16 @@
 import Map from '../components/Map';
 
+import Search from '../components/Search';
+
 const Index =() => {
+
+  //console.log("MYSQL_Host ", process.env.MYSQL_HOST);
   return (
     <>
         <div>
             <h2>CSC 648/848 SW Enginering Fall 2020</h2>
             <h3>Section 2<br/>Team 3</h3>
+            <Search/>
 
         </div>
 
