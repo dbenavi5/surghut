@@ -1,0 +1,13 @@
+CREATE TABLE County
+(name CHAR(40),
+latitude FLOAT NOT NULL,
+longitude FLOAT NOT NULL,
+covide_case MEDIUMINT DEFAULT 0,
+covide_death MEDIUMINT DEFAULT 0,
+fire_case INT DEFAULT 0,
+evacuation_level TINYINT DEFAULT 0,
+PRIMARY KEY (name)
+)
+
+INSERT INTO County (name, latitude, longitude)
+VALUES ('Shasta', 40.7637666014, -122.040521531)
