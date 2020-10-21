@@ -7,7 +7,7 @@ import Button from './Button';
 const IP_SERVER = "localhost";
 const PORT_SERVER = "80";
 
-async function GetInfo() {
+async function GetCounty() {
     console.log("getInfo init");
     let answer = await fetch(
       'https://' + IP_SERVER + '/api/county',
@@ -22,11 +22,11 @@ async function GetInfo() {
     console.log("getInfo: ", answer);  
     answer = await answer.json();
     console.log("getInfo json: ", answer);
-    //return answer;
+    return answer;
 }
 
 
-function SearchV2 (props) {
+function SearchV2 ({onSearch, onSearchResult}) {
 
     const [text, setText] = useState("");
 
@@ -40,8 +40,8 @@ function SearchV2 (props) {
                 />
                 <Button
                 onClick={() => {
-                    console.log("test");
-                    GetInfo();
+                    //console.log("test");
+                    GetCounty();
                 }}
                 >
                 Test

@@ -11,3 +11,6 @@ PRIMARY KEY (name)
 
 INSERT INTO County (name, latitude, longitude)
 VALUES ('Shasta', 40.7637666014, -122.040521531)
+
+
+https://public.opendatasoft.com/explore/dataset/us-county-boundaries/table/?flg=fr&refine.stusab=CA&location=6,37.41896,-119.30661&basemap=jawg.streets&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InVzLWNvdW50eS1ib3VuZGFyaWVzIiwib3B0aW9ucyI6eyJmbGciOiJmciIsInJlZmluZS5zdHVzYWIiOiJDQSJ9fSwiY2hhcnRzIjpbeyJhbGlnbk1vbnRoIjp0cnVlLCJ0eXBlIjoiY29sdW1uIiwiZnVuYyI6IkFWRyIsInlBeGlzIjoiYWxhbmQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjRkY1MTVBIn1dLCJ4QXhpcyI6InN0dXNhYiIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9
