@@ -2,7 +2,21 @@ import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import { geolocated } from "react-geolocated";
 
-const Position = ({ src }) => <img src={src}/>;
+const markerStyle = {
+    position: 'absolute',
+    transform: 'translate(-50%, -50%)'
+}
+
+function Position({ src }) {
+    return (
+        <div style={markerStyle}>
+            <img
+            width="30"
+            height="30"
+            src={src}/>
+        </div>
+    )
+};
 
 function Map(props) {
 
