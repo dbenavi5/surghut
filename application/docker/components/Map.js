@@ -6,13 +6,13 @@ const Position = ({ src }) => <img src={src}/>;
 
 function Map(props) {
 
-    const [zoom, setZoom] = useState(15);
+    const [zoom, setZoom] = useState(6);
 
     
     if (props.coords) {
         const center = {
-            lat: props.coords.latitude,
-            lng: props.coords.longitude
+            lat: 36.778259,
+            lng: -119.417931
         }
         return (
             // Important! Always set the container height explicitly
