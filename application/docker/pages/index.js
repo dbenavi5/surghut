@@ -16,6 +16,7 @@ const escape = require('sql-template-strings');
 
 function Index({data}) {
 
+  const [county, setCounty] = useState(data);
   const [map, setMap] = useState(true);
   const [covide, setCovide] = useState(true);
   const [fire, setFire] = useState(true);
@@ -25,6 +26,12 @@ function Index({data}) {
         <div>
             <h2>CSC 648/848 SW Enginering Fall 2020</h2>
             <h3>Section 2<br/>Team 3</h3>
+
+            <Search
+              data={data}
+              setResult={setCounty}
+            />
+
 
             <div
              className={styles.container}
@@ -54,7 +61,7 @@ function Index({data}) {
 
             {map ?
               <Map>
-                {data.map((county) =>
+                {county.map((county) =>
                   <Marker 
                   key={county.id}
                   lat={county.latitude}
@@ -67,7 +74,7 @@ function Index({data}) {
               </Map>
             :
               <Tab
-              data={data}
+              data={county}
               covide={covide}
               fire={fire}
               />
@@ -81,7 +88,6 @@ function Index({data}) {
             <div className="button-container"><a className="fire-btn" href="/wildfires_page">Wildfires</a></div>
 
             <div className="button-container"><a className="fire-btn" href="/covid_page">Coronavirus</a></div>
-            <Search/>
         </div>
         
     </>
