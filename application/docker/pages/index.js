@@ -1,4 +1,5 @@
 import Map from '../components/Map';
+import Tab from '../components/Tab';
 import Marker from '../components/Marker';
 
 import Search from '../components/Search';
@@ -9,12 +10,13 @@ const escape = require('sql-template-strings');
 
 function Index({data}) {
 
-  console.log("props index ", data[0]);
+  //console.log("props index ", data[0]);
   return (
     <>
         <div>
             <h2>CSC 648/848 SW Enginering Fall 2020</h2>
             <h3>Section 2<br/>Team 3</h3>
+            
             
 
         </div>
@@ -24,26 +26,33 @@ function Index({data}) {
 
             <div className="button-container"><a className="fire-btn" href="/covid_page">Coronavirus</a></div>
             <Search/>
-            <Map>
-              {data.map((county) =>
-                <Marker 
-                key={county.id}
-                lat={county.latitude}
-                lng={county.longitude}
-                name={county.name}
-                covide_case={county.covide_case}
-                covide_death={county.covide_death}
-                evacuation_level={county.evacuation_level}
-                fire_case={county.fire_case}
-                />
-              )}
-            </Map>
         </div>
+        <Tab
+            data={data}
+            covide={true}
+            fire={true}
+        />
     </>
       
      
   )
 };
+
+//<Map>
+//{data.map((county) =>
+//  <Marker 
+//  key={county.id}
+//  lat={county.latitude}
+//  lng={county.longitude}
+//  name={county.name}
+//  covide_case={county.covide_case}
+//  covide_death={county.covide_death}
+//  evacuation_level={county.evacuation_level}
+//  fire_case={county.fire_case}
+//  />
+//)}
+//</Map>
+
 
 const IP_SERVER = "localhost";
 
