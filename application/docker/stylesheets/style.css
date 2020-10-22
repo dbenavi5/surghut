@@ -137,22 +137,6 @@ input[type=password] {
     box-sizing: border-box;
 }
 
-/* Result Container */
-.result-container{
-    display: flex;
-    flex-flow: wrap;
-    background-color: white;
-}
-
-.resultItem {
-    position: relative;
-    padding: 16px;
-    border: 1px solid black;
-    margin: 16px;
-    text-align: center;
-    min-width:50px;
-}
-
 /* bottom nav */
 .bottom-nav {
     overflow: hidden;

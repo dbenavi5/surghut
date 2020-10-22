@@ -5,7 +5,7 @@ import TabData from './TabData';
 
 
 function Tab({data, covide, fire}) {
-    console.log("tab data ", data[0]);
+    //console.log("tab data ", data[0]);
 
     return (
         <div>

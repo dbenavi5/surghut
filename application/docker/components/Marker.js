@@ -13,11 +13,9 @@ const markerStyleHover = {
 }
 
 function Marker({
-    name, 
-    covide_case,
-    covide_death,
-    evacuation_level,
-    fire_case,
+    data,
+    covide,
+    fire,
     $hover}) {
 
     if (!$hover) {
@@ -36,14 +34,24 @@ function Marker({
     return (
         <div
         style={markerStyleHover}
-        //className={styles.error}
-        //className={styles.container}
         >
-            <p style={{ fontSize: 25}} >{name}</p>
-            <p style={{ fontSize: 15}} >covide_case by 100K : {covide_case}</p>
-            <p style={{ fontSize: 15}} >covide_death by 100K : {covide_death}</p>
-            <p style={{ fontSize: 15}} >evacuation_level : {evacuation_level}</p>
-            <p style={{ fontSize: 15}} >fire_case : {fire_case}</p>
+            <p style={{ fontSize: 25}} >{data.name}</p>
+            {covide ?
+                <>
+                    <p style={{ fontSize: 15}} >covide_case by 100K : {data.covide_case}</p>
+                    <p style={{ fontSize: 15}} >covide_death by 100K : {data.covide_death}</p>
+                </>
+                :
+                <></>
+                        }
+            {fire ?
+                <>
+                    <p style={{ fontSize: 15}} >evacuation_level : {data.evacuation_level}</p>
+                    <p style={{ fontSize: 15}} >fire_case : {data.fire_case}</p>
+                </>
+                :
+                <></>
+            }
         </div>
     );
 }

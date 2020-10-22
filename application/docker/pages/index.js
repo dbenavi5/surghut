@@ -1,8 +1,14 @@
+import React , { useState } from 'react';
+
+import styles from './index.module.css'
+
 import Map from '../components/Map';
 import Tab from '../components/Tab';
 import Marker from '../components/Marker';
 
 import Search from '../components/Search';
+
+import Switch from '../components/Switch';
 
 const db = require('../lib/db');
 const escape = require('sql-template-strings');
@@ -10,13 +16,63 @@ const escape = require('sql-template-strings');
 
 function Index({data}) {
 
+  const [map, setMap] = useState(true);
+  const [covide, setCovide] = useState(true);
+  const [fire, setFire] = useState(true);
   //console.log("props index ", data[0]);
   return (
     <>
         <div>
             <h2>CSC 648/848 SW Enginering Fall 2020</h2>
             <h3>Section 2<br/>Team 3</h3>
-            
+
+            <div
+             className={styles.container}
+            >
+
+            <Switch
+            state={map}
+            onChange={setMap}
+            nameTrue="Map"
+            nameFalse="Tab"
+            />
+
+            <Switch
+            state={covide}
+            onChange={setCovide}
+            nameTrue="Covide : On"
+            nameFalse="Covide : Off"
+            />
+
+            <Switch
+            state={fire}
+            onChange={setFire}
+            nameTrue="Fire : On"
+            nameFalse="Fire : Off"
+            />
+            </div>
+
+            {map ?
+              <Map>
+                {data.map((county) =>
+                  <Marker 
+                  key={county.id}
+                  lat={county.latitude}
+                  lng={county.longitude}
+                  data={county}
+                  covide={covide}
+                  fire={fire}
+                  />
+                )}
+              </Map>
+            :
+              <Tab
+              data={data}
+              covide={covide}
+              fire={fire}
+              />
+            }
+
             
 
         </div>
@@ -27,58 +83,18 @@ function Index({data}) {
             <div className="button-container"><a className="fire-btn" href="/covid_page">Coronavirus</a></div>
             <Search/>
         </div>
-        <Tab
-            data={data}
-            covide={true}
-            fire={true}
-        />
+        
     </>
       
      
   )
 };
 
-//<Map>
-//{data.map((county) =>
-//  <Marker 
-//  key={county.id}
-//  lat={county.latitude}
-//  lng={county.longitude}
-//  name={county.name}
-//  covide_case={county.covide_case}
-//  covide_death={county.covide_death}
-//  evacuation_level={county.evacuation_level}
-//  fire_case={county.fire_case}
-//  />
-//)}
-//</Map>
 
 
-const IP_SERVER = "localhost";
-
-const PORT_SERVER = "3000";
 
 
 export async function getServerSideProps({ req, query }) {
-  console.log("IP_SERVER ", IP_SERVER, " PORT_SERVER ", PORT_SERVER);
-
-  //let answer = await fetch(
-  //  'https://' + IP_SERVER + ':3000/api/county',
-  //  {
-  //    headers: {
-  //      Accept: 'application/json',
-  //      'Content-Type': 'application/json',
-  //    },
-  //    method: 'GET',
-  //  },
-  //);
-  //console.log("getInfo: ", answer);  
-  //answer = await answer.json();
-
-  //const res = await fetch(
-  //  `https://${IP_SERVER}:${PORT_SERVER}/api/county`
-  //)
-  //const answer = await res.json()
 
   const county = await db.query(escape`
       SELECT *

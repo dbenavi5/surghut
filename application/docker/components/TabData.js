@@ -3,7 +3,7 @@ import React from 'react';
 
 
 function TabData({data, covide, fire}) {
-    console.log("tab data ", data);
+    //console.log("tab data ", data);
     return (
         <tr>
             <td>{data.name}</td>
