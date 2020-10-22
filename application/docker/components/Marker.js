@@ -9,7 +9,7 @@ const markerStyleHover = {
     position: 'absolute',
     transform: 'translate(-50%, -50%)',
     width: 280,
-    backgroundColor : 'rgba(140,140,140, 0.5)'
+    backgroundColor : 'rgba(140,140,140, 0.8)'
 }
 
 function Marker({
@@ -35,19 +35,19 @@ function Marker({
         <div
         style={markerStyleHover}
         >
-            <p style={{ fontSize: 25}} >{data.name}</p>
+            <p style={{ fontSize: 25 , color: "white"}} >{data.name}</p>
             {covide ?
                 <>
-                    <p style={{ fontSize: 15}} >covide_case by 100K : {data.covide_case}</p>
-                    <p style={{ fontSize: 15}} >covide_death by 100K : {data.covide_death}</p>
+                    <p style={{ fontSize: 15, color: "white"}} >covide_case by 100K : {data.covide_case}</p>
+                    <p style={{ fontSize: 15, color: "white"}} >covide_death by 100K : {data.covide_death}</p>
                 </>
                 :
                 <></>
                         }
             {fire ?
                 <>
-                    <p style={{ fontSize: 15}} >evacuation_level : {data.evacuation_level}</p>
-                    <p style={{ fontSize: 15}} >fire_case : {data.fire_case}</p>
+                    <p style={{ fontSize: 15, color: "white"}} >evacuation_level : {data.evacuation_level}</p>
+                    <p style={{ fontSize: 15, color: "white"}} >fire_case : {data.fire_case}</p>
                 </>
                 :
                 <></>

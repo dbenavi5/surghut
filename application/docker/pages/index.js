@@ -83,16 +83,7 @@ function Index({data}) {
             
 
         </div>
-
-        <div id="btn-wrapper">
-            <div className="button-container"><a className="fire-btn" href="/wildfires_page">Wildfires</a></div>
-
-            <div className="button-container"><a className="fire-btn" href="/covid_page">Coronavirus</a></div>
-        </div>
-        
     </>
-      
-     
   )
 };
 

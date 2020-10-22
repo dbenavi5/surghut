@@ -5,11 +5,11 @@ import Button from './Button';
 
 function GetCounty(data, key, setResult) {
 
-    console.log("key == ", key);
+    //console.log("key == ", key);
 
     const result = data.filter(
         function (data) {
-            return data.name.includes(key);
+            return data.name.toLowerCase().includes(key.toLowerCase());
         }
     )
 

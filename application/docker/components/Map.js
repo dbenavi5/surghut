@@ -18,6 +18,13 @@ function Position({ src }) {
     )
 };
 
+const handleApiLoaded = (map, maps) => {
+    map.data.loadGeoJson(
+        "/california-counties.geojson"
+    );
+    // use map and maps objects
+};
+
 function Map(props) {
 
     const [zoom, setZoom] = useState(6);
@@ -35,6 +42,8 @@ function Map(props) {
                 bootstrapURLKeys={{ key: "AIzaSyCKcBbyY43_ocqIJQUmQlSHZopPH-TPhuA" }}
                 defaultCenter={center}
                 defaultZoom={zoom}
+                yesIWantToUseGoogleMapApiInternals
+                onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}
                 >
                     <Position
                       lat={props.coords.latitude}
