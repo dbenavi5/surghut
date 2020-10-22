@@ -1,7 +1,7 @@
 import React from 'react'
 
 const BottomNav = () => (
-    <nav className="fixed-bottom">
+    <nav >
             <div className="bottom-nav">
                 Copyright &copy; 2020 SurgeHut  
                 SFSU Team 03   
