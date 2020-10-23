@@ -1,0 +1,22 @@
+
+.container {
+    display: flex;
+    background-color: aqua;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.buttonActive {
+    flex: 1;
+    background-color: rgb(110, 110, 110);
+
+}
+
+.buttonInactive {
+    flex: 1;
+    background-color: rgb(170, 170, 170);
+}
+
+.text {
+    color: white;
+}

@@ -2,17 +2,38 @@ import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import { geolocated } from "react-geolocated";
 
-const Position = ({ src }) => <img src={src}/>;
+const markerStyle = {
+    position: 'absolute',
+    transform: 'translate(-50%, -50%)'
+}
+
+function Position({ src }) {
+    return (
+        <div style={markerStyle}>
+            <img
+            width="30"
+            height="30"
+            src={src}/>
+        </div>
+    )
+};
+
+const handleApiLoaded = (map, maps) => {
+    map.data.loadGeoJson(
+        "/california-counties.geojson"
+    );
+    // use map and maps objects
+};
 
 function Map(props) {
 
-    const [zoom, setZoom] = useState(15);
+    const [zoom, setZoom] = useState(6);
 
     
     if (props.coords) {
         const center = {
-            lat: props.coords.latitude,
-            lng: props.coords.longitude
+            lat: 36.778259,
+            lng: -119.417931
         }
         return (
             // Important! Always set the container height explicitly
@@ -21,6 +42,8 @@ function Map(props) {
                 bootstrapURLKeys={{ key: "AIzaSyCKcBbyY43_ocqIJQUmQlSHZopPH-TPhuA" }}
                 defaultCenter={center}
                 defaultZoom={zoom}
+                yesIWantToUseGoogleMapApiInternals
+                onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}
                 >
                     <Position
                       lat={props.coords.latitude}
