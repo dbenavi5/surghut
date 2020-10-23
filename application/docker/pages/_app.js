@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import { AuthProvider, ProtectRoute } from '../contexts/auth';
 import * as gtag from '../lib/gtag'
 import '../stylesheets/style.css'
 
@@ -15,7 +16,13 @@ const App = ({ Component, pageProps }) => {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+    <AuthProvider>
+      <ProtectRoute>
+        <Component {...pageProps} />
+      </ProtectRoute>
+    </AuthProvider>
+  )
 }
 
 export default App
