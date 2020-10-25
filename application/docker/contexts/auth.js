@@ -40,10 +40,12 @@ export const AuthProvider = ({ children }) => {
     }
 
     const logout = (email, password) => {
+        const router = useRouter()
         Cookies.remove('token')
         setUser(null)
         delete api.defaults.headers.Authorization
-        window.location.pathname = '/login'
+
+        router.push('/login')
     }
 
 
@@ -60,8 +62,9 @@ export const useAuth = () => useContext(AuthContext);
 
 export const ProtectRoute = ({ children }) => {
     const { isAuthenticated, isLoading } = useAuth();
-    if (isLoading || (!isAuthenticated && window.location.pathname !== '/login')){
-      return <LoadingScreen />; 
+    const router = useRouter()
+    if (isLoading || (!isAuthenticated && router.pathname !== '/login')){
+      return <p>Loading</p>; 
     }
     return children;
 };
