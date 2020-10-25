@@ -1,0 +1,41 @@
+import React, { useState } from 'react';
+import {TextInput} from './Input';
+import Button from './Button';
+
+import {useAuth} from '../contexts/auth';
+
+function LoginForm() {
+
+    const [pseudo, setPseudo] = useState('');
+    const [password, setPassword] = useState('');
+
+    const {login} = useAuth();
+
+    return (
+        <div>
+            <p>LoginForm</p>
+            <TextInput
+            type={"text"}
+            value={pseudo}
+            placeHolder={'Pseudo'}
+            onTextChange={setPseudo}
+            />
+            <TextInput
+            type={"password"}
+            value={password}
+            placeHolder={'Password'}
+            onTextChange={setPassword}
+            />
+            <Button
+            onClick={ () => {
+                console.log("login");
+                login(pseudo, password);
+            }}
+            >
+                sign in
+            </Button>
+        </div>
+    );
+}
+
+export {LoginForm};

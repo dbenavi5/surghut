@@ -25,6 +25,7 @@ function Search ({data, setResult}) {
         <div id= "searchWrapper">     
             <label className="search-label" htmlFor="search-input" >
                 <TextInput
+                type={"text"}
                 placeHolder={"Search..."}
                 value={text}
                 onTextChange={setText}

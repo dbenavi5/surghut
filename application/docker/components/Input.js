@@ -1,18 +1,21 @@
 import React from 'react';
 
-function TextInput({value, onTextChange, placeHolder}) {
+function TextInput({value, onTextChange, placeHolder, type}) {
 
     const eventHandler = (event) => {
         onTextChange(event.target.value)
     }
 
     return (
-        <input
-        type="text"
-        placeholder={placeHolder}
-        value={value}
-        onChange={eventHandler}
-        />
+        <div>
+            <label>{placeHolder}</label>
+            <input
+            type={type}
+            placeholder={placeHolder}
+            value={value}
+            onChange={eventHandler}
+            />
+        </div>
     );
 }
 

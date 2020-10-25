@@ -1,6 +1,7 @@
 import React, { createContext, useState, useContext, useEffect } from 'react'
 import Cookies from 'js-cookie'
-import Router, { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
+import {LoginForm} from '../components/Form';
 
 //api here is an axios instance which has the baseURL set according to the env.
 import api from '../api/api';
@@ -27,9 +28,10 @@ export const AuthProvider = ({ children }) => {
         loadUserFromCookies()
     }, [])
 
-    const login = async (email, password) => {
-        const { data: token } = await api.post('auth/login', { email, password })
-        if (token) {
+    const login = async (pseudo, password) => {
+        const answer = await api.post('auth/login', { pseudo, password })
+        console.log("answer = ", answer);
+        if (false) {
             console.log("Got token")
             Cookies.set('token', token, { expires: 60 })
             api.defaults.headers.Authorization = `Bearer ${token.token}`
@@ -64,7 +66,7 @@ export const ProtectRoute = ({ children }) => {
     const { isAuthenticated, isLoading } = useAuth();
     const router = useRouter()
     if (isLoading || (!isAuthenticated && router.pathname !== '/login')){
-      return <p>Loading</p>; 
+      return <LoginForm/>; 
     }
     return children;
 };
