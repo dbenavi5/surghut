@@ -3,18 +3,15 @@ const escape = require('sql-template-strings')
 
 module.exports = async (req, res) => {
     //console.log("req.body = ", req.body);
-    console.log("req.headers.cookie = ", req.headers.cookie);
+    console.log("req.cookies.token.token = ", req.cookies.token);
     //console.log("req.body = ", req);
 
-    //const profile = await db.query(escape`
-    //  SELECT *
-    //  FROM Profile P
-    //  WHERE P.pseudo=${req.body.pseudo} AND P.password=${req.body.password}
-    //`);
-    //if (profile.length <= 0 || profile.length > 1) {
-    //    res.status(200).json({ error : "wrong input" })
-    //}
-    //console.log("result api: ", answer);
+    const profile = await db.query(escape`
+      SELECT *
+      FROM Profile P
+      WHERE P.access_token=${req.cookies.token}
+    `);
+    console.log("result api: ", profile);
 
-    res.status(200).json({ lol : "lol" });
+    res.status(200).json({ profile });
 }

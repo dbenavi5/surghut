@@ -20,8 +20,8 @@ export const AuthProvider = ({ children }) => {
             if (token) {
                 console.log("Got a token in the cookies, let's see if it is valid")
                 api.defaults.headers.Authorization = `Bearer ${token}`
-                const { data: user } = await api.get('users/me')
-                if (user) setUser(user);
+                const { data } = await api.get('users/me')
+                if (data.profile.length === 1) setUser(data.profile);
             }
             setLoading(false)
         }
@@ -33,11 +33,11 @@ export const AuthProvider = ({ children }) => {
         console.log("answer = ", token.token);
         if (token.token) {
             console.log("Got token")
-            Cookies.set('token', token, { expires: 60 })
+            Cookies.set('token', token.token, { expires: 60 })
             api.defaults.headers.Authorization = `Bearer ${token.token}`
-            const { data: user } = await api.get('users/me')
-            //setUser(user)
-            console.log("Got user", user)
+            const { data } = await api.get('users/me')
+            setUser(data.profile)
+            console.log("Got user", data.profile)
         }
     }
 
