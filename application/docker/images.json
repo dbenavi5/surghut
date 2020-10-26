@@ -1,0 +1,306 @@
+ [
+     
+     {
+		"pic_id": "001",
+		"title": "Apple Fire in California",
+		"description": "The Apple Fire burns north of Beaumont on July 31, 2020",
+		"category": "wildfires",
+		"author": "Brody  Hessin",
+        "author_page_link": "https://twitter.com/BrodyHessin",
+		"image": "public/images/Beaumont.jpg",
+        "source": "https://twitter.com/BrodyHessin/status/1289446228082663424",
+        "license": {
+            "license_title": "Creative Commons Attribution 4.0 International License.",
+            "cc_link" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+	},
+
+     {
+		"pic_id": "002",
+		"title": "USA-Wildfires",
+		"description": "Along Highway 29 near Lower Lake, California",
+		"category": "wildfires",
+		"author": "Jeff Head",
+        "author_page_link": "https://www.flickr.com/photos/jeff_head",
+		"image": "public/images/CAHighwayWildfires.jpg",
+        "source": "https://www.flickr.com/photos/jeff_head/20799665403",
+        "license": {
+            "license_title": "Creative Commons Public Domain Mark 1.0 License.",
+            "cc_link": "https://creativecommons.org/publicdomain/mark/1.0/"
+        }
+	},
+
+	{
+        "pic_id": "003",
+		"title": "The Forest Is Closed",
+		"description": "Closed Highway Route heading towards Angeles Crest Forest",
+		"category": "wildfires",
+		"author": "Russ Allison Loar",
+        "author_page_link": "https://www.flickr.com/photos/russloar/",
+		"image": "/public/images/forest_road_closed.jpg",
+        "source": "https://www.flickr.com/photos/russloar/50349910348",
+        "license": {
+            "license_title": "Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by-nc-nd/2.0/"
+        }
+	},
+
+	{
+		"pic_id": "004",
+		"title": "La Crescenta, CA August 2009",
+		"description": "station fire briggs terrance roadblock",
+		"category": "wildfires",
+		"author": "Anthony Citrano",
+        "author_page_link": "https://www.flickr.com/photos/zigzaglens/",
+		"image": "public/images/Western_Wildfires.jpg",
+        "source": "https://www.flickr.com/photos/zigzaglens/3872434394",
+        "license": {
+            "license_title": "Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by-nc-nd/2.0/"
+        }
+	},
+
+	{
+		"pic_id": "005",
+		"title": "Rim Fire in California",
+		"description": "The Rim Fire in Stanislaus National Forest on August 13, 2013",
+		"category": "wildfires",
+		"author": "U.S. Department of Agriculture",
+        "author_page_link": "",
+		"image": "public/images/rim_fire_mariposa_county.jpg",
+        "source": "https://www.flickr.com/photos/usdagov/9626930351/",
+        "license": {
+            "license_title": "Creative Commons Attribution 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by-nc-nd/2.0/"
+        }
+	},
+
+	{
+		"pic_id":"006",
+		"title": "Delta Fire in Redding, CA",
+		"description": "Incident activity on the Delta Fire, burning north of Redding, CA along I-5",
+		"category": "wildfires",
+		"author": "Pacific Southwest Forest Service, USDA Follow",
+        "author_page_link": "",
+		"image": "public/images/redding_ca.jpg",
+        "source":"https://www.flickr.com/photos/usfsregion5/42894188060/",
+        "license":{
+            "license_title": "Creative Commons Attribution 2.0 Generic License.",
+            "cc_link":"https://creativecommons.org/licenses/by-nc-nd/2.0/"
+        }
+	},
+
+	{
+		"pic_id": "007",
+		"title": "Big Forest Fire",
+		"description": "Forest Fire Siskiyou County, CA",
+		"category": "wildfires",
+		"author": "skeeze",
+        "author_page_link": "",
+		"image": "public/images/siskiyou_forest_fire.jpg",
+        "source": "https://pixabay.com/photos/forest-fire-blaze-smoke-trees-1161868/",
+        "license": {
+            "license_title": "Pixabay License.",
+            "cc_link": "https://pixabay.com/service/license/"
+        }
+	},
+
+	{
+		"pic_id": "008",
+		"title": "SF Orange Sky",
+		"description": "The day the sun didn't rise",
+		"category": "county",
+		"author": "Christopher Michel",
+        "author_page_link": "",
+		"image": "public/images/SF_air.jpg",
+        "source": "https://www.flickr.com/photos/cmichel67/50324415841/",
+        "license": {
+            "license_title": "Creative Commons Attribution 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by/2.0/"
+            
+        }
+	},
+
+	{
+		"pic_id": "009",
+		"title": "Alameda County",
+		"description": "Wind Mills in Alameda County",
+		"category": "county",
+		"author": "Clotee Pridgen Allochuku",
+        "author_page_link": "https://web.archive.org/web/20161030141750/http://www.panoramio.com/user/4624801?with_photo_id=126992306",
+		"image": "public/images/Alameda_County.pg",
+        "source": "https://web.archive.org/web/20161030141911/http://www.panoramio.com/photo/126992306",
+        "license": {
+            "license_title": "Creative Commons Attribution-ShareAlike 3.0 Unported License.",
+            "cc_link": "https://creativecommons.org/licenses/by-sa/3.0/"
+        }
+	},
+
+	{
+		"pic_id": "010",
+		"title": "Los Angeles County back in August 2009",
+		"description": "A line of flames burns up the side of a canyon inside the Angeles National Forest.",
+		"category": "wildfires",
+		"author": "Anthony Citrano",
+        "author_page_link": "https://www.flickr.com/photos/zigzaglens/",
+		"image": "public/images/AngeleNationalForest.jpg",
+        "source": "https://www.flickr.com/photos/zigzaglens/3870347550/",
+        "license": {
+            "license_title":  "Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by-nc-nd/2.0/"
+        }
+	},
+
+
+	{
+		"pic_id":"011",
+		"title": "Thomas Fire",
+		"description": "Affects Santa Barbara and Ventura Counties",
+		"category": "wildfires",
+		"author": "Edward Vielmetti",
+        "author_page_link": "https://www.flickr.com/photos/edward-vielmetti",
+		"image": "public/images/SantaBarbaraFire.jpg",
+        "source":"https://www.flickr.com/photos/edward-vielmetti/3029336438/",
+        "license": {
+            "license_title":  "Creative Commons Attribution 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by/2.0/"
+        }
+	},
+
+
+	{
+		"pic_id":"012",
+		"title": "Mendocino County Line",
+		"description": "Entering Mendocino County from Sonoma County, California",
+		"category": "wildfires",
+		"author": "J. Stephen Conn",
+        "author_page_link": "https://www.flickr.com/photos/jstephenconn",
+		"image": "public/images/MendocinoCounty.jpg",
+        "source":"https://www.flickr.com/photos/jstephenconn/7115325891/",
+        "license": {
+            "license_title": "Creative Commons Attribution-NonCommercial 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by-nc/2.0/"
+        }
+	},
+	
+	{
+		"pic_id":"013",
+		"title": "Humboldt Lightning Fire",
+		"description": "Task Force cleaning up after the wildfire passed by. Wildcat Butte Mountains in Humboldt County was affected by this wildfire.",
+		"category": "county",
+		"author": "California National Guard",
+        "author_page_link": "https://www.flickr.com/photos/caguard/",
+		"image": "public/images/HumboldtCountyNationalGuard.jpg",
+        "source":"https://www.flickr.com/photos/caguard/20443709956/",
+        "license": {
+            "license_title": "Creative Commons Attribution-NonCommercial 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by/2.0/"
+        }
+	},
+
+	{
+		"pic_id":"014",
+		"title": "Butte Lightening Complex",
+		"description": "Helicopters from CA National Guard working hard to stop the fire",
+		"category": "wildfires",
+		"author": "The National Gaurd",
+        "author_page_link": "https://www.flickr.com/photos/thenationalguard",
+		"image": "public/images/ButteCounty.jpg",
+        "source":"https://www.flickr.com/photos/thenationalguard/50251519136",
+        "license": {
+            "license_title": "Creative Commons Attribution 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by/2.0/"
+        }
+	},
+
+	{
+		"pic_id":"015",
+		"title": "Del Norte County Line",
+		"description": "US Hwy 101 southbound just past the CA agricultural checkpoint.",
+		"category": "wildfires",
+		"author": "Jimmy Emerson",
+        "author_page_link": "https://www.flickr.com/photos/auvet",
+		"image": "public/images/DelNorteCountyLine.jpg",
+        "source":"https://www.flickr.com/photos/auvet/6027201832/",
+        "license": {
+            "license_title": "Creative Commons Attribution 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by/2.0/"
+        }
+	},
+
+	{
+		"pic_id":"016",
+		"title": "Fire by Mono Lake",
+		"description": "The Marina Fire by Mono Lake, just north of Lee Vining last night",
+		"category": "wildfires",
+		"author": "Jeff Sullivan",
+        "author_page_link": "https://www.flickr.com/photos/jeffreysullivan",
+		"image": "public/images/MonoCountyFire.jpg",
+        "source":"https://www.flickr.com/photos/jeffreysullivan/27290506644",
+        "license": {
+            "license_title": "Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by-nc-nd/2.0/"
+        }
+	},
+
+	{
+		"pic_id":"017",
+		"title": "Monterey County",
+		"description": "The Army's prescribed burns on the former Fort Ord are being conducted as part of the munitions cleanup program.",
+		"category": "wildfires",
+		"author": "Presidio of Monterey",
+        "author_page_link": "https://www.flickr.com/photos/presidioofmonterey/",
+		"image": "public/images/PresidioMonterey.jpg",
+        "source":"https://www.flickr.com/photos/presidioofmonterey/37281291960",
+        "license": {
+            "license_title":  "Creative Commons Public Domain Mark 1.0 License.",
+            "cc_link": "https://creativecommons.org/publicdomain/mark/1.0/"
+        }
+	},
+
+	{
+		"pic_id":"018",
+		"title": "Fire Aftermath",
+		"description": "",
+		"category": "wildfires",
+		"author": "Jeff Head",
+        "author_page_link": "http://flickr.com/photos/jeff_head/",
+		"image": "public/images/FireDamage.jpg",
+        "source":"http://flickr.com/photos/jeff_head/20778581604",
+        "license": {
+            "license_title":  "Creative Commons Public Domain Mark 1.0 License.",
+            "cc_link": "https://creativecommons.org/publicdomain/mark/1.0/"
+        }
+	},
+     
+    {
+		"pic_id":"019",
+		"title": "San Diego Fire",
+		"description": "San Diego Downtown Skyline",
+		"category": "wildfires",
+		"author": "See Things Differently",
+        "author_page_link": "https://www.flickr.com/photos/65248912@N00/",
+		"image": "public/images/SanDiegoSmoke.jpg",
+        "source":"https://www.flickr.com/photos/65248912@N00/1711742464/",
+        "license": {
+            "license_title":  "Creative Commons Attribution 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by/2.0/"
+        }
+	},
+     
+    {
+		"pic_id":"020",
+		"title": "Wildfire near Sonoma County",
+		"description": "Wildfire near Sonoma in the Palm Springs-South Coast Field Office",
+		"category": "wildfires",
+		"author": "Bureau of Land Management California",
+        "author_page_link": "https://www.flickr.com/photos/blmcalifornia/",
+		"image": "public/images/NearSonomaCounty",
+        "source":"https://www.flickr.com/photos/blmcalifornia/32552781277/",
+        "license": {
+            "license_title":  "Creative Commons Attribution 2.0 Generic License.",
+            "cc_link": "https://creativecommons.org/licenses/by/2.0/"
+        }
+	}
+
+]
