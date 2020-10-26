@@ -61,7 +61,7 @@ function Index({ data }) {
 
             {map ?
               <Map>
-                {county.map((countys) =>
+                {county.map((county) =>
                   <Marker 
                   key={county.id}
                   lat={county.latitude}

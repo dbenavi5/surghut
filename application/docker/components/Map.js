@@ -27,7 +27,7 @@ const handleApiLoaded = (map, maps) => {
 
 function Map(props) {
 
-    const [zoom] = useState(6);
+    const [zoom, setZoom] = useState(6);
 
     
     if (props.coords) {

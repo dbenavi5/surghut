@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 
 import { GA_TRACKING_ID } from '../lib/gtag'
 
+
 export default class MyDocument extends Document {
     
   render() {

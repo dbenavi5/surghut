@@ -7,10 +7,12 @@ const Login = () => (
     <div >
         <Head>
             <title>SurgeHut</title>
+            <meta name="Description" content="SFSU team3  project Fall 2020."></meta>
+            <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
             <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css"/>
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+            <script src="https://apis.google.com/js/platform.js" async defer></script>
         </Head>
-
         <div>
             <center>
                 <h1>Login Page</h1>
@@ -32,12 +34,10 @@ const Login = () => (
                             <input id="reset" className="reset" type="reset" value="Cancel"/>
                         </div>
 
-                        <div>---- Or sign in with Google ----</div>
+                        <div className="google-wrap">---- Or sign in with Google ----</div>
                         <GoogleSignIn/>
-   
                     </fieldset>
                 </form>
-                
             </center>
         </div>
     </div>
