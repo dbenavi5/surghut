@@ -1,7 +1,3 @@
-// parses the request query parameter
-// uses the query params  to select a single profile from  db
-// sends the  retrieved profile as a response
-
 const db = require('../../lib/db');
 const escape = require('sql-template-string');
 

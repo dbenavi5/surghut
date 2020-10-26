@@ -1,10 +1,3 @@
-// This file[API] performs the following functions:
-// parses requeste, uses query parameter to determine profiles required
-//request only the required profiles  from the database,
-// queries the database to get the total results,
-// uses  record count to calculate pagination
-// sends the retrieved  profiles as a response
-
 const db = require( '../../lib/db' );
 const escape = require( 'sql-template-strings' );
 

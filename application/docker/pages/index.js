@@ -14,12 +14,12 @@ const db = require('../lib/db');
 const escape = require('sql-template-strings');
 
 
-function Index({data}) {
+function Index({ data }) {
 
-  const [county, setCounty] = useState(data);
-  const [map, setMap] = useState(true);
-  const [covide, setCovide] = useState(true);
-  const [fire, setFire] = useState(true);
+  const [ county, setCounty ] = useState(data);
+  const [ map, setMap ] = useState(true);
+  const [ covide, setCovide ] = useState(true);
+  const [ fire, setFire ] = useState(true);
   //console.log("props index ", data[0]);
   return (
     <>
@@ -38,30 +38,30 @@ function Index({data}) {
             >
 
             <Switch
-            state={map}
-            onChange={setMap}
-            nameTrue="Map"
-            nameFalse="Tab"
+              state={map}
+              onChange={setMap}
+              nameTrue="Map"
+              nameFalse="Tab"
             />
 
             <Switch
-            state={covide}
-            onChange={setCovide}
-            nameTrue="Covide : On"
-            nameFalse="Covide : Off"
+              state={covide}
+              onChange={setCovide}
+              nameTrue="Covide : On"
+              nameFalse="Covide : Off"
             />
 
             <Switch
-            state={fire}
-            onChange={setFire}
-            nameTrue="Fire : On"
-            nameFalse="Fire : Off"
+              state={fire}
+              onChange={setFire}
+              nameTrue="Fire : On"
+              nameFalse="Fire : Off"
             />
             </div>
 
             {map ?
               <Map>
-                {county.map((county) =>
+                {county.map((countys) =>
                   <Marker 
                   key={county.id}
                   lat={county.latitude}
@@ -74,31 +74,25 @@ function Index({data}) {
               </Map>
             :
               <Tab
-              data={county}
-              covide={covide}
-              fire={fire}
+                data={county}
+                covide={covide}
+                fire={fire}
               />
             }
-
-            
-
         </div>
     </>
   )
-};
-
-
-
-
+}
 
 export async function getServerSideProps({ req, query }) {
 
-  const county = await db.query(escape`
+  const county = await db.query( escape`
       SELECT *
       FROM County
   `);
-
+  
   return { props: { data :county} }
+  
 }
 
 export default Index;

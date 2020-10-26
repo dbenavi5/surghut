@@ -16,7 +16,7 @@ function Position({ src }) {
             src={src}/>
         </div>
     )
-};
+}
 
 const handleApiLoaded = (map, maps) => {
     map.data.loadGeoJson(
@@ -27,7 +27,7 @@ const handleApiLoaded = (map, maps) => {
 
 function Map(props) {
 
-    const [zoom, setZoom] = useState(6);
+    const [zoom] = useState(6);
 
     
     if (props.coords) {
@@ -72,4 +72,4 @@ export default geolocated({
         enableHighAccuracy: false,
     },
     userDecisionTimeout: 5000,
-})(Map);;
+})(Map);

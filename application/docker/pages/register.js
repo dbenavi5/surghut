@@ -1,7 +1,5 @@
 import React from 'react'
-import Link from 'next/link';
 import Head from 'next/head';
-import BottomNav from '../components/BottomNav';
 
 const Registration = () => (
     
@@ -11,23 +9,6 @@ const Registration = () => (
             <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css"/>
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
         </Head>
-        <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
-            <div className="container">
-                <Link href="/"><a className="navbar-brand">SurgeHut</a></Link>
-                <div className="collapse navbar-collapse">
-                    
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <Link href="/"><a className="nav-link">Home</a></Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link href="/login"><a className="nav-link">Login</a></Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
 
         <div>
             <center>
@@ -71,8 +52,6 @@ const Registration = () => (
                 </form>
             </center>
         </div>
-
-        <BottomNav/>
     </div>
         
 );

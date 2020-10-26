@@ -9,11 +9,11 @@ import { GA_TRACKING_ID } from '../lib/gtag'
 export default class MyDocument extends Document {
     
   render() {
-    //console.log(GA_TRACKING_ID);
+    console.log(GA_TRACKING_ID);
     return (
       <Html>
         <Head>
-          <title>SurgeHut</title>
+          {/* <title>SurgeHut</title> */}
           <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css"/>
           <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
