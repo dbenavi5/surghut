@@ -1,7 +1,12 @@
 import React from 'react'
 import Link from 'next/link';
 
+import {useAuth} from '../contexts/auth';
+import Button from './Button';
+
 function Navbar () {
+
+    const {isAuthenticated, logout} = useAuth();
 
     return (
         <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
@@ -14,12 +19,23 @@ function Navbar () {
                         <li className="nav-item">
                             <Link href="/about"><a className="nav-link">About</a></Link>
                         </li>
-                        <li className="nav-item">
-                            <Link href="/login"><a className="nav-link">Login</a></Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link href="/register"><a className="nav-link">Register</a></Link>
-                        </li>   
+                        {isAuthenticated ? 
+                        <Button
+                        onClick={logout}
+                        >
+                            Logout
+                        </Button>
+                        :
+                        <>
+                            <li className="nav-item">
+                                <Link href="/login"><a className="nav-link">Login</a></Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link href="/register"><a className="nav-link">Register</a></Link>
+                            </li>
+                        </>
+                        }
+                        
                     </ul>
                 </div>
             </div>

@@ -10,6 +10,9 @@ import Search from '../components/Search';
 
 import Switch from '../components/Switch';
 
+import Navbar from '../components/Navbar';
+
+
 const db = require('../lib/db');
 const escape = require('sql-template-strings');
 
@@ -23,6 +26,7 @@ function Index({data}) {
   //console.log("props index ", data[0]);
   return (
     <>
+        <Navbar/>
         <div>
             <h2>CSC 648/848 SW Enginering Fall 2020</h2>
             <h3>Section 2<br/>Team 3</h3>

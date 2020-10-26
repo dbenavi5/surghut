@@ -41,18 +41,31 @@ export const AuthProvider = ({ children }) => {
         }
     }
 
-    const logout = (email, password) => {
-        const router = useRouter()
+    const register = async (pseudo, mail, password) => {
+        const {data : token} = await api.post('auth/register', { pseudo, mail, password })
+        console.log("answer = ", token.token);
+        if (token.token) {
+            console.log("Got token")
+            Cookies.set('token', token.token, { expires: 60 })
+            api.defaults.headers.Authorization = `Bearer ${token.token}`
+            const { data } = await api.get('users/me')
+            setUser(data.profile)
+            console.log("Got user", data.profile)
+        }
+    }
+
+    const logout = () => {
+        //const router = useRouter()
         Cookies.remove('token')
         setUser(null)
         delete api.defaults.headers.Authorization
 
-        router.push('/login')
+        //router.push('/login')
     }
 
 
     return (
-        <AuthContext.Provider value={{ isAuthenticated: !!user, user, login, loading, logout }}>
+        <AuthContext.Provider value={{ isAuthenticated: !!user, user, login, register, loading, logout }}>
             {children}
         </AuthContext.Provider>
     )

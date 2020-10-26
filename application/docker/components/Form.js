@@ -38,4 +38,45 @@ function LoginForm() {
     );
 }
 
-export {LoginForm};
+function RegisterForm() {
+
+    const [pseudo, setPseudo] = useState('');
+    const [mail, setMail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const {register} = useAuth();
+
+    return (
+        <div>
+            <p>RegisterForm</p>
+            <TextInput
+            type={"text"}
+            value={pseudo}
+            placeHolder={'Pseudo'}
+            onTextChange={setPseudo}
+            />
+            <TextInput
+            type={"text"}
+            value={mail}
+            placeHolder={'Mail'}
+            onTextChange={setMail}
+            />
+            <TextInput
+            type={"text"}
+            value={password}
+            placeHolder={'Password'}
+            onTextChange={setPassword}
+            />
+            <Button
+            onClick={ () => {
+                console.log("login");
+                register(pseudo, mail, password);
+            }}
+            >
+                sign up
+            </Button>
+        </div>
+    );
+}
+
+export {LoginForm, RegisterForm};

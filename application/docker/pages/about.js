@@ -1,7 +1,12 @@
 import Link from 'next/link';
 
+import Navbar from '../components/Navbar';
+
+
+
 const About = () =>(
         <div>
+            <Navbar/>
             <h1>About This Project</h1>
             <p>Public Safety Web App for California residents facing wildfire surges and monitoring the coronavirus within the users county.</p>
 
