@@ -1,6 +1,6 @@
- [
+[
      
-     {
+    {
 		"pic_id": "001",
 		"title": "Apple Fire in California",
 		"description": "The Apple Fire burns north of Beaumont on July 31, 2020",
@@ -15,7 +15,7 @@
         }
 	},
 
-     {
+    {
 		"pic_id": "002",
 		"title": "USA-Wildfires",
 		"description": "Along Highway 29 near Lower Lake, California",
@@ -302,5 +302,4 @@
             "cc_link": "https://creativecommons.org/licenses/by/2.0/"
         }
 	}
-
 ]
