@@ -29,14 +29,14 @@ export const AuthProvider = ({ children }) => {
     }, [])
 
     const login = async (pseudo, password) => {
-        const {data} = await api.post('auth/login', { pseudo, password })
-        console.log("answer = ", data);
-        if (false) {
+        const {data : token} = await api.post('auth/login', { pseudo, password })
+        console.log("answer = ", token.token);
+        if (token.token) {
             console.log("Got token")
             Cookies.set('token', token, { expires: 60 })
             api.defaults.headers.Authorization = `Bearer ${token.token}`
             const { data: user } = await api.get('users/me')
-            setUser(user)
+            //setUser(user)
             console.log("Got user", user)
         }
     }
