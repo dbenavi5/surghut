@@ -14,7 +14,7 @@ function Switch({state, onChange, nameTrue, nameFalse}) {
                 onChange(true);
             }}
             >
-                <p className={styles.text}>{nameTrue}</p>
+            <p className={styles.text}>{nameTrue}</p>
             </div>
             <div
             className={ state ? styles.buttonInactive : styles.buttonActive}            
