@@ -29,8 +29,8 @@ export const AuthProvider = ({ children }) => {
     }, [])
 
     const login = async (pseudo, password) => {
-        const answer = await api.post('auth/login', { pseudo, password })
-        console.log("answer = ", answer);
+        const {data} = await api.post('auth/login', { pseudo, password })
+        console.log("answer = ", data);
         if (false) {
             console.log("Got token")
             Cookies.set('token', token, { expires: 60 })
