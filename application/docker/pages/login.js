@@ -9,7 +9,6 @@ const Login = () => (
             <title>SurgeHut</title>
             <meta name="Description" content="SFSU team3  project Fall 2020."></meta>
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-            {/* <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css"/> */}
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
             <script src="https://apis.google.com/js/platform.js" async defer></script>
         </Head>
@@ -31,7 +30,7 @@ const Login = () => (
                             <input className="reg-inputs" name="password" type="password" placeholder="Password"
                                 size="15"required/>
                         </div>
-                        <div className="sumbit-wrap">
+                        <div className="submit-wrap">
                             <input id="submit" className="submit" type="submit" value="Login" />
                             <input id="reset" className="reset" type="reset" value="Cancel"/>
                         </div>
