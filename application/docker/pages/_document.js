@@ -29,9 +29,7 @@ export default class MyDocument extends Document {
           </center>
           <NextScript />
         </body>
-        <bottom>
-          <BottomNav/>
-        </bottom>
+        <BottomNav/>
       </Html>
     )
   }

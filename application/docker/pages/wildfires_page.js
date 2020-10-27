@@ -1,7 +1,8 @@
+import React from 'react';
 import Head from 'next/head';
 
 const Wildfires = () =>(
-        <div>
+        <div className="reg-form">
             <Head>
                 <title>SurgeHut</title>
                 <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css"/>

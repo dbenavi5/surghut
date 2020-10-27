@@ -4,7 +4,7 @@ import React from 'react';
 
 function Button({onClick, children}) {
     return (
-        <button 
+        <button className="search-icon" 
         onClick={onClick}
         //className={styles.button}
         >

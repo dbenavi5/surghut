@@ -1,7 +1,8 @@
+import React  from 'react';
 import Head from 'next/head';
 
 const Covid = () =>(
-    <div>
+    <div className="reg-form">
         <Head>
             <title>SurgeHut</title>
             <meta name="Description" content="SFSU team3  project Fall 2020."></meta>
