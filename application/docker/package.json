@@ -22,5 +22,9 @@
     "serverless-mysql": "^1.5.4",
     "sql-template-strings": "^2.2.2",
     "swr": "^0.3.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-plugin-react": "^7.21.5"
   }
 }
