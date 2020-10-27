@@ -4,7 +4,7 @@ module.exports = {
     'es2020': true,
   },
   'extends': [
-    "eslint:recommended",
+    'eslint:recommended',
     'plugin:react/recommended',
     'google',
   ],
@@ -19,9 +19,9 @@ module.exports = {
     'react',
   ],
   'rules': {
-    "react/react-in-jsx-scope": "off"
+    'react/react-in-jsx-scope': 'off',
   },
-  "globals": {
-    "React": "writable"
-  }
+  'globals': {
+    'React': 'writable',
+  },
 };

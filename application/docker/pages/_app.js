@@ -1,12 +1,12 @@
-//import { useEffect } from 'react'
-//import { useRouter } from 'next/router'
-import { AuthProvider, ProtectRoute } from '../contexts/auth';
-//import * as gtag from '../lib/gtag'
-import '../stylesheets/style.css'
+// import { useEffect } from 'react'
+// import { useRouter } from 'next/router'
+import {AuthProvider, ProtectRoute} from '../contexts/auth';
+// import * as gtag from '../lib/gtag'
+import '../stylesheets/style.css';
 
-const App = ({ Component, pageProps }) => {
-  //const router = useRouter()
-  //useEffect(() => {
+const App = ({Component, pageProps}) => {
+  // const router = useRouter()
+  // useEffect(() => {
   //  const handleRouteChange = (url) => {
   //    gtag.pageview(url)
   //  }
@@ -14,13 +14,13 @@ const App = ({ Component, pageProps }) => {
   //  return () => {
   //    router.events.off('routeChangeComplete', handleRouteChange)
   //  }
-  //}, [router.events])
+  // }, [router.events])
 
   return (
     <AuthProvider>
-        <Component {...pageProps} />
+      <Component {...pageProps} />
     </AuthProvider>
-  )
-}
+  );
+};
 
-export default App
+export default App;

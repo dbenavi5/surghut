@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
 function josue_carreo() {
   return (
@@ -19,7 +19,7 @@ function josue_carreo() {
       </div>
 
     </>
-  )
+  );
 }
 
-export default josue_carreo
+export default josue_carreo;

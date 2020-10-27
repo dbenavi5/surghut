@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import BottomNav from '../components/BottomNav';
@@ -8,11 +8,11 @@ import Navbar from '../components/Navbar';
 
 
 const Registration = () => (
-    
-        <div>
-            <Navbar/>
-            <RegisterForm/>
-        </div>
+
+  <div>
+    <Navbar/>
+    <RegisterForm/>
+  </div>
 );
 
 export default Registration;

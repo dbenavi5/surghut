@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import GoogleSignIn from '../components/GoogleSignIn';
@@ -11,13 +11,13 @@ import {LoginForm} from '../components/Form';
 
 const Login = () => (
 
-        <div>
-            <Navbar/>
-            <LoginForm/>
-        </div>
+  <div>
+    <Navbar/>
+    <LoginForm/>
+  </div>
 );
 
-//<h1>Login Page</h1>
+// <h1>Login Page</h1>
 //                <form id= "form1" name="form1" >
 //                    <fieldset className="field">
 //                        <div>
@@ -25,7 +25,7 @@ const Login = () => (
 //                            <input id = "username" name="username" type="text" placeholder="Username"
 //                                size="15" required/>
 //                        </div>
-//                        
+//
 //                        <div>
 //                            <div><label htmlFor="password">Password</label></div>
 //                            <input name="password" type="password" placeholder="Password"
@@ -38,7 +38,7 @@ const Login = () => (
 //
 //                        <div>---- Or sign in with Google ----</div>
 //                        <GoogleSignIn/>
-//   
+//
 //                    </fieldset>
 //                </form>
 
