@@ -23,7 +23,7 @@ function Index({ data }) {
   //console.log("props index ", data[0]);
   return (
     <>
-        <div>
+        <div className="reg-form">
             <h2>CSC 648/848 SW Enginering Fall 2020</h2>
             <h3>Section 2<br/>Team 3</h3>
 

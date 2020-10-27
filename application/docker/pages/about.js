@@ -1,27 +1,27 @@
 import Link from 'next/link';
 
 const About = () =>(
-        <div>
-            <h1>About This Project</h1>
+        <div className="reg-form">
+            <h1 >About This Project</h1>
             <p>Public Safety Web App for California residents facing wildfire surges and monitoring the coronavirus within the users county.</p>
 
             <h6>Meet the Team</h6>
-            <div className="">
-                <ul className="navbar-nav ml-auto">
+            <div className="about-us">
+                <ul className="navbar-nav">
                     <li className="">
-                        <Link href="/about/josue_carreo"><a className="nav-link">Josue Carreo</a></Link>
+                        <Link href="/about/josue_carreo"><a className="navLink">Josue Carreo</a></Link>
                     </li>
                     <li className="">
-                        <Link href="/about/pierre_antoine"><a className="nav-link">Pierre Antoine</a></Link>
+                        <Link href="/about/pierre_antoine"><a className="navLink">Pierre Antoine</a></Link>
                     </li>
                     <li className="">
-                        <Link href="/about/harsimran_nandhra"><a className="nav-link">Harsimran Nandhra</a></Link>
+                        <Link href="/about/harsimran_nandhra"><a className="navLink">Harsimran Nandhra</a></Link>
                     </li>
                     <li className="">
-                        <Link href="/about/kevin_chen"><a className="nav-link">Kevin Chen</a></Link>
+                        <Link href="/about/kevin_chen"><a className="navLink">Kevin Chen</a></Link>
                     </li>
                     <li className="">
-                        <Link href="/about/diana_benavides"><a className="nav-link">Diana Benavides</a></Link>
+                        <Link href="/about/diana_benavides"><a className="navLink">Diana Benavides</a></Link>
                     </li>
                 </ul>
             </div>
