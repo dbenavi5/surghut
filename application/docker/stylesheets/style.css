@@ -2,13 +2,25 @@
     padding: 0;
     margin: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
-/* navbar */
+
+/* top navbar */
+nav{ 
+    position: fixed;
+    width: 100%;
+    box-shadow: -1px 4px 56px 11px;
+    z-index:100;
+}
+.navbar {
+    background: linear-gradient(to right, #0cbaba, #380036);   
+    position: fixed;
+}
+/* search bar */
 #searchWrapper{
     padding: 0;
     margin: 0;
-    
 }
 #searchWrapper input {
     width: 100%;
@@ -44,9 +56,9 @@
     color: white;
 }
 
-.nav-item{
+/* .nav-item{
     float: left;
-}
+} */
 
 #btn-wrapper{
     margin: 20%;
@@ -130,6 +142,12 @@
 .submit:hover{
     opacity: .8;
 }
+.check1, .check2{
+    margin:26px;
+}
+.reg_border{
+    text-shadow: 2px 2px gray;
+}
 
 input[type=text] {
     width: 250px;
@@ -188,27 +206,34 @@ input[type=password] {
 /* bottom nav */
 .bottom-nav {
     overflow: hidden;
-    background: #343a40;
-    position: relative;
+    background: black;
+    position: fixed;
     bottom: 0;
     width: 100%;
     color: white;
     padding: 16px;
 }
 /* registration */
- .reg-form{
-    box-shadow: -1px 4px 56px 11px;
-    width: 600px;
-    height: 850px;
-    padding-top: 20px;
- }
+.reg-form{
+    padding-top: 200px;
+    margin-bottom: 200px
+}
+.reg-inputs{
+    box-shadow: -1px 8px 16px 0px;
+    outline: none;
+}
+
+form {
+    position: relative;
+    
+}
 
  /* images css */
- .license-caption {
-     font-size: 12px;
- }
+.license-caption {
+    font-size: 12px;
+}
 
- .pic {
+.pic {
     display: block;
     height: 50%;
     width: 50%;
