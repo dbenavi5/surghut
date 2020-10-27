@@ -8,7 +8,6 @@ function TextInput({value, onTextChange, placeHolder, type}) {
 
     return (
         <div>
-            <label>{placeHolder}</label>
             <input
             type={type}
             placeholder={placeHolder}
