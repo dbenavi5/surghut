@@ -33,7 +33,7 @@ function Search({data, setResult}) {
             GetCounty(data, text, setResult);
           }}
         >
-                Test
+                Search
         </Button>
       </label>
     </div>

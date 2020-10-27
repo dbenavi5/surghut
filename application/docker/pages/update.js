@@ -3,7 +3,6 @@ import {ProtectRoute} from '../contexts/auth';
 
 import Navbar from '../components/Navbar';
 
-
 function Update() {
   return (
     <ProtectRoute>
