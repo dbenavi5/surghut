@@ -16,9 +16,11 @@ module.exports = async (req, res) => {
         res.status(200).json({ error : "pseudo already taken" })
     }
     const newProfile = await db.query(escape`
-        USERT INTO Profile (pseudo, mail, password)
+        INSERT INTO Profile (pseudo, mail, password)
         VALUES (${req.body.pseudo}, ${req.body.mail}, ${req.body.password})
   ` );
+    console.log("result create use api: ", newProfile);
+    
     const answer = await db.query(escape`
         UPDATE Profile P
         SET

@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import BottomNav from '../components/BottomNav';
 
 
-import { GA_TRACKING_ID } from '../lib/gtag'
+//import { GA_TRACKING_ID } from '../lib/gtag'
 
 export default class MyDocument extends Document {
     
@@ -26,9 +26,6 @@ export default class MyDocument extends Document {
           </center>
           <NextScript />
         </body>
-        <bottom>
-          <BottomNav/>
-        </bottom>
       </Html>
     )
   }

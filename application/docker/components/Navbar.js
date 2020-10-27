@@ -17,14 +17,22 @@ function Navbar () {
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
+                            <Link href="/"><a className="nav-link">Home</a></Link>
+                        </li>
+                        <li className="nav-item">
                             <Link href="/about"><a className="nav-link">About</a></Link>
                         </li>
                         {isAuthenticated ? 
-                        <Button
-                        onClick={logout}
-                        >
-                            Logout
-                        </Button>
+                        <>
+                            <li className="nav-item">
+                                    <Link href="/update"><a className="nav-link">update</a></Link>
+                            </li>
+                            <Button
+                            onClick={logout}
+                            >
+                                Logout
+                            </Button>
+                        </>
                         :
                         <>
                             <li className="nav-item">

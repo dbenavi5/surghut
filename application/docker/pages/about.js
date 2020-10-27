@@ -4,7 +4,8 @@ import Navbar from '../components/Navbar';
 
 
 
-const About = () =>(
+function About () {
+    return (
         <div>
             <Navbar/>
             <h1>About This Project</h1>
@@ -31,6 +32,7 @@ const About = () =>(
                 </ul>
             </div>
         </div>
-);
+    )
+};
 
 export default About;

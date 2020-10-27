@@ -2,6 +2,7 @@ import React, { createContext, useState, useContext, useEffect } from 'react'
 import Cookies from 'js-cookie'
 import { useRouter } from 'next/router'
 import {LoginForm} from '../components/Form';
+import Navbar from '../components/Navbar';
 
 //api here is an axios instance which has the baseURL set according to the env.
 import api from '../api/api';
@@ -9,10 +10,12 @@ import api from '../api/api';
 
 const AuthContext = createContext({});
 
-export const AuthProvider = ({ children }) => {
+export function AuthProvider({ children }) {
 
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
+    const router = useRouter();
+
 
     useEffect(() => {
         async function loadUserFromCookies() {
@@ -37,7 +40,8 @@ export const AuthProvider = ({ children }) => {
             api.defaults.headers.Authorization = `Bearer ${token.token}`
             const { data } = await api.get('users/me')
             setUser(data.profile)
-            console.log("Got user", data.profile)
+            console.log("Got user", data.profile);
+            router.push('/')
         }
     }
 
@@ -51,16 +55,16 @@ export const AuthProvider = ({ children }) => {
             const { data } = await api.get('users/me')
             setUser(data.profile)
             console.log("Got user", data.profile)
+            router.push('/')
         }
     }
 
     const logout = () => {
-        //const router = useRouter()
         Cookies.remove('token')
         setUser(null)
-        delete api.defaults.headers.Authorization
-
-        //router.push('/login')
+        delete api.defaults.headers.Authorization;
+        //window.location.pathname = '/login';
+        router.push('/login')
     }
 
 
@@ -75,11 +79,19 @@ export const AuthProvider = ({ children }) => {
 
 export const useAuth = () => useContext(AuthContext);
 
-export const ProtectRoute = ({ children }) => {
+export function ProtectRoute({ children }) {
     const { isAuthenticated, isLoading } = useAuth();
     const router = useRouter()
     if (isLoading || (!isAuthenticated && router.pathname !== '/login')){
-      return <LoginForm/>; 
+        //router.push('/');
+        //window.location.pathname = '/login';
+
+        return (
+            <>
+            <Navbar/>
+            <LoginForm/>
+            </>
+        );
     }
     return children;
 };
