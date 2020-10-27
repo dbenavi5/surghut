@@ -1,6 +1,6 @@
-import React , { useState } from 'react';
+import React, {useState} from 'react';
 
-import styles from './index.module.css'
+import styles from './index.module.css';
 
 import Map from '../components/Map';
 import Tab from '../components/Tab';
@@ -9,6 +9,9 @@ import Marker from '../components/Marker';
 import Search from '../components/Search';
 
 import Switch from '../components/Switch';
+
+import Navbar from '../components/Navbar';
+
 
 const db = require('../lib/db');
 const escape = require('sql-template-strings');
@@ -23,15 +26,15 @@ function Index({ data }) {
   //console.log("props index ", data[0]);
   return (
     <>
+        <Navbar/>
         <div className="reg-form">
             <h2>CSC 648/848 SW Enginering Fall 2020</h2>
             <h3>Section 2<br/>Team 3</h3>
 
-            <Search
-              data={data}
-              setResult={setCounty}
-            />
 
+        <div
+          className={styles.container}
+        >
 
             <div
              className={styles.container}
@@ -59,20 +62,19 @@ function Index({ data }) {
             />
             </div>
 
-            {map ?
+        {map ?
               <Map>
                 {county.map((county) =>
-                  <Marker 
-                  key={county.id}
-                  lat={county.latitude}
-                  lng={county.longitude}
-                  data={county}
-                  covide={covide}
-                  fire={fire}
-                  />
+                  <Marker
+                    key={county.id}
+                    lat={county.latitude}
+                    lng={county.longitude}
+                    data={county}
+                    covide={covide}
+                    fire={fire}
+                  />,
                 )}
-              </Map>
-            :
+              </Map> :
               <Tab
                 data={county}
                 covide={covide}
@@ -80,19 +82,19 @@ function Index({ data }) {
               />
             }
         </div>
+      </div>
     </>
   )
 }
 
-export async function getServerSideProps({ req, query }) {
 
-  const county = await db.query( escape`
+export async function getServerSideProps({req, query}) {
+  const county = await db.query(escape`
       SELECT *
       FROM County
   `);
-  
-  return { props: { data :county} }
-  
+
+  return {props: {data: county}};
 }
 
 export default Index;

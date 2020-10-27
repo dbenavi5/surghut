@@ -1,30 +1,28 @@
 import React from 'react';
-//import styles from './CSS/Button.module.css'
+// import styles from './CSS/Button.module.css'
 
 
 function TabData({data, covide, fire}) {
-    //console.log("tab data ", data);
-    return (
-        <tr>
-            <td>{data.name}</td>
-            {covide ?
+  // console.log("tab data ", data);
+  return (
+    <tr>
+      <td>{data.name}</td>
+      {covide ?
                 <>
-                    <td>{data.covide_case}</td>
-                    <td>{data.covide_death}</td>
-                </>
-                :
+                  <td>{data.covide_case}</td>
+                  <td>{data.covide_death}</td>
+                </> :
                 <></>
-                        }
-            {fire ?
+      }
+      {fire ?
                 <>
-                    <td>{data.fire_case}</td>
-                    <td>{data.evacuation_level}</td>
-                </>
-                :
+                  <td>{data.fire_case}</td>
+                  <td>{data.evacuation_level}</td>
+                </> :
                 <></>
-            }
-        </tr>
-    );
+      }
+    </tr>
+  );
 }
 
 export default TabData;

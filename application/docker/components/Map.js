@@ -1,33 +1,33 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import GoogleMapReact from 'google-map-react';
-import { geolocated } from "react-geolocated";
+import {geolocated} from 'react-geolocated';
 
 const markerStyle = {
-    position: 'absolute',
-    transform: 'translate(-50%, -50%)'
-}
+  position: 'absolute',
+  transform: 'translate(-50%, -50%)',
+};
 
-function Position({ src }) {
-    return (
-        <div style={markerStyle}>
-            <img
-            width="30"
-            height="30"
-            src={src}/>
-        </div>
-    )
+function Position({src}) {
+  return (
+    <div style={markerStyle}>
+      <img
+        width="30"
+        height="30"
+        src={src}/>
+    </div>
+  );
 }
 
 const handleApiLoaded = (map, maps) => {
-    map.data.loadGeoJson(
-        "/california-counties.geojson"
-    );
-    // use map and maps objects
+  map.data.loadGeoJson(
+      '/california-counties.geojson',
+  );
+  // use map and maps objects
 };
 
 function Map(props) {
+  const [zoom, setZoom] = useState(6);
 
-    const [zoom, setZoom] = useState(6);
 
     
     if (props.coords) {
@@ -56,15 +56,15 @@ function Map(props) {
         )
     }
 
-    //if (!props.isGeolocationAvailable) {
-    //    return (
-    //        <div>Your browser does not support Geolocation</div>
-    //    )
-    //}
+  // if (!props.isGeolocationAvailable) {
+  //    return (
+  //        <div>Your browser does not support Geolocation</div>
+  //    )
+  // }
 
-    return (
-        <div>Geolocation is not enabled</div>
-    )
+  return (
+    <div>Geolocation is not enabled</div>
+  );
 }
 
 export default geolocated({

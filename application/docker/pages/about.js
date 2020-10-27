@@ -1,7 +1,11 @@
 import Link from 'next/link';
+import Navbar from '../components/Navbar';
 
-const About = () =>(
+
+function About() {
+    return (        
         <div className="reg-form">
+            <Navbar/>
             <h1 >About This Project</h1>
             <p>Public Safety Web App for California residents facing wildfire surges and monitoring the coronavirus within the users county.</p>
 
@@ -26,6 +30,6 @@ const About = () =>(
                 </ul>
             </div>
         </div>
-);
+    );}
 
 export default About;

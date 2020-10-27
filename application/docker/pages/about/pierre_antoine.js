@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
-import styles from './pierre_antoine.module.css'
+import styles from './pierre_antoine.module.css';
 
 function pierre_antoine() {
   return (
@@ -23,7 +23,7 @@ function pierre_antoine() {
       </div>
 
     </>
-  )
+  );
 }
 
-export default pierre_antoine
+export default pierre_antoine;

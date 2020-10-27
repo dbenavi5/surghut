@@ -1,29 +1,29 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
 function diana_benavides() {
   return (
     <>
-    <div>
+      <div>
         <h1>Diana Benavides</h1>
-    </div>
+      </div>
 
-    <div>
+      <div>
         <h2>GitHub Master and Backend Assistant</h2>
 
-        <p>Hello my name is Diana Benavides and I am a senior at SFSU. I'm designing a Web Application, 
+        <p>Hello my name is Diana Benavides and I am a senior at SFSU. I'm designing a Web Application,
             along with my team, to bring awareness of public safety measures surrounding Covid-19 and the Wildfires across California.</p>
-  
-        <a href="https://github.com/dbenavi5" class="btn"> my Github</a>
+
+        <a href="https://github.com/dbenavi5" className="btn"> my Github</a>
         <div>
-            <Link href="/about">
+          <Link href="/about">
             <a>back to about page</a>
-            </Link>
+          </Link>
         </div>
-    </div>
-      
+      </div>
+
     </>
-  )
+  );
 }
 
-export default diana_benavides
+export default diana_benavides;

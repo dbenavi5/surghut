@@ -1,16 +1,16 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, {Html, Head, Main, NextScript} from 'next/document';
 
 import BottomNav from '../components/BottomNav';
-import Navbar from '../components/Navbar';
+
+import Watermark from '../components/Watermark';
 
 
-import { GA_TRACKING_ID } from '../lib/gtag'
+// import { GA_TRACKING_ID } from '../lib/gtag'
 
 
 export default class MyDocument extends Document {
-    
   render() {
-    console.log(GA_TRACKING_ID);
+    // console.log(GA_TRACKING_ID);
     return (
       <Html>
         <Head>
@@ -20,28 +20,27 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
           {/* Global Site Tag (gtag.js) - Google Analytics */}
-          
+
         </Head>
         <body>
-          <Navbar/>
           <center>
-          <Main />
+            <Main />
           </center>
           <NextScript />
         </body>
-        <BottomNav/>
+        <Watermark/>
       </Html>
-    )
+    );
   }
 }
 
 // script googla analytic to put between <Head></Head>
 
-//<script
+// <script
 //  async
 //  src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-///>
-//<script
+// />
+// <script
 //  dangerouslySetInnerHTML={{
 //    __html: `
 //  window.dataLayer = window.dataLayer || [];
@@ -50,6 +49,6 @@ export default class MyDocument extends Document {
 //  gtag('config', '${GA_TRACKING_ID}', {
 //    page_path: window.location.pathname,
 //  });
-//`,
+// `,
 //  }}
-///>
+// />

@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
-import styles from './kevin_chen.module.css'
+import styles from './kevin_chen.module.css';
 
 function kevin_chen() {
   return (
@@ -23,7 +23,7 @@ function kevin_chen() {
       </div>
 
     </>
-  )
+  );
 }
 
-export default kevin_chen
+export default kevin_chen;
