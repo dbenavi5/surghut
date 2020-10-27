@@ -4,6 +4,33 @@
     box-sizing: border-box;
 }
 
+.data-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.data-table tr:hover {background-color: #ddd;}
+
+.data-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #380036;
+  color: white;
+}
+
+.data-table td, .data-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.data-table{
+   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+.map-container {
+    margin-top: 100px;
+    box-shadow: -1px 4px 56px 11px;
+}
 
 /* top navbar */
 nav { 
@@ -47,21 +74,27 @@ nav {
     padding-top:30px;
 }
 /* search bar */
+#searchWrapper {
+    padding: 100px;
+}
+
 #searchWrapper input{
     width: 600px;
-    border: 1px solid darkslategray;
-    padding: 9px;
+    border: none;
+    padding: 10px;
     font-size:15px;
     margin-top: 0;
     color: darkslategray;
     box-sizing: border-box;
     outline: none;
     position: relative;
+    border-radius: 4px;
 }
 
 .search-label{
     position: relative;
     width:600px;
+    box-shadow: -1px 4px 56px 1px;
 }
 .search-icon{
     position: absolute;
@@ -69,9 +102,11 @@ nav {
     margin: 0;
     outline: none;
     width: 60px;
-    border: 0;
+    border: 1px solid black;
+    border-radius: 4px;
     height: 42px;
     background: transparent;
+    box-shadow: -1px 4px 56px px;
 }
 .search-icon:hover{
     background: lightslategray;
@@ -232,13 +267,3 @@ form {
     width: 50%;
 }
 
-table,
-td {
-    border: 1px solid #333;
-}
-
-thead,
-tfoot {
-    background-color: #333;
-    color: #fff;
-}

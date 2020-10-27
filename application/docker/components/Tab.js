@@ -9,7 +9,7 @@ function Tab({data, covide, fire}) {
 
     return (
         <div>
-            <table>
+            <table  className="data-table">
                 <thead>
                     <tr>
                         <th colspan="1">Name</th>

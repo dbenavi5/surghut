@@ -1,7 +1,6 @@
-
 .container {
     display: flex;
-    background-color: aqua;
+    background: red;
     width: 200px;
     border-radius: 10px;
 }
