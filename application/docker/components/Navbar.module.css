@@ -1,0 +1,30 @@
+.nav_bar {
+    background: linear-gradient(to right, #0cbaba, #380036);
+    padding: 30px 10%;
+    box-shadow: -1px 4px 56px 11px;
+}
+
+.nav_brand, .nav_item, .nav_link, .dropdown_item{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-item: center;
+}
+
+.logo {
+    text-shadow: 2px  2px gray;
+}
+.nav_item  {
+    display: inline-block;
+    padding: 50px 20px;
+    font-size: 18px;
+}
+
+.drop_content {
+   display: none;
+}

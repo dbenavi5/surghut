@@ -3,52 +3,56 @@ import Link from 'next/link';
 
 import {useAuth} from '../contexts/auth';
 import Button from './Button';
+import Watermark from './Watermark';
+import styles from './Navbar.module.css';
 
 function Navbar() {
   const {isAuthenticated, logout} = useAuth();
 
   return (
-    <nav className="nav-bar">
-            <div className="container">
-                <a href = "/" className="navbar_brand"><h1>SurgeHut</h1></a>
-                <div className="collapse-navbar">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link" href="/about">About</a>
-                        </li>
-                        {isAuthenticated ?
-                        <>
-                          <li className="nav-item">
-                            <Link href="/update"><a className="nav-link">update</a></Link>
-                          </li>
-                          <Button
-                            onClick={logout}
-                          >
-                                Logout
-                          </Button>
-                        </> :
-                        <>
-                          <li className="nav-item">
-                            <Link href="/login"><a className="nav-link">Login</a></Link>
-                          </li>
-                          <li className="nav-item">
-                            <Link href="/register"><a className="nav-link">Register</a></Link>
-                          </li>
-                        </>
-                        }
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Category</a>
-                            <div className="drop-content">
-                                <a className="dropdown-item" href="#">County</a>
-                                <a className="dropdown-item" href="#">COVID-19</a>
-                                <a className="dropdown-item" href="#">Wildfires</a>
-                            </div> 
-                        </li>   
-                    </ul>
-                </div>
-            </div>
+    <nav className={styles.nav_bar}>
+      <div className={styles.container}>
+          <a href="/" className={styles.nav_brand}><h1 className={styles.logo}>SurgeHut</h1></a>
+	  <Watermark className={styles.water} />
+          <div className={styles.collapse_navbar}>
+              <ul className={styles.navbar_nav}>
+                  <li className={styles.nav_item}>
+                      <a href="/about" className= {styles.nav_link}>About</a>
+                  </li>
+                  {isAuthenticated ?
+                  <>
+                    <li className={styles.nav_item}>
+                      <Link href="/update"><a className={styles.nav_link}>update</a></Link>
+                    </li>
+                    <Button
+                      onClick={logout}
+                    >
+                          Logout
+                    </Button>
+                  </> :
+                  <>
+                    <li className={styles.nav_item}>
+                      <Link href="/login"><a className={styles.nav_link}>Login</a></Link>
+                    </li>
+                    <li className={styles.nav_item}>
+                      <Link href="/register"><a className={styles.nav_link}>Register</a></Link>
+                    </li>
+                  </>
+                  }
+                  <li className={styles.nav_item}>
+                      <a className={styles.nav_link} data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Category</a>
+                      <div className={styles.drop_content}>
+                          <a className={styles.dropdown_item} href="#">County</a>
+                          <a className={styles.dropdown_item} href="#">COVID-19</a>
+                          <a className={styles.dropdown_item} href="#">Wildfires</a>
+                      </div> 
+                  </li>   
+              </ul>
+          </div>
+      </div>
     </nav>
   );
 }
 
 export default Navbar;
+

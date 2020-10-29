@@ -36,47 +36,6 @@
     box-shadow: -1px 4px 56px 11px;
 }
 
-/* top navbar */
-nav { 
-    position: fixed;
-    z-index:2;
-}
-.container {
-    background: linear-gradient(to right, #0cbaba, #380036);   
-    position: fixed;
-    width: 100%;
-    box-shadow: -1px 4px 56px 11px;
-    text-align: right;
-}
-.collapse-navbar ul {
-    display: inline-flex;
-    list-style: none;
-    color: white;
-
-}
-.collapse-navbar ul li {
-    width: 120px;
-    margin: 15px;
-    padding: 15px;
-}
-.nav-link {
-    text-decoration: none;
-    font-size: 20px;
-}
-.container a {
-    text-align: left;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-}
-
-.navbar_brand h1{
-    font-weight: bold;
-    width: 120px;
-    padding-left: 50px;
-    color:white;
-    text-shadow: 2px 2px gray;
-    padding-top:30px;
-}
 /* search bar */
 #searchWrapper {
     padding: 100px;
@@ -115,27 +74,6 @@ nav {
 .search-icon:hover{
     background: lightslategray;
     border:0;
-}
-
-
-.drop-content{
-    display:none;
-    position:absolute;
-    background-color: white;
-    min-width: 100px;
-    box-shadow: 0px 4px 6px 0px;
-    z-index: 1;
-}
-.drop-content a{
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-.dropdown:hover .drop-content{
-    display: block;
 }
 
 .field{
@@ -250,10 +188,6 @@ input[type=password] {
     padding: 16px;
 }
 /* registration */
-.reg-form{
-    padding-top: 300px;
-    margin-bottom: 200px
-}
 .reg-inputs{
     box-shadow: -1px 8px 16px 0px;
     outline: none;
@@ -274,4 +208,5 @@ form {
     height: 50%;
     width: 50%;
 }
+
 

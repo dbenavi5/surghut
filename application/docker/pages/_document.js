@@ -23,12 +23,9 @@ export default class MyDocument extends Document {
 
         </Head>
         <body>
-          <center>
-            <Main />
-          </center>
+          <Main />
           <NextScript />
         </body>
-        <Watermark/>
       </Html>
     );
   }
