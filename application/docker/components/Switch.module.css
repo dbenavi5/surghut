@@ -1,14 +1,11 @@
 .container {
-    display: flex;
-    background: red;
+    display: inline-flex;
     width: 200px;
-    border-radius: 10px;
 }
 
 .buttonActive {
     flex: 1;
     background-color: rgb(110, 110, 110);
-
 }
 
 .buttonInactive {

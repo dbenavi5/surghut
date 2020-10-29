@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 
 import {TextInput} from './Input';
 import Button from './Button';
+import styles from './Search.module.css';
+
 
 function GetCounty(data, key, setResult) {
   // console.log("key == ", key);
@@ -20,9 +22,9 @@ function Search({data, setResult}) {
   const [text, setText] = useState('');
 
   return (
-    <div id= "searchWrapper">
-      <label className="search-label" htmlFor="search-input" >
-        <TextInput
+    <div className={styles.searchWrapper}>
+      <label className={styles.search_label} htmlFor="search-input" >
+        <TextInput 
           type={'text'}
           placeHolder={'Search...'}
           value={text}
@@ -33,7 +35,7 @@ function Search({data, setResult}) {
             GetCounty(data, text, setResult);
           }}
         >
-                Search
+               <i className="fa  fa-search"> Search</i>
         </Button>
       </label>
     </div>

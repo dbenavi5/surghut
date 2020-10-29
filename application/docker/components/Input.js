@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Search.module.css';
 
 function TextInput({value, onTextChange, placeHolder, type}) {
   const eventHandler = (event) => {
@@ -8,6 +9,7 @@ function TextInput({value, onTextChange, placeHolder, type}) {
   return (
     <div>
       <input
+	className={styles.search_input}	
         type={type}
         placeholder={placeHolder}
         value={value}

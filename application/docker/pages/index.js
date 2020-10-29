@@ -26,8 +26,12 @@ function Index({ data }) {
   //console.log("props index ", data[0]);
   return (
     <>
+      <div>
         <Navbar/>
-        <div className="reg-form">
+        <Search
+            data={data}
+            setResult={setCounty}
+        />
 
 
         <div

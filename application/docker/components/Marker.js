@@ -24,6 +24,7 @@ function Marker({
           width="30"
           height="30"
           src="https://image.flaticon.com/icons/png/128/3603/3603850.png"
+	  alt="marker position"
         />
       </div>
     );

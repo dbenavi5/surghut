@@ -43,8 +43,8 @@ function Navbar() {
                       <a className={styles.nav_link} data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Category</a>
                       <div className={styles.drop_content}>
                           <a className={styles.dropdown_item} href="#">County</a>
-                          <a className={styles.dropdown_item} href="#">COVID-19</a>
-                          <a className={styles.dropdown_item} href="#">Wildfires</a>
+                          <a className={styles.dropdown_item} href="/covid_page">COVID-19</a>
+                          <a className={styles.dropdown_item} href="/wildfires_page">Wildfires</a>
                       </div> 
                   </li>   
               </ul>

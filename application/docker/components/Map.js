@@ -13,7 +13,8 @@ function Position({src}) {
       <img
         width="30"
         height="30"
-        src={src}/>
+        src={src}
+	alt="map position"/>
     </div>
   );
 }
@@ -49,6 +50,7 @@ function Map(props) {
                       lat={props.coords.latitude}
                       lng={props.coords.longitude}
                       src="https://image.flaticon.com/icons/png/128/3603/3603850.png"
+		      alt="map position"
                     />
                     {props.children}
                 </GoogleMapReact>
