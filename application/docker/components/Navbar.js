@@ -3,6 +3,7 @@ import Dropdown from './Dropdown';
 import {useAuth} from '../contexts/auth';
 import {MobileButton} from './MobileButton';
 import Button from './Button';
+import Watermark from './Watermark';
 // import Link from 'next/link'
 
 
@@ -39,6 +40,7 @@ function Navbar() {
       <a href="/" className="navLogo">
         SurgeHut
       </a>
+      <Watermark />
       <div className="menuIcon" onClick={ handleClick }>
         <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
       </div>

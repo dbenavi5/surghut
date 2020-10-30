@@ -2,7 +2,7 @@ import Document, {Html, Head, Main, NextScript} from 'next/document';
 
 // import BottomNav from '../components/BottomNav';
 
-// import Watermark from '../components/Watermark';
+import Watermark from '../components/Watermark';
 
 
 // import { GA_TRACKING_ID } from '../lib/gtag'
@@ -28,9 +28,9 @@ export default class MyDocument extends Document {
 
         </Head>
         <body>
-	 <center>
+	      <center>
            <Main />
-	 </center>
+	      </center>
           <NextScript />
         </body>
       </Html>

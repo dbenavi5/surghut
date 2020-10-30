@@ -6,7 +6,7 @@
     border-radius: 6px;
 }
 
-.search_btn {
+/* .search_btn {
     position: inherit;
     padding: 10px;
     outline: none;
@@ -16,7 +16,7 @@
     height:  42px;
     background: transparent;
     z-index: 1;
-}
+} */
 .searchWrapper {
     margin-top: 100px;
     margin-bottom: 100px;
