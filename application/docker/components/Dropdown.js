@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
 import { MenuItems } from './MenuItems';
 
 function Dropdown()  {
@@ -13,10 +12,10 @@ function Dropdown()  {
                 {MenuItems.map((item, index) => {
                     return (
                         <li  key={index}>
-                            <Link className={item.cName} href={item.path} onClick={() => 
+                            <a className={item.cName} href={item.path} onClick={() => 
                                 setClick(false)}>
                                     {item.title}
-                            </Link>
+                            </a>
                         </li>
                     )
                 })}

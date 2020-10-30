@@ -38,7 +38,7 @@ function Navbar() {
     <>
     <nav className="navbar">
       <a href="/" className="navLogo">
-      <i class="fab fa-accusoft">SurgeHut </i>
+      <i className="fab fa-accusoft">SurgeHut </i>
       </a>
       <Watermark />
       <div className="menuIcon" onClick={ handleClick }>
