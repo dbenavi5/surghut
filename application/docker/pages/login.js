@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-import GoogleSignIn from '../components/GoogleSignIn';
 
 import Navbar from '../components/Navbar';
 

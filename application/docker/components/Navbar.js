@@ -1,56 +1,59 @@
-import React from 'react';
-import Link from 'next/link';
-
+import React, { useState } from 'react';
+// import Link from 'next/link';
+import Dropdown from './Dropdown';
 import {useAuth} from '../contexts/auth';
-import Button from './Button';
-import Watermark from './Watermark';
-import styles from './Navbar.module.css';
+//import Watermark from './Watermark';
+//import styles from './Navbar.module.css';
+import {MobileButton} from './MobileButton';
+
 
 function Navbar() {
   const {isAuthenticated, logout} = useAuth();
 
+  const [click, setClick] = useState(false);
+
+  const [dropdown, setDropdown] = useState(false);
+
+  const handleClick = () => setClick(!click);
+
+  const closeMobileMenu  = () => setClick(false);
+
   return (
-    <nav className={styles.nav_bar}>
-      <div className={styles.container}>
-          <a href="/" className={styles.nav_brand}><h1 className={styles.logo}>SurgeHut</h1></a>
-	  <Watermark className={styles.water} />
-          <div className={styles.collapse_navbar}>
-              <ul className={styles.navbar_nav}>
-                  <li className={styles.nav_item}>
-                      <a href="/about" className= {styles.nav_link}>About</a>
-                  </li>
-                  {isAuthenticated ?
-                  <>
-                    <li className={styles.nav_item}>
-                      <Link href="/update"><a className={styles.nav_link}>update</a></Link>
-                    </li>
-                    <Button
-                      onClick={logout}
-                    >
-                          Logout
-                    </Button>
-                  </> :
-                  <>
-                    <li className={styles.nav_item}>
-                      <Link href="/login"><a className={styles.nav_link}>Login</a></Link>
-                    </li>
-                    <li className={styles.nav_item}>
-                      <Link href="/register"><a className={styles.nav_link}>Register</a></Link>
-                    </li>
-                  </>
-                  }
-                  <li className={styles.nav_item}>
-                      <a className={styles.nav_link} data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Category</a>
-                      <div className={styles.drop_content}>
-                          <a className={styles.dropdown_item} href="#">County</a>
-                          <a className={styles.dropdown_item} href="/covid_page">COVID-19</a>
-                          <a className={styles.dropdown_item} href="/wildfires_page">Wildfires</a>
-                      </div> 
-                  </li>   
-              </ul>
-          </div>
+    <>
+    <nav className="navbar">
+      <a href="/" className="navLogo">
+        SurgeHut
+      </a>
+      <div className="menuIcon" onClick={ handleClick }>
+        <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
       </div>
+      <ul className={click ? 'navMenu active' : 'navMenu'}>
+        <li className="navItems">
+          <a href="/" className="navLinks" onClick={closeMobileMenu}>
+            Home
+          </a>
+        </li>
+        <li className="navItems">
+          <a href="#" className="navLinks" onClick={closeMobileMenu}>
+            Category <i className="fas fa-caret-down"/>   
+          </a>
+          {dropdown && <Dropdown/>}
+        </li>
+        <li className="navItems">
+          <a href="/login" className="navLinks" onClick={closeMobileMenu}>
+            Sign In
+          </a>
+        </li>
+        <li className="navItems">
+          <a href="/register" className="navMobile" onClick={closeMobileMenu}>
+            Sign Up
+          </a>
+        </li>
+      </ul>
+      <MobileButton />
     </nav>
+    </>
+    
   );
 }
 
