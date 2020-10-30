@@ -1,15 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
+import Navbar from '../components/Navbar';
 
 const Wildfires = () =>(
-        <div className="reg-form">
-            <Head>
-                <title>SurgeHut</title>
-                <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css"/>
-                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
-            </Head>
+        <div>
             <center>
                 <div>
+                    <Navbar/>
                     <h1>Wildfires</h1>
                     <p>in CA</p>
                 </div>

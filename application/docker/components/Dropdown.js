@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { MenuItems } from './MenuItems';
-// import './Dropdown.css';
 
 function Dropdown()  {
 
