@@ -32,9 +32,9 @@
       display: none;
     }
     
-    .dropdownMenu {
+    .dropdownMenu:hover {
       width: 100%;
-      display: block;
+      display: contents;
       z-index: 1;
     }
 

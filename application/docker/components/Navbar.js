@@ -4,7 +4,6 @@ import {useAuth} from '../contexts/auth';
 import {MobileButton} from './MobileButton';
 import Button from './Button';
 import Watermark from './Watermark';
-// import Link from 'next/link'
 
 
 function Navbar() {
@@ -37,10 +36,11 @@ function Navbar() {
   return (
     <>
     <nav className="navbar">
+      <Watermark/>
       <a href="/" className="navLogo">
       <i className="fab fa-accusoft">SurgeHut </i>
       </a>
-      <Watermark />
+      
       <div className="menuIcon" onClick={ handleClick }>
         <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
       </div>

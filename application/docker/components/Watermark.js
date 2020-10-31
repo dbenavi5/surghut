@@ -4,7 +4,7 @@ function Watermark() {
   return (
     <div>
       <h4 className="watermark">SW Enginering
-           <br/> CSC 648/848 Fall 2020<b/>Section 2</h4>
+           <br/> CSC 648/848 Fall 2020<br/>Section 2</h4>
       
     </div>
   );
