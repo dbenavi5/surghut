@@ -2,11 +2,13 @@
 // import { useRouter } from 'next/router'
 import {AuthProvider, ProtectRoute} from '../contexts/auth';
 // import * as gtag from '../lib/gtag'
+
 import '../stylesheets/style.css';
 import '../components/Dropdown.css';
 import '../components/Navbar.css';
 import '../components/Watermark.css'
 import '../components/MobileButton.css'
+
 
 const App = ({Component, pageProps}) => {
   // const router = useRouter()
