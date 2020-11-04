@@ -7,7 +7,9 @@ class CovidTable extends Component {
             onSortByTotal, 
             onSortByCountyName,
             onSortById,
-            onSortByDate
+            onSortByDate,
+            onRowSelected,
+            
         } = this.props;
 
         return (
@@ -33,17 +35,24 @@ class CovidTable extends Component {
                 </thead>
                 <tbody>
                     {
-                        counties.map(( county ) => (
-                            <tr key={county.id}>
-                                <td>{county.id}</td>
-                                <td>{county.county}</td>
-                                <td>{county.totalConfirmed}</td>
-                                <td>{county.deathCount}</td>
-                                <td>{county.newConfirmedCases}</td>
-                                <td>{county.newDeathCount}</td>
-                                <td>{county.date}</td>
-                            </tr>
-                    ))}
+                        counties.map(( county ) => {
+                            const style = {
+                                backgroundColor:'#0cbaba',
+                            }
+                            return(
+                                <tr key={county.id} 
+                                style={county.selected ? style : null}
+                                onClick={ () => onRowSelected( county )}>
+                                    <td>{county.id}</td>
+                                    <td>{county.county}</td>
+                                    <td>{county.totalConfirmed}</td>
+                                    <td>{county.deathCount}</td>
+                                    <td>{county.newConfirmedCases}</td>
+                                    <td>{county.newDeathCount}</td>
+                                    <td>{county.date}</td>
+                                </tr>
+                            );
+                        })}
                 </tbody>
             </table>
         );
