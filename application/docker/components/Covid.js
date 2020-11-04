@@ -14,7 +14,7 @@ class Covid extends Component {
         newDeaths: 0
     };
 
-    url = "https://raw.githubusercontent.com/datadesk/california-coronavirus-data/master/latimes-county-totals.csv";
+    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/db/application/docker/csv_files/Covid_cases.csv?token=ANLI5K2V547BDYKE7PNPCCK7VM7F6";
 
     async componentDidMount() {
         const response = await axios.get(this.url);
@@ -29,23 +29,24 @@ class Covid extends Component {
 
         for(let i = 1; i < rows.length; i++) {
             const row = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);  //split on comma
-            const caseDate = row[0];
+            
+            const id = Number(row[0]);
             const countyName = row[1];
-            const fibs = Number(row[2]);
-            const deathCount = Number(row[4]);
-            const newConfirmedTotal = Number(row[5]);
-            const newDeathCount  = Number(row[6]);
-            const totalConfirmed = Number(row[3]); //total confirmed cases  in CA
+            const totalConfirmed = Number(row[2]); //total confirmed cases  in CA
+            const deathCount = Number(row[3]);
+            const newConfirmedTotal = Number(row[4]);
+            const newDeathCount  = Number(row[5]);
+            const caseDate = row[6];
 
             if (caseDate !== "") {
                 counties.push({
                     date: caseDate,
-                    id: fibs,
+                    id: id,
                     county: countyName,
                     deathCount :  deathCount,
-                    total_confirmed_cases: totalConfirmed,
-                    new_confirmed_cases: newConfirmedCases,
-                    new_deaths: newDeathCount,
+                    totalConfirmed: totalConfirmed,
+                    newConfirmedCases: newConfirmedCases,
+                    newDeathCount: newDeathCount,
                 });
                 
                 confirmedCases += totalConfirmed;
@@ -54,10 +55,37 @@ class Covid extends Component {
                 newDeaths += newDeathCount;
             }
         }
-        await new Promise ((x) => setTimeout(x, 500));
+        await new Promise ((x) => setTimeout(x, 100));
 
         this.setState({ counties, confirmedCases });
     }
+
+    sortByTotal  = ( countyA, countyB ) => {
+        if( countyB.totalConfirmed > countyA.totalConfirmed ) return 1;
+        else if ( countyB.totalConfirmed < countyA.totalConfirmed ) return -1;
+        else return 0;
+
+    };
+
+    handleOnSortByTotal = ( event ) => {
+        event.preventDefault();
+        const counties = [...this.state.counties];
+        counties.sort(this.sortByTotal);
+        this.setState({ counties });
+    };
+
+    sortByCountyName = ( countyA, countyB ) => {
+        if( countyA.county > countyB.county ) return 1;
+        else if ( countyA.county < countyB.county ) return -1;
+        else return 0;
+    };
+
+    handleOnSortCountyName = ( event ) => {
+        event.preventDefault();
+        const counties = [...this.state.counties];
+        counties.sort(this.sortByCountyName);
+        this.setState({ counties });
+    };
 
     numberWithCommas(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -72,7 +100,11 @@ class Covid extends Component {
                 { confirmedCases === 0 ? (
                     <Loading/> 
                 ) : (
-                    <CovidTable counties={counties}/> 
+                    <CovidTable 
+                        counties={counties} 
+                        onSortByTotal = {this.handleOnSortByTotal}
+                        onSortByCountyName = {this.handleOnSortCountyName}
+                    /> 
                 )}
             </div>
         );

@@ -2,18 +2,23 @@ import React, { Component } from 'react';
 
 class CovidTable extends Component {
     render() {
-        const { counties } = this.props;
+        const { counties, onSortByTotal, onSortByCountyName } = this.props;
 
         return (
             <table className="data-table">
                 <thead>
                     <tr >
-                        <th>Date</th>
-                        <th>County</th>
-                        <th>Confirmed Cases</th>
+                        <th>id</th>
+                        <th>
+                            <a href="/" onClick={ onSortByCountyName }>County</a>
+                        </th>
+                        <th>
+                            <a href="/" onClick={ onSortByTotal }>Confirmed Cases</a>
+                        </th>
                         <th>Deaths</th>
                         <th>New Confirmed Cases</th>
-                        <th>New Deaths</th>                      
+                        <th>New Deaths</th>
+                        <th>Date</th>                      
                     </tr>
                 </thead>
                 <tbody>
@@ -21,18 +26,18 @@ class CovidTable extends Component {
                         counties.map(( county ) => (
                             <tr key={county.id}>
                                 <td>{county.id}</td>
-                                <td>{county.date}</td>
                                 <td>{county.county}</td>
-                                <td>{county.total_confirmed_cases}</td>
+                                <td>{county.totalConfirmed}</td>
                                 <td>{county.deathCount}</td>
-                                <td>{county.new_confirmed_cases}</td>
-                                <td>{county.new_deaths}</td>
+                                <td>{county.newConfirmedCases}</td>
+                                <td>{county.newDeathCount}</td>
+                                <td>{county.date}</td>
                             </tr>
                     ))}
                 </tbody>
             </table>
         );
-    };
+    }
 }
 
 export default CovidTable;
