@@ -7,6 +7,7 @@ import CovidTable from '../components/CovidTable';
 class Covid extends Component {
     state  = {
         counties: [],
+        id: 0,
         confirmedCases:0,
         deaths:0,
         newConfirmedCases: 0,
@@ -30,6 +31,7 @@ class Covid extends Component {
             const row = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);  //split on comma
             const caseDate = row[0];
             const countyName = row[1];
+            const fibs = Number(row[2]);
             const deathCount = Number(row[4]);
             const newConfirmedTotal = Number(row[5]);
             const newDeathCount  = Number(row[6]);
@@ -38,6 +40,7 @@ class Covid extends Component {
             if (caseDate !== "") {
                 counties.push({
                     date: caseDate,
+                    id: fibs,
                     county: countyName,
                     deathCount :  deathCount,
                     total_confirmed_cases: totalConfirmed,
@@ -51,7 +54,7 @@ class Covid extends Component {
                 newDeaths += newDeathCount;
             }
         }
-        await new Promise ((x) => setTimeout(x, 1000));
+        await new Promise ((x) => setTimeout(x, 500));
 
         this.setState({ counties, confirmedCases });
     }
@@ -66,7 +69,11 @@ class Covid extends Component {
         return (
             <div>
                 <h1>Covid Confirmed Cases: { this.numberWithCommas(confirmedCases) } </h1>
-                { confirmedCases === 0 ? <Loading/> : <CovidTable/> }
+                { confirmedCases === 0 ? (
+                    <Loading/> 
+                ) : (
+                    <CovidTable counties={counties}/> 
+                )}
             </div>
         );
     } 
