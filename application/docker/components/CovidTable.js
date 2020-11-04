@@ -2,13 +2,21 @@ import React, { Component } from 'react';
 
 class CovidTable extends Component {
     render() {
-        const { counties, onSortByTotal, onSortByCountyName } = this.props;
+        const { 
+            counties, 
+            onSortByTotal, 
+            onSortByCountyName,
+            onSortById,
+            onSortByDate
+        } = this.props;
 
         return (
             <table className="data-table">
                 <thead>
                     <tr >
-                        <th>id</th>
+                        <th>
+                            <a href="/" onClick={ onSortById }>id</a>
+                        </th>
                         <th>
                             <a href="/" onClick={ onSortByCountyName }>County</a>
                         </th>
@@ -18,7 +26,9 @@ class CovidTable extends Component {
                         <th>Deaths</th>
                         <th>New Confirmed Cases</th>
                         <th>New Deaths</th>
-                        <th>Date</th>                      
+                        <th>
+                            <a href="/" onClick={ onSortByDate }>Date</a>
+                        </th>                      
                     </tr>
                 </thead>
                 <tbody>

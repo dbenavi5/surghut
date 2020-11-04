@@ -11,10 +11,11 @@ class Covid extends Component {
         confirmedCases:0,
         deaths:0,
         newConfirmedCases: 0,
-        newDeaths: 0
+        newDeaths: 0,
+        date: true
     };
 
-    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/db/application/docker/csv_files/Covid_cases.csv?token=ANLI5K2V547BDYKE7PNPCCK7VM7F6";
+    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/db/application/docker/csv_files/Covid_cases.csv?token=ANLI5KYWEXGAOJRDRZTB3LS7VODR6";
 
     async componentDidMount() {
         const response = await axios.get(this.url);
@@ -31,7 +32,7 @@ class Covid extends Component {
             const row = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);  //split on comma
             
             const id = Number(row[0]);
-            const countyName = row[1];
+            const countyName = row[1].replace(/"/g,"");
             const totalConfirmed = Number(row[2]); //total confirmed cases  in CA
             const deathCount = Number(row[3]);
             const newConfirmedTotal = Number(row[4]);
@@ -55,7 +56,7 @@ class Covid extends Component {
                 newDeaths += newDeathCount;
             }
         }
-        await new Promise ((x) => setTimeout(x, 100));
+        await new Promise ((x) => setTimeout(x, 50));
 
         this.setState({ counties, confirmedCases });
     }
@@ -68,10 +69,7 @@ class Covid extends Component {
     };
 
     handleOnSortByTotal = ( event ) => {
-        event.preventDefault();
-        const counties = [...this.state.counties];
-        counties.sort(this.sortByTotal);
-        this.setState({ counties });
+        this.handleOnSortBy( event, this.sortByTotal );
     };
 
     sortByCountyName = ( countyA, countyB ) => {
@@ -81,9 +79,34 @@ class Covid extends Component {
     };
 
     handleOnSortCountyName = ( event ) => {
+        this.handleOnSortBy( event, this.sortByCountyName);
+    };
+
+    sortById = ( countyA, countyB ) => {
+        if( countyB.id > countyA.id ) return 1;
+        else if ( countyB.id < countyA.id ) return -1;
+        else return 0;
+    };
+
+    handleOnSortById = ( event ) => {
+        this.handleOnSortBy( event, this.sortById);
+    };
+    
+    sortByDate = ( countyA, countyB ) => {
+        if( countyB.date > countyA.date ) return 1;
+        else if ( countyB.date < countyA.date ) return -1;
+        else return 0;
+    };
+
+
+    handleOnSortByDate = ( event ) => {
+        this.handleOnSortBy( event, this.sortByDate);
+    };
+
+    handleOnSortBy = ( event, sortOperation )  => {
         event.preventDefault();
         const counties = [...this.state.counties];
-        counties.sort(this.sortByCountyName);
+        counties.sort(sortOperation);
         this.setState({ counties });
     };
 
@@ -101,9 +124,11 @@ class Covid extends Component {
                     <Loading/> 
                 ) : (
                     <CovidTable 
-                        counties={counties} 
-                        onSortByTotal = {this.handleOnSortByTotal}
-                        onSortByCountyName = {this.handleOnSortCountyName}
+                        counties={ counties } 
+                        onSortByTotal = { this.handleOnSortByTotal }
+                        onSortByCountyName = { this.handleOnSortCountyName }
+                        onSortById = { this.handleOnSortById }
+                        onSortByDate = { this.handleOnSortByDate }
                     /> 
                 )}
             </div>
