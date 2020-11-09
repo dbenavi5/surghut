@@ -2,7 +2,7 @@ import React from 'react';
 import {ProtectRoute} from '../contexts/auth';
 
 import Navbar from '../components/Navbar';
-import {CovidCaseForm} from '../components/Form';
+import {CovidCaseForm, FireCaseForm} from '../components/Form';
 
 function Update() {
   
@@ -13,6 +13,7 @@ function Update() {
         <Navbar/>
         <p>protected page</p>
         <CovidCaseForm/>
+        <FireCaseForm/>
       </div>
     </ProtectRoute>
   );
