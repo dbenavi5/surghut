@@ -4,12 +4,14 @@ const escape = require('sql-template-strings');
 module.exports = async (req, res) => {
   // console.log("req = ", req);
   console.log('req.body = ', req.body, req.body.user);
-  const time = new Date().toISOString().slice(0, 19).replace('T', ' ').replace('Z', '');
+  const time = new Date().toISOString().slice(0, 19).replace('T', ' ');
   console.log(time);
 
   const newProfile = await db.query(escape`
-        INSERT INTO Covid (upload_time, nb_case, county)
-        VALUES (${time}, ${req.body.nbCase}, ${req.body.county})
+  UPDATE Covid C
+  SET
+    validate = 1
+  WHERE C.upload_time=${req.body.upload_time}
   ` );
   console.log('result create use api: ', newProfile);
 

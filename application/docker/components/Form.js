@@ -3,7 +3,7 @@ import {TextInput} from './Input';
 import Button from './Button';
 
 import {useAuth} from '../contexts/auth';
-import {addCovidCase} from '../api/covid/covide'
+import {addCovidCase, cancelCovidCase, validateCovidCase} from '../api/covid/covide'
 
 function LoginForm() {
   const [pseudo, setPseudo] = useState('');
@@ -111,4 +111,34 @@ function CovidCaseForm() {
   )
 }
 
-export {LoginForm, RegisterForm, CovidCaseForm};
+function ValidateCovidCaseForm({upload_time, county, nbCase}) {
+
+  const {user} = useAuth();
+
+  return (
+    <div>
+        <p>Covid case form</p>
+        <p>upload time : {upload_time.replace('Z', '')}</p>
+        <p>county : {county}</p>
+        <p>number of new case: {nbCase}</p>
+        <Button
+          onClick={ () => {
+            console.log('new case covid fill');
+            cancelCovidCase(user, upload_time.replace('Z', ''));
+          }}
+        >
+                  delete
+        </Button>
+        <Button
+          onClick={ () => {
+            console.log('new case covid fill');
+            validateCovidCase(user, upload_time.replace('Z', ''));
+          }}
+        >
+                  validate
+        </Button>
+      </div>
+  )
+}
+
+export {LoginForm, RegisterForm, CovidCaseForm, ValidateCovidCaseForm};
