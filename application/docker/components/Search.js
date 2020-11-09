@@ -24,7 +24,7 @@ function Search({data, setResult}) {
   return (
     <div className={styles.searchWrapper}>
       <label className={styles.search_label} htmlFor="search-input" >
-        <TextInput 
+        <TextInput
           type={'text'}
           placeHolder={'Search...'}
           value={text}
@@ -35,7 +35,7 @@ function Search({data, setResult}) {
             GetCounty(data, text, setResult);
           }}
         >
-               <i className="fa  fa-search"> Search</i>
+          <i className="fa  fa-search"> Search</i>
         </Button>
       </label>
     </div>

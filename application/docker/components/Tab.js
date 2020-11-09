@@ -7,13 +7,13 @@ import TabData from './TabData';
 function Tab({data, covide, fire}) {
   // console.log("tab data ", data[0]);
 
-    return (
-        <div>
-            <table  className="data-table">
-                <thead>
-                    <tr>
-                        <th colspan="1">Name</th>
-                        {covide ?
+  return (
+    <div>
+      <table className="data-table">
+        <thead>
+          <tr>
+            <th colSpan="1">Name</th>
+            {covide ?
                             <>
                               <th colSpan="1">covide case / 100K</th>
                               <th colSpan="1">covide death / 100K</th>
