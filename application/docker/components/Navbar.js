@@ -24,6 +24,9 @@ function Navbar() {
                     <li className={styles.nav_item}>
                       <Link href="/update"><a className={styles.nav_link}>update</a></Link>
                     </li>
+                    <li className={styles.nav_item}>
+                      <Link href="/checking"><a className={styles.nav_link}>checking</a></Link>
+                    </li>
                     <Button
                       onClick={logout}
                     >
