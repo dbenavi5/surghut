@@ -3,6 +3,7 @@ import {TextInput} from './Input';
 import Button from './Button';
 
 import {useAuth} from '../contexts/auth';
+import {addCovidCase} from '../api/covid/covide'
 
 function LoginForm() {
   const [pseudo, setPseudo] = useState('');
@@ -77,4 +78,37 @@ function RegisterForm() {
   );
 }
 
-export {LoginForm, RegisterForm};
+function CovidCaseForm() {
+  const [newCase, setNewCase] = useState('');
+  const [county, setCounty] = useState('');
+
+  const {user} = useAuth();
+
+  return (
+    <div>
+        <p>Covid case form</p>
+        <TextInput
+          type={'text'}
+          value={newCase}
+          placeHolder={'Enter number of new covid case'}
+          onTextChange={setNewCase}
+        />
+        <TextInput
+          type={'text'}
+          value={county}
+          placeHolder={'enter the name the county'}
+          onTextChange={setCounty}
+        />
+        <Button
+          onClick={ () => {
+            console.log('new case covid fill');
+            addCovidCase(user, newCase, county);
+          }}
+        >
+                  sign up
+        </Button>
+      </div>
+  )
+}
+
+export {LoginForm, RegisterForm, CovidCaseForm};
