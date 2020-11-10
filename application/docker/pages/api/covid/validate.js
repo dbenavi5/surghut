@@ -15,6 +15,13 @@ module.exports = async (req, res) => {
   ` );
   console.log('result create use api: ', newProfile);
 
+  const update = await db.query(escape`
+  UPDATE County C
+  SET
+    C.covide_case = (SELECT C.nb_case FROM Covid C WHERE C.upload_time=${req.body.upload_time})
+  WHERE C.name= (SELECT C.county FROM Covid C WHERE C.upload_time=${req.body.upload_time})
+  ` );
+
   // console.log("req.header = ", req.header);
   res.status(200);
 };
