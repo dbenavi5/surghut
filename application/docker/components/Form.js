@@ -14,6 +14,8 @@ import {addFireCase,
 
 import {sendMail} from '../api/mailbox/mailbox';
 
+import {registerAlert, sendAlert, cancelAlert} from '../api/alert/alert';
+
 function LoginForm() {
   const [pseudo, setPseudo] = useState('');
   const [password, setPassword] = useState('');
@@ -253,11 +255,104 @@ function MailForm() {
   )
 }
 
+function AlertRegisterForm() {
+  const [mail, setMail] = useState('');
+  const [county, setCounty] = useState('');
+
+  return (
+    <div>
+        <p>Fire alert form</p>
+        <TextInput
+          type={'text'}
+          value={mail}
+          placeHolder={'Enter your mail'}
+          onTextChange={setMail}
+        />
+        <TextInput
+          type={'text'}
+          value={county}
+          placeHolder={'enter the name of your county'}
+          onTextChange={setCounty}
+        />
+        <Button
+          onClick={ () => {
+            console.log('new case covid fill');
+            registerAlert(mail, county);
+          }}
+        >
+                  register
+        </Button>
+      </div>
+  )
+}
+
+function SendAlertForm() {
+  const [county, setCounty] = useState('');
+  const [level, setLevel] = useState('');
+
+  const {user} = useAuth();
+
+  return (
+    <div>
+        <p>Fire alert form</p>
+        <TextInput
+          type={'text'}
+          value={county}
+          placeHolder={'enter the name of the county'}
+          onTextChange={setCounty}
+        />
+        <TextInput
+          type={'text'}
+          value={level}
+          placeHolder={'Enter the new level of alert'}
+          onTextChange={setLevel}
+        />
+        <Button
+          onClick={ () => {
+            console.log('new case covid fill');
+            sendAlert(user, county, level);
+          }}
+        >
+                  send
+        </Button>
+      </div>
+  )
+}
+
+function CancelAlertForm() {
+  const [county, setCounty] = useState('');
+
+  const {user} = useAuth();
+
+  return (
+    <div>
+        <p>Fire alert cancel form</p>
+        <TextInput
+          type={'text'}
+          value={county}
+          placeHolder={'enter the name of the county'}
+          onTextChange={setCounty}
+        />
+        <Button
+          onClick={ () => {
+            console.log('new case covid fill');
+            cancelAlert(user, county);
+          }}
+        >
+                  send
+        </Button>
+      </div>
+  )
+}
+
 export {LoginForm, 
   RegisterForm, 
   CovidCaseForm, 
   ValidateCovidCaseForm,
   FireCaseForm,
   ValidateFireCaseForm,
-  MailForm
+  MailForm,
+  AlertRegisterForm,
+  SendAlertForm,
+  CancelAlertForm
 };

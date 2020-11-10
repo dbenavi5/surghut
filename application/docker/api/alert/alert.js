@@ -15,4 +15,4 @@ async function cancelAlert(user, county) {
     console.log("addCovidCase ", result);
 }
 
-export {registerAlert, deleteAlert, sendAlert, cancelAlert}
+export {registerAlert, sendAlert, cancelAlert}

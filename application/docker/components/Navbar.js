@@ -30,6 +30,9 @@ function Navbar() {
                     <li className={styles.nav_item}>
                       <Link href="/mailbox"><a className={styles.nav_link}>mailbox</a></Link>
                     </li>
+                    <li className={styles.nav_item}>
+                      <Link href="/alert"><a className={styles.nav_link}>alert</a></Link>
+                    </li>
                     <Button
                       onClick={logout}
                     >
