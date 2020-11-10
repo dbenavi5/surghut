@@ -16,17 +16,24 @@ function Checking({data}) {
     <ProtectRoute>
       <div>
         <Navbar/>
-        <p>Checking page</p>
-        <ValidateCovidCaseForm
-        upload_time={data.covid[0].upload_time}
-        county={data.covid[0].county}
-        nbCase={data.covid[0].nb_case}
-        />
-        <ValidateFireCaseForm
-        upload_time={data.fire[0].upload_time}
-        county={data.fire[0].county}
-        nbCase={data.fire[0].nb_case}
-        />
+        {data.covid.map((data) => 
+            <ValidateCovidCaseForm
+            key={data.upload_time}
+            upload_time={data.upload_time}
+            county={data.county}
+            nbCase={data.nb_case}
+            />
+        )}
+        
+        {data.fire.map((data) => 
+            <ValidateFireCaseForm
+            key={data.upload_time}
+            upload_time={data.upload_time}
+            county={data.county}
+            nbCase={data.nb_case}
+            />
+        )}
+        
       </div>
     </ProtectRoute>
   );

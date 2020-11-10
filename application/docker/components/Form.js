@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {TextInput} from './Input';
+import {TextInput, InputWithChoice} from './Input';
 import Button from './Button';
 
 import {useAuth} from '../contexts/auth';
@@ -89,7 +89,7 @@ function RegisterForm() {
   );
 }
 
-function CovidCaseForm() {
+function CovidCaseForm({idData, dataCounty}) {
   const [newCase, setNewCase] = useState('');
   const [county, setCounty] = useState('');
 
@@ -99,13 +99,14 @@ function CovidCaseForm() {
     <div>
         <p>Covid case form</p>
         <TextInput
-          type={'text'}
+          type={'number'}
           value={newCase}
-          placeHolder={'Enter number of new covid case'}
+          placeHolder={'Enter number of covid case'}
           onTextChange={setNewCase}
         />
-        <TextInput
-          type={'text'}
+        <InputWithChoice
+          data={dataCounty}
+          idData={idData}
           value={county}
           placeHolder={'enter the name the county'}
           onTextChange={setCounty}
@@ -116,7 +117,7 @@ function CovidCaseForm() {
             addCovidCase(user, newCase, county);
           }}
         >
-                  sign up
+                  send
         </Button>
       </div>
   )
@@ -131,7 +132,7 @@ function ValidateCovidCaseForm({upload_time, county, nbCase}) {
         <p>Covid case form</p>
         <p>upload time : {upload_time.replace('Z', '')}</p>
         <p>county : {county}</p>
-        <p>number of new case: {nbCase}</p>
+        <p>Current number of case: {nbCase}</p>
         <Button
           onClick={ () => {
             console.log('new case covid fill');
@@ -152,23 +153,26 @@ function ValidateCovidCaseForm({upload_time, county, nbCase}) {
   )
 }
 
-function FireCaseForm() {
+function FireCaseForm({idData, dataCounty}) {
   const [newCase, setNewCase] = useState('');
   const [county, setCounty] = useState('');
 
   const {user} = useAuth();
 
+  console.log(newCase);
+
   return (
     <div>
         <p>Fire case form</p>
         <TextInput
-          type={'text'}
+          type={'number'}
           value={newCase}
-          placeHolder={'Enter number of new covid case'}
+          placeHolder={'Enter number of fire case'}
           onTextChange={setNewCase}
         />
-        <TextInput
-          type={'text'}
+        <InputWithChoice
+          data={dataCounty}
+          idData={idData}
           value={county}
           placeHolder={'enter the name the county'}
           onTextChange={setCounty}
@@ -179,7 +183,7 @@ function FireCaseForm() {
             addFireCase(user, newCase, county);
           }}
         >
-                  sign up
+                  send
         </Button>
       </div>
   )
@@ -194,7 +198,7 @@ function ValidateFireCaseForm({upload_time, county, nbCase}) {
         <p>Fire case form</p>
         <p>upload time : {upload_time.replace('Z', '')}</p>
         <p>county : {county}</p>
-        <p>number of new case: {nbCase}</p>
+        <p>Current number of case: {nbCase}</p>
         <Button
           onClick={ () => {
             console.log('new case covid fill');
@@ -224,7 +228,7 @@ function MailForm() {
 
   return (
     <div>
-        <p>Fire case form</p>
+        <p>Send a mail to a user</p>
         <TextInput
           type={'text'}
           value={receiver}
@@ -249,27 +253,30 @@ function MailForm() {
             sendMail(user, receiver, object, message);
           }}
         >
-                  sign up
+                  register
         </Button>
       </div>
   )
 }
 
-function AlertRegisterForm() {
+function AlertRegisterForm({idData, dataCounty}) {
   const [mail, setMail] = useState('');
   const [county, setCounty] = useState('');
 
+  //console.log("alert form ", dataCounty);
+
   return (
     <div>
-        <p>Fire alert form</p>
+        <p>Register your mail to receive alert from your county</p>
         <TextInput
           type={'text'}
           value={mail}
           placeHolder={'Enter your mail'}
           onTextChange={setMail}
         />
-        <TextInput
-          type={'text'}
+        <InputWithChoice
+          data={dataCounty}
+          idData={idData}
           value={county}
           placeHolder={'enter the name of your county'}
           onTextChange={setCounty}
@@ -286,7 +293,7 @@ function AlertRegisterForm() {
   )
 }
 
-function SendAlertForm() {
+function SendAlertForm({idData, dataCounty}) {
   const [county, setCounty] = useState('');
   const [level, setLevel] = useState('');
 
@@ -294,15 +301,16 @@ function SendAlertForm() {
 
   return (
     <div>
-        <p>Fire alert form</p>
-        <TextInput
-          type={'text'}
+        <p>Send a alert in a county</p>
+        <InputWithChoice
+          data={dataCounty}
+          idData={idData}
           value={county}
           placeHolder={'enter the name of the county'}
           onTextChange={setCounty}
         />
         <TextInput
-          type={'text'}
+          type={'number'}
           value={level}
           placeHolder={'Enter the new level of alert'}
           onTextChange={setLevel}
@@ -319,16 +327,17 @@ function SendAlertForm() {
   )
 }
 
-function CancelAlertForm() {
+function CancelAlertForm({idData, dataCounty}) {
   const [county, setCounty] = useState('');
 
   const {user} = useAuth();
 
   return (
     <div>
-        <p>Fire alert cancel form</p>
-        <TextInput
-          type={'text'}
+        <p>Cancel an alert in a county</p>
+        <InputWithChoice
+          data={dataCounty}
+          idData={idData}
           value={county}
           placeHolder={'enter the name of the county'}
           onTextChange={setCounty}

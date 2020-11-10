@@ -4,20 +4,44 @@ import {ProtectRoute} from '../contexts/auth';
 import Navbar from '../components/Navbar';
 import {AlertRegisterForm, SendAlertForm, CancelAlertForm} from '../components/Form';
 
-function Update() {
-  
+const db = require('../lib/db');
+const escape = require('sql-template-strings');
+
+function Alert({data}) {
+
+    //console.log(data);
 
   return (
     <ProtectRoute>
       <div>
         <Navbar/>
-        <p>protected page</p>
-        <AlertRegisterForm/>
-        <SendAlertForm/>
-        <CancelAlertForm/>
+        <AlertRegisterForm
+        idData="County"
+        dataCounty={data}
+        />
+        <SendAlertForm
+        idData="County2"
+        dataCounty={data}
+        />
+        <CancelAlertForm
+        idData="County3"
+        dataCounty={data}
+        />
       </div>
     </ProtectRoute>
   );
 }
 
-export default Update;
+export async function getServerSideProps({req, query}) {
+    const county = await db.query(escape`
+        SELECT *
+        FROM County
+    `);
+  
+    return {props: {data: county}};
+}
+
+
+
+
+export default Alert;
