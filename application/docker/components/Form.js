@@ -12,6 +12,8 @@ import {addFireCase,
   cancelFiredCase, 
   validateFireCase} from '../api/fire/fire';
 
+import {sendMail} from '../api/mailbox/mailbox';
+
 function LoginForm() {
   const [pseudo, setPseudo] = useState('');
   const [password, setPassword] = useState('');
@@ -211,10 +213,51 @@ function ValidateFireCaseForm({upload_time, county, nbCase}) {
   )
 }
 
+function MailForm() {
+  const [receiver, setReceiver] = useState('');
+  const [object, setObjet] = useState('');
+  const [message, setMessage] = useState('');
+
+  const {user} = useAuth();
+
+  return (
+    <div>
+        <p>Fire case form</p>
+        <TextInput
+          type={'text'}
+          value={receiver}
+          placeHolder={'Enter pseudo of the receiver'}
+          onTextChange={setReceiver}
+        />
+        <TextInput
+          type={'text'}
+          value={object}
+          placeHolder={'enter the object of your mail'}
+          onTextChange={setObjet}
+        />
+        <TextInput
+          type={'text'}
+          value={message}
+          placeHolder={'enter the message of your mail'}
+          onTextChange={setMessage}
+        />
+        <Button
+          onClick={ () => {
+            console.log('new case covid fill');
+            sendMail(user, receiver, object, message);
+          }}
+        >
+                  sign up
+        </Button>
+      </div>
+  )
+}
+
 export {LoginForm, 
   RegisterForm, 
   CovidCaseForm, 
   ValidateCovidCaseForm,
   FireCaseForm,
-  ValidateFireCaseForm
+  ValidateFireCaseForm,
+  MailForm
 };
