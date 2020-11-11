@@ -8,19 +8,17 @@ const db = require('../lib/db');
 const escape = require('sql-template-strings');
 
 function Update({data}) {
-  
-
   return (
     <ProtectRoute>
       <div>
         <Navbar/>
         <CovidCaseForm
-        idData="Covid"
-        dataCounty={data}
+          idData="Covid"
+          dataCounty={data}
         />
         <FireCaseForm
-        dataCounty={data}
-        idData="Fire"
+          dataCounty={data}
+          idData="Fire"
         />
       </div>
     </ProtectRoute>

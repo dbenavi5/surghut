@@ -1,6 +1,6 @@
 import Axios from 'axios';
 
-//create url for request
+// create url for request
 
 const urls = {
   test: `/api/`,
@@ -8,7 +8,7 @@ const urls = {
   production: 'https://your-production-url.com/',
 };
 
-//create a Axios request
+// create a Axios request
 
 const api = Axios.create({
   baseURL: urls.test,

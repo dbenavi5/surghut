@@ -7,12 +7,10 @@ import {MailForm} from '../components/Form';
 import Mail from '../components/Mail';
 
 function MailBox() {
-  
-
   return (
     <ProtectRoute>
       <div>
-        <Navbar/> 
+        <Navbar/>
         <MailForm/>
         <Mail/>
       </div>

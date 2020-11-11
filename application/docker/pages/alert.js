@@ -16,34 +16,32 @@ function Alert({data}) {
       <div>
         <Navbar/>
         <AlertRegisterForm
-        idData="County"
-        dataCounty={data}
+          idData="County"
+          dataCounty={data}
         />
         <SendAlertForm
-        idData="County2"
-        dataCounty={data}
+          idData="County2"
+          dataCounty={data}
         />
         <CancelAlertForm
-        idData="County3"
-        dataCounty={data}
+          idData="County3"
+          dataCounty={data}
         />
       </div>
     </ProtectRoute>
   );
 }
 
-//get all county information in the County database for this page
+// get all county information in the County database for this page
 
 export async function getServerSideProps({req, query}) {
-    const county = await db.query(escape`
+  const county = await db.query(escape`
         SELECT *
         FROM County
     `);
-  
-    return {props: {data: county}};
+
+  return {props: {data: county}};
 }
-
-
 
 
 export default Alert;

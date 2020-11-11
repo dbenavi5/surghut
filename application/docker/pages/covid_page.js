@@ -1,16 +1,16 @@
-import React  from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
 
 const Covid = () =>(
-    <div>
-        <center>
-            <div>
-                <Navbar/>
-                <h1>Coronavirus</h1>
-                <p>Pandemic in CA</p>
-            </div>
-        </center>
-    </div>
+  <div>
+    <center>
+      <div>
+        <Navbar/>
+        <h1>Coronavirus</h1>
+        <p>Pandemic in CA</p>
+      </div>
+    </center>
+  </div>
 );
 
 export default Covid;

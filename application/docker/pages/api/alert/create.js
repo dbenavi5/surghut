@@ -4,7 +4,6 @@ const escape = require('sql-template-strings');
 // api that save the mail and county of a user in the Alert database
 
 module.exports = async (req, res) => {
-
   // sql request to save mail and county in Alert database
   const data = await db.query(escape`
         INSERT INTO Alert (mail, county)
