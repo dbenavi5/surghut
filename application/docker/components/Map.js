@@ -14,7 +14,7 @@ function Position({src}) {
         width="30"
         height="30"
         src={src}
-	alt="map position"/>
+        alt="map position"/>
     </div>
   );
 }
@@ -30,33 +30,32 @@ function Map(props) {
   const [zoom, setZoom] = useState(6);
 
 
-    
-    if (props.coords) {
-        const center = {
-            lat: 36.778259,
-            lng: -119.417931
-        }
-        return (
-            // Important! Always set the container height explicitly
-            <div className="map-container" style={{ height: '75vh', width: '65%' }}>
-                <GoogleMapReact
-                bootstrapURLKeys={{ key: "AIzaSyCKcBbyY43_ocqIJQUmQlSHZopPH-TPhuA" }}
-                defaultCenter={center}
-                defaultZoom={zoom}
-                yesIWantToUseGoogleMapApiInternals
-                onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}
-                >
-                    <Position
-                      lat={props.coords.latitude}
-                      lng={props.coords.longitude}
-                      src="https://image.flaticon.com/icons/png/128/3603/3603850.png"
+  if (props.coords) {
+    const center = {
+      lat: 36.778259,
+      lng: -119.417931,
+    };
+    return (
+    // Important! Always set the container height explicitly
+      <div className="map-container" style={{height: '75vh', width: '65%'}}>
+        <GoogleMapReact
+          bootstrapURLKeys={{key: 'AIzaSyCKcBbyY43_ocqIJQUmQlSHZopPH-TPhuA'}}
+          defaultCenter={center}
+          defaultZoom={zoom}
+          yesIWantToUseGoogleMapApiInternals
+          onGoogleApiLoaded={({map, maps}) => handleApiLoaded(map, maps)}
+        >
+          <Position
+            lat={props.coords.latitude}
+            lng={props.coords.longitude}
+            src="https://image.flaticon.com/icons/png/128/3603/3603850.png"
 		      alt="map position"
-                    />
-                    {props.children}
-                </GoogleMapReact>
-            </div>
-        )
-    }
+          />
+          {props.children}
+        </GoogleMapReact>
+      </div>
+    );
+  }
 
   // if (!props.isGeolocationAvailable) {
   //    return (
@@ -70,8 +69,8 @@ function Map(props) {
 }
 
 export default geolocated({
-    positionOptions: {
-        enableHighAccuracy: false,
-    },
-    userDecisionTimeout: 5000,
+  positionOptions: {
+    enableHighAccuracy: false,
+  },
+  userDecisionTimeout: 5000,
 })(Map);

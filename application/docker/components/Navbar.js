@@ -5,7 +5,6 @@ import {MobileButton} from './MobileButton';
 import Button from './Button';
 import Watermark from './Watermark';
 
-
 function Navbar() {
   const {isAuthenticated, logout} = useAuth();
 
@@ -69,6 +68,15 @@ function Navbar() {
             <li className="navItems">
               <a href="/update" className="navLinks">update</a>
             </li>
+            <li className="navItems">
+              <a href="/checking" className="navLinks">checking</a>
+            </li>
+            <li className="navItems">
+              <a href="/mailbox" className="navLinks">mailbox</a>
+            </li>
+            <li className="navItems">
+              <a href="/alert" className="navLinks">alert</a>
+            </li>
             <Button
               onClick={logout}
             >
@@ -86,12 +94,14 @@ function Navbar() {
       
         }
       </ul>
-      <MobileButton />
+
     </nav>
     </>
     
   );
 }
+
+//<MobileButton />
 
 export default Navbar;
 
