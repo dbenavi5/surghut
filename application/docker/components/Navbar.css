@@ -56,12 +56,12 @@
 .navMobile {
   display: none;
 }
-
+  
 .menuIcon {
   display: none;
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width: 960px) {
   .navbar {
     height: 20vh;
     width: 100%;

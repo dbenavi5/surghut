@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {TextInput, InputWithChoice} from './Input';
 import Button from './Button';
+import styles from './Form.module.css';
 
 import {useAuth} from '../contexts/auth';
 import {addCovidCase,
@@ -24,7 +25,7 @@ function LoginForm() {
 
   return (
     <div>
-      <p>LoginForm</p>
+      <p className={styles.form_wrap}>Login</p>
       <TextInput
         type={'text'}
         value={pseudo}
@@ -58,25 +59,33 @@ function RegisterForm() {
 
   return (
     <div>
-      <p>RegisterForm</p>
-      <TextInput
-        type={'text'}
-        value={pseudo}
-        placeHolder={'Pseudo'}
-        onTextChange={setPseudo}
-      />
-      <TextInput
-        type={'text'}
-        value={mail}
-        placeHolder={'Mail'}
-        onTextChange={setMail}
-      />
-      <TextInput
-        type={'text'}
-        value={password}
-        placeHolder={'Password'}
-        onTextChange={setPassword}
-      />
+      <p className={styles.form_wrap}>Sign-Up to get alerts!</p>
+      
+      <div className={styles.reg_input}>
+        <TextInput
+          type={'text'}
+          value={pseudo}
+          placeHolder={'Pseudo'}
+          onTextChange={setPseudo}
+        />
+      </div>
+      
+      <div className={styles.reg_input}>
+        <TextInput
+          type={'text'}
+          value={mail}
+          placeHolder={'Mail'}
+          onTextChange={setMail}
+        />
+      </div>
+      <div className={styles.reg_input}>
+        <TextInput
+          type={'text'}
+          value={password}
+          placeHolder={'Password'}
+          onTextChange={setPassword}
+        />
+      </div>
       <Button
         onClick={ () => {
           console.log('login');

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import {InputWithChoice} from './Input';
+import {SearchInputWithChoice} from './Input';
 import Button from './Button';
 import styles from './Search.module.css';
 
@@ -26,7 +26,7 @@ function Search({data, setResult}) {
   return (
     <div className={styles.searchWrapper}>
       <label className={styles.search_label} htmlFor="search-input" >
-        <InputWithChoice
+        <SearchInputWithChoice
           data={data}
           idData="County"
           placeHolder={'Enter the name of your county'}
