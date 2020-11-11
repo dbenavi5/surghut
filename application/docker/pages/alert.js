@@ -7,10 +7,10 @@ import {AlertRegisterForm, SendAlertForm, CancelAlertForm} from '../components/F
 const db = require('../lib/db');
 const escape = require('sql-template-strings');
 
+// alert page
+// data is the information of all county get from the County database
+
 function Alert({data}) {
-
-    //console.log(data);
-
   return (
     <ProtectRoute>
       <div>
@@ -31,6 +31,8 @@ function Alert({data}) {
     </ProtectRoute>
   );
 }
+
+//get all county information in the County database for this page
 
 export async function getServerSideProps({req, query}) {
     const county = await db.query(escape`

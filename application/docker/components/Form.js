@@ -259,11 +259,15 @@ function MailForm() {
   )
 }
 
+
+// Form that save a mail in the data base in case we need to send
+// a email to a user when his county is concerned
+// idData is the id of the dom element of the dataCounty
+// dataCounty is an array of json where there is the name of all county
+
 function AlertRegisterForm({idData, dataCounty}) {
   const [mail, setMail] = useState('');
   const [county, setCounty] = useState('');
-
-  //console.log("alert form ", dataCounty);
 
   return (
     <div>
@@ -283,8 +287,7 @@ function AlertRegisterForm({idData, dataCounty}) {
         />
         <Button
           onClick={ () => {
-            console.log('new case covid fill');
-            registerAlert(mail, county);
+            registerAlert(mail, county); // send the mail and county of the user in the Alert database
           }}
         >
                   register
@@ -293,11 +296,15 @@ function AlertRegisterForm({idData, dataCounty}) {
   )
 }
 
+// Form that send a mail to all user in the Alert database and are in the county concerned
+// idData is the id of the dom element of the dataCounty
+// dataCounty is an array of json where there is the name of all county
+
 function SendAlertForm({idData, dataCounty}) {
   const [county, setCounty] = useState('');
   const [level, setLevel] = useState('');
 
-  const {user} = useAuth();
+  const {user} = useAuth(); // get information on the current user connected
 
   return (
     <div>
@@ -317,8 +324,7 @@ function SendAlertForm({idData, dataCounty}) {
         />
         <Button
           onClick={ () => {
-            console.log('new case covid fill');
-            sendAlert(user, county, level);
+            sendAlert(user, county, level); //send a email to all user in the county concerned and tell the alert level
           }}
         >
                   send
@@ -327,10 +333,14 @@ function SendAlertForm({idData, dataCounty}) {
   )
 }
 
+// Form that send a mail to all user in the Alert database and are in the county concerned
+// idData is the id of the dom element of the dataCounty
+// dataCounty is an array of json where there is the name of all county
+
 function CancelAlertForm({idData, dataCounty}) {
   const [county, setCounty] = useState('');
 
-  const {user} = useAuth();
+  const {user} = useAuth(); // get information on the current user connected
 
   return (
     <div>
@@ -344,8 +354,7 @@ function CancelAlertForm({idData, dataCounty}) {
         />
         <Button
           onClick={ () => {
-            console.log('new case covid fill');
-            cancelAlert(user, county);
+            cancelAlert(user, county); //send a email to all user in the county concerned
           }}
         >
                   send

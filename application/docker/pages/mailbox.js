@@ -12,7 +12,7 @@ function MailBox() {
   return (
     <ProtectRoute>
       <div>
-        <Navbar/>
+        <Navbar/> 
         <MailForm/>
         <Mail/>
       </div>
