@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Dropdown from './Dropdown';
 import {useAuth} from '../contexts/auth';
 import {MobileButton} from './MobileButton';
 import Button from './Button';
 import Watermark from './Watermark';
+
 
 function Navbar() {
   const {isAuthenticated, logout} = useAuth();
@@ -14,10 +15,10 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
 
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu  = () => setClick(false);
 
   const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
+    if(window.innerWidth < 960) {
       setDropdown(false);
     } else {
       setDropdown(true);
@@ -25,7 +26,7 @@ function Navbar() {
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
+    if(window.innerWidth < 960) {
       setDropdown(false);
     } else {
       setDropdown(false);
@@ -34,36 +35,36 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar">
-        <Watermark/>
-        <a href="/" className="navLogo">
-          <i className="fab fa-accusoft">SurgeHut </i>
-        </a>
-
-        <div className="menuIcon" onClick={ handleClick }>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
-        </div>
-        <ul className={click ? 'navMenu active' : 'navMenu'}>
-          <li className="navItems">
-            <a href="/" className="navLinks" onClick={closeMobileMenu}>
+    <nav className="navbar">
+      <Watermark/>
+      <a href="/" className="navLogo">
+      <i className="fab fa-accusoft">SurgeHut </i>
+      </a>
+      
+      <div className="menuIcon" onClick={ handleClick }>
+        <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+      </div>
+      <ul className={click ? 'navMenu active' : 'navMenu'}>
+        <li className="navItems">
+          <a href="/" className="navLinks" onClick={closeMobileMenu}>
             Home
-            </a>
-          </li>
-          <li className="navItems">
-            <a href="/about" className="navLinks" onClick={closeMobileMenu}>
+          </a>
+        </li>
+        <li className="navItems">
+          <a href="/about" className="navLinks" onClick={closeMobileMenu}>
             About
-            </a>
-          </li>
-          <li className="navItems"
+          </a>
+        </li>
+        <li className="navItems"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
-          >
-            <a href="#" className="navLinks" onClick={closeMobileMenu}>
-            Category <i className="fas fa-caret-down"/>
-            </a>
-            {dropdown && <Dropdown/>}
-          </li>
-          {isAuthenticated ?
+        >
+          <a href="#" className="navLinks" onClick={closeMobileMenu}>
+            Category <i className="fas fa-caret-down"/>   
+          </a>
+          {dropdown && <Dropdown/>}
+        </li>
+        {isAuthenticated ? 
           <>
             <li className="navItems">
               <a href="/update" className="navLinks">update</a>
@@ -91,17 +92,15 @@ function Navbar() {
               <a href="/register" className="navMobile">Sign Up</a>
             </li>
           </>
-
-          }
-        </ul>
-
-      </nav>
+      
+        }
+      </ul>
+      <MobileButton />
+    </nav>
     </>
-
+    
   );
 }
-
-// <MobileButton />
 
 export default Navbar;
 
