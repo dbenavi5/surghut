@@ -28,7 +28,7 @@ function Navbar() {
                       <Link href="/checking"><a className={styles.nav_link}>checking</a></Link>
                     </li>
                     <li className={styles.nav_item}>
-                      <Link href="/mailbox"><a className={styles.nav_link}>mailbox</a></Link>
+                      <a href="/update" className={styles.nav_link}>mailbox</a>
                     </li>
                     <li className={styles.nav_item}>
                       <Link href="/alert"><a className={styles.nav_link}>alert</a></Link>
