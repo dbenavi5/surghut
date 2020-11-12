@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Dropdown from './Dropdown';
 import {useAuth} from '../contexts/auth';
 import {MobileButton} from './MobileButton';
-import Button from './Button';
 import Watermark from './Watermark';
 
 function Navbar() {
@@ -78,11 +77,14 @@ function Navbar() {
             <li className="navItems">
               <a href="/alert" className="navLinks">Alert</a>
             </li>
-            <Button
-              onClick={logout}
-            >
-                  <div>Logout</div>
-            </Button>
+	    <li className="navItems">
+              <a href="#" className="navLinks"
+                onClick={logout}
+              >
+                    Logout
+              </a>
+	    </li>
+
           </> :
           <>
             <li className="navItems">

@@ -80,7 +80,7 @@ function RegisterForm() {
       </div>
       <div className={styles.reg_input}>
         <TextInput
-          type={'text'}
+          type={'password'}
           value={password}
           placeHolder={'Password'}
           onTextChange={setPassword}

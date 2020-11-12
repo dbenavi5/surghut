@@ -28,7 +28,7 @@
 }
 
 .navMenu {
-  display: inline-flex;
+  display: flex;
   grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   list-style: none;
@@ -47,6 +47,8 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   z-index: 1;
+  outline:  none;
+  
 }
 .navLinks:hover {
   background-color: #0cbaba;
