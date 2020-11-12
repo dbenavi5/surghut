@@ -1,17 +1,18 @@
 .watermark {
-    color: #fff;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    margin-left: -150px;
-    text-align: center;
-    justify-self: space-between;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -150px;
+  text-align: center;
+  justify-self: space-between;
 }
 @media screen and (max-width: 960px) {
-    .watermark {
-      display: block;
-      text-align: center;
-    }
+  .watermark {
+    display: block;
+    text-align: center;
+  }
 }
+

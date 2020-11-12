@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
 import Covid from '../components/Covid';
 
@@ -11,6 +11,7 @@ const CovidPage = () =>(
             </div>
         </center>
     </div>
+
 );
 
 export default CovidPage;

@@ -17,20 +17,19 @@ const db = require('../lib/db');
 const escape = require('sql-template-strings');
 
 
-function Index({ data }) {
-
-  const [ county, setCounty ] = useState(data);
-  const [ map, setMap ] = useState(true);
-  const [ covide, setCovide ] = useState(true);
-  const [ fire, setFire ] = useState(true);
-  //console.log("props index ", data[0]);
+function Index({data}) {
+  const [county, setCounty] = useState(data);
+  const [map, setMap] = useState(true);
+  const [covide, setCovide] = useState(true);
+  const [fire, setFire] = useState(true);
+  // console.log("props index ", data[0]);
   return (
     <>
       <div>
         <Navbar/>
         <Search
-            data={data}
-            setResult={setCounty}
+          data={data}
+          setResult={setCounty}
         />
 
 
@@ -38,9 +37,9 @@ function Index({ data }) {
           className={styles.container}
         >
 
-            <div
-             className={styles.container}
-            >
+          <div
+            className={styles.container}
+          >
 
             <Switch
               state={map}
@@ -62,9 +61,9 @@ function Index({ data }) {
               nameTrue="Fire : On"
               nameFalse="Fire : Off"
             />
-            </div>
+          </div>
 
-        {map ?
+          {map ?
               <Map>
                 {county.map((county) =>
                   <Marker
@@ -82,11 +81,11 @@ function Index({ data }) {
                 covide={covide}
                 fire={fire}
               />
-            }
+          }
         </div>
       </div>
     </>
-  )
+  );
 }
 
 

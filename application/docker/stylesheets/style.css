@@ -1,7 +1,7 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
 }
 
 .data-table tr:nth-child(even){background-color: #f2f2f2;}
@@ -22,13 +22,13 @@
 }
 
 .data-table{
-   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-   border-collapse: collapse;
-   width: 100%;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 .map-container {
-    margin: 100px 0px;
-    box-shadow: -1px 4px 56px 11px;
+  margin: 100px 0px;
+  box-shadow: -1px 4px 56px 11px;
 }
 

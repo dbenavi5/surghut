@@ -6,6 +6,7 @@ import {AuthProvider, ProtectRoute} from '../contexts/auth';
 import '../stylesheets/style.css';
 import '../components/Dropdown.css';
 import '../components/Navbar.css';
+
 import '../components/Watermark.css'
 import '../components/MobileButton.css'
 import '../components/Covid.css'

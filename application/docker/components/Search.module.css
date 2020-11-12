@@ -1,27 +1,16 @@
-.search_input {
-    color: darkslatedgray;
-    outline: none;
+.form_input {
     width: 600px;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-sizing: border-box;
+    outline: none;
 }
 
-/* .search_btn {
-    position: inherit;
-    padding: 10px;
-    outline: none;
-    width: 100px;
-    border: 1px solid black;
-    border-radius: 6px;
-    height:  42px;
-    background: transparent;
-    z-index: 1;
-} */
 .searchWrapper {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left:0;
-    margin-right:0;
+    margin: 100px 0px;
     padding: 0;
     
 }
