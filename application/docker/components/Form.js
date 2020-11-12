@@ -106,7 +106,7 @@ function CovidCaseForm({idData, dataCounty}) {
 
   return (
     <div>
-      <p>Covid case form</p>
+      <p className={styles.form_wrap}>Covid case form</p>
       <TextInput
         type={'number'}
         value={newCase}
@@ -137,10 +137,10 @@ function ValidateCovidCaseForm({upload_time, county, nbCase}) {
 
   return (
     <div>
-      <p>Covid case form</p>
-      <p>upload time : {upload_time.replace('Z', '')}</p>
-      <p>county : {county}</p>
-      <p>Current number of case: {nbCase}</p>
+      <p className={styles.form_wrap}>Covid case form</p>
+      <p className={styles.form_wrap}>upload time : {upload_time.replace('Z', '')}</p>
+      <p className={styles.form_wrap}>county : {county}</p>
+      <p className={styles.form_wrap}>Current number of case: {nbCase}</p>
       <Button
         onClick={ () => {
           console.log('new case covid fill');
@@ -171,7 +171,7 @@ function FireCaseForm({idData, dataCounty}) {
 
   return (
     <div>
-      <p>Fire case form</p>
+      <p className={styles.form_wrap}>Fire case form</p>
       <TextInput
         type={'number'}
         value={newCase}
@@ -202,10 +202,10 @@ function ValidateFireCaseForm({upload_time, county, nbCase}) {
 
   return (
     <div>
-      <p>Fire case form</p>
-      <p>upload time : {upload_time.replace('Z', '')}</p>
-      <p>county : {county}</p>
-      <p>Current number of case: {nbCase}</p>
+      <p className={styles.form_wrap}>Fire case form</p>
+      <p className={styles.form_wrap}>upload time : {upload_time.replace('Z', '')}</p>
+      <p className={styles.form_wrap}>county : {county}</p>
+      <p className={styles.form_wrap}>Current number of case: {nbCase}</p>
       <Button
         onClick={ () => {
           console.log('new case covid fill');
@@ -235,7 +235,7 @@ function MailForm() {
 
   return (
     <div>
-      <p>Send a mail to a user</p>
+      <p className={styles.form_wrap}>Send a mail to a user</p>
       <TextInput
         type={'text'}
         value={receiver}
@@ -278,7 +278,7 @@ function AlertRegisterForm({idData, dataCounty}) {
 
   return (
     <div>
-      <p>Register your mail to receive alert from your county</p>
+      <p className={styles.form_wrap}>Register your mail to receive alert from your county</p>
       <TextInput
         type={'text'}
         value={mail}
@@ -315,7 +315,7 @@ function SendAlertForm({idData, dataCounty}) {
 
   return (
     <div>
-      <p>Send a alert in a county</p>
+      <p className={styles.form_wrap}>Send a alert in a county</p>
       <InputWithChoice
         data={dataCounty}
         idData={idData}
@@ -351,7 +351,7 @@ function CancelAlertForm({idData, dataCounty}) {
 
   return (
     <div>
-      <p>Cancel an alert in a county</p>
+      <p className={styles.form_wrap}>Cancel an alert in a county</p>
       <InputWithChoice
         data={dataCounty}
         idData={idData}
