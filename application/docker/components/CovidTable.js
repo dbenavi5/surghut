@@ -9,7 +9,6 @@ class CovidTable extends Component {
             onSortById,
             onSortByDate,
             onRowSelected,
-            
         } = this.props;
 
         return (

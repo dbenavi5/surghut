@@ -1,0 +1,10 @@
+.h3-tag {
+    padding: 1rem;
+    margin:1rem;
+    display: inline-flex;
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+    background: #380036;
+    color: #fff;
+}

@@ -5,7 +5,7 @@ import Button from './Button';
 import {useAuth} from '../contexts/auth';
 
 function LoginForm() {
-  const [pseudo, setPseudo] = useState('');
+  const [pseudo, setPseudo] = useState('');     //set username
   const [password, setPassword] = useState('');
 
   const {login} = useAuth();
