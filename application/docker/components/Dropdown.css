@@ -1,7 +1,8 @@
 .dropdownMenu {
     width: 150px;
     position: absolute;
-    top: 80px;
+    display: block;
+    top: 120px;
     list-style: none;
     text-align: start;
 }

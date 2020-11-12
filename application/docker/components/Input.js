@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Search.module.css';
+import styles from './Form.module.css';
 
 function SearchTextInput({value, onTextChange, placeHolder, type}) {
   const eventHandler = (event) => {

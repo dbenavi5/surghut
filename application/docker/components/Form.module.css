@@ -3,6 +3,19 @@
     font-size: 3rem;
 }
 
-.reg_input{
-    padding: 2rem 0rem;
+.form_input {
+    width: 600px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.searchWrapper {
+    margin: 100px 0px;
+    padding: 0;
+    
 }
