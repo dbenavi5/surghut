@@ -12,6 +12,11 @@
   font-size: 1.2rem;
   box-shadow: -1px 4px 56px 11px;
 }
+
+.water-wrap{
+  background: black;
+  padding: 30px;
+}
 .navLogo {
   color: #fff;
   justify-self: start;
@@ -23,7 +28,7 @@
 }
 
 .navMenu {
-  display: grid;
+  display: inline-flex;
   grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   list-style: none;
@@ -33,7 +38,7 @@
   margin-right: 2rem;
 }
 .navItems {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   height: 80px;
 }

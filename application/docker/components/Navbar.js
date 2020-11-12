@@ -34,12 +34,13 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar">
+      <div className="water-wrap">
         <Watermark/>
+      </div>
+      <nav className="navbar">
         <a href="/" className="navLogo">
           <i className="fab fa-accusoft">SurgeHut </i>
         </a>
-
         <div className="menuIcon" onClick={ handleClick }>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
         </div>
@@ -66,21 +67,21 @@ function Navbar() {
           {isAuthenticated ?
           <>
             <li className="navItems">
-              <a href="/update" className="navLinks">update</a>
+              <a href="/update" className="navLinks">Update</a>
             </li>
             <li className="navItems">
-              <a href="/checking" className="navLinks">checking</a>
+              <a href="/checking" className="navLinks">Checking</a>
             </li>
             <li className="navItems">
-              <a href="/mailbox" className="navLinks">mailbox</a>
+              <a href="/mailbox" className="navLinks">Mailbox</a>
             </li>
             <li className="navItems">
-              <a href="/alert" className="navLinks">alert</a>
+              <a href="/alert" className="navLinks">Alert</a>
             </li>
             <Button
               onClick={logout}
             >
-                  Logout
+                  <div>Logout</div>
             </Button>
           </> :
           <>
