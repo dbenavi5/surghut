@@ -10,8 +10,6 @@ module.exports = async (req, res) => {
       SELECT *
       FROM Mailbox M
       WHERE M.sender= (SELECT P.pseudo FROM Profile P WHERE P.access_token=${req.cookies.token} )
-      OR 
-      M.receiver = (SELECT P.pseudo FROM Profile P WHERE P.access_token=${req.cookies.token})
     `);
 
   res.status(200).json({mails});
