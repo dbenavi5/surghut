@@ -65,7 +65,7 @@ function SearchInputWithChoice({value, onTextChange, placeHolder, data, idData})
   };
 
   return (
-    <div>
+    <div className={styles.search_wrap}>
       <input
         list={idData}
         className={styles.form_input}

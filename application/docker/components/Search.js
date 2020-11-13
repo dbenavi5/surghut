@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import {SearchInputWithChoice} from './Input';
 import Button from './Button';
-import styles from './Search.module.css';
+import styles from './Form.module.css';
 
 
 function GetCounty(data, key, setResult) {
