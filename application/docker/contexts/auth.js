@@ -86,8 +86,6 @@ export function ProtectRoute({children}) {
 
     return (
       <>
-        <Navbar/>
-        <LoginForm/>
       </>
     );
   }

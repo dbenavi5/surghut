@@ -54,6 +54,9 @@ function Navbar() {
             About
             </a>
           </li>
+          <li className="navItems">
+              <a href="/alert" className="navLinks">Alert</a>
+          </li>
           <li className="navItems"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
@@ -74,10 +77,7 @@ function Navbar() {
             <li className="navItems">
               <a href="/mailbox" className="navLinks">Mailbox</a>
             </li>
-            <li className="navItems">
-              <a href="/alert" className="navLinks">Alert</a>
-            </li>
-	    <li className="navItems">
+	          <li className="navItems">
               <a href="#" className="navLinks"
                 onClick={logout}
               >

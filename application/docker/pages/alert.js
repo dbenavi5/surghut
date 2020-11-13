@@ -12,23 +12,23 @@ const escape = require('sql-template-strings');
 
 function Alert({data}) {
   return (
-    <ProtectRoute>
       <div>
         <Navbar/>
         <AlertRegisterForm
           idData="County"
           dataCounty={data}
         />
-        <SendAlertForm
-          idData="County2"
-          dataCounty={data}
-        />
-        <CancelAlertForm
-          idData="County3"
-          dataCounty={data}
-        />
+        <ProtectRoute>
+          <SendAlertForm
+            idData="County2"
+            dataCounty={data}
+          />
+          <CancelAlertForm
+            idData="County3"
+            dataCounty={data}
+          />
+        </ProtectRoute>
       </div>
-    </ProtectRoute>
   );
 }
 
