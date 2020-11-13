@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
 class CovidTable extends Component {
+
+
     render() {
+
         const { 
             counties, 
             onSortByTotal, 
@@ -12,6 +15,7 @@ class CovidTable extends Component {
         } = this.props;
 
         return (
+            <>
             <table className="data-table">
                 <thead>
                     <tr >
@@ -54,6 +58,7 @@ class CovidTable extends Component {
                         })}
                 </tbody>
             </table>
+            </>
         );
     }
 }

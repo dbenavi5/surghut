@@ -23,8 +23,8 @@ class Chart extends Component{
                 <div>
                     <Pie 
                         data={data} 
-                        width={550} 
-                        height={650} 
+                        width={350} 
+                        height={450} 
                         options={{ maintainAspectRatio: false }}
                     />
                 </div>

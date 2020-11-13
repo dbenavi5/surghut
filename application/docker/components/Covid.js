@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import axios from 'axios';
 import Loading from '../components/Loading';
@@ -14,11 +15,12 @@ class Covid extends Component {
         newDeaths: 0,
         date: this.sortByDate,
         selectedCounties: [],
-        filterText: ""
+        filterText: "",
     };
 
-    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/db/application/docker/csv_files/statewide_covid_cases.csv?token=ANLI5K4IQEJXTQZZH52VIA27WT5CS";
-    // "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/db/application/docker/csv_files/statewide_covid_cases.csv?token=ANLI5K2LHKEQRFDTH7ZAOVC7VO45G";
+    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/db/application/docker/csv_files/statewide_covid_cases.csv?token=ANLI5K4IQEJXTQZZH52VIA27WT5CS"; 
+
+    // fetchiing data and parsing data
     async componentDidMount() {
         const response = await axios.get(this.url);
         const rows = response.data.split("\n");
@@ -30,7 +32,7 @@ class Covid extends Component {
         let newDeaths = 0;
 
 
-        //parsing through rows of data table
+        //parsing through rows of data table to get right set of row
         for(let i = 1; i < rows.length; i++) {
             const row = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);  //split on comma
             
@@ -42,7 +44,7 @@ class Covid extends Component {
             const newDeathCount  = Number(row[5]);      //total new death count
             const caseDate = row[6];
 
-            if (caseDate !== "") {
+            if (countyName !== "") {
                 counties.push({
                     date: caseDate,
                     id: id,
@@ -59,6 +61,8 @@ class Covid extends Component {
                 newDeaths += newDeathCount;
             }
         }
+
+        // times to loading, feature 1 seconds to load
         await new Promise ((x) => setTimeout(x, 1000));
 
         this.setState({ counties, confirmedCases, totalDeathCount, newConfirmedCases, newDeaths });
@@ -98,6 +102,7 @@ class Covid extends Component {
 
     };
 
+    // handles sort event of confirmed cases
     handleOnSortByTotal = ( event ) => {
         this.handleOnSortBy( event, this.sortByTotal );
     };
@@ -146,11 +151,13 @@ class Covid extends Component {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
+    // handles search filter
     handleFilterTextChange = (event) => {
         const filterText = event.target.value;
         this.setState({ filterText: filterText });
     };
 
+    //handles clear button
     handleReset = () => {
         const counties = [...this.state.counties];
         for (let i = 0; i < counties.length; i++) {
@@ -190,10 +197,12 @@ class Covid extends Component {
             <div>
                 <h1 className="h1-tag">Coronavirus Stats</h1>
                 <h2 className="h2-tag"> As Of November 2, 2020 </h2>
-                <h3 className="h3-tag"> Confirmed Cases: {this.numberWithCommas(confirmedCases)} </h3>
-                <h3 className="h3-tag"> Death Count: {this.numberWithCommas(totalDeathCount)} </h3>
-                <h3 className="h3-tag"> New Confirmed Cases: {this.numberWithCommas(newConfirmedCases)} </h3>
-                <h3 className="h3-tag"> New Deaths Count: {this.numberWithCommas(newDeaths)} </h3>
+                <div className="tag-wrap">
+                    <h3 className="h3-tag"> Confirmed Cases: {this.numberWithCommas(confirmedCases)} </h3>
+                    <h3 className="h3-tag"> Death Count: {this.numberWithCommas(totalDeathCount)} </h3>
+                    <h3 className="h3-tag"> New Confirmed Cases: {this.numberWithCommas(newConfirmedCases)} </h3>
+                    <h3 className="h3-tag"> New Deaths Count: {this.numberWithCommas(newDeaths)} </h3>
+                </div>
                 <h3 className="select-intruct">Compare Death Rate with other counties in California.
                     <br/>
                     Select from the table a county or counties to compare death rate.
@@ -202,19 +211,20 @@ class Covid extends Component {
                     <Loading/> 
                 ) : (
                     <div>
-                        <button 
-                            className="clear-btn"
-                            type="button" onClick={this.handleReset}>
-                                Clear
-                        </button>
-                        <div className="chart-search-filter">
+                        <div>
                             <input
                                 type="text"
                                 value={filterText}
                                 onChange={this.handleFilterTextChange}
-                                className=""
+                                className="chart-search-filter"
                                 placeholder="Search"
                             />
+                            <button 
+                                className="clear-btn"
+                                type="button" 
+                                onClick={this.handleReset}>
+                                    Clear
+                            </button>
                         </div>
                         <Chart counties={selectedCounties} />
                         <CovidTable 

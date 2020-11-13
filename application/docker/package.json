@@ -23,6 +23,7 @@
     "react-dom": "16.13.1",
     "react-geolocated": "^3.0.1",
     "react-loading-skeleton": "^2.1.1",
+    "react-paginate": "^6.5.0",
     "react-router-dom": "^5.2.0",
     "serverless-mysql": "^1.5.4",
     "sql-template-strings": "^2.2.2",
