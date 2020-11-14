@@ -35,18 +35,18 @@ class Covid extends Component {
         //parsing through rows of data table to get right set of row
         for(let i = 1; i < rows.length; i++) {
             const row = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);  //split on comma
-            const id = Number(row[0]);
-            const countyName = row[1].replace(/"/g,"");
-            const totalConfirmed = Number(row[2]);      //total confirmed cases in CA
-            const deathCount = Number(row[3]);          //total death count
-            const newConfirmedTotal = Number(row[4]);   //total new confirmed
-            const newDeathCount  = Number(row[5]);      //total new death count
+            //const id = Number(row[0]);
+            const countyName = row[0].replace(/"/g,"");
+            const totalConfirmed = Number(row[1]);      //total confirmed cases in CA
+            const deathCount = Number(row[2]);          //total death count
+            const newConfirmedTotal = Number(row[3]);   //total new confirmed
+            const newDeathCount  = Number(row[4]);      //total new death count
             const caseDate = row[6];
 
             if (countyName !== "") {
                 counties.push({
                     date: caseDate,
-                    id: id,
+                    // id: id,
                     county: countyName,
                     deathCount: deathCount,
                     totalConfirmed: totalConfirmed,
@@ -77,7 +77,7 @@ class Covid extends Component {
 
         const county = {
             date: countyToUpdate.date,
-            id: countyToUpdate.id,
+            // id: countyToUpdate.id,
             county: countyToUpdate.county,
             deathCount: countyToUpdate.deathCount,
             totalConfirmed: countyToUpdate.totalConfirmed,
@@ -153,7 +153,7 @@ class Covid extends Component {
 
             const county = {
                 date: c.date,
-                id: c.id,
+                // id: c.id,
                 county: c.county,
                 deathCount: c.deathCount,
                 totalConfirmed: c.totalConfirmed,
@@ -231,7 +231,7 @@ class Covid extends Component {
                             // sorts each column
                             onSortByTotal = {this.handleOnSortByTotal}
                             onSortByCountyName = {this.handleOnSortCountyName}
-                            onSortById = {this.handleOnSortById}
+                            // onSortById = {this.handleOnSortById}
                             onRowSelected = {this.handleOnRowSelected}
                         /> 
                     </div>

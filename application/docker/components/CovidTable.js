@@ -8,7 +8,7 @@ class CovidTable extends Component {
             counties, 
             onSortByTotal, 
             onSortByCountyName,
-            onSortById,
+            // onSortById,
             onSortByDate,
             onRowSelected,
         } = this.props;
@@ -18,9 +18,9 @@ class CovidTable extends Component {
             <table className="data-table">
                 <thead>
                     <tr >
-                        <th>
+                        {/* <th>
                             <a href="/" onClick={ onSortById }>id</a>
-                        </th>
+                        </th> */}
                         <th>
                             <a href="/" onClick={ onSortByCountyName }>County</a>
                         </th>
@@ -42,10 +42,10 @@ class CovidTable extends Component {
                                 backgroundColor:'#0cbaba',
                             }
                             return(
-                                <tr key={county.id} 
+                                <tr key={county.county} 
                                 style={county.selected ? style : null}
                                 onClick={ () => onRowSelected( county )}>
-                                    <td>{county.id}</td>
+                                    {/* <td>{county.id}</td> */}
                                     <td>{county.county}</td>
                                     <td>{county.totalConfirmed}</td>
                                     <td>{county.deathCount}</td>
