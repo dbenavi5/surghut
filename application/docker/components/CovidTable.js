@@ -26,9 +26,7 @@ class CovidTable extends Component {
                         <th>Deaths</th>
                         <th>New Confirmed Cases</th>
                         <th>New Deaths</th>
-                        <th>
-                            <a href="/" onClick={ onSortByDate }>Date</a>
-                        </th>                      
+                        <th>Date</th>                      
                     </tr>
                 </thead>
                 <tbody>

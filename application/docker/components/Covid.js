@@ -17,7 +17,7 @@ class Covid extends Component {
         filterText: "",
     };
 
-    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/new-db/application/docker/csv_files/dailyStatewideCases.csv?token=ANLI5KZ6OGWEYEULSASFKBS7XDO26"; 
+    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/new-db/application/docker/csv_files/dailyStatewideCases.csv?token=ANLI5K2LQHBQ2LTGROMPD7K7XDQPO"; 
 
     // fetchiing data and parsing data
     async componentDidMount() {
@@ -34,12 +34,12 @@ class Covid extends Component {
         //parsing through rows of data table to get right set of row
         for(let i = 1; i < rows.length; i++) {
             const row = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);  //split on comma
-            const countyName = row[1].replace(/"/g,"");
-            const totalConfirmed = Number(row[2]);      //total confirmed cases in CA
-            const deathCount = Number(row[3]);          //total death count
-            const newConfirmedTotal = Number(row[4]);   //total new confirmed
-            const newDeathCount  = Number(row[5]);      //total new death count
-            const caseDate = row[6];
+            const countyName = row[0].replace(/"/g,"");
+            const totalConfirmed = Number(row[1]);      //total confirmed cases in CA
+            const deathCount = Number(row[2]);          //total death count
+            const newConfirmedTotal = Number(row[3]);   //total new confirmed
+            const newDeathCount  = Number(row[4]);      //total new death count
+            const caseDate = row[5];
 
             if (countyName !== "") {
                 counties.push({
@@ -111,16 +111,6 @@ class Covid extends Component {
     handleOnSortCountyName = ( event ) => {
         this.handleOnSortBy( event, this.sortByCountyName );
     };
-    
-    sortByDate = ( countyA, countyB ) => {
-        if( countyB.date > countyA.date ) return 1;
-        else if ( countyB.date < countyA.date ) return -1;
-        else return 0;
-    };
-
-    handleOnSortByDate = ( event ) => {
-        this.handleOnSortBy( event, this.sortByDate);
-    };
 
     //handles sort functions for each column
     handleOnSortBy = ( event, sortOperation )  => {
@@ -186,9 +176,9 @@ class Covid extends Component {
                     <h3 className="h3-tag"> New Confirmed Cases: {this.numberWithCommas(newConfirmedCases)} </h3>
                     <h3 className="h3-tag"> New Deaths Count: {this.numberWithCommas(newDeaths)} </h3>
                 </div>
-                <h3 className="select-intruct">Compare Death Rate with other counties in California.
+                <h3 className="select-intruct">Compare COVID-19 cases with other counties in California.
                     <br/>
-                    Select from the table a county or counties to compare death rate.
+                    Search or scroll down to select a the counties you wish to compare
                 </h3>
                 { confirmedCases === 0 ? (
                     <Loading/> 
@@ -226,7 +216,6 @@ class Covid extends Component {
                             // sorts each column
                             onSortByTotal = {this.handleOnSortByTotal}
                             onSortByCountyName = {this.handleOnSortCountyName}
-                            onSortByDate = {this.handleOnSortByDate}
                             onRowSelected = {this.handleOnRowSelected}
                         /> 
                     </div>
