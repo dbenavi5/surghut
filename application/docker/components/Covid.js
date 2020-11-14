@@ -18,7 +18,7 @@ class Covid extends Component {
         filterText: "",
     };
 
-    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/db/application/docker/csv_files/statewide_covid_cases.csv?token=ANLI5K4IQEJXTQZZH52VIA27WT5CS"; 
+    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/new-db/application/docker/csv_files/dailyStatewideCases.csv?token=ANLI5KY7NR34J6QQAMJJUKS7XDOOO"; 
 
     // fetchiing data and parsing data
     async componentDidMount() {
