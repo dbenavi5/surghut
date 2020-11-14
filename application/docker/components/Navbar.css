@@ -1,8 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: 0;
-}
 .navbar {
   background: linear-gradient(to right, #242222, #380036);
   height: 80px;
@@ -28,13 +23,12 @@
 }
 
 .navMenu {
-  display: flex;
+  display: inline-flex;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  grid-gap: 20px;
   list-style: none;
   text-align: center;
   width: 70vw;
-  justify-content: end;
   margin-right: 2rem;
 }
 .navItems {
