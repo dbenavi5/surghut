@@ -25,5 +25,5 @@
 .searchWrapper {
     margin: 100px 0px;
     padding: 0;
-    
+    display: inline-flex;    
 }

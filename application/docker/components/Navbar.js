@@ -94,15 +94,14 @@ function Navbar() {
               <a href="/register" className="navMobile">Sign Up</a>
             </li>
           </>
-    
           }
         <li className="navItems">
           <a href="!#" >
             <MobileButton />
           </a>
         </li>
+
         </ul>
-        {/* <MobileButton /> */}
       </nav>
     </>
   );
