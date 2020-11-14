@@ -4,7 +4,6 @@ class CovidTable extends Component {
 
 
     render() {
-
         const { 
             counties, 
             onSortByTotal, 

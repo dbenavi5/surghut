@@ -9,7 +9,16 @@ class Chart extends Component{
 
         if (counties.length === 0) return <div></div>
 
-        const data = {
+        const data01 = {
+            labels: counties.map((county) => county.county),
+            datasets: [
+                {
+                    data: counties.map((county) => county.totalConfirmed),
+                    backgroundColor: colors,
+                }
+            ] 
+        }
+        const data02 = {
             labels: counties.map((county) => county.county),
             datasets: [
                 {
@@ -18,16 +27,59 @@ class Chart extends Component{
                 }
             ] 
         }
+        const data03 = {
+            labels: counties.map((county) => county.county),
+            datasets: [
+                {
+                    data: counties.map((county) => county.newConfirmedCases),
+                    backgroundColor: colors,
+                }
+            ] 
+        }
+        const data04 = {
+            labels: counties.map((county) => county.county),
+            datasets: [
+                {
+                    data: counties.map((county) => county.newDeathCount),
+                    backgroundColor: colors,
+                }
+            ] 
+        }
         return (
-            <div>
+            <div className="chart-container">
                 <div>
                     <Pie 
-                        data={data} 
-                        width={350} 
-                        height={450} 
+                        data={data01} 
+                        width={200} 
+                        height={300} 
                         options={{ maintainAspectRatio: false }}
                     />
                 </div>
+                <div>
+                    <Pie 
+                        data={data02} 
+                        width={200} 
+                        height={300} 
+                        options={{ maintainAspectRatio: false }}
+                    />
+                </div>
+                <div>
+                    <Pie 
+                        data={data03} 
+                        width={200} 
+                        height={300} 
+                        options={{ maintainAspectRatio: false }}
+                    />
+                </div>
+                <div>
+                    <Pie 
+                        data={data04} 
+                        width={200} 
+                        height={300} 
+                        options={{ maintainAspectRatio: false }}
+                    />
+                </div>
+                
             </div>
         );
     }
