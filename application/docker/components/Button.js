@@ -4,11 +4,12 @@ import styles from './Form.module.css';
 
 function Button({onClick, children}) {
   return (
-    	<button className={styles.search_btn}
-      	        onClick={onClick}
-        >
-     		 {children}
-    	</button>
+      <button className={styles.search_btn}
+        onClick={onClick}
+        // className={styles.button}
+      >
+        {children}
+      </button>
   );
 }
 

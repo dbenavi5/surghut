@@ -59,7 +59,7 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <a href="#" className="navLinks" onClick={closeMobileMenu}>
-            Category <i className="fas fa-caret-down"/>
+              Category<i className="fas fa-caret-down"/>
             </a>
             {dropdown && <Dropdown/>}
           </li>

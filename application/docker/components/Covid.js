@@ -8,7 +8,6 @@ import Chart from '../components/Chart';
 class Covid extends Component {
     state  = {
         counties: [],
-        id: 0,
         confirmedCases: 0,
         totalDeathCount: 0,
         newConfirmedCases: 0,
@@ -18,7 +17,7 @@ class Covid extends Component {
         filterText: "",
     };
 
-    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/db/application/docker/csv_files/statewide_covid_cases.csv?token=ANLI5K4IQEJXTQZZH52VIA27WT5CS"; 
+    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/new-db/application/docker/csv_files/dailyStatewideCases.csv?token=ANLI5K2LQHBQ2LTGROMPD7K7XDQPO"; 
 
     // fetchiing data and parsing data
     async componentDidMount() {
@@ -35,19 +34,16 @@ class Covid extends Component {
         //parsing through rows of data table to get right set of row
         for(let i = 1; i < rows.length; i++) {
             const row = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);  //split on comma
-            
-            const id = Number(row[0]);
-            const countyName = row[1].replace(/"/g,"");
-            const totalConfirmed = Number(row[2]);      //total confirmed cases in CA
-            const deathCount = Number(row[3]);          //total death count
-            const newConfirmedTotal = Number(row[4]);   //total new confirmed
-            const newDeathCount  = Number(row[5]);      //total new death count
-            const caseDate = row[6];
+            const countyName = row[0].replace(/"/g,"");
+            const totalConfirmed = Number(row[1]);      //total confirmed cases in CA
+            const deathCount = Number(row[2]);          //total death count
+            const newConfirmedTotal = Number(row[3]);   //total new confirmed
+            const newDeathCount  = Number(row[4]);      //total new death count
+            const caseDate = row[5];
 
             if (countyName !== "") {
                 counties.push({
                     date: caseDate,
-                    id: id,
                     county: countyName,
                     deathCount: deathCount,
                     totalConfirmed: totalConfirmed,
@@ -77,7 +73,6 @@ class Covid extends Component {
 
         const county = {
             date: countyToUpdate.date,
-            id: countyToUpdate.id,
             county: countyToUpdate.county,
             deathCount: countyToUpdate.deathCount,
             totalConfirmed: countyToUpdate.totalConfirmed,
@@ -116,28 +111,6 @@ class Covid extends Component {
     handleOnSortCountyName = ( event ) => {
         this.handleOnSortBy( event, this.sortByCountyName );
     };
-
-    sortById = ( countyA, countyB ) => {
-        if( countyB.id > countyA.id ) return 1;
-        else if ( countyB.id < countyA.id ) return -1;
-        else return 0;
-    };
-
-    handleOnSortById = ( event ) => {
-        this.handleOnSortBy( event, this.sortById);
-    };
-    
-    sortByDate = ( countyA, countyB ) => {
-        if( countyB.date > countyA.date ) return 1;
-        else if ( countyB.date < countyA.date ) return -1;
-        else return 0;
-    };
-
-
-    handleOnSortByDate = ( event ) => {
-        this.handleOnSortBy( event, this.sortByDate);
-    };
-
 
     //handles sort functions for each column
     handleOnSortBy = ( event, sortOperation )  => {
@@ -196,16 +169,16 @@ class Covid extends Component {
         return (
             <div>
                 <h1 className="h1-tag">Coronavirus Stats</h1>
-                <h2 className="h2-tag"> As Of November 2, 2020 </h2>
+                <h2 className="h2-tag"> As Of November 12, 2020 </h2>
                 <div className="tag-wrap">
                     <h3 className="h3-tag"> Confirmed Cases: {this.numberWithCommas(confirmedCases)} </h3>
                     <h3 className="h3-tag"> Death Count: {this.numberWithCommas(totalDeathCount)} </h3>
                     <h3 className="h3-tag"> New Confirmed Cases: {this.numberWithCommas(newConfirmedCases)} </h3>
                     <h3 className="h3-tag"> New Deaths Count: {this.numberWithCommas(newDeaths)} </h3>
                 </div>
-                <h3 className="select-intruct">Compare Death Rate with other counties in California.
+                <h3 className="select-intruct">Compare COVID-19 cases with other counties in California.
                     <br/>
-                    Select from the table a county or counties to compare death rate.
+                    Search or scroll down to select a the counties you wish to compare
                 </h3>
                 { confirmedCases === 0 ? (
                     <Loading/> 
@@ -243,8 +216,6 @@ class Covid extends Component {
                             // sorts each column
                             onSortByTotal = {this.handleOnSortByTotal}
                             onSortByCountyName = {this.handleOnSortCountyName}
-                            onSortById = {this.handleOnSortById}
-                            onSortByDate = {this.handleOnSortByDate}
                             onRowSelected = {this.handleOnRowSelected}
                         /> 
                     </div>
