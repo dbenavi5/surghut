@@ -18,7 +18,9 @@ function Alert({data}) {
           idData="County"
           dataCounty={data}
         />
-        <ProtectRoute>
+        <ProtectRoute
+          accessLevel={2}
+        >
           <SendAlertForm
             idData="County2"
             dataCounty={data}

@@ -9,7 +9,9 @@ const escape = require('sql-template-strings');
 
 function Update({data}) {
   return (
-    <ProtectRoute>
+    <ProtectRoute
+    accessLevel={1}
+    >
       <div>
         <Navbar/>
         <CovidCaseForm

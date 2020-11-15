@@ -5,7 +5,7 @@ import {MobileButton} from './MobileButton';
 import Watermark from './Watermark';
 
 function Navbar() {
-  const {isAuthenticated, logout} = useAuth();
+  const {isAuthenticated, logout, user} = useAuth();
 
   const [click, setClick] = useState(false);
 
@@ -68,12 +68,19 @@ function Navbar() {
           </li>
           {isAuthenticated ?
           <>
-            <li className="navItems">
-              <a href="/update" className="navLinks">Update</a>
-            </li>
-            <li className="navItems">
-              <a href="/checking" className="navLinks">Checking</a>
-            </li>
+            {user && user.access_level > 0 ? 
+              <li className="navItems">
+                <a href="/update" className="navLinks">Update</a>
+              </li>
+            
+              :
+              <></>}
+            {user && user.access_level > 1 ?
+                  <li className="navItems">
+                  <a href="/checking" className="navLinks">Checking</a>
+                </li>
+          
+               : <></>}
             <li className="navItems">
               <a href="/mailbox" className="navLinks">Mailbox</a>
             </li>

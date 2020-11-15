@@ -12,7 +12,9 @@ function Checking({data}) {
   console.log('data', data);
 
   return (
-    <ProtectRoute>
+    <ProtectRoute
+      accessLevel={2}
+    >
       <div>
         <Navbar/>
         {data.covid.map((data) =>

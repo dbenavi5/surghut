@@ -23,7 +23,7 @@ export function AuthProvider({children}) {
         console.log('Got a token in the cookies, let\'s see if it is valid');
         api.defaults.headers.Authorization = `Bearer ${token}`;
         const {data} = await api.get('users/me');
-        if (data.profile.length === 1) setUser(data.profile);
+        if (data.profile.length === 1) setUser(data.profile[0]);
       }
       setLoading(false);
     }
@@ -38,7 +38,7 @@ export function AuthProvider({children}) {
       Cookies.set('token', token.token, {expires: 60});
       api.defaults.headers.Authorization = `Bearer ${token.token}`;
       const {data} = await api.get('users/me');
-      setUser(data.profile);
+      setUser(data.profile[0]);
       console.log('Got user', data.profile);
       router.push('/');
     }
@@ -52,8 +52,8 @@ export function AuthProvider({children}) {
       Cookies.set('token', token.token, {expires: 60});
       api.defaults.headers.Authorization = `Bearer ${token.token}`;
       const {data} = await api.get('users/me');
-      setUser(data.profile);
-      console.log('Got user', data.profile);
+      setUser(data.profile[0]);
+      console.log('Got user', data.profile[0]);
       router.push('/');
     }
   };
@@ -77,9 +77,18 @@ export function AuthProvider({children}) {
 
 export const useAuth = () => useContext(AuthContext);
 
-export function ProtectRoute({children}) {
-  const {isAuthenticated, isLoading} = useAuth();
+export function ProtectRoute({children, accessLevel}) {
+  const {isAuthenticated, isLoading, user} = useAuth();
   const router = useRouter();
+  console.log("user ", user)
+
+  if (user && user.access_level < accessLevel) {
+    return (
+      <>
+      </>
+    );
+  }
+
   if (isLoading || (!isAuthenticated && router.pathname !== '/login')) {
     // router.push('/');
     // window.location.pathname = '/login';
