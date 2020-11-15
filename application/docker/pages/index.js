@@ -34,7 +34,7 @@ function Index({data}) {
 
 
         <div
-          className={styles.container}
+          className=""
         >
 
           <div

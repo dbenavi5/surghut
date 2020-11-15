@@ -6,7 +6,7 @@ function Switch({state, onChange, nameTrue, nameFalse}) {
   // console.log("tab data ", data);
   return (
     <div
-      className={styles.container}
+      className={styles.switch_container}
     >
       <div
         className={ state ? styles.buttonActive : styles.buttonInactive}

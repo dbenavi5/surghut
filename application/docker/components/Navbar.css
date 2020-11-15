@@ -1,11 +1,6 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: 0;
-}
 .navbar {
   background: linear-gradient(to right, #242222, #380036);
-  height: 80px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +12,7 @@
   background: black;
   padding: 30px;
 }
+
 .navLogo {
   color: #fff;
   justify-self: start;
@@ -28,8 +24,8 @@
 }
 
 .navMenu {
-  display: inline-flex;
-  grid-template-columns: repeat(5, auto);
+  display: grid;
+  grid-template-columns: repeat(10, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -38,7 +34,7 @@
   margin-right: 2rem;
 }
 .navItems {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   height: 80px;
 }
@@ -48,7 +44,6 @@
   padding: 0.5rem 1rem;
   z-index: 1;
   outline:  none;
-  
 }
 .navLinks:hover {
   background-color: #0cbaba;

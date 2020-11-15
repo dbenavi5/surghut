@@ -68,7 +68,7 @@ function SearchInputWithChoice({value, onTextChange, placeHolder, data, idData})
     <div className={styles.search_wrap}>
       <input
         list={idData}
-        className={styles.form_input}
+        className={styles.searchForm_input}
         type="text"
         placeholder={placeHolder}
         value={value}

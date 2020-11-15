@@ -1,25 +1,27 @@
-.form_wrap {
-    padding: 1rem;
-    font-size: 3rem;
-}
-
-.search_btn {
-    padding: 15px 20px;
-}
-
-.form_input {
+.searchForm_input,.form_input {
     width: 600px;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 15px 20px;
+    margin: 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 0;
+    border:1px solid;
     box-sizing: border-box;
     outline: none;
 }
-
-.searchWrapper {
-    margin: 100px 0px;
+.search_label{
+    display: inline-flex;
     padding: 0;
-    display: inline-flex;    
+    box-sizing:0;
+    border: 0;
+    margin: 50px 0;
+}
+
+.search_btn {
+    padding: 5px 20px;
+    border: 0;
+    outline: none;
+}
+
+.form_wrap {
+    padding: 1rem;
+    font-size: 3rem;
 }

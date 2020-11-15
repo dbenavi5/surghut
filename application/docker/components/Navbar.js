@@ -95,12 +95,8 @@ function Navbar() {
             </li>
           </>
           }
-	 <li className="navItems">
-           <a href="!#" >
-             <MobileButton />
-           </a>
-         </li>
         </ul>
+       <MobileButton/>
       </nav>
     </>
   );

@@ -37,14 +37,15 @@ function Map(props) {
     };
     return (
     // Important! Always set the container height explicitly
-      <div className="map-container" style={{height: '75vh', width: '65%'}}>
+      <div style={{height: '100vh', width: '100%'}}>
         <GoogleMapReact
           bootstrapURLKeys={{key: 'AIzaSyCKcBbyY43_ocqIJQUmQlSHZopPH-TPhuA'}}
           defaultCenter={center}
           defaultZoom={zoom}
           yesIWantToUseGoogleMapApiInternals
           onGoogleApiLoaded={({map, maps}) => handleApiLoaded(map, maps)}
-        >
+          className={'map-container'}
+	 >
           <Position
             lat={props.coords.latitude}
             lng={props.coords.longitude}
