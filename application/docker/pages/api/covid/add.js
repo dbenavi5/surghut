@@ -8,8 +8,8 @@ module.exports = async (req, res) => {
   console.log(time);
 
   const newProfile = await db.query(escape`
-        INSERT INTO Covid (upload_time, nb_case, county)
-        VALUES (${time}, ${req.body.nbCase}, ${req.body.county})
+        INSERT INTO Covid (upload_time, nb_case, county, nb_death)
+        VALUES (${time}, ${req.body.nbCase}, ${req.body.county}, ${req.body.nbDeath})
   ` );
   console.log('result create use api: ', newProfile);
 

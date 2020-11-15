@@ -18,7 +18,8 @@ module.exports = async (req, res) => {
   const update = await db.query(escape`
   UPDATE County C
   SET
-    C.covide_case = (SELECT C.nb_case FROM Covid C WHERE C.upload_time=${req.body.upload_time})
+  C.covide_case = (SELECT C.nb_case FROM Covid C WHERE C.upload_time=${req.body.upload_time}),
+  C.covide_death = (SELECT C.nb_death FROM Covid C WHERE C.upload_time=${req.body.upload_time})
   WHERE C.name= (SELECT C.county FROM Covid C WHERE C.upload_time=${req.body.upload_time})
   ` );
 

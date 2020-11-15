@@ -21,6 +21,7 @@ function Checking({data}) {
             upload_time={data.upload_time}
             county={data.county}
             nbCase={data.nb_case}
+            nbDeath={data.nb_death}
           />,
         )}
 

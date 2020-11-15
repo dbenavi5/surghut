@@ -1,8 +1,8 @@
 import api from '../api';
 
 
-async function addCovidCase(user, nbCase, county) {
-  const result = await api.post('covid/add', {user, nbCase, county});
+async function addCovidCase(user, nbCase, nbDeath,county) {
+  const result = await api.post('covid/add', {user, nbCase, nbDeath, county});
   console.log('addCovidCase ', result);
 }
 
