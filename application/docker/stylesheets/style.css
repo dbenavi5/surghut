@@ -32,3 +32,9 @@
   box-shadow: -1px 4px 56px 11px;
 }
 
+@media screen and (max-width: 960px) {
+  .map-container {
+    width: auto;
+    height:  auto;
+  }
+}
