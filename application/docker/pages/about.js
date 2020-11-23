@@ -13,7 +13,7 @@ function About() {
       <div className="about-us">
         <ul className="navbar-nav">
           <li className="">
-            <Link href="/about/josue_carreo"><a className="navLink">Josue Carreon</a></Link>
+            <Link href="/about/josue_carreon"><a className="navLink">Josue Carreon</a></Link>
           </li>
           <li className="">
             <Link href="/about/pierre_antoine"><a className="navLink">Pierre Antoine</a></Link>
