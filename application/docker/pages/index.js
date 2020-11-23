@@ -20,7 +20,7 @@ const escape = require('sql-template-strings');
 function Index({data}) {
   const [county, setCounty] = useState(data);
   const [map, setMap] = useState(true);
-  const [covide, setCovide] = useState(true);
+  const [covid, setCovid] = useState(true);
   const [fire, setFire] = useState(true);
   // console.log("props index ", data[0]);
   return (
@@ -50,16 +50,16 @@ function Index({data}) {
 
             <Switch
               state={covide}
-              onChange={setCovide}
-              nameTrue="Covide : On"
-              nameFalse="Covide : Off"
+              onChange={setCovid}
+              nameTrue="COVID Cases : On"
+              nameFalse="COVID Cases : Off"
             />
 
             <Switch
               state={fire}
               onChange={setFire}
-              nameTrue="Fire : On"
-              nameFalse="Fire : Off"
+              nameTrue="Fire Cases : On"
+              nameFalse="Fire Cases : Off"
             />
           </div>
 
@@ -71,14 +71,14 @@ function Index({data}) {
                     lat={county.latitude}
                     lng={county.longitude}
                     data={county}
-                    covide={covide}
+                    covid={covid}
                     fire={fire}
                   />,
                 )}
               </Map> :
               <Tab
                 data={county}
-                covide={covide}
+                covid={covid}
                 fire={fire}
               />
           }
