@@ -1,0 +1,11 @@
+.container {
+    border-style: solid;
+}
+
+.horizontal {
+    display: inline-flex;
+}
+
+.text {
+    padding: 10px 10px;
+}

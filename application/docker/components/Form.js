@@ -100,6 +100,7 @@ function RegisterForm() {
 
 function CovidCaseForm({idData, dataCounty}) {
   const [newCase, setNewCase] = useState('');
+  const [newDeath, setNewDeath] = useState('');
   const [county, setCounty] = useState('');
 
   const {user} = useAuth();
@@ -113,6 +114,12 @@ function CovidCaseForm({idData, dataCounty}) {
         placeHolder={'Enter number of covid case'}
         onTextChange={setNewCase}
       />
+      <TextInput
+        type={'number'}
+        value={newDeath}
+        placeHolder={'Enter number of covid death case'}
+        onTextChange={setNewDeath}
+      />
       <InputWithChoice
         data={dataCounty}
         idData={idData}
@@ -123,7 +130,7 @@ function CovidCaseForm({idData, dataCounty}) {
       <Button
         onClick={ () => {
           console.log('new case covid fill');
-          addCovidCase(user, newCase, county);
+          addCovidCase(user, newCase, newDeath,county);
         }}
       >
                   send
@@ -132,7 +139,7 @@ function CovidCaseForm({idData, dataCounty}) {
   );
 }
 
-function ValidateCovidCaseForm({upload_time, county, nbCase}) {
+function ValidateCovidCaseForm({upload_time, county, nbCase, nbDeath}) {
   const {user} = useAuth();
 
   return (
@@ -141,6 +148,7 @@ function ValidateCovidCaseForm({upload_time, county, nbCase}) {
       <p className={styles.form_wrap}>upload time : {upload_time.replace('Z', '')}</p>
       <p className={styles.form_wrap}>county : {county}</p>
       <p className={styles.form_wrap}>Current number of case: {nbCase}</p>
+      <p className={styles.form_wrap}>Current number of death: {nbDeath}</p>
       <Button
         onClick={ () => {
           console.log('new case covid fill');
