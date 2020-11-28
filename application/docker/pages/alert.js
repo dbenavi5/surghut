@@ -14,6 +14,7 @@ function Alert({data}) {
   return (
       <div>
         <Navbar/>
+        //Allows admin to enter a county and send a COVID or wildfire alert
         <AlertRegisterForm
           idData="County"
           dataCounty={data}
