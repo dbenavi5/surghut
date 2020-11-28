@@ -4,7 +4,7 @@ import TabData from './TabData';
 // import styles from './CSS/Button.module.css'
 
 
-function Tab({data, covide, fire}) {
+function Tab({data, covid, fire}) {
   // console.log("tab data ", data[0]);
 
   return (
@@ -13,10 +13,10 @@ function Tab({data, covide, fire}) {
         <thead>
           <tr>
             <th colSpan="1">Name</th>
-            {covide ?
+            {covid ?
                             <>
-                              <th colSpan="1">covide case / 100K</th>
-                              <th colSpan="1">covide death / 100K</th>
+                              <th colSpan="1">covid case / 100K</th>
+                              <th colSpan="1">covid death / 100K</th>
                             </> :
                             <></>
             }
@@ -36,7 +36,7 @@ function Tab({data, covide, fire}) {
               <TabData
                 key={county.id}
                 data={county}
-                covide={covide}
+                covid={covid}
                 fire={fire}
 
               />
