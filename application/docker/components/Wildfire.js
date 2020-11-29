@@ -1,10 +1,23 @@
 import React from 'react';
+import FireGrid from '../components/FireGrid';
+import { fetchFireData } from '../api/fire/fetchFireData';
 
 class Wildfire extends React.Component{
+    state = {
+        data: {},
+    }
+
+    async componentDidMount() {
+        const fetchedData = await fetchFireData();
+
+        this.setState({data: fetchedData});
+    }
     render(){
+
+        const { data } = this.state;
         return(
             <div>
-                <h1>wildfire component</h1>
+                <FireGrid data={data}/>
             </div>
         )
     }
