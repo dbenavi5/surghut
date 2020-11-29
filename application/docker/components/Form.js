@@ -29,7 +29,7 @@ function LoginForm() {
       <TextInput
         type={'text'}
         value={pseudo}
-        placeHolder={'Pseudo'}
+        placeHolder={'Username'}
         onTextChange={setPseudo}
       />
       <TextInput
@@ -65,7 +65,7 @@ function RegisterForm() {
         <TextInput
           type={'text'}
           value={pseudo}
-          placeHolder={'Pseudo'}
+          placeHolder={'Username'}
           onTextChange={setPseudo}
         />
       </div>
@@ -74,7 +74,7 @@ function RegisterForm() {
         <TextInput
           type={'text'}
           value={mail}
-          placeHolder={'Mail'}
+          placeHolder={'Email'}
           onTextChange={setMail}
         />
       </div>
@@ -111,13 +111,13 @@ function CovidCaseForm({idData, dataCounty}) {
       <TextInput
         type={'number'}
         value={newCase}
-        placeHolder={'Enter number of covid case'}
+        placeHolder={'Enter number of covid cases'}
         onTextChange={setNewCase}
       />
       <TextInput
         type={'number'}
         value={newDeath}
-        placeHolder={'Enter number of covid death case'}
+        placeHolder={'Enter number of covid death cases'}
         onTextChange={setNewDeath}
       />
       <InputWithChoice
