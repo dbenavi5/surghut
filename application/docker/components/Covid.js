@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import axios from 'axios';
 import Loading from '../components/Loading';
@@ -17,7 +16,7 @@ class Covid extends Component {
         filterText: "",
     };
 
-    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/new-db/application/docker/csv_files/dailyStatewideCases.csv?token=ANLI5K2LQHBQ2LTGROMPD7K7XDQPO"; 
+    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/master/application/docker/csv_files/statewide_covid_cases.csv?token=ANLI5K6UX47UC7FCXU2H4WS7ZQ322";
 
     // fetchiing data and parsing data
     async componentDidMount() {
