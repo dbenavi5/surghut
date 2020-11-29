@@ -2,15 +2,15 @@ import React from 'react';
 // import styles from './CSS/Button.module.css'
 
 
-function TabData({data, covide, fire}) {
+function TabData({data, covid, fire}) {
   // console.log("tab data ", data);
   return (
     <tr>
       <td>{data.name}</td>
-      {covide ?
+      {covid ?
                 <>
-                  <td>{data.covide_case}</td>
-                  <td>{data.covide_death}</td>
+                  <td>{data.covid_case}</td>
+                  <td>{data.covid_death}</td>
                 </> :
                 <></>
       }

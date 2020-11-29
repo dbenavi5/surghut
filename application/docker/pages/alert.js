@@ -10,6 +10,9 @@ const escape = require('sql-template-strings');
 // alert page
 // data is the information of all county get from the County database
 
+//Allows admin to enter a county and send a COVID or wildfire alert
+
+
 function Alert({data}) {
   return (
       <div>

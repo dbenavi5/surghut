@@ -49,7 +49,7 @@ function Index({data}) {
             />
 
             <Switch
-              state={covide}
+              state={covid}
               onChange={setCovid}
               nameTrue="COVID Cases : On"
               nameFalse="COVID Cases : Off"

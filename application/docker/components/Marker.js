@@ -14,7 +14,7 @@ const markerStyleHover = {
 
 function Marker({
   data,
-  covide,
+  covid,
   fire,
   $hover}) {
   if (!$hover) {
@@ -35,10 +35,10 @@ function Marker({
       style={markerStyleHover}
     >
       <p style={{fontSize: 25, color: 'white'}} >{data.name}</p>
-      {covide ?
+      {covid ?
                 <>
-                  <p style={{fontSize: 15, color: 'white'}} >covide_case by 100K : {data.covide_case}</p>
-                  <p style={{fontSize: 15, color: 'white'}} >covide_death by 100K : {data.covide_death}</p>
+                  <p style={{fontSize: 15, color: 'white'}} >covid_case by 100K : {data.covid_case}</p>
+                  <p style={{fontSize: 15, color: 'white'}} >covid_death by 100K : {data.covid_death}</p>
                 </> :
                 <></>
       }

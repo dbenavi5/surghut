@@ -7,7 +7,7 @@ import {useAuth} from '../contexts/auth';
 import {addCovidCase,
   cancelCovidCase,
   validateCovidCase,
-} from '../api/covid/covide';
+} from '../api/covid/covid';
 
 import {addFireCase,
   cancelFiredCase,
