@@ -4,12 +4,10 @@ import Wildfire from '../components/Wildfire';
 
 const Wildfires = () =>(
   <div>
-    <center>
       <div>
         <Navbar/>
         <Wildfire />
       </div>
-    </center>
   </div>
 );
 

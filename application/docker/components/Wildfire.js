@@ -5,13 +5,12 @@ import { fetchFireData } from '../api/fire/fetchFireData';
 class Wildfire extends React.Component{
     state = {
         data: {},
-    }
+    };
 
     async componentDidMount() {
         const fetchedData = await fetchFireData();
-
         console.log(fetchedData);
-        //this.setState({data: fetchedData});
+        this.setState({data: fetchedData});
     }
     render(){
 
