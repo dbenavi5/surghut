@@ -1,1871 +1,2136 @@
-[
  {
    "incident_name": "San Dimas Fire",
    "incident_county": "Los Angeles",
    "incident_location": "San Dimas Canyon Rd and Golden Hills Rd",
    "incident_acres_burned": 132,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Apple Fire",
    "incident_county": "Riverside",
    "incident_location": "off of Oak Glen Road and Apple Tree Lane, North of Cherry Valley",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Slink Fire",
    "incident_county": "Mono",
    "incident_location": "Slinkard Valley, west of Coleville, California",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "July Complex",
    "incident_county": "Siskiyou, Modoc",
    "incident_location": "Caldwell Trail and Hill Road, Northwest of Tionesta",
    "incident_acres_burned": 83261,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Dam Fire",
    "incident_county": "Los Angeles",
    "incident_location": "San Gabriel Canyon Rd and Silverfish Rd Morris Reservoir",
    "incident_acres_burned": 220,
-   "incident_containment": 95
+   "incident_containment": 95,
+   "FIELD6": ""
  },
  {
    "incident_name": "Stump Fire",
    "incident_county": "Tehama",
    "incident_location": "Childs Meadow and Highway 89/36, Northeast of Mineral",
    "incident_acres_burned": 684,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Castaic Fire",
    "incident_county": "Los Angeles",
    "incident_location": "Main Ramp Road and Lake Hughes Road, South of Castaic Lake  ",
    "incident_acres_burned": 178,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "166 Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Highway 166 and Highway 33, East of Cuyama in San Luis Obispo County",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Trimmer Fire",
    "incident_county": "Fresno",
    "incident_location": "Big Creek Rd and Trimmer Springs Rd, Sycamore Flats",
    "incident_acres_burned": 594,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Texas Fire",
    "incident_county": "Los Angeles",
    "incident_location": "Texas Canyon Rd and Bouquet Canyon Rd",
    "incident_acres_burned": 210,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Whale Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Old Creek Road and Sant Rita Road, north of Cayucos in San Luis Obispo County. ",
    "incident_acres_burned": 312,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Holser Fire",
    "incident_county": "Ventura",
    "incident_location": "Holser Canyon Rd and Piru Canyon Rd, south of Lake Piru",
    "incident_acres_burned": 3000,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "3-19 Fire",
    "incident_county": "Mendocino",
    "incident_location": "Burris Lane in Potter Valley",
    "incident_acres_burned": 62,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Placer Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "west of La Panza Station 41, east of Santa Margarita in San Luis Obispo County.",
    "incident_acres_burned": 53,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "R-8 Pinecone Fire",
    "incident_county": "Lassen",
    "incident_location": "Highway 395 and Termo Grasshopper Road, West of Termo",
    "incident_acres_burned": 567,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Ranch 2 Fire",
    "incident_county": "Los Angeles",
    "incident_location": "North San Gabriel Canyon Rd and Ranch Rd, San Gabriel Canyon",
    "incident_acres_burned": 4237,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bobcat Fire ",
    "incident_county": "Los Angeles",
    "incident_location": "Northeast of Cogswell Reservoir, San Gabriel Canyon in Los Angeles county. ",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bullfrog Fire",
    "incident_county": "Fresno",
    "incident_location": "Dinkey Lakes and Nelson Lake, SE of Bullfrog Lake",
    "incident_acres_burned": 1185,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Point Fire (Placer County)",
    "incident_county": "Placer",
    "incident_location": "Nevada Point Rd and Long Creek Rd, east of Foresthill",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Fork Fire",
    "incident_county": "El Dorado",
    "incident_location": "South Fork Road and Trail View, northeast of Pollock Pines in El Dorado County. ",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Silverado Fire ",
    "incident_county": "Orange",
    "incident_location": "Off the 241 in the Irvine area",
    "incident_acres_burned": 12466,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Blue Ridge Fire ",
    "incident_county": "Orange",
    "incident_location": "North of the 91 in the Yorba Linda and Chino Hills area in Orange and San Bernardino Counties",
    "incident_acres_burned": 13964,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Pope Fire",
    "incident_county": "Napa",
    "incident_location": "Lower Chiles Valley Rd and Chiles Pope Valley Rd",
    "incident_acres_burned": 61,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Cypress Fire",
    "incident_county": "Riverside, San Bernardino",
    "incident_location": "Sierra Ave and  Riverside County Line, North of Jurupa Valley ",
    "incident_acres_burned": 150,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Point Fire (Shasta and Tehama County)",
    "incident_county": "Shasta, Tehama",
    "incident_location": "Gas Point Rd and Libby Ln, Cottonwood",
    "incident_acres_burned": 275,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Dersch Fire",
    "incident_county": "Shasta",
    "incident_location": "Dersch Rd and Franciscan Way, east of Anderson",
    "incident_acres_burned": 133,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Olinda Fire",
    "incident_county": "Shasta",
    "incident_location": "West Anderson Dr and Davidson Ln, southwest of Anderson",
    "incident_acres_burned": 5,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Redwood Fire",
    "incident_county": "Humboldt",
    "incident_location": "Redwood House Road and Kneeland Road, Northwest of Bridgeville",
    "incident_acres_burned": 102,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Ferry Fire",
    "incident_county": "Butte",
    "incident_location": "Montgomery St and Linden Ave, Oroville",
    "incident_acres_burned": 6,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Creek Fire",
    "incident_county": "Fresno, Madera",
    "incident_location": "Both sides of the San Joaquin River near Mammoth Pool, Shaver Lake, Big Creek and Huntington Lake",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "SQF Complex Fire (Includes Castle Fire and Shotgun Fire) ",
    "incident_county": "Tulare",
    "incident_location": "East of Giant Sequoia National Monument in Tulare County. ",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "August Complex (includes Doe Fire)",
    "incident_county": "Mendocino, Humboldt, Trinity, Tehama, Glenn, Lake, Colusa",
    "incident_location": " Mendocino, Humboldt, Trinity, Tehama, Glenn, Lake, & Colusa ",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Cameron Fire",
    "incident_county": "El Dorado",
    "incident_location": "North of Durock Road and South of Highway 50 between Cameron Park Drive and Ponderosa Road in El Dorado county.",
    "incident_acres_burned": 15,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Martindale Fire ",
    "incident_county": "Los Angeles",
    "incident_location": "Bouquet Canyon Road, East of Hawthorne",
    "incident_acres_burned": 230,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bruder Fire",
    "incident_county": "San Bernardino",
    "incident_location": "Bruder Lane and Helen Drive, South of Redlands",
    "incident_acres_burned": 170,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Glass Fire",
    "incident_county": "Napa, Sonoma",
    "incident_location": "North Fork Crystal Springs Rd & Crystal Springs Rd",
    "incident_acres_burned": 67484,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Coleman Fire",
    "incident_county": "Monterey",
    "incident_location": "Fort Hunter Liggett in Monterey County. ",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Butte/Tehama/Glenn Lightning Complex (Tehama/Glenn Zone) ",
    "incident_county": "Tehama, Glenn",
    "incident_location": "Southwest of Red Bank Rd",
    "incident_acres_burned": 19609,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Zogg Fire",
    "incident_county": "Shasta, Tehama",
    "incident_location": "Zogg Mine Road and Jenny Bird Lane, North of Igo",
    "incident_acres_burned": 56338,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Oak Fire",
    "incident_county": "Mendocino",
    "incident_location": "West of Highway 101--Big John Road & Skyview Road, Brooktrails Township, Willits",
    "incident_acres_burned": 1100,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Diamond Fire",
    "incident_county": "Calaveras",
    "incident_location": "Highway 4 and Main Street, North of Copperopolis",
    "incident_acres_burned": 21,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Irvine Fire",
    "incident_county": "Contra Costa",
    "incident_location": "Irvine Drive in Moraga ",
    "incident_acres_burned": 30,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Dolan Fire",
    "incident_county": "Monterey",
    "incident_location": "Dolan Rd and Hwy 1, Ventana Wilderness",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "El Dorado Fire",
    "incident_county": "San Bernardino, Riverside",
    "incident_location": "Oak Glen Rd Road and Potato Canyon Road, West of Oak Glen",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Fields Fire ",
    "incident_county": "Yuba",
    "incident_location": "Gold Field Road and Hammonton Road, Northeast of Marigold ",
    "incident_acres_burned": 56,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Lambert Fire",
    "incident_county": "Amador",
    "incident_location": "Lambert Road and Carbondale Road, North of Carbondale",
    "incident_acres_burned": 21,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Moraine Fire",
    "incident_county": "Tulare",
    "incident_location": "South of Palmer Peak , East of Avalanche Pass Trail on the north side of Moraine Creek",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Wolf Fire",
    "incident_county": "Mariposa",
    "incident_location": "north side of Tioga Road and White Wolf campground",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Snow Fire ",
    "incident_county": "Riverside",
    "incident_location": "Snow Creek Road and Cottonwood Road,  west of Palm Springs in Riverside County. ",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Fox Fire",
    "incident_county": "Siskiyou",
    "incident_location": "Fox Creek, Southwest of Callahan ",
    "incident_acres_burned": 2188,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Woodward Fire",
    "incident_county": "Marin",
    "incident_location": "Woodward Valley Trail, East of Olema",
    "incident_acres_burned": 4929,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Rattlesnake Fire",
    "incident_county": "Tulare",
    "incident_location": "The Rattlesnake fire is burning in Sequoia Kings Canyon National Parks Wilderness in the Rattlesnake drainage on the upper slope.",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Shackleford Fire",
    "incident_county": "Siskiyou",
    "incident_location": "Shackleford Rd, southwest of Quartz Valley Reservation",
    "incident_acres_burned": 50,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Copper Fire ",
    "incident_county": "Amador",
    "incident_location": "Copper Hill Rd. off Hwy 16, east of Rancho Murieta",
    "incident_acres_burned": 48,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "North Complex Fire",
    "incident_county": "Plumas, Butte",
    "incident_location": "Flemmings Sheep Camp",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Pony Fire",
    "incident_county": "Sacramento",
    "incident_location": "Pony Brown Rd and Ione Rd, Sloughhouse",
    "incident_acres_burned": 20,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "LNU Lightning Complex (includes Hennessey, Gamble, 15-10, Spanish, Markley, 13-4, 11-16, Walbridge)",
    "incident_county": "Napa, Sonoma, Lake, Yolo, Solano",
    "incident_location": "See details below",
    "incident_acres_burned": 363220,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "SCU Lightning Complex",
    "incident_county": "Santa Clara, Alameda, Contra Costa, San Joaquin, Stanislaus",
    "incident_location": "Multiple locations throughout Santa Clara County, Alameda County, Contra Costa County, San Joaquin County, Merced and Stanislaus County",
    "incident_acres_burned": 396624,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Candy Fire",
    "incident_county": "Riverside",
    "incident_location": "Gavilan Road and Lake Mathews Dr, Perris in Riverside County.",
    "incident_acres_burned": 227,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Lake Fire",
    "incident_county": "Los Angeles",
    "incident_location": "Lake Hughes Rd and Prospect Rd, southwest Lake Hughes ",
    "incident_acres_burned": 31089,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Valley Fire",
    "incident_county": "San Diego",
    "incident_location": "Japatul Road and  Carveacre Road, Southeast of Alpine",
    "incident_acres_burned": 16390,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "CZU Lightning Complex (Including Warnella Fire) ",
    "incident_county": "Santa Cruz, San Mateo",
    "incident_location": "Various locations across San Mateo and Santa Cruz Counties",
    "incident_acres_burned": 86509,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Blue Jay Fire",
    "incident_county": "Mariposa",
    "incident_location": "Near Tioga Road, North of Yosemite Valley ",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Slater Fire (includes Devil Fire)",
    "incident_county": "Siskiyou",
    "incident_location": "99-97 Cutoff and Yellow Butte Road, North of Mt. Shasta",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Feather Fire",
    "incident_county": "Sierra",
    "incident_location": "northwest of Howland Flat",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "San Antonio Fire ",
    "incident_county": "Santa Barbara",
    "incident_location": "Vandenberg Road and San Antonio Road, Vandenberg Air Force Base in Santa Barbara County. ",
    "incident_acres_burned": 111,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Schoolhouse Fire",
    "incident_county": "Siskiyou",
    "incident_location": "Schoolhouse Gap Rd And McAdams Creek Rd",
    "incident_acres_burned": 45,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Willow Fire",
    "incident_county": "Yuba",
    "incident_location": "Neptune Lane and Willow Glen Road, North of Smartville ",
    "incident_acres_burned": 1311,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Pala Fire",
    "incident_county": "San Diego",
    "incident_location": "Hwy 76 and Pala Temecula, northwest of Pala",
    "incident_acres_burned": 122,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Hobo Fire ",
    "incident_county": "Trinity",
    "incident_location": "East Fork Rd and Barney Gulch Rd, north of Helena",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "W-5 Cold Springs",
    "incident_county": "Lassen",
    "incident_location": "Cold Spring Road, West of Cold Spring Mountain ",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Sperry Fire",
    "incident_county": "Stanislaus",
    "incident_location": "Interstate 5 and Sperry Road, West of Patterson",
    "incident_acres_burned": 45,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Sheep Fire ",
    "incident_county": "Plumas",
    "incident_location": "Gold Run Road, Southwest of Susanville in Plumas County. ",
    "incident_acres_burned": 29570,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Coyote Fire",
    "incident_county": "Santa Clara",
    "incident_location": "Monterey Rd and Coyote Creek Golf Dr",
    "incident_acres_burned": 143,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Beach Fire ",
    "incident_county": "Mono",
    "incident_location": "Hwy 120 and Forest Road 1N23, south of Mono Lake",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bell Fire",
    "incident_county": "Tuolumne",
    "incident_location": "Emigrant Wilderness, East of Pinecrest",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Creek Fire",
    "incident_county": "Mendocino",
    "incident_location": "Covelo, Highway 162 and Short Creek Rd",
    "incident_acres_burned": 820,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Carmel Fire",
    "incident_county": "Monterey",
    "incident_location": "Cachagua Rd and Carmel Valley Rd, South of Carmel",
    "incident_acres_burned": 6905,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "River Fire",
    "incident_county": "Monterey",
    "incident_location": "Pine Canyon and River Rd, east of Salinas",
    "incident_acres_burned": 48088,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Catholic Fire",
    "incident_county": "Lake",
    "incident_location": "Highway 20 and Catholic Church Rd, east of Clearlake Oaks",
    "incident_acres_burned": 13,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Johnson Fire ",
    "incident_county": "Los Angeles",
    "incident_location": "Johnson Road and Limeridge Dr, East of Elizabeth Lake in Los Angeles County",
    "incident_acres_burned": 290,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Moc Fire",
    "incident_county": "Tuolumne",
    "incident_location": "Hwy 49 and Hwy 120, Moccasin",
    "incident_acres_burned": 2857,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Hensley Fire ",
    "incident_county": "Madera",
    "incident_location": "Road 400 and Road 406, south of Hensley Lake in Madera County",
    "incident_acres_burned": 688,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Jones Fire",
    "incident_county": "Nevada",
    "incident_location": "Jones Bar Rd, Yuba River Drainage, northwest of Nevada City",
    "incident_acres_burned": 705,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Loyalton Fire",
    "incident_county": "Sierra",
    "incident_location": "Mount Ina Coolbrith East of Loyalton in Sierra County. ",
    "incident_acres_burned": 47029,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Perry Fire",
    "incident_county": "Placer",
    "incident_location": "Perry Ranch Rd and Werner Rd",
    "incident_acres_burned": 9,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Hills Fire",
    "incident_county": "Fresno",
    "incident_location": "Highway 33 and  Sutter Ave,  south of Coalinga in Fresno County.",
    "incident_acres_burned": 2121,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Salt Fire",
    "incident_county": "Calaveras",
    "incident_location": "Salt Springs Valley Reservoir",
    "incident_acres_burned": 1789,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Elsmere Fire",
    "incident_county": "Los Angeles",
    "incident_location": "Elsmere Grapevine Rd and Santa Clarita Truck Trail, Newhall",
    "incident_acres_burned": 200,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Post Fire",
    "incident_county": "Los Angeles",
    "incident_location": "NB I-5 and High way 138, South of Gorman in Los Angeles County.",
    "incident_acres_burned": 120,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Volcano Fire",
    "incident_county": "San Diego",
    "incident_location": "De Luz Rd and Tenaja Truck Trail, west of Temecula City",
    "incident_acres_burned": 45,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "4-8 Fire",
    "incident_county": "Glenn",
    "incident_location": "Highway 162 and County Road 302, west of Willows",
    "incident_acres_burned": 275,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Flint Fire",
    "incident_county": "Calaveras",
    "incident_location": "Flint St and Rock Creek Rd",
    "incident_acres_burned": 55,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Murphy Fire",
    "incident_county": "El Dorado",
    "incident_location": "Johntown Creek Road, Garden Valley",
    "incident_acres_burned": 14,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Milepost 21 Fire",
    "incident_county": "Humboldt",
    "incident_location": "Highway 96 and Deerhorn Rd, southeast of Weitchpec",
    "incident_acres_burned": 100,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Stagecoach Fire",
    "incident_county": "Kern",
    "incident_location": "Stagecoach Drive and Piute Meadow Road South of Lake Isabella in Kern County. ",
    "incident_acres_burned": 7760,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Red Salmon Complex",
    "incident_county": "Humboldt",
    "incident_location": "near Salmon Mountain, Northeast of Willow Creek",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Hog Fire",
    "incident_county": "Lassen",
    "incident_location": " Hog Flat Reservoir, West of Susanville",
    "incident_acres_burned": 9564,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Elk Fire",
    "incident_county": "Glenn",
    "incident_location": "west of Willows",
    "incident_acres_burned": 727,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "3-2 Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Sunrise Ridge Rd and Santa Rita Rd, East of Cayucos",
    "incident_acres_burned": 20,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Cowhead Fire",
    "incident_county": "Modoc",
    "incident_location": "Off of County Road 1 and County Road 201, Northeast of Bidwell",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Adams Fire",
    "incident_county": "Lassen",
    "incident_location": "Scott Rd and Highway 395, south of Doyle",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Clark Fire",
    "incident_county": "Butte",
    "incident_location": "Durham Pentz Road and Clark Road, southwest of Pentz in Butte County. ",
    "incident_acres_burned": 110,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Meiss Fire",
    "incident_county": "Sacramento",
    "incident_location": "Dillard Rd and Meiss Rd, southwest of Rancho Murieta",
    "incident_acres_burned": 512,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Duluth Fire",
    "incident_county": "Placer",
    "incident_location": "Duluth Ave and Nichols Dr",
    "incident_acres_burned": 65,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Johnson Fire ",
    "incident_county": "Riverside",
    "incident_location": "Johnson Street and Ave 82",
    "incident_acres_burned": 75,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Carrizo Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Soda Lake rd and Belmont Trail",
    "incident_acres_burned": 183,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "North Fire",
    "incident_county": "Lassen",
    "incident_location": "Highway 395 and Highway 70, east of Chilcoot in Lassen County,",
    "incident_acres_burned": 6882,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Beale Fire",
    "incident_county": "Yuba",
    "incident_location": "Doolittle Dr. and Warren Shingle Road, near Beale Air Force Base in Yuba County. ",
    "incident_acres_burned": 600,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Badger Fire",
    "incident_county": "Siskiyou",
    "incident_location": "Badger Mountain Road and Hawkinsville Humbug Road",
    "incident_acres_burned": 557,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Sierra Fire",
    "incident_county": "Riverside",
    "incident_location": " La Sierra Avenue and Cajalco Road",
    "incident_acres_burned": 100,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Sperry Fire",
    "incident_county": "Stanislaus",
    "incident_location": "Diablo Grande Parkway and Del Puerto Canyon Road, West of Patterson",
    "incident_acres_burned": 80,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Quail Fire",
    "incident_county": "Solano",
    "incident_location": "Quail Canyon Road and Pleasants Valley Road, Southwest of Winters",
    "incident_acres_burned": 1837,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Peak Fire",
    "incident_county": "Ventura",
    "incident_location": "off Highway 118 and Rocky Peak Road, east of Simi Valley",
    "incident_acres_burned": 186,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Rowher Fire",
    "incident_county": "Los Angeles",
    "incident_location": "Spring Canyon Road and Anthony Road, North of Santa Clarita ",
    "incident_acres_burned": 648,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Gold Fire",
    "incident_county": "Lassen",
    "incident_location": "Highway 139 and County Road A-2, South of Adin",
    "incident_acres_burned": 22634,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Mina Fire",
    "incident_county": "Mendocino",
    "incident_location": "Hopper Ln and Crawford Rd",
    "incident_acres_burned": 177,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "R-1 Fire",
    "incident_county": "Lassen",
    "incident_location": "Horse Lake Mountain",
    "incident_acres_burned": 285,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Iris Fire",
    "incident_county": "Mono",
    "incident_location": "Iris Meadow and Rock Creek Rd, South of Crowley Lake",
    "incident_acres_burned": 120,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Soda Fire",
    "incident_county": "Kern",
    "incident_location": "Soda Lake Rd and Hwy 33, south of Maricopa",
    "incident_acres_burned": 424,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Pond Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Kata Creek Road and Oak Creek Place, East of Santa Margarita",
    "incident_acres_burned": 1962,
-   "incident_containment": 99
+   "incident_containment": 99,
+   "FIELD6": ""
  },
  {
    "incident_name": "Fort Fire",
    "incident_county": "Kern",
    "incident_location": "Grapevine Rd and I-5",
    "incident_acres_burned": 277,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Pass Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Hwy 41, northeast of Shandon",
    "incident_acres_burned": 280,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Sites Fire ",
    "incident_county": "Colusa",
    "incident_location": "Sites Lodoga Road and Campground Road, Southeast of Stonyford in Colusa County. ",
    "incident_acres_burned": 560,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Easton Fire",
    "incident_county": "San Bernardino",
    "incident_location": "Highway 330 and East Highland Avenue, Northeast of San Bernardino",
    "incident_acres_burned": 71,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Water Fire",
    "incident_county": "Riverside",
    "incident_location": "Whitewater Canyon Road at the Whitewater Preserve In Riverside County. ",
    "incident_acres_burned": 52,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Lincoln Fire",
    "incident_county": "Humboldt",
    "incident_location": "Bendixsen Street and Simpson Private Road, Samoa",
    "incident_acres_burned": 25,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Sophia Fire",
    "incident_county": "El Dorado",
    "incident_location": "Sophia Park Way and Alexandra Dr near El Dorado Hills in El Dorado County. ",
    "incident_acres_burned": 36,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Branch Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Hwy 58 and Soda Lake Rd, California Valley",
    "incident_acres_burned": 3022,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Sheep Fire",
    "incident_county": "Kern",
    "incident_location": "Comanche Point Rd, south east of Bakersfield ",
    "incident_acres_burned": 233,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Karen Fire",
    "incident_county": "Riverside",
    "incident_location": "Sierra Avenue and Karen Lane in Riverside County. ",
    "incident_acres_burned": 250,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Brook Fire",
    "incident_county": "San Bernardino",
    "incident_location": "Keenbrook Rd and Cajon Blvd",
    "incident_acres_burned": 185,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Rabbit Fire",
    "incident_county": "Riverside",
    "incident_location": "Hwy 60 and Jack Rabbit Trail",
    "incident_acres_burned": 104,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Ridge Fire",
    "incident_county": "Los Angeles",
    "incident_location": "Old Ridge Route Rd in the community of Quail Lake",
    "incident_acres_burned": 321,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Flat Fire",
    "incident_county": "Trinity",
    "incident_location": "Highway 299W and Mill Creek Road, Southeast of Burnt Ranch",
    "incident_acres_burned": 62,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Clay Fire",
    "incident_county": "Sacramento",
    "incident_location": "Clay Station Road and Momtoma Lane",
    "incident_acres_burned": 730,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Border 11 Fire",
    "incident_county": "San Diego",
    "incident_location": "Marron Valley Rd and Border Rd, Marron Valley",
    "incident_acres_burned": 100,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Ione Fire ",
    "incident_county": "Sacramento",
    "incident_location": "Ione Road at North end of Carbondale road in Sacramento County. ",
    "incident_acres_burned": 51,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Holland Fire ",
    "incident_county": "Contra Costa",
    "incident_location": "Delta Rd and Holland Tract Rd, northeast of Brentwood",
    "incident_acres_burned": 75,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Cottonwood Fire",
    "incident_county": "Merced",
    "incident_location": "Hwy 152 and Romero Visitors Center, west of Santa Nella",
    "incident_acres_burned": 788,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Nail Fire",
    "incident_county": "Colusa",
    "incident_location": "Fouts Springs, Southwest of Stonyford",
    "incident_acres_burned": 25,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Mountain Meadow Fire ",
    "incident_county": "Solano",
    "incident_location": "Mountain Meadows Drive and Cedar Creek Court, Southwest of Fairfield",
    "incident_acres_burned": 75,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Platina Fire",
    "incident_county": "Shasta",
    "incident_location": "Platina Rd and Big Foot Rd, southwest of Redding",
    "incident_acres_burned": 340,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Mineral Fire",
    "incident_county": "Fresno",
    "incident_location": "Hwy 198 and S Coalinga Mineral Springs Rd, west of Coalinga",
    "incident_acres_burned": 29667,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Jack Fire",
    "incident_county": "Riverside",
    "incident_location": "Hwy 60 and Jackrabbit Trail, West of Beaumont",
    "incident_acres_burned": 145,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Hill Fire",
    "incident_county": "Colusa",
    "incident_location": "Highway 20 and Highway 16, East of Wilbur Springs",
    "incident_acres_burned": 138,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Springs Fire",
    "incident_county": "Tulare",
    "incident_location": "Hot Springs Dr and M-56",
    "incident_acres_burned": 217,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Grade Fire ",
    "incident_county": "Tulare",
    "incident_location": "Boyd Dr and Rd 168, east of Orosi",
    "incident_acres_burned": 1050,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Candy Fire",
    "incident_county": "Butte",
    "incident_location": "Candy Cane Ln and Apache Hill Rd, west of Palermo",
    "incident_acres_burned": 17,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Fork Fire",
    "incident_county": "Tulare",
    "incident_location": "South Fork Dr and Salt Creek Fire Control Rd, East of Three Rivers",
    "incident_acres_burned": 130,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Avila Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Avila Beach Drive and Hwy 101, East of Avila Beach",
    "incident_acres_burned": 445,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Feather Fire",
    "incident_county": "Butte",
    "incident_location": "Feather Ave and 18th Street, Oroville",
    "incident_acres_burned": 30,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Rabbit Fire ",
    "incident_county": "Madera",
    "incident_location": "Road 603 and Road 600, East of Chowchilla",
    "incident_acres_burned": 135,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Pitzer Fire",
    "incident_county": "San Bernardino",
    "incident_location": "Pitzer Buttes Road and Power line Road,  South of Lucerne Valley ",
    "incident_acres_burned": 119,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Hollow Fire",
    "incident_county": "Alameda",
    "incident_location": "Tesla Road and McLaughlin Road, Southeast of Livermore",
    "incident_acres_burned": 253,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Ben Fire",
    "incident_county": "Mariposa",
    "incident_location": "Ben Hur Road and Buckeye Road, South of Mariposa  ",
    "incident_acres_burned": 48,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Coyote Fire",
    "incident_county": "San Benito",
    "incident_location": "Panoche Road and Coyote Creek, West of Panoche",
    "incident_acres_burned": 1508,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Casino Fire",
    "incident_county": "Riverside",
    "incident_location": "Hwy 371 and Santos Rd, south of Anza",
    "incident_acres_burned": 91,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Valley Fire ",
    "incident_county": "Yuba",
    "incident_location": "Spenceville Road and Gandry Drive, Southeast of Beale Air Force base ",
    "incident_acres_burned": 500,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Robinson Fire",
    "incident_county": "Butte",
    "incident_location": "Gold Mountain Rd and Stoney Oaks Blvd, northeast of Bangor",
    "incident_acres_burned": 33,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Power Fire",
    "incident_county": "Madera",
    "incident_location": "Road 222 and Road 235, South of North Fork",
    "incident_acres_burned": 108,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Elliot Fire",
    "incident_county": "Riverside",
    "incident_location": "Block Elliot Rd, south of  Winchester",
    "incident_acres_burned": 2,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Soledad Fire",
    "incident_county": "Los Angeles",
    "incident_location": "Soledad Canyon Road and Agua Dulce Canyon Rd, South of Agua Dulce ",
    "incident_acres_burned": 1525,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Soda Fire ",
    "incident_county": "San Luis Obispo",
    "incident_location": "Soda Lake Rd and Culver City Rd, California Valley",
    "incident_acres_burned": 157,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Crews Fire",
    "incident_county": "Santa Clara",
    "incident_location": "Crews Road and Oak Spring Circle, North of Gilroy",
    "incident_acres_burned": 5513,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Alum Fire",
    "incident_county": "Santa Clara",
    "incident_location": "Mt Hamilton Rd and Crothers Rd, northeast of San Jose",
    "incident_acres_burned": 31,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Tripp Fire ",
    "incident_county": "Riverside",
    "incident_location": "Cary Road and Tripp Flats Road, West of Anza ",
    "incident_acres_burned": 10,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Hog Fire",
    "incident_county": "Fresno",
    "incident_location": "E Trimmer Springs Rd and Pine Flat Lake ",
    "incident_acres_burned": 533,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Brandon Fire",
    "incident_county": "El Dorado",
    "incident_location": " Brandon Rd",
    "incident_acres_burned": 32,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "California Fire",
    "incident_county": "Contra Costa",
    "incident_location": "California Street and Springwood Street. East of Rodeo",
    "incident_acres_burned": 298,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Kings Fire",
    "incident_county": "Fresno",
    "incident_location": "King Canyon Road and Dunlap Road, East of Squaw Valley",
    "incident_acres_burned": 67,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Poeville Fire",
    "incident_county": "State of Nevada",
    "incident_location": "Highway 395 Truckee Meadows",
    "incident_acres_burned": 2975,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Quarter Fire",
    "incident_county": "Tuolumne",
    "incident_location": "Italian Bar Road and Grant Ridge Road, North of Twain Harte",
    "incident_acres_burned": 10,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Park Fire",
    "incident_county": "Santa Clara",
    "incident_location": "East Dunne Avenue and Finley Ridge Road, East of Morgan Hill",
    "incident_acres_burned": 343,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Patterson Fire",
    "incident_county": "San Joaquin",
    "incident_location": "Hwy 580 and Patterson Pass Rd, west of Tracy",
    "incident_acres_burned": 150,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Mount R Fire",
    "incident_county": "San Bernardino",
    "incident_location": "Highway 330 and Old City Creek Road, Southwest of Running Springs",
    "incident_acres_burned": 62,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Lake Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Hwy 58 and Soda Lake Road, West of McKittrick",
    "incident_acres_burned": 588,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Sheridan Fire",
    "incident_county": "Alameda",
    "incident_location": "Sheridan Road, south of Sunol in Santa Clara county. ",
    "incident_acres_burned": 108,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Cotton Fire",
    "incident_county": "Merced",
    "incident_location": "Hwy 152 and Lower Cottonwood Hunting Area, West of Santa Nella",
    "incident_acres_burned": 100,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Avacado Fire",
    "incident_county": "Butte",
    "incident_location": "Bangor Park Road and Teddy Lane, West of Bangor  ",
    "incident_acres_burned": 136,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Aurora Fire",
    "incident_county": "Mono",
    "incident_location": "Bodie Rd, east of Bridgeport",
    "incident_acres_burned": 280,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Gage Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Running Deer Rd and Gage Irving Road",
    "incident_acres_burned": 33,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Pass Fire",
    "incident_county": "Merced",
    "incident_location": "Hwy 152 and Dinosaur Point Rd, near Santa Nella",
    "incident_acres_burned": 2192,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bonadelle Fire",
    "incident_county": "Madera",
    "incident_location": "Avenue 15 and Road 35, Bonadelle",
    "incident_acres_burned": 597,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bena Fire",
    "incident_county": "Kern",
    "incident_location": "Bena Road and Caliente Bodfish Road, East of Bakersfield",
    "incident_acres_burned": 2900,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "R-3 Fire",
    "incident_county": "Lassen",
    "incident_location": "Skedaddle Ranch Road and Spencer Basin Road Northeast of Herlong",
    "incident_acres_burned": 210,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "R-2 Fire",
    "incident_county": "Lassen",
    "incident_location": "Highway 395 and Smoke Creek Rod, Northeast of Susanville",
    "incident_acres_burned": 563,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Muck Fire ",
    "incident_county": "Lassen",
    "incident_location": "Highway 299 and Muck Valley Road, South of Nubieber",
    "incident_acres_burned": 12,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bend Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Belmont Trail and Bend Rd, California Valley ",
    "incident_acres_burned": 263,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "58 Fire",
    "incident_county": "Riverside",
    "incident_location": "Van Buren Street and Avenue 58, Thermal",
    "incident_acres_burned": 12,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Indian Fire",
    "incident_county": "Riverside",
    "incident_location": "Wheeler Rd and Tripp Flats Rd, community of Anza",
    "incident_acres_burned": 59,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Diablo Fire",
    "incident_county": "Stanislaus",
    "incident_location": "Del Puerto Canyon and Diablo Grande",
    "incident_acres_burned": 202,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Sycamore Fire",
    "incident_county": "Fresno",
    "incident_location": "Sycamore Road and Coyote Drive Southeast of Tollhouse",
    "incident_acres_burned": 19,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Hunter Fire",
    "incident_county": "Monterey",
    "incident_location": "River Road and Interlake Road, South of Lockwood",
    "incident_acres_burned": 195,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "India Fire",
    "incident_county": "San Diego",
    "incident_location": "Roblar Rd and Basilone Rd, Camp Pendleton Marine Corps Base",
    "incident_acres_burned": 1100,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Ridge Fire",
    "incident_county": "Monterey",
    "incident_location": "Plasket Ridge Road and S Coast Ridge Road, North of Gorda",
    "incident_acres_burned": 83,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "River Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "River Road and Creston Road, West of Paso Robles",
    "incident_acres_burned": 15,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Teddy Fire",
    "incident_county": "Butte",
    "incident_location": "Teddy Lane and Bangor Park Rd., Bangor",
    "incident_acres_burned": 13,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Rico Fire ",
    "incident_county": "Monterey",
    "incident_location": "Sargents Canyon Rd and Dead Mans Gulch Rd, southeast of San Ardo",
    "incident_acres_burned": 338,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Stage Fire",
    "incident_county": "Monterey",
    "incident_location": "  Old Stage Road and Williams Road, Northeast of Salinas",
    "incident_acres_burned": 52,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bitter Fire ",
    "incident_county": "San Benito",
    "incident_location": "Highway 25 and Hernandez-Coalinga Road, North of King City",
    "incident_acres_burned": 895,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "East Fire",
    "incident_county": "Modoc",
    "incident_location": "County Road 79 and East 19th Street",
    "incident_acres_burned": 11,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Honcut Fire",
    "incident_county": "Butte",
    "incident_location": "Palermo Honcut Hwy and Four Junes Way, south of Palermo",
    "incident_acres_burned": 89,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Walker Fire",
    "incident_county": "Calaveras",
    "incident_location": "Walker Trail Road and Hogan Dam Road, North of Copperopolis",
    "incident_acres_burned": 1455,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Baker Fire",
    "incident_county": "Kern",
    "incident_location": "Bena Rd and Caliente Bodfish Rd, east of Bakersfield  ",
    "incident_acres_burned": 165,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Nelson Fire",
    "incident_county": "Placer",
    "incident_location": "Nelson Rd and Rockwell Ln, west of Lincoln",
    "incident_acres_burned": 110,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Liberty Fire",
    "incident_county": "San Joaquin",
    "incident_location": "Liberty Rd and Hwy 88, east of Galt",
    "incident_acres_burned": 89,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Nelson Fire ",
    "incident_county": "Butte",
    "incident_location": "Nelson Ave and 16th St, Oroville",
    "incident_acres_burned": 95,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Gyle Fire",
    "incident_county": "Tehama",
    "incident_location": "Interstate 5 and Gyle Road, north of Corning",
    "incident_acres_burned": 68,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Riata Fire ",
    "incident_county": "San Luis Obispo",
    "incident_location": "5900 Block West Pozo Road near Hwy 58, East of Santa Margarita",
    "incident_acres_burned": 18,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Lime Fire",
    "incident_county": "Ventura",
    "incident_location": "Lime Canyon Rd and Piru Canyon Rd, west of Lake Piru     ",
    "incident_acres_burned": 803,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Smoketree Fire",
    "incident_county": "Riverside",
    "incident_location": "East Murray Canyon Dr and S Toledo Ave",
    "incident_acres_burned": 129,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Dawson Fire ",
    "incident_county": "Riverside",
    "incident_location": "Dawson Canyon Road and Park Canyon Road ",
    "incident_acres_burned": 10,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Grant Fire",
    "incident_county": "Sacramento",
    "incident_location": "Grantline Road and Keifer Blvd",
    "incident_acres_burned": 5042,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Drum Fire",
    "incident_county": "Santa Barbara",
    "incident_location": "Drum Canyon Road and Highway 246, west of Buellton",
    "incident_acres_burned": 696,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Cornetts Fire",
    "incident_county": "Mariposa",
    "incident_location": "Cornetts Road and Old Highway South",
    "incident_acres_burned": 191,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Skyline Fire",
    "incident_county": "San Diego",
    "incident_location": "Skyline Truck Trail",
    "incident_acres_burned": 100,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Hopland Fire",
    "incident_county": "Mendocino",
    "incident_location": "Highway 101, southwest of Hopland",
    "incident_acres_burned": 34,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Border 7 Fire",
    "incident_county": "San Diego",
    "incident_location": "Marron Valley",
    "incident_acres_burned": 90,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Elizabeth Fire",
    "incident_county": "Ventura",
    "incident_location": "Elizabeth and Foothill Rd, north of Ventura   ",
    "incident_acres_burned": 289,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Watt Fire",
    "incident_county": "Placer",
    "incident_location": "PFE Rd and Watt Ave",
    "incident_acres_burned": 40,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Soda Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Hwy 58 and Soda Lake Rd, California Valley",
    "incident_acres_burned": 1672,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Vineyard Fire ",
    "incident_county": "Mendocino",
    "incident_location": "Highway 128 and Elkhorn Road, South of Yorkville",
    "incident_acres_burned": 151,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Cronan Fire ",
    "incident_county": "El Dorado",
    "incident_location": "at Cronan Ranch off of Pedro Hill, near the community of Pilot Hill",
    "incident_acres_burned": 29,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "McGary Fire ",
    "incident_county": "Solano",
    "incident_location": "McGary Road and Highway 80, Southwest of Cordelia",
    "incident_acres_burned": 79,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Wildlife Fire",
    "incident_county": "Solano",
    "incident_location": "Kellogg St and Maple St",
    "incident_acres_burned": 300,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Brock Fire",
    "incident_county": "Shasta",
    "incident_location": "Lake Shasta, West of Round Mountain",
    "incident_acres_burned": 15,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Hunters Fire",
    "incident_county": "Mariposa",
    "incident_location": " Hunters Valley Road and Detwiler Road in Mariposa County. ",
    "incident_acres_burned": 85,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Grand Fire",
    "incident_county": "Riverside",
    "incident_location": "S Main Divide Road near DeCariso Road, West of Lake Elsinore ",
    "incident_acres_burned": 27,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bradley Fire ",
    "incident_county": "Monterey",
    "incident_location": "Sargents Canyon and Alvardo Road, North of Bradley",
    "incident_acres_burned": 230,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Oak Fire",
    "incident_county": "Riverside",
    "incident_location": "45000 Block of Castile Canyon Road, East of San Jacinto in Riverside County is 15 acres.",
    "incident_acres_burned": 20,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Gulch Fire",
    "incident_county": "Sonoma",
    "incident_location": "Stage Gulch Road and  Lakeville Highway, North of Lakeville",
    "incident_acres_burned": 107,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bitterwater Fire",
    "incident_county": "Monterey",
    "incident_location": "off Bitterwater road, northeast of King City in Monterey County. ",
    "incident_acres_burned": 211,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Willow Fire ",
    "incident_county": "Contra Costa",
    "incident_location": "Willow Pass Court and Evora Road, Northeast of Concord",
    "incident_acres_burned": 100,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Colleen Fire",
    "incident_county": "Santa Clara",
    "incident_location": "Colleen Dr, South San Jose",
    "incident_acres_burned": 126,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Lakeville Fire",
    "incident_county": "Sonoma",
    "incident_location": "Lakeville Highway and Stage Gulch Road, Southeast of Petaluma",
    "incident_acres_burned": 141,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Karchner Fire",
    "incident_county": "Placer",
    "incident_location": "Karchner Road and Riosa Road, East of Wheatland",
    "incident_acres_burned": 39,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Silver Fire",
    "incident_county": "Santa Clara",
    "incident_location": "Dutch Flat Trail, East of San Jose",
    "incident_acres_burned": 19,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Horn Fire ",
    "incident_county": "Lassen",
    "incident_location": "Horn Road and Mail Route Road, east of Ravendale in Lassen County. ",
    "incident_acres_burned": 37,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Nash Fire",
    "incident_county": "Mendocino",
    "incident_location": "Nash Mill Rd and Big Meadow Rd",
    "incident_acres_burned": 10,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Scorpion Fire",
    "incident_county": "Santa Barbara",
    "incident_location": "Scorpion Valley on Santa Cruz Island in Santa Barbara county",
    "incident_acres_burned": 1395,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Acres Fire",
    "incident_county": "Madera",
    "incident_location": "Road 600 and Road 603,",
    "incident_acres_burned": 237,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Amoruso Fire",
    "incident_county": "Placer",
    "incident_location": "Sunset Blvd West and Amoruso Way, southwest of Lincoln",
    "incident_acres_burned": 650,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Creek Fire",
    "incident_county": "Contra Costa",
    "incident_location": "Round Valley Regional Park,  southwest of  Brentwood in Contra Costa County",
    "incident_acres_burned": 60,
-   "incident_containment": 50
+   "incident_containment": 50,
+   "FIELD6": ""
  },
  {
    "incident_name": "Harley Fire",
    "incident_county": "Riverside",
    "incident_location": "19000 Block of Gustin Road, East of Lake Mathews",
    "incident_acres_burned": 60,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Range Fire",
    "incident_county": "San Luis Obispo",
    "incident_location": "Range M22 Camp Roberts Military Reserve",
    "incident_acres_burned": 5000,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Spanish Fire ",
    "incident_county": "Napa",
    "incident_location": "Spanish Valley Trail and Stagecoach Canyon, Northwest of Lake Berryessa",
    "incident_acres_burned": 20,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Acres Fire",
    "incident_county": "Madera",
    "incident_location": "Near Road 602 and Road 603",
    "incident_acres_burned": 152,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Gilman Fire",
    "incident_county": "Riverside",
    "incident_location": "Gilman Springs Road and Slegers Street, Southeast of Moreno Valley",
    "incident_acres_burned": 20,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Hollister Fire",
    "incident_county": "Santa Barbara",
    "incident_location": "Hollister Ranch, West of Goleta in Gaviota",
    "incident_acres_burned": 156,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Interstate 5 Fire",
    "incident_county": "Kings",
    "incident_location": "Interstate 5 & Avenal Cutoff, south of Fresno County line",
    "incident_acres_burned": 2060,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bar Fire",
    "incident_county": "Trinity",
    "incident_location": "Bar K Rd & Shady Creek Lane in Douglas City",
    "incident_acres_burned": 55,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Byron Fire",
    "incident_county": "Contra Costa",
    "incident_location": "Byron Highway and Bruns Ave, southeast of Byron",
    "incident_acres_burned": 47,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Thomas Fire",
    "incident_county": "Santa Barbara, Ventura",
    "incident_location": "Hwy 150 and Hwy 126, north of Santa Paula",
    "incident_acres_burned": 281893,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Red Fire ",
    "incident_county": "Tehama",
    "incident_location": "Red Bank Road, Southwest of Red Bluff",
    "incident_acres_burned": 26,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Carter Fire ",
    "incident_county": "Imperial",
    "incident_location": "Off Austin Road  and Weaver Road, South of Brawley",
    "incident_acres_burned": 275,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Baker Fire",
    "incident_county": "Yuba",
    "incident_location": "Near Bullards Bar Reservoir, West of Camptonville ",
    "incident_acres_burned": 0,
-   "incident_containment": 0
+   "incident_containment": 0,
+   "FIELD6": ""
  },
  {
    "incident_name": "Baseball Fire",
    "incident_county": "Glenn, Mendocino",
    "incident_location": "Off Atchison Creek, East of Covelo",
    "incident_acres_burned": 211,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "South Main Fire",
    "incident_county": "Riverside",
    "incident_location": "Off South Main Divide & Hacienda Rd, El Cariso",
    "incident_acres_burned": 20,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Mann Fire",
    "incident_county": "Riverside",
    "incident_location": "Santa Ana Riverbottom near California Ave and Grulla Ct,  South of Jurupa Valley ",
    "incident_acres_burned": 180,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Grizzly Fire",
    "incident_county": "Glenn",
    "incident_location": "Grizzly Flat Recreation Area, west of Orland",
    "incident_acres_burned": 154,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Kincade Fire",
    "incident_county": "Sonoma",
    "incident_location": "John Kincade Road and Burned Mountain Road, northeast of Geyserville",
    "incident_acres_burned": 77758,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Maria Fire ",
    "incident_county": "Ventura",
    "incident_location": "off of Bradley Road and Solano Verde Dr, Top of South Mt, Santa Paula",
    "incident_acres_burned": 9999,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Wood Fire",
    "incident_county": "Lassen",
    "incident_location": "Off Horselake Road and Woodranch Road, East of Susanville",
    "incident_acres_burned": 57,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Antelope Fire",
    "incident_county": "Sierra",
    "incident_location": "Hwy 49 and Fillippini Road, Sierraville",
    "incident_acres_burned": 102,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Beegum Fire",
    "incident_county": "Tehama",
    "incident_location": "Off of Highway 36 West and Tedoc Rd, West of Red Bluff",
    "incident_acres_burned": 75,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  },
  {
    "incident_name": "Bear Fire ",
    "incident_county": "Humboldt",
    "incident_location": "Bear Creek Road and Anderson Ford Road, Northwest of Highway 36 at Dinsmore",
    "incident_acres_burned": 15,
-   "incident_containment": 100
+   "incident_containment": 100,
+   "FIELD6": ""
  }
-]
