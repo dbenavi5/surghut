@@ -268,7 +268,7 @@ function MailForm() {
           sendMail(user, receiver, object, message);
         }}
       >
-                  register
+                  send
       </Button>
     </div>
   );
