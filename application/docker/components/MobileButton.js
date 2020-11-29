@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 
 export function MobileButton() {
+  
   return (
     <Link href="/register" >
       <button className="mobileBtn">

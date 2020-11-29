@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import Dropdown from './Dropdown';
 import {useAuth} from '../contexts/auth';
-import {MobileButton} from './MobileButton';
+// import {MobileButton} from './MobileButton';
 import Watermark from './Watermark';
+import styles from './Navbar.module.css';
 
 function Navbar() {
   const {isAuthenticated, logout, user} = useAuth();
@@ -13,6 +14,7 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
 
+  // for mobile layout
   const closeMobileMenu = () => setClick(false);
 
   const onMouseEnter = () => {
@@ -33,77 +35,77 @@ function Navbar() {
 
   return (
     <>
-      <div className="water-wrap">
+      <div className={styles.water_wrap}>
         <Watermark/>
       </div>
-      <nav className="navbar">
-        <a href="/" className="navLogo">
+      <nav className={styles.navbar}>
+        <a href="/" className={styles.navLogo}>
           <i className="fab fa-accusoft">SurgeHut </i>
         </a>
-        <div className="menuIcon" onClick={ handleClick }>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+        <div className={styles.menuIcon} onClick={ handleClick }>
+          <i className={click ? 'closeIcon fas fa-times' : 'bars fas fa-bars'}/>
         </div>
         <ul className={click ? 'navMenu active' : 'navMenu'}>
-          <li className="navItems">
-            <a href="/" className="navLinks" onClick={closeMobileMenu}>
+          <li className={styles.navItems}>
+            <a href="/" className={styles.navLinks} onClick={closeMobileMenu}>
             Home
             </a>
           </li>
-          <li className="navItems">
-            <a href="/about" className="navLinks" onClick={closeMobileMenu}>
+          <li className={styles.navItems}>
+            <a href="/about" className={styles.navLinks} onClick={closeMobileMenu}>
             About
             </a>
           </li>
-          <li className="navItems">
-              <a href="/alert" className="navLinks">Alert</a>
+          <li className={styles.navItems}>
+              <a href="/alert" className={styles.navLinks}>Alert</a>
           </li>
-          <li className="navItems"
+          <li className={styles.navItems}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <a href="#" className="navLinks" onClick={closeMobileMenu}>
-              Category<i className="fas fa-caret-down"/>
+            <a href="#" className={styles.navLinks} onClick={closeMobileMenu}>
+              Category<i className={`${styles.caretDown} fas fa-caret-down`}/>
             </a>
             {dropdown && <Dropdown/>}
           </li>
           {isAuthenticated ?
           <>
             {user && user.access_level > 0 ? 
-              <li className="navItems">
-                <a href="/update" className="navLinks">Update</a>
+              <li className={styles.navItems}>
+                <a href="/update" className={styles.navLinks}>Update</a>
               </li>
             
               :
               <></>}
             {user && user.access_level > 1 ?
-                  <li className="navItems">
-                  <a href="/checking" className="navLinks">Checking</a>
+                  <li className={styles.navItems}>
+                  <a href="/checking" className={styles.navLinks}>Checking</a>
                 </li>
           
                : <></>}
-            <li className="navItems">
-              <a href="/mailbox" className="navLinks">Mailbox</a>
+            <li className={styles.navItems}>
+              <a href="/mailbox" className={styles.navLinks}>Mailbox</a>
             </li>
-	          <li className="navItems">
-              <a href="#" className="navLinks"
+	          <li className={styles.navItems}>
+              <a href="#" className={styles.navLinks}
                 onClick={logout}
               >
                     Logout
               </a>
-	    </li>
+	          </li>
 
           </> :
           <>
-            <li className="navItems">
-              <a href="/login" className="navLinks">Login</a>
+            <li className={styles.navItems}>
+              <a href="/login" className={styles.navLinks}>Login</a>
             </li>
-            <li className="navItems">
-              <a href="/register" className="navMobile">Sign Up</a>
+            <li className={styles.navItems}>
+              <a href="/register" className={styles.navMobile}>Sign Up</a>
             </li>
           </>
           }
         </ul>
-       <MobileButton/>
+       {/* <MobileButton/> */}
       </nav>
     </>
   );

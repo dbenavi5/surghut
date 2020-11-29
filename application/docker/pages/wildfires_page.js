@@ -1,15 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Wildfire from '../components/Wildfire';
 
 const Wildfires = () =>(
   <div>
-    <center>
       <div>
         <Navbar/>
-        <h1>Wildfires</h1>
-        <p>in CA</p>
+        <Wildfire />
       </div>
-    </center>
   </div>
 );
 

@@ -1,9 +1,9 @@
-
 import React, { Component } from 'react';
 import axios from 'axios';
 import Loading from '../components/Loading';
 import CovidTable from '../components/CovidTable';
 import Chart from '../components/Chart';
+import styles from './Covid.module.css';
 
 class Covid extends Component {
     state  = {
@@ -17,9 +17,8 @@ class Covid extends Component {
         filterText: "",
     };
 
-    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/new-db/application/docker/csv_files/dailyStatewideCases.csv?token=ANLI5K2LQHBQ2LTGROMPD7K7XDQPO"; 
+    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/master/application/docker/csv_files/statewide_covid_cases.csv?token=ANLI5K7HMPHDPMWVK32KJUK7ZS4YY";
 
-    // fetchiing data and parsing data
     async componentDidMount() {
         const response = await axios.get(this.url);
         const rows = response.data.split("\n");
@@ -103,8 +102,8 @@ class Covid extends Component {
     };
 
     sortByCountyName = ( countyA, countyB ) => {
-        if( countyA.county > countyB.county ) return 1;
-        else if ( countyA.county < countyB.county ) return -1;
+        if( countyB.county > countyA.county ) return 1;
+        else if ( countyB.county < countyA.county ) return -1;
         else return 0;
     };
 
@@ -168,15 +167,15 @@ class Covid extends Component {
         
         return (
             <div>
-                <h1 className="h1-tag">Coronavirus Stats</h1>
-                <h2 className="h2-tag"> As Of November 12, 2020 </h2>
-                <div className="tag-wrap">
-                    <h3 className="h3-tag"> Confirmed Cases: {this.numberWithCommas(confirmedCases)} </h3>
-                    <h3 className="h3-tag"> Death Count: {this.numberWithCommas(totalDeathCount)} </h3>
-                    <h3 className="h3-tag"> New Confirmed Cases: {this.numberWithCommas(newConfirmedCases)} </h3>
-                    <h3 className="h3-tag"> New Deaths Count: {this.numberWithCommas(newDeaths)} </h3>
+                <h1 className={styles.h1Tag}>Coronavirus Stats</h1>
+                <h2 className={styles.h2Tag}> As Of November 26, 2020 </h2>
+                <div className={styles.tag_wrap}>
+                    <h3 className={styles.h3Tag}> Confirmed Cases: {this.numberWithCommas(confirmedCases)} </h3>
+                    <h3 className={styles.h3Tag}> Death Count: {this.numberWithCommas(totalDeathCount)} </h3>
+                    <h3 className={styles.h3Tag}> New Confirmed Cases: {this.numberWithCommas(newConfirmedCases)} </h3>
+                    <h3 className={styles.h3Tag}> New Deaths Count: {this.numberWithCommas(newDeaths)} </h3>
                 </div>
-                <h3 className="select-intruct">Compare COVID-19 cases with other counties in California.
+                <h3 className={styles.select_intruct}>Compare COVID-19 cases with other counties in California.
                     <br/>
                     Search or scroll down to select a the counties you wish to compare
                 </h3>
@@ -189,11 +188,11 @@ class Covid extends Component {
                                 type="text"
                                 value={filterText}
                                 onChange={this.handleFilterTextChange}
-                                className="chart-search-filter"
+                                className={styles.chart_search_filter}
                                 placeholder="Search"
                             />
                             <button 
-                                className="clear-btn"
+                                className={styles.clearBtn}
                                 type="button" 
                                 onClick={this.handleReset}>
                                     Clear

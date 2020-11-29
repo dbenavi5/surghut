@@ -10,6 +10,7 @@
 .dropdownMenu li{
     background: #fff;
     cursor: pointer;
+    padding: 4px;
 }
 
 .dropdownMenu li:hover {
@@ -17,7 +18,7 @@
 }
 
 .dropdownMenu.clicked {
-    display: none;
+    display: contents;
 }
 .dropdownLinks {
     display: block;
@@ -28,18 +29,20 @@
     padding: 16px;
 }
 @media screen and (max-width:960px) {
-    .fa-caret-down {
-      display: none;
-    }
     
-    .dropdownMenu:hover {
-      width: 100%;
-      display: contents;
-      z-index: 1;
+    .dropdownMenu li:hover {
+        width: 100%;
+        display: contents;
+        z-index: 1;
     }
 
-    .dropdownLinks {
-      text-align: center;
-    }
+    /* .dropdownLinks{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: Black;
+        padding: 16px;
+    } */
      
 }
