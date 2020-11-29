@@ -10,7 +10,8 @@ class Wildfire extends React.Component{
     async componentDidMount() {
         const fetchedData = await fetchFireData();
 
-        this.setState({data: fetchedData});
+        console.log(fetchedData);
+        //this.setState({data: fetchedData});
     }
     render(){
 
