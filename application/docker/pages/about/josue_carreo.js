@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 
-function josue_carreo() {
+function josue_carreon() {
   return (
     <>
       <div >
-        <h1 >Josue CERREO</h1>
+        <h1 >Josue CARREON</h1>
       </div>
 
       <div>
@@ -22,4 +22,4 @@ function josue_carreo() {
   );
 }
 
-export default josue_carreo;
+export default josue_carreon;
