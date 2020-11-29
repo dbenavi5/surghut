@@ -247,13 +247,13 @@ function MailForm() {
       <TextInput
         type={'text'}
         value={receiver}
-        placeHolder={'Enter pseudo of the receiver'}
+        placeHolder={'Enter username of the receiver'}
         onTextChange={setReceiver}
       />
       <TextInput
         type={'text'}
         value={object}
-        placeHolder={'enter the object of your mail'}
+        placeHolder={'enter the subject of your mail'}
         onTextChange={setObjet}
       />
       <TextInput

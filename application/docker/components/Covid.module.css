@@ -1,0 +1,30 @@
+.h3Tag {
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-flex;
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+    background: #380036;
+    color: #fff;
+}
+
+.chart_search_filter{
+    width: 600px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.clearBtn{
+    padding: 10px 20px;
+    outline: none;
+}
+
+.chartContainer{
+    display: inline-flex;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Pie } from 'react-chartjs-2';
+import styles from './Covid.module.css';
 
 class Chart extends Component{
 
@@ -46,7 +47,7 @@ class Chart extends Component{
             ] 
         }
         return (
-            <div className="chart-container">
+            <div className={styles.chartContainer}>
                 <div>
                     <Pie 
                         data={data01} 
