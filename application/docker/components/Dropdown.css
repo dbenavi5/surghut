@@ -18,7 +18,7 @@
 }
 
 .dropdownMenu.clicked {
-    display: contents;
+    display: none;
 }
 .dropdownLinks {
     display: block;
