@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import Dropdown from './Dropdown';
+//import Dropdown from './Dropdown';
 import {useAuth} from '../contexts/auth';
-// import {MobileButton} from './MobileButton';
+import {MobileButton} from './MobileButton';
 import Watermark from './Watermark';
 import styles from './Navbar.module.css';
 
@@ -59,6 +59,7 @@ function Navbar() {
           <li className={styles.navItems}>
               <a href="/alert" className={styles.navLinks}>Alert</a>
           </li>
+          {/*
           <li className={styles.navItems}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
@@ -68,6 +69,7 @@ function Navbar() {
             </a>
             {dropdown && <Dropdown/>}
           </li>
+          */}
           {isAuthenticated ?
           <>
             {user && user.access_level > 0 ? 
@@ -105,7 +107,7 @@ function Navbar() {
           </>
           }
         </ul>
-       {/* <MobileButton/> */}
+       <MobileButton/>
       </nav>
     </>
   );
