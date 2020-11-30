@@ -7,9 +7,10 @@ module.exports = async (req, res) => {
   const time = new Date().toISOString().slice(0, 19).replace('T', ' ').replace('Z', '');
   console.log(time);
 
+
   const newProfile = await db.query(escape`
         INSERT INTO Mailbox (upload_time, sender, receiver, object, message)
-        VALUES (${time}, ${req.body.user[0].pseudo}, ${req.body.receiver}, ${req.body.object}, ${req.body.message})
+        VALUES (${time}, ${req.body.user.pseudo}, ${req.body.receiver}, ${req.body.object}, ${req.body.message})
   ` );
   console.log('result create use api: ', newProfile);
 
