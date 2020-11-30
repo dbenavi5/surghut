@@ -21,6 +21,22 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossOrigin="anonymous"/>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
+           <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+           />
+           <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+           `,
+            }}
+           />
 
         </Head>
         <body>
@@ -34,21 +50,5 @@ export default class MyDocument extends Document {
   }
 }
 
-// script googla analytic to put between <Head></Head>
+          // script googla analytic to put between <Head></Head>
 
-// <script
-//  async
-//  src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-// />
-// <script
-//  dangerouslySetInnerHTML={{
-//    __html: `
-//  window.dataLayer = window.dataLayer || [];
-//  function gtag(){dataLayer.push(arguments);}
-//  gtag('js', new Date());
-//  gtag('config', '${GA_TRACKING_ID}', {
-//    page_path: window.location.pathname,
-//  });
-// `,
-//  }}
-// />
