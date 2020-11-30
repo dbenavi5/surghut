@@ -4,7 +4,8 @@ import api from '../api';
 
 async function registerAlert(mail, county) {
   const result = await api.post('alert/create', {mail, county});
-  console.log(result);
+  console.log("result registerAlert" ,result.data);
+  return result.data.result;
 }
 
 // send an alert to all user in a county
@@ -12,7 +13,9 @@ async function registerAlert(mail, county) {
 
 async function sendAlert(user, county, level) {
   const result = await api.post('alert/send', {user, county, level});
-  console.log(result);
+  console.log("result sendAlert" ,result.data);
+  return result.data.result;
+
 }
 
 // cancel an alert to all user in a county
@@ -20,7 +23,8 @@ async function sendAlert(user, county, level) {
 
 async function cancelAlert(user, county) {
   const result = await api.post('alert/cancel', {user, county});
-  console.log(result);
+  console.log("result cancel alert" , result.data);
+  return result.data.result;
 }
 
 export {registerAlert, sendAlert, cancelAlert};

@@ -102,6 +102,8 @@ function CovidCaseForm({idData, dataCounty}) {
   const [newCase, setNewCase] = useState('');
   const [newDeath, setNewDeath] = useState('');
   const [county, setCounty] = useState('');
+  const [result, setResult] = useState(null);
+
 
   const {user} = useAuth();
 
@@ -127,10 +129,12 @@ function CovidCaseForm({idData, dataCounty}) {
         placeHolder={'enter the name the county'}
         onTextChange={setCounty}
       />
+      {result ? <p>{result}</p> : <></>}
       <Button
-        onClick={ () => {
+        onClick={ async () => {
           console.log('new case covid fill');
-          addCovidCase(user, newCase, newDeath,county);
+         const fetchResult = await addCovidCase(user, newCase, newDeath,county);
+         setResult(fetchResult);
         }}
       >
                   send
@@ -142,6 +146,9 @@ function CovidCaseForm({idData, dataCounty}) {
 function ValidateCovidCaseForm({upload_time, county, nbCase, nbDeath}) {
   const {user} = useAuth();
 
+  const [result, setResult] = useState(null);
+
+
   return (
     <div>
       <p className={styles.form_wrap}>Covid case form</p>
@@ -149,18 +156,23 @@ function ValidateCovidCaseForm({upload_time, county, nbCase, nbDeath}) {
       <p className={styles.form_wrap}>county : {county}</p>
       <p className={styles.form_wrap}>Current number of case: {nbCase}</p>
       <p className={styles.form_wrap}>Current number of death: {nbDeath}</p>
+      {result ? <p>{result}</p> : <></>}
       <Button
-        onClick={ () => {
+        onClick={ async () => {
           console.log('new case covid fill');
-          cancelCovidCase(user, upload_time.replace('Z', ''));
+          const fetchResult = await cancelCovidCase(user, upload_time.replace('Z', ''));
+          setResult(fetchResult);
+
         }}
       >
                   delete
       </Button>
       <Button
-        onClick={ () => {
+        onClick={ async () => {
           console.log('new case covid fill');
-          validateCovidCase(user, upload_time.replace('Z', ''));
+          const fetchResult = await validateCovidCase(user, upload_time.replace('Z', ''));
+         setResult(fetchResult);
+          
         }}
       >
                   validate
@@ -172,6 +184,8 @@ function ValidateCovidCaseForm({upload_time, county, nbCase, nbDeath}) {
 function FireCaseForm({idData, dataCounty}) {
   const [newCase, setNewCase] = useState('');
   const [county, setCounty] = useState('');
+  const [result, setResult] = useState(null);
+
 
   const {user} = useAuth();
 
@@ -193,10 +207,13 @@ function FireCaseForm({idData, dataCounty}) {
         placeHolder={'enter the name the county'}
         onTextChange={setCounty}
       />
+      {result ? <p>{result}</p> : <></>}
       <Button
-        onClick={ () => {
+        onClick={ async () => {
           console.log('new case covid fill');
-          addFireCase(user, newCase, county);
+          const fetchResult = await addFireCase(user, newCase, county);
+         setResult(fetchResult);
+
         }}
       >
                   send
@@ -207,6 +224,8 @@ function FireCaseForm({idData, dataCounty}) {
 
 function ValidateFireCaseForm({upload_time, county, nbCase}) {
   const {user} = useAuth();
+  const [result, setResult] = useState(null);
+
 
   return (
     <div>
@@ -214,18 +233,22 @@ function ValidateFireCaseForm({upload_time, county, nbCase}) {
       <p className={styles.form_wrap}>upload time : {upload_time.replace('Z', '')}</p>
       <p className={styles.form_wrap}>county : {county}</p>
       <p className={styles.form_wrap}>Current number of case: {nbCase}</p>
+      {result ? <p>{result}</p> : <></>}
       <Button
-        onClick={ () => {
+        onClick={ async () => {
           console.log('new case covid fill');
-          cancelFiredCase(user, upload_time.replace('Z', ''));
+          const fetchResult = await cancelFiredCase(user, upload_time.replace('Z', ''));
+          setResult(fetchResult);
+
         }}
       >
                   delete
       </Button>
       <Button
-        onClick={ () => {
+        onClick={ async () => {
           console.log('new case covid fill');
-          validateFireCase(user, upload_time.replace('Z', ''));
+          const fetchResult = await validateFireCase(user, upload_time.replace('Z', ''));
+          setResult(fetchResult);
         }}
       >
                   validate
@@ -238,6 +261,8 @@ function MailForm() {
   const [receiver, setReceiver] = useState('');
   const [object, setObjet] = useState('');
   const [message, setMessage] = useState('');
+  const [result, setResult] = useState(null);
+
 
   const {user} = useAuth();
 
@@ -262,10 +287,12 @@ function MailForm() {
         placeHolder={'enter the message of your mail'}
         onTextChange={setMessage}
       />
+      {result ? <p>{result}</p> : <></>}
       <Button
-        onClick={ () => {
+        onClick={ async () => {
           console.log('new case covid fill');
-          sendMail(user, receiver, object, message);
+          const fetchResult = await sendMail(user, receiver, object, message);
+          setResult(fetchResult);
         }}
       >
                   send
@@ -283,6 +310,8 @@ function MailForm() {
 function AlertRegisterForm({idData, dataCounty}) {
   const [mail, setMail] = useState('');
   const [county, setCounty] = useState('');
+  const [result, setResult] = useState(null);
+
 
   return (
     <div>
@@ -300,9 +329,11 @@ function AlertRegisterForm({idData, dataCounty}) {
         placeHolder={'enter the name of your county'}
         onTextChange={setCounty}
       />
+      {result ? <p>{result}</p> : <></>}
       <Button
-        onClick={ () => {
-          registerAlert(mail, county); // send the mail and county of the user in the Alert database
+        onClick={ async () => {
+          const fetchResult = await registerAlert(mail, county); // send the mail and county of the user in the Alert database
+          setResult(fetchResult);        
         }}
       >
                   register
@@ -318,6 +349,8 @@ function AlertRegisterForm({idData, dataCounty}) {
 function SendAlertForm({idData, dataCounty}) {
   const [county, setCounty] = useState('');
   const [level, setLevel] = useState('');
+  const [result, setResult] = useState(null);
+
 
   const {user} = useAuth(); // get information on the current user connected
 
@@ -337,9 +370,11 @@ function SendAlertForm({idData, dataCounty}) {
         placeHolder={'Enter the new level of alert'}
         onTextChange={setLevel}
       />
+      {result ? <p>{result}</p> : <></>}
       <Button
-        onClick={ () => {
-          sendAlert(user, county, level); // send a email to all user in the county concerned and tell the alert level
+        onClick={ async () => {
+          const fetchResult = await sendAlert(user, county, level); // send a email to all user in the county concerned and tell the alert level
+          setResult(fetchResult);          
         }}
       >
                   send
@@ -354,6 +389,8 @@ function SendAlertForm({idData, dataCounty}) {
 
 function CancelAlertForm({idData, dataCounty}) {
   const [county, setCounty] = useState('');
+  const [result, setResult] = useState(null);
+
 
   const {user} = useAuth(); // get information on the current user connected
 
@@ -367,9 +404,11 @@ function CancelAlertForm({idData, dataCounty}) {
         placeHolder={'enter the name of the county'}
         onTextChange={setCounty}
       />
+      {result ? <p>{result}</p> : <></>}
       <Button
-        onClick={ () => {
-          cancelAlert(user, county); // send a email to all user in the county concerned
+        onClick={ async () => {
+          const fetchResult = await cancelAlert(user, county); // send a email to all user in the county concerned
+          setResult(fetchResult);
         }}
       >
                   send

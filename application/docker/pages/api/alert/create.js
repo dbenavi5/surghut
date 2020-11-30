@@ -10,5 +10,6 @@ module.exports = async (req, res) => {
         VALUES (${req.body.mail}, ${req.body.county})
   ` );
 
-  res.status(200);
+  res.status(200).json({result: `you will receive all alert in ${req.body.county}`});
+
 };

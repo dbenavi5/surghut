@@ -64,5 +64,5 @@ module.exports = async (req, res) => {
     }
   });
 
-  res.status(200);
+  res.status(200).json({result: `the alert has been cancel in ${req.body.county}`});
 };

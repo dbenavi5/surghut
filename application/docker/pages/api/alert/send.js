@@ -63,5 +63,5 @@ module.exports = async (req, res) => {
       console.log('Email sent: ' + info.response);
     }
   });
-  res.status(200);
+  res.status(200).json({result: `the alert has been sent to all user in ${req.body.county}`});
 };

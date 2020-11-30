@@ -12,5 +12,6 @@ module.exports = async (req, res) => {
   console.log('result create use api: ', newProfile);
 
   // console.log("req.header = ", req.header);
-  res.status(200);
+  res.status(200).json({result: `Entry cancel`});
+
 };
