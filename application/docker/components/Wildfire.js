@@ -1,44 +1,29 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 // import FireGrid from '../components/FireGrid';
 // import { fetchFireData } from '../api/fire/fetchFireData';
 
 class Wildfire extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
+    state = {
             error: null,
             isLoaded: false,
-            data: [],
-            name: [],
-        }
+            Name: [],
+            County: [],
     }
 
-    // url = "https://www.fire.ca.gov/umbraco/api/IncidentApi/List?inactive=true";
+    url = "https://raw.githubusercontent.com/CSC-648-SFSU/csc648-02-fa20-team03/new-db/application/docker/json_files/fire_data.json?token=ANLI5K4WTYBJBQ2JUT2CKDS7ZY5V2";
+
+    //"https://www.fire.ca.gov/umbraco/api/IncidentApi/List?inactive=true";
 
     async componentDidMount() {
-        fetch("https://www.fire.ca.gov/umbraco/api/IncidentApi/List?inactive=2020")
-            .then(response => 
-                response.json(console.log(response))) 
-            .then(
-                (Name) => {
-                    this.setState({
-                        isLoading: true,
-                        data: Name.data
-                    });
-                },
+        const res = await axios.get(this.url);
+        console.log(res);
 
-                (error) => {
-                    this.setState({
-                        isLoading: true,
-                        error
-                    });
-                }
-            )
     }
     
     render(){
 
-        const {error, isLoaded, data }= this.state;
+        const {error, isLoaded, Name, County }= this.state;
 
         if(error) {
             return <div>Error: {error.message}</div>
@@ -47,7 +32,7 @@ class Wildfire extends Component{
         } else {
             return(
                 <ul>
-                    {data.map(item => (
+                    {name.map(item => (
                         <li key={item.Name}>
                             {item.Name}
                         </li>
