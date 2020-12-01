@@ -81,5 +81,24 @@ function SearchInputWithChoice({value, onTextChange, placeHolder, data, idData})
   );
 }
 
+function MailTextInput({value, onTextChange, placeHolder, type}) {
+  const eventHandler = (event) => {
+    onTextChange(event.target.value);
+  };
 
-export {SearchTextInput, TextInput, InputWithChoice, SearchInputWithChoice};
+  return (
+    <div>
+      <textarea
+        className={styles.form_input}
+        type={type}
+        placeholder={placeHolder}
+        value={value}
+        onChange={eventHandler}
+        className={styles.mailForm}
+      />
+    </div>
+  );
+}
+
+export {SearchTextInput, TextInput, InputWithChoice, SearchInputWithChoice, MailTextInput};
+

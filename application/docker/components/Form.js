@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {TextInput, InputWithChoice} from './Input';
+import {MailTextInput, TextInput, InputWithChoice} from './Input';
 import Button from './Button';
 import styles from './Form.module.css';
 
@@ -44,7 +44,7 @@ function LoginForm() {
           login(pseudo, password);
         }}
       >
-                sign in
+                Sign In
       </Button>
     </div>
   );
@@ -65,7 +65,7 @@ function RegisterForm() {
         <TextInput
           type={'text'}
           value={pseudo}
-          placeHolder={'Pseudo'}
+          placeHolder={'Username'}
           onTextChange={setPseudo}
         />
       </div>
@@ -74,7 +74,7 @@ function RegisterForm() {
         <TextInput
           type={'text'}
           value={mail}
-          placeHolder={'Mail'}
+          placeHolder={'Email'}
           onTextChange={setMail}
         />
       </div>
@@ -92,7 +92,7 @@ function RegisterForm() {
           register(pseudo, mail, password);
         }}
       >
-                sign up
+                Sign Up
       </Button>
     </div>
   );
@@ -137,7 +137,7 @@ function CovidCaseForm({idData, dataCounty}) {
          setResult(fetchResult);
         }}
       >
-                  send
+                  Send
       </Button>
     </div>
   );
@@ -165,7 +165,7 @@ function ValidateCovidCaseForm({upload_time, county, nbCase, nbDeath}) {
 
         }}
       >
-                  delete
+                  Delete
       </Button>
       <Button
         onClick={ async () => {
@@ -175,7 +175,7 @@ function ValidateCovidCaseForm({upload_time, county, nbCase, nbDeath}) {
           
         }}
       >
-                  validate
+                  Validate
       </Button>
     </div>
   );
@@ -216,7 +216,7 @@ function FireCaseForm({idData, dataCounty}) {
 
         }}
       >
-                  send
+                  Send
       </Button>
     </div>
   );
@@ -242,7 +242,7 @@ function ValidateFireCaseForm({upload_time, county, nbCase}) {
 
         }}
       >
-                  delete
+                  Delete
       </Button>
       <Button
         onClick={ async () => {
@@ -251,7 +251,7 @@ function ValidateFireCaseForm({upload_time, county, nbCase}) {
           setResult(fetchResult);
         }}
       >
-                  validate
+                  Validate
       </Button>
     </div>
   );
@@ -281,7 +281,7 @@ function MailForm() {
         placeHolder={'enter the subject of your mail'}
         onTextChange={setObjet}
       />
-      <TextInput
+      <MailTextInput
         type={'text'}
         value={message}
         placeHolder={'enter the message of your mail'}

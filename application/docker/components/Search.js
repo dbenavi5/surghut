@@ -31,6 +31,7 @@ function Search({data, setResult}) {
           idData="County"
           placeHolder={'Enter the name of your county'}
           value={text}
+          className={styles.options}
           onTextChange={setText}
         />
         <Button
