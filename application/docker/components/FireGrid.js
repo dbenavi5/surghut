@@ -4,7 +4,7 @@ import styles from './FireGrid.module.css';
 import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 
 const FireGrid = ({incident_name, incident_county, incident_location}) => {
-    //console.log(props);
+    ////console.log(props);
 
     return (
         <div className={styles.container}>

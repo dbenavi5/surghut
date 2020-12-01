@@ -2,9 +2,9 @@ const db = require('../../../lib/db');
 const escape = require('sql-template-strings');
 
 module.exports = async (req, res) => {
-  // console.log("req.body = ", req.body);
-  console.log('req.cookies.token.token = ', req.cookies.token);
-  // console.log("req.body = ", req);
+  // //console.log("req.body = ", req.body);
+  //console.log('req.cookies.token.token = ', req.cookies.token);
+  // //console.log("req.body = ", req);
 
   const mails = await db.query(escape`
       SELECT *

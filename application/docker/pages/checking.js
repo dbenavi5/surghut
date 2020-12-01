@@ -9,7 +9,7 @@ const escape = require('sql-template-strings');
 
 
 function Checking({data}) {
-  console.log('data', data);
+  //console.log('data', data);
 
   return (
     <ProtectRoute

@@ -6,6 +6,6 @@ module.exports = async (req, res) => {
       SELECT *
       FROM County
     `);
-    // console.log("result api: ", county);
+    // //console.log("result api: ", county);
   res.status(200).json({county});
 };

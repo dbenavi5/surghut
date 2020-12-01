@@ -47,11 +47,11 @@ function Mail({sent}) {
     async function getMail() {
       const {data: mailsReceived} = await api.post('mailbox/mailReceived');
       setMailReceived(mailsReceived.mails);
-      console.log("mailReceived = ", mailsReceived)
+      //console.log("mailReceived = ", mailsReceived)
 
       const {data: mailsSent} = await api.post('mailbox/mailSent');
       setMailSent(mailsSent.mails);
-      console.log("mailSent = ", mailsSent)
+      //console.log("mailSent = ", mailsSent)
     }
     getMail();
   }, []);

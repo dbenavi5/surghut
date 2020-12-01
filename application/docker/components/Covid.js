@@ -21,7 +21,7 @@ class Covid extends Component {
 
     async componentDidMount() {
         const response = await axios.get(this.url);
-        // console.log(response.data);
+        // //console.log(response.data);
         const rows = response.data.split("\n");
 
         const counties = [];

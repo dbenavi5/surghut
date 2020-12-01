@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
     return {...initialProps};
   }
   render() {
-    // console.log(GA_TRACKING_ID);
+    // //console.log(GA_TRACKING_ID);
     return (
       <Html lang="en">
         <Head>

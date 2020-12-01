@@ -6,7 +6,7 @@ import styles from './Form.module.css';
 
 
 function GetCounty(data, key, setResult) {
-  // console.log("key == ", key);
+  // //console.log("key == ", key);
 
   const result = data.filter(
       function(data) {
@@ -21,7 +21,7 @@ function GetCounty(data, key, setResult) {
 function Search({data, setResult}) {
   const [text, setText] = useState('');
 
-  console.log(text);
+  //console.log(text);
 
   return (
     <div className={styles.searchWrapper}>

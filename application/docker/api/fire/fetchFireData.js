@@ -7,7 +7,7 @@ export const fetchFireData = async () => {
     try {
         const data  = await axios.get(url);
 
-        console.log(data);
+        //console.log(data);
         //return {data};
     } catch (error) {
         

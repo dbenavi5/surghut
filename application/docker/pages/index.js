@@ -22,7 +22,7 @@ function Index({data}) {
   const [map, setMap] = useState(true);
   const [covid, setCovid] = useState(true);
   const [fire, setFire] = useState(true);
-  // console.log("props index ", data[0]);
+  // //console.log("props index ", data[0]);
   return (
     <>
       <div>
@@ -105,7 +105,7 @@ export async function getServerSideProps({req, query}) {
       FROM County
   `);
 
-  console.log('county data = ', county);
+  //console.log('county data = ', county);
   return {props: {data: county}};
 }
 

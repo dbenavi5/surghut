@@ -17,7 +17,7 @@ class Wildfire extends Component{
 
     async componentDidMount() {
         const res = await axios.get(this.url);
-        console.log(res);
+        //console.log(res);
 
     }
     

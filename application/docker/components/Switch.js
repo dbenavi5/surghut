@@ -3,7 +3,7 @@ import styles from './Switch.module.css';
 
 
 function Switch({state, onChange, nameTrue, nameFalse}) {
-  // console.log("tab data ", data);
+  // //console.log("tab data ", data);
   return (
     <div
       className={styles.switch_container}

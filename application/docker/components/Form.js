@@ -40,7 +40,7 @@ function LoginForm() {
       />
       <Button
         onClick={ () => {
-          console.log('login');
+          //console.log('login');
           login(pseudo, password);
         }}
       >
@@ -88,7 +88,7 @@ function RegisterForm() {
       </div>
       <Button
         onClick={ () => {
-          console.log('login');
+          //console.log('login');
           register(pseudo, mail, password);
         }}
       >
@@ -132,7 +132,7 @@ function CovidCaseForm({idData, dataCounty}) {
       {result ? <p>{result}</p> : <></>}
       <Button
         onClick={ async () => {
-          console.log('new case covid fill');
+          //console.log('new case covid fill');
          const fetchResult = await addCovidCase(user, newCase, newDeath,county);
          setResult(fetchResult);
         }}
@@ -159,7 +159,7 @@ function ValidateCovidCaseForm({upload_time, county, nbCase, nbDeath}) {
       {result ? <p>{result}</p> : <></>}
       <Button
         onClick={ async () => {
-          console.log('new case covid fill');
+          //console.log('new case covid fill');
           const fetchResult = await cancelCovidCase(user, upload_time.replace('Z', ''));
           setResult(fetchResult);
 
@@ -169,7 +169,7 @@ function ValidateCovidCaseForm({upload_time, county, nbCase, nbDeath}) {
       </Button>
       <Button
         onClick={ async () => {
-          console.log('new case covid fill');
+          //console.log('new case covid fill');
           const fetchResult = await validateCovidCase(user, upload_time.replace('Z', ''));
          setResult(fetchResult);
           
@@ -189,7 +189,7 @@ function FireCaseForm({idData, dataCounty}) {
 
   const {user} = useAuth();
 
-  console.log(newCase);
+  //console.log(newCase);
 
   return (
     <div>
@@ -210,7 +210,7 @@ function FireCaseForm({idData, dataCounty}) {
       {result ? <p>{result}</p> : <></>}
       <Button
         onClick={ async () => {
-          console.log('new case covid fill');
+          //console.log('new case covid fill');
           const fetchResult = await addFireCase(user, newCase, county);
          setResult(fetchResult);
 
@@ -236,7 +236,7 @@ function ValidateFireCaseForm({upload_time, county, nbCase}) {
       {result ? <p>{result}</p> : <></>}
       <Button
         onClick={ async () => {
-          console.log('new case covid fill');
+          //console.log('new case covid fill');
           const fetchResult = await cancelFiredCase(user, upload_time.replace('Z', ''));
           setResult(fetchResult);
 
@@ -246,7 +246,7 @@ function ValidateFireCaseForm({upload_time, county, nbCase}) {
       </Button>
       <Button
         onClick={ async () => {
-          console.log('new case covid fill');
+          //console.log('new case covid fill');
           const fetchResult = await validateFireCase(user, upload_time.replace('Z', ''));
           setResult(fetchResult);
         }}
@@ -290,7 +290,7 @@ function MailForm() {
       {result ? <p>{result}</p> : <></>}
       <Button
         onClick={ async () => {
-          console.log('new case covid fill');
+          //console.log('new case covid fill');
           const fetchResult = await sendMail(user, receiver, object, message);
           setResult(fetchResult);
         }}

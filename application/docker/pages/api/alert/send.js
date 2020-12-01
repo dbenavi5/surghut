@@ -58,9 +58,9 @@ module.exports = async (req, res) => {
   // send the mail
   transporter.sendMail(mailOptions, function(error, info) {
     if (error) {
-      console.log(error);
+      //console.log(error);
     } else {
-      console.log('Email sent: ' + info.response);
+      //console.log('Email sent: ' + info.response);
     }
   });
   res.status(200).json({result: `the alert has been sent to all user in ${req.body.county}`});

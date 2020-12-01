@@ -13,10 +13,10 @@ exports.query = async (query) => {
   try {
     const results = await db.query(query);
     await db.end();
-    // console.log("mysql result: ", results);
+    // //console.log("mysql result: ", results);
     return results;
   } catch (error) {
-    // console.log("error mysql: ", error)
+    // //console.log("error mysql: ", error)
     return {error};
   }
 };
