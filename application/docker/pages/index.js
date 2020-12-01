@@ -105,6 +105,7 @@ export async function getServerSideProps({req, query}) {
       FROM County
   `);
 
+  console.log('county data = ', county);
   return {props: {data: county}};
 }
 

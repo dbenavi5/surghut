@@ -9,8 +9,8 @@ function TabData({data, covid, fire}) {
       <td>{data.name}</td>
       {covid ?
                 <>
-                  <td>{data.covide_case}</td>
-                  <td>{data.covide_death}</td>
+                  <td>{data.covid_case}</td>
+                  <td>{data.covid_death}</td>
                 </> :
                 <></>
       }
