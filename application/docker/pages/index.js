@@ -27,6 +27,16 @@ function Index({data}) {
     <>
       <div>
         <Navbar/>
+        <div className={styles.welcomeMsg}>
+           <h1 className={styles.welcomTag}>Welcome to SurgeHut</h1>
+           <p className={styles.pTag}>Track down COVID-19 cases and monitor evacuation levels for Wildfires across the state of California. 
+               SurgeHut is open to the public, however registered users can recieve updates and alerts of any new COVID-19 cases or emerging Wildfires base on you county.
+           </p>
+
+        </div>
+        <p className={styles.pTag2}>Try out the interactive Google Maps<br/>
+          Type in your county in the search bar then click the search button to get your county information. 
+        </p>
         <Search
           data={data}
           setResult={setCounty}

@@ -38,7 +38,7 @@ function Search({data, setResult}) {
             GetCounty(data, text, setResult);
           }}
         >
-          <i className="fa  fa-search"> Search</i>
+          <i className="fa  fa-search"/>
         </Button>
       </label>
     </div>

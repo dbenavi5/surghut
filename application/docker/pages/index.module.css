@@ -1,3 +1,27 @@
 .container {
     display: flex;
 }
+
+.welcomeMsg{
+   width:70%;
+   height: 70%;
+   top: 25%;
+   left: 130px;
+}
+.pTag{
+   text-align:left;
+   line-height:1.9;
+   font-size: 16px;
+   margin-top: 10px;
+}
+.pTag2{
+   font-size: 12px;
+   font-style: italic;
+   color: #42455a;
+   margin-top: 25px;
+}
+@media screen and (max-width:960p){
+   .welcomeMsg{
+       margin:auto;
+   }
+}
