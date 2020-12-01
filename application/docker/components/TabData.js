@@ -3,14 +3,14 @@ import React from 'react';
 
 
 function TabData({data, covid, fire}) {
-  // console.log("tab data ", data);
+  console.log("tab data ", data);
   return (
     <tr>
       <td>{data.name}</td>
       {covid ?
                 <>
-                  <td>{data.covid_case}</td>
-                  <td>{data.covid_death}</td>
+                  <td>{data.covide_case}</td>
+                  <td>{data.covide_death}</td>
                 </> :
                 <></>
       }
