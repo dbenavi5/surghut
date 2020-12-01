@@ -29,19 +29,19 @@
 
 IPv4
 
-    18.220.122.76
+    18.188.245.171
 
 DNS(IPv4)
 
-    ec2-18-218-216-63.us-east-2.compute.amazonaws.com
+    ec2-18-188-245-171.us-east-2.compute.amazonaws.com
 
 ## port exposed
 
-- 80 : App (http://18.220.122.76/)
-- 443 : App (https://18.220.122.76/)
+- 80 : App (http://18.188.245.171/)
+- 443 : App (https://18.188.245.171/)
 - 22 : ssh
 - 3306 : mySQL
-- 8080 : adminer (http://18.220.122.76:8080/)
+- 8080 : adminer (http://18.188.245.171:8080/)
 
 ## user : key : password
 
@@ -79,7 +79,7 @@ exemple:
 
 exemple:
 
-    ssh -i "rootUserTeam3.pem" ubuntu@ec2-18-218-216-63.us-east-2.compute.amazonaws.com
+    ssh -i "rootUserTeam3.pem" ubuntu@ec2-18-188-245-171.us-east-2.compute.amazonaws.com
 
 # How to access mySQL ?
 
@@ -155,7 +155,7 @@ exemple :
 
 ### step 1
 
-go to http://18.218.216.63:8080/
+go to http://18.188.245.171:8080/
 
 ![adminer login page ](../docs/images/adminer_login_page.png)
 
@@ -163,7 +163,7 @@ go to http://18.218.216.63:8080/
 
 Be sure 'System' is on 'MySQL'
 
-enter in 'Server' the ip of the server (18.218.216.63)
+enter in 'Server' the ip of the server (18.188.245.171)
 
 enter in 'Username' your database user
 
@@ -175,4 +175,4 @@ you can enter in 'Database' the database you want to access (team3)
 
 ## How to access about page ?
 
-go to http://18.218.216.63/about
+go to https://18.188.245.171/about
