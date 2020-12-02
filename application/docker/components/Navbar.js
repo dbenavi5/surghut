@@ -102,12 +102,11 @@ function Navbar() {
               <a href="/login" className={styles.navLinks}>Login</a>
             </li>
             <li className={styles.navItems}>
-              <a href="/register" className={styles.navMobile}>Sign Up</a>
+              <a href="/register" className={styles.navLinks}>Sign Up</a>
             </li>
           </>
           }
         </ul>
-       <MobileButton/>
       </nav>
     </>
   );
