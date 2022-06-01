@@ -15,11 +15,11 @@ instruction to do when you are login to the server
 
 ### step 1 clone the project
 
-    git clone https://github.com/dbenavi5/surghut.git
+    git clone https://github.com/dbenavi5/surghut.git <folder name>
 
 ### step 2 install docker
 
-    cd csc648-02-fa20-team03/application/
+    cd <folder name>/application/
 
     ./installDocker.sh
 
