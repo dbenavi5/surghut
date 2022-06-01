@@ -23,8 +23,8 @@ function Marker({
         <img
           width="30"
           height="30"
-          src="https://image.flaticon.com/icons/png/128/3603/3603850.png"
-	  alt="marker position"
+          src="https://img.icons8.com/color/96/undefined/marker--v1.png"
+	  alt="marker"
         />
       </div>
     );

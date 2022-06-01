@@ -14,7 +14,7 @@ function Position({src}) {
         width="30"
         height="30"
         src={src}
-        alt="map position"/>
+        alt="marker"/>
     </div>
   );
 }
@@ -39,7 +39,7 @@ function Map(props) {
     // Important! Always set the container height explicitly
       <div style={{height: '100vh', width: '100%'}}>
         <GoogleMapReact
-          bootstrapURLKeys={{key: 'AIzaSyCKcBbyY43_ocqIJQUmQlSHZopPH-TPhuA'}}
+          bootstrapURLKeys={{key: "AIzaSyA29Fg4-R5iHJQlaN7sEr0B6OgAIc-2q8o"}}
           defaultCenter={center}
           defaultZoom={zoom}
           yesIWantToUseGoogleMapApiInternals
@@ -49,8 +49,8 @@ function Map(props) {
           <Position
             lat={props.coords.latitude}
             lng={props.coords.longitude}
-            src="https://image.flaticon.com/icons/png/128/3603/3603850.png"
-		      alt="map position"
+            src="https://img.icons8.com/color/96/undefined/marker--v1.png"
+            alt="marker"
           />
           {props.children}
         </GoogleMapReact>
