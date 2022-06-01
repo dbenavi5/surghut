@@ -8,7 +8,7 @@ Be sure you have open port 3306 of your server
 
 ### step 1 connect
 
-    [pantoine@ordi-pierre credentials]$ mysql -u pierre -p -h ec2-18-188-62-215.us-east-2.compute.amazonaws.com
+    [pantoine@ordi-pierre credentials]$ mysql -u dbenavi5 -p -h ec2-54-215-214-63.us-west-1.compute.amazonaws.com
     Enter password: 
     Welcome to the MariaDB monitor.  Commands end with ; or \g.
     Your MySQL connection id is 122
