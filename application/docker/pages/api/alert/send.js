@@ -1,3 +1,7 @@
+/* eslint-disable max-len */
+/* eslint-disable no-unused-vars */
+/* eslint-disable require-jsdoc */
+/* eslint-disable no-undef */
 const db = require('../../../lib/db');
 const escape = require('sql-template-strings');
 
@@ -13,7 +17,6 @@ function createContact(mails) {
 
   return result;
 }
-
 
 module.exports = async (req, res) => {
   // create the mail api
@@ -35,14 +38,14 @@ module.exports = async (req, res) => {
     UPDATE  County C
     SET C.evacuation_level = ${req.body.level}
     WHERE C.name = ${req.body.county}
-    ` );
+    `);
 
   // sql request to get all email of a county in Alert databse
   const mails = await db.query(escape`
         SELECT A.mail
         FROM Alert A
         WHERE A.county = ${req.body.county}
-  ` );
+  `);
 
   // create list of receiver
   const contact = createContact(mails);
@@ -58,10 +61,14 @@ module.exports = async (req, res) => {
   // send the mail
   transporter.sendMail(mailOptions, function(error, info) {
     if (error) {
-      //console.log(error);
+      // console.log(error);
     } else {
-      //console.log('Email sent: ' + info.response);
+      // console.log('Email sent: ' + info.response);
     }
   });
-  res.status(200).json({result: `the alert has been sent to all user in ${req.body.county}`});
+  res
+      .status(200)
+      .json({
+        result: `the alert has been sent to all user in ${req.body.county}`,
+      });
 };

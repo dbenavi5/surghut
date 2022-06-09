@@ -1,41 +1,40 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable require-jsdoc */
+/* eslint-disable no-undef */
 import React from 'react';
 import {ProtectRoute} from '../contexts/auth';
-
-import Navbar from '../components/Navbar';
-import {ValidateCovidCaseForm, ValidateFireCaseForm} from '../components/Form';
+import {
+  ValidateCovidCaseForm,
+  ValidateFireCaseForm,
+} from '../components/form/Form';
 
 const db = require('../lib/db');
 const escape = require('sql-template-strings');
 
-
 function Checking({data}) {
-  //console.log('data', data);
+  // console.log('data', data);
 
   return (
-    <ProtectRoute
-      accessLevel={2}
-    >
+    <ProtectRoute accessLevel={2}>
       <div>
-        <Navbar/>
-        {data.covid.map((data) =>
+        {data.covid.map((data) => (
           <ValidateCovidCaseForm
             key={data.upload_time}
             upload_time={data.upload_time}
             county={data.county}
             nbCase={data.nb_case}
             nbDeath={data.nb_death}
-          />,
-        )}
+          />
+        ))}
 
-        {data.fire.map((data) =>
+        {data.fire.map((data) => (
           <ValidateFireCaseForm
             key={data.upload_time}
             upload_time={data.upload_time}
             county={data.county}
             nbCase={data.nb_case}
-          />,
-        )}
-
+          />
+        ))}
       </div>
     </ProtectRoute>
   );

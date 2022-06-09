@@ -1,0 +1,52 @@
+import {useState} from 'react';
+import {useAuth} from '../../contexts/auth';
+import {TextInput} from '../input/Input';
+import Button from '../button/Button';
+import styles from './Register.module.css';
+
+const RegistrationForm = () => {
+  const [pseudo, setPseudo] = useState('');
+  const [mail, setMail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const {register} = useAuth();
+
+  return (
+    <div id={styles.register}>
+      <div className="register container" id={styles.contain}>
+        <div className={styles.title}>Sign-Up to get alerts!</div>
+
+        <TextInput
+          type={'text'}
+          value={pseudo}
+          placeHolder={'Username'}
+          onTextChange={setPseudo}
+        />
+
+        <TextInput
+          type={'text'}
+          value={mail}
+          placeHolder={'Email'}
+          onTextChange={setMail}
+        />
+        <TextInput
+          type={'password'}
+          value={password}
+          placeHolder={'Password'}
+          onTextChange={setPassword}
+        />
+
+        <Button className={styles.button}
+          onClick={() => {
+            // console.log('login');
+            register(pseudo, mail, password);
+          }}
+        >
+          Sign Up
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default RegistrationForm;

@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 const db = require('../../../lib/db');
 const escape = require('sql-template-strings');
 
@@ -8,8 +10,9 @@ module.exports = async (req, res) => {
   const data = await db.query(escape`
         INSERT INTO Alert (mail, county)
         VALUES (${req.body.mail}, ${req.body.county})
-  ` );
+  `);
 
-  res.status(200).json({result: `you will receive all alert in ${req.body.county}`});
-
+  res
+      .status(200)
+      .json({result: `you will receive all alert in ${req.body.county}`});
 };

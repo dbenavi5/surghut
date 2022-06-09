@@ -1,18 +1,6 @@
 import React from 'react';
+import LoginForm from '../components/login/LoginForm';
 
-import Navbar from '../components/Navbar';
-
-
-import {LoginForm} from '../components/Form';
-
-const Login = () => (
-
-  <div>
-    <Navbar/>
-    <LoginForm/>
-  </div>
-);
+const Login = () => <LoginForm />;
 
 export default Login;
-
-

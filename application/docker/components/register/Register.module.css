@@ -1,0 +1,45 @@
+#register{
+    position:relative;
+}
+
+#register #contain{
+    margin: 100px auto;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#register .title {
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 500;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#register .button {
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+    padding: 20px 15px;
+    background-color: #007AFF;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 40px 0;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+#register .button:hover{
+    box-shadow: 0px 3px 20px 3px rgba(#007AFF, 0.3);
+    background-color: #007AFF;
+    cursor: pointer;
+}

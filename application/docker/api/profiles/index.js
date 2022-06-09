@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const db = require( '../../lib/db' );
 const escape = require( 'sql-template-strings' );
 
@@ -20,5 +21,5 @@ module.exports = async ( req, res ) => {
 
   const {profilesCount} = count[0];
   const pageCount = Math.ceil( profilesCount / limit );
-  re.status(200).json({profiles, pageCount, page});
+  res.status(200).json({profiles, pageCount, page});
 };

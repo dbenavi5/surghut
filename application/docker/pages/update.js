@@ -1,39 +1,32 @@
+/* eslint-disable object-curly-spacing */
+/* eslint-disable require-jsdoc */
+/* eslint-disable no-undef */
 import React from 'react';
-import {ProtectRoute} from '../contexts/auth';
+import { ProtectRoute } from '../contexts/auth';
+import { CovidCaseForm, FireCaseForm } from '../components/form/Form';
 
-import Navbar from '../components/Navbar';
-import {CovidCaseForm, FireCaseForm} from '../components/Form';
+// const db = require('../lib/db');
+// const escape = require('sql-template-strings');
 
-const db = require('../lib/db');
-const escape = require('sql-template-strings');
-
-function Update({data}) {
+// eslint-disable-next-line react/prop-types
+function Update({ data }) {
   return (
-    <ProtectRoute
-    accessLevel={1}
-    >
+    <ProtectRoute accessLevel={1}>
       <div>
-        <Navbar/>
-        <CovidCaseForm
-          idData="Covid"
-          dataCounty={data}
-        />
-        <FireCaseForm
-          dataCounty={data}
-          idData="Fire"
-        />
+        <CovidCaseForm idData="Covid" dataCounty={data} />
+        <FireCaseForm dataCounty={data} idData="Fire" />
       </div>
     </ProtectRoute>
   );
 }
 
-export async function getServerSideProps({req, query}) {
-  const county = await db.query(escape`
-      SELECT *
-      FROM County
-  `);
+// export async function getServerSideProps({ req, query }) {
+//   const county = await db.query(escape`
+//       SELECT *
+//       FROM County
+//   `);
 
-  return {props: {data: county}};
-}
+//   return { props: { data: county } };
+// }
 
 export default Update;

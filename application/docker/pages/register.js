@@ -1,14 +1,10 @@
+/* eslint-disable object-curly-spacing */
 import React from 'react';
-import {RegisterForm} from '../components/Form';
-
-import Navbar from '../components/Navbar';
-
+import RegisterForm from '../components/register/RegistrationForm';
 
 const Registration = () => (
-
   <div>
-    <Navbar/>
-    <RegisterForm/>
+    <RegisterForm />
   </div>
 );
 

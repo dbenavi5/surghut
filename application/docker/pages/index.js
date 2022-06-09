@@ -1,23 +1,24 @@
-import React, {useState} from 'react';
+/* eslint-disable quotes */
+/* eslint-disable no-unused-vars */
+/* eslint-disable object-curly-spacing */
+/* eslint-disable require-jsdoc */
+import React, { useState } from "react";
 
-import styles from './index.module.css';
+// import styles from './index.module.css';
 
-import Map from '../components/Map';
-import Tab from '../components/Tab';
-import Marker from '../components/Marker';
+// import Map from '../components/Map';
+// import Tab from '../components/Tab';
+// import Marker from '../components/Marker';
 
-import Search from '../components/Search';
+import Search from "../components/search/Search";
+import Switch from "../components/switch/Switch";
+import Hero from "../components/hero/Hero";
 
-import Switch from '../components/Switch';
+// const db = require('../lib/db');
+// const escape = require('sql-template-strings');
 
-import Navbar from '../components/Navbar';
-
-
-const db = require('../lib/db');
-const escape = require('sql-template-strings');
-
-
-function Index({data}) {
+// eslint-disable-next-line react/prop-types
+function Index({ data }) {
   const [county, setCounty] = useState(data);
   const [map, setMap] = useState(true);
   const [covid, setCovid] = useState(true);
@@ -25,55 +26,34 @@ function Index({data}) {
   // //console.log("props index ", data[0]);
   return (
     <>
-      <div>
-        <Navbar/>
-        <div className={styles.welcomeMsg}>
-           <h1 className={styles.welcomTag}>Welcome to SurgeHut</h1>
-           <p className={styles.pTag}>Track down COVID-19 cases and monitor evacuation levels for Wildfires across the state of California. 
-               SurgeHut is open to the public, however registered users can recieve updates and alerts of any new COVID-19 cases or emerging Wildfires base on you county.
-           </p>
+      <Hero />
+      <Search data={data} setResult={setCounty} />
 
+      <div className="">
+        <div className="">
+          <Switch
+            state={map}
+            onChange={setMap}
+            nameTrue="Map"
+            nameFalse="Tab"
+          />
+
+          <Switch
+            state={covid}
+            onChange={setCovid}
+            nameTrue="COVID Cases : On"
+            nameFalse="COVID Cases : Off"
+          />
+
+          <Switch
+            state={fire}
+            onChange={setFire}
+            nameTrue="Fire Cases : On"
+            nameFalse="Fire Cases : Off"
+          />
         </div>
-        <p className={styles.pTag2}>Try out the interactive Google Maps<br/>
-          Type in your county in the search bar then click the search button to get your county information. 
-        </p>
-        <Search
-          data={data}
-          setResult={setCounty}
-        />
 
-
-        <div
-          className=""
-        >
-
-          <div
-            className={styles.container}
-          >
-
-            <Switch
-              state={map}
-              onChange={setMap}
-              nameTrue="Map"
-              nameFalse="Tab"
-            />
-
-            <Switch
-              state={covid}
-              onChange={setCovid}
-              nameTrue="COVID Cases : On"
-              nameFalse="COVID Cases : Off"
-            />
-
-            <Switch
-              state={fire}
-              onChange={setFire}
-              nameTrue="Fire Cases : On"
-              nameFalse="Fire Cases : Off"
-            />
-          </div>
-
-          {map ?
+        {/* {map ?
               <Map>
                 {county.map((county) =>
                   <Marker
@@ -91,23 +71,20 @@ function Index({data}) {
                 covid={covid}
                 fire={fire}
               />
-          }
-        </div>
+          } */}
       </div>
     </>
   );
 }
 
+// export async function getServerSideProps({req, query}) {
+//   const county = await db.query(escape`
+//       SELECT *
+//       FROM County
+//   `);
 
-export async function getServerSideProps({req, query}) {
-  const county = await db.query(escape`
-      SELECT *
-      FROM County
-  `);
-
-  //console.log('county data = ', county);
-  return {props: {data: county}};
-}
+//   //console.log('county data = ', county);
+//   return {props: {data: county}};
+// }
 
 export default Index;
-
