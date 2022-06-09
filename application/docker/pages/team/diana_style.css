@@ -60,7 +60,6 @@ p {
     text-decoration: none;
     color: #398f51;
     border-radius: 20px;
-    transition: background 0.5s;
 }
 
 .btn:hover {

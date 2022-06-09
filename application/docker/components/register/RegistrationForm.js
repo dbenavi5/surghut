@@ -13,10 +13,10 @@ const RegistrationForm = () => {
 
   return (
     <div id={styles.register}>
+      <div className={styles.title}>Sign-Up to get alerts!</div>
       <div className="register container" id={styles.contain}>
-        <div className={styles.title}>Sign-Up to get alerts!</div>
-
         <TextInput
+          className={styles.input}
           type={'text'}
           value={pseudo}
           placeHolder={'Username'}
@@ -24,12 +24,14 @@ const RegistrationForm = () => {
         />
 
         <TextInput
+          className={styles.input}
           type={'text'}
           value={mail}
           placeHolder={'Email'}
           onTextChange={setMail}
         />
         <TextInput
+          className={styles.input}
           type={'password'}
           value={password}
           placeHolder={'Password'}

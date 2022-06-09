@@ -8,7 +8,6 @@ import Navbar from '../components/navbar/Navbar';
 
 import '../stylesheets/globalStyle.css';
 
-
 const App = ({Component, pageProps}) => {
   const router = useRouter();
   useEffect(() => {

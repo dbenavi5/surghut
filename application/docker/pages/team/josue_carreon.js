@@ -1,16 +1,17 @@
+/* eslint-disable quotes */
 /* eslint-disable camelcase */
 /* eslint-disable require-jsdoc */
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 function josue_carreon() {
   return (
-    <>
-      <div>
+    <div className="container">
+      <div className="header">
         <h1>Josue CARREON</h1>
       </div>
 
-      <div>
+      <div className="header2">
         <h2>Role</h2>
         <p>I am the team lead</p>
         <div>
@@ -19,7 +20,7 @@ function josue_carreon() {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

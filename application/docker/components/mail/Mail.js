@@ -15,12 +15,12 @@ function MailItem({data}) {
   return (
     <div className="">
       <div className="">
-        <p className="">receiver : {data.receiver}</p>
-        <p className="">sender : {data.sender}</p>
+        <p>receiver : {data.receiver}</p>
+        <p>sender : {data.sender}</p>
       </div>
-      <p className="">sent at {data.upload_time}</p>
+      <p>sent at {data.upload_time}</p>
       <div className="">
-        <p className="">object : {data.object}</p>
+        <p>object : {data.object}</p>
         <Switch
           state={show}
           onChange={setShow}

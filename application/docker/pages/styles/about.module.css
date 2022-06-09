@@ -1,0 +1,20 @@
+#about{
+    position: relative;
+    
+}
+
+#about #contain {
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about .aboutUs ul{
+    list-style: none;
+}

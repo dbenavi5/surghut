@@ -39,23 +39,20 @@ function CovidCaseForm({ idData, dataCounty }) {
   return (
     <div id="form">
       <div className="form container">
-        <p className="">Covid case form</p>
+        <h1>Covid case form</h1>
         <TextInput
-          className=""
           type={"number"}
           value={newCase}
           placeHolder={"Enter number of covid cases"}
           onTextChange={setNewCase}
         />
         <TextInput
-          className=""
           type={"number"}
           value={newDeath}
           placeHolder={"Enter number of covid death cases"}
           onTextChange={setNewDeath}
         />
         <InputWithChoice
-          className=""
           data={dataCounty}
           idData={idData}
           value={county}
@@ -92,11 +89,11 @@ function ValidateCovidCaseForm({ upload_time, county, nbCase, nbDeath }) {
   return (
     <div id="form">
       <div className="form container">
-        <p className="">Covid case form</p>
-        <p className="">upload time : {upload_time.replace("Z", "")}</p>
-        <p className="">county : {county}</p>
-        <p className="">Current number of case: {nbCase}</p>
-        <p className="">Current number of death: {nbDeath}</p>
+        <h1>Covid case form</h1>
+        <p>upload time : {upload_time.replace("Z", "")}</p>
+        <p>county : {county}</p>
+        <p>Current number of case: {nbCase}</p>
+        <p>Current number of death: {nbDeath}</p>
         {result ? <p>{result}</p> : <></>}
         <Button
           className=""
@@ -141,7 +138,7 @@ function FireCaseForm({ idData, dataCounty }) {
   return (
     <div id="form">
       <div className="form container">
-        <p className="">Fire case form</p>
+        <h1>Fire case form</h1>
         <TextInput
           className=""
           type={"number"}
@@ -181,10 +178,10 @@ function ValidateFireCaseForm({ upload_time, county, nbCase }) {
   return (
     <div id="form">
       <div className="form container">
-        <p className="">Fire case form</p>
-        <p className="">upload time : {upload_time.replace("Z", "")}</p>
-        <p className="">county : {county}</p>
-        <p className="">Current number of case: {nbCase}</p>
+        <h1>Fire case form</h1>
+        <p>upload time : {upload_time.replace("Z", "")}</p>
+        <p>county : {county}</p>
+        <p>Current number of case: {nbCase}</p>
         {result ? <p>{result}</p> : <></>}
         <Button
           className=""
@@ -228,7 +225,7 @@ function MailForm() {
   return (
     <div id="form">
       <div className="form container">
-        <p className="">Send a mail to a user</p>
+        <h1>Send a mail to a user</h1>
         <TextInput
           className=""
           type={"text"}
@@ -279,7 +276,7 @@ function AlertRegisterForm({ idData, dataCounty }) {
   return (
     <div id="form">
       <div className="form container">
-        <p className="">Register your mail to receive alert from your county</p>
+        <h1>Register your mail to receive alert from your county</h1>
         <TextInput
           className=""
           type={"text"}
@@ -324,7 +321,7 @@ function SendAlertForm({ idData, dataCounty }) {
   return (
     <div id="form">
       <div className="form container">
-        <p className="">Send a alert in a county</p>
+        <h1>Send a alert in a county</h1>
         <InputWithChoice
           className=""
           data={dataCounty}
@@ -368,7 +365,7 @@ function CancelAlertForm({ idData, dataCounty }) {
   return (
     <div id="form">
       <div className="form container">
-        <p className="">Cancel an alert in a county</p>
+        <h1>Cancel an alert in a county</h1>
         <InputWithChoice
           className=""
           data={dataCounty}

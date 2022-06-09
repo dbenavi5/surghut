@@ -4,44 +4,43 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable require-jsdoc */
 import React from "react";
-import styles from './Input.module.css';
+// import styles from "./Input.module.css";
 
-function TextInput({ style, value, onTextChange, placeHolder, type }) {
+function TextInput({ value, className, onTextChange, placeHolder, type }) {
   const eventHandler = (event) => {
     onTextChange(event.target.value);
   };
 
   return (
-    <div className={styles.textInput}>
-      <input
-        className={styles.input}
-        type={type}
-        placeholder={placeHolder}
-        value={value}
-        onChange={eventHandler}
-      />
-    </div>
+    <input
+      className={className}
+      type={type}
+      placeholder={placeHolder}
+      value={value}
+      onChange={eventHandler}
+    />
   );
 }
 
 function InputWithChoice({
   value,
-  styles,
+  className,
   onTextChange,
   placeHolder,
   data,
   idData,
+  type,
 }) {
   const eventHandler = (event) => {
     onTextChange(event.target.value);
   };
 
   return (
-    <div>
+    <div className={'styles.wrapper'}>
       <input
         list={idData}
-        className={styles}
-        type="text"
+        className={className}
+        type={type}
         placeholder={placeHolder}
         value={value}
         onChange={eventHandler}
@@ -53,21 +52,19 @@ function InputWithChoice({
   );
 }
 
-function MailTextInput({ value, styles, onTextChange, placeHolder, type }) {
+function MailTextInput({ value, className, onTextChange, placeHolder, type }) {
   const eventHandler = (event) => {
     onTextChange(event.target.value);
   };
 
   return (
-    <div>
-      <textarea
-        className={styles}
-        type={type}
-        placeholder={placeHolder}
-        value={value}
-        onChange={eventHandler}
-      />
-    </div>
+    <textarea
+      className={className}
+      type={type}
+      placeholder={placeHolder}
+      value={value}
+      onChange={eventHandler}
+    />
   );
 }
 

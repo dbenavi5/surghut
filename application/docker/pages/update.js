@@ -5,8 +5,8 @@ import React from 'react';
 import { ProtectRoute } from '../contexts/auth';
 import { CovidCaseForm, FireCaseForm } from '../components/form/Form';
 
-// const db = require('../lib/db');
-// const escape = require('sql-template-strings');
+const db = require('../lib/db');
+const escape = require('sql-template-strings');
 
 // eslint-disable-next-line react/prop-types
 function Update({ data }) {
@@ -20,13 +20,13 @@ function Update({ data }) {
   );
 }
 
-// export async function getServerSideProps({ req, query }) {
-//   const county = await db.query(escape`
-//       SELECT *
-//       FROM County
-//   `);
+export async function getServerSideProps({ req, query }) {
+  const county = await db.query(escape`
+      SELECT *
+      FROM County
+  `);
 
-//   return { props: { data: county } };
-// }
+  return { props: { data: county } };
+}
 
 export default Update;

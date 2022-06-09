@@ -12,9 +12,10 @@ const LoginForm = () => {
 
   return (
     <div id={styles.login}>
+      <div className={styles.title}>Login</div>
       <div className='container' id={styles.contain}>
-        <div className={styles.title}>Login</div>
         <TextInput
+          className={styles.input}
           type={'text'}
           value={pseudo}
           placeHolder={'Username'}

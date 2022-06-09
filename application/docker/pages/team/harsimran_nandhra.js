@@ -1,29 +1,33 @@
+/* eslint-disable quotes */
 /* eslint-disable camelcase */
 /* eslint-disable require-jsdoc */
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 // import styles from './harsimran.css'
 function harsimran_nandhra() {
   return (
-    <>
-      <div>
-        <h1>Harsimran Nandhra</h1>
+    <div className="container">
+      <div className="header">
+        <h1>Harsimran NANDHRA</h1>
       </div>
 
-      <div>
+      <div className="header2">
         <h2>Role:</h2>
         <p>I will work on the front-end and help with the back-end</p>
 
-        <h2>Link</h2>
-        <a href="https://github.com/hnandhra1"> my Github</a>
+        <Link href="https://github.com/hnandhra1">
+          <a target="_blank" rel="noreferrer">
+            My Github
+          </a>
+        </Link>
         <div>
           <Link href="/about">
             <a>back to about page</a>
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

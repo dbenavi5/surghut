@@ -1,16 +1,18 @@
+/* eslint-disable max-len */
+/* eslint-disable quotes */
 /* eslint-disable camelcase */
 /* eslint-disable require-jsdoc */
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 function diana_benavides() {
   return (
-    <>
-      <div>
-        <h1>Diana Benavides</h1>
+    <div className="container">
+      <div className="header">
+        <h1>Diana BENAVIDES</h1>
       </div>
 
-      <div>
+      <div className="header2">
         <h2>GitHub Master and Backend Assistant</h2>
 
         <p>
@@ -20,17 +22,18 @@ function diana_benavides() {
           California.
         </p>
 
-        <a href="https://github.com/dbenavi5" className="btn">
-          {' '}
-          my Github
-        </a>
+        <Link href="https://github.com/dbenavi5">
+          <a target="_blank" rel="noreferrer">
+            My Github
+          </a>
+        </Link>
         <div>
           <Link href="/about">
             <a>back to about page</a>
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

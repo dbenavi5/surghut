@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable require-jsdoc */
 import React from 'react';
-// import styles from './CSS/Button.module.css'
-// import styles from './Form.module.css';
 
-function Button({onClick, children, className}) {
+function Button({onClick, children, className, style}) {
   return (
     <button
+      style={style}
       className={className}
       onClick={onClick}
     >

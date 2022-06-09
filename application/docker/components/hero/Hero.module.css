@@ -22,7 +22,7 @@
 #hero h1 {
     display: block;
     width: fit-content;
-    font-size: 7rem;
+    font-size: 4rem;
     position: relative;
     color: transparent;
     animation: text_reveal .3s ease forwards;

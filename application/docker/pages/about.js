@@ -1,43 +1,36 @@
+/* eslint-disable quotes */
 /* eslint-disable require-jsdoc */
-import Link from 'next/link';
+import Link from "next/link";
+import styles from "./styles/about.module.css";
 
 function About() {
   return (
-    <div id="about">
-      <div className="about container">
+    <div id={styles.about}>
+      <div className="about container" id={styles.contain}>
         <h1>About This Project</h1>
-        <p>
-          Public Safety Web App for California residents facing wildfire surges
-          and monitoring the coronavirus within the users county.
-        </p>
-
-        <h6>Meet the Team</h6>
-        <div className="about-us">
-          <ul className="navbar-nav">
-            <li className="">
-              <Link href="/team/josue_carreon">
-                <a className="navLink">Josue Carreon</a>
-              </Link>
+        <div className={styles.header}>
+          <p>
+            Public Safety Web App for California residents facing wildfire
+            surges and monitoring the coronavirus within the users county.
+          </p>
+        </div>
+        <div className={styles.aboutUs}>
+          <h6>Meet the Team</h6>
+          <ul>
+            <li>
+              <Link href="/team/josue_carreon">Josue Carreon</Link>
             </li>
-            <li className="">
-              <Link href="/team/pierre_antoine">
-                <a className="navLink">Pierre Antoine</a>
-              </Link>
+            <li>
+              <Link href="/team/pierre_antoine">Pierre Antoine</Link>
             </li>
-            <li className="">
-              <Link href="/team/harsimran_nandhra">
-                <a className="navLink">Harsimran Nandhra</a>
-              </Link>
+            <li>
+              <Link href="/team/harsimran_nandhra">Harsimran Nandhra</Link>
             </li>
-            <li className="">
-              <Link href="/team/kevin_chen">
-                <a className="navLink">Kevin Chen</a>
-              </Link>
+            <li>
+              <Link href="/team/kevin_chen">Kevin Chen</Link>
             </li>
-            <li className="">
-              <Link href="/team/diana_benavides">
-                <a className="navLink">Diana Benavides</a>
-              </Link>
+            <li>
+              <Link href="/team/diana_benavides">Diana Benavides</Link>
             </li>
           </ul>
         </div>
