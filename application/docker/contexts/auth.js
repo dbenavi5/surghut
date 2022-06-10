@@ -97,7 +97,7 @@ export function ProtectRoute({children, accessLevel}) {
     return <></>;
   }
 
-  if (isLoading || (isAuthenticated && router.pathname !== '/login')) {
+  if (isLoading || (!isAuthenticated && router.pathname !== '/login')) {
     // router.push('/');
     // window.location.pathname = '/login';
 

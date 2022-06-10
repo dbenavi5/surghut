@@ -1,16 +1,12 @@
-/* eslint-disable quote-props */
-/* eslint-disable object-curly-spacing */
-/* eslint-disable quotes */
 /* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
-import React, { useState } from "react";
-import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
+import React, {useState} from 'react';
+import {AiOutlineSearch, AiOutlineClose} from 'react-icons/ai';
 
-import { InputWithChoice } from "../input/Input";
-import Button from "../button/Button";
-import styles from "./Search.module.css";
+import {InputWithChoice} from '../input/Input';
+import Button from '../button/Button';
+import styles from './Search.module.css';
 
-function GetCounty(data, key, setResult) {
+const GetCounty = (data, key, setResult) => {
   // console.log("key == ", key);
 
   const result = data.filter((data) => {
@@ -18,10 +14,10 @@ function GetCounty(data, key, setResult) {
   });
 
   setResult(result);
-}
+};
 
-function Search({ data, setResult }) {
-  const [text, setText] = useState("");
+const Search = ({data, setResult}) => {
+  const [text, setText] = useState('');
   const [isActive, setIsActive] = useState(false);
 
   const _toggleSearch = () => {
@@ -29,30 +25,30 @@ function Search({ data, setResult }) {
   };
 
   const mystyle = {
-    position: "relative",
-    height: "36px",
-    width: "36px",
-    border: "none",
-    zIndex: 1,
-    cursor: "pointer",
-    background: "none",
-    ":hover": {
-      color: "white",
-      "::after": {
+    'position': 'relative',
+    'height': '36px',
+    'width': '36px',
+    'border': 'none',
+    'zIndex': 1,
+    'cursor': 'pointer',
+    'background': 'none',
+    ':hover': {
+      'color': 'white',
+      '::after': {
         opacity: 1,
-        transform: "scale(1)",
+        transform: 'scale(1)',
       },
     },
-    "::after": {
-      position: "absolute",
+    '::after': {
+      position: 'absolute',
       top: 0,
       left: 0,
-      height: "100%",
+      height: '100%',
       borderRadius: 0,
       zIndex: -1,
-      background: "black",
-      transition: "0.2s ease",
-      transform: "scale(0.6)",
+      background: 'black',
+      transition: '0.2s ease',
+      transform: 'scale(0.6)',
       opacity: 0,
     },
   };
@@ -77,7 +73,7 @@ function Search({ data, setResult }) {
         <InputWithChoice
           data={data}
           idData="County"
-          placeHolder={"Enter the name of your county"}
+          placeHolder={'Enter the name of your county'}
           value={text}
           className={styles.input}
           onTextChange={setText}
@@ -85,6 +81,6 @@ function Search({ data, setResult }) {
       </div>
     </div>
   );
-}
+};
 
 export default Search;

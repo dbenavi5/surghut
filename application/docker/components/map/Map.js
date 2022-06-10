@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
 import React, {useState} from 'react';
 import GoogleMapReact from 'google-map-react';
 import {geolocated} from 'react-geolocated';
@@ -10,20 +9,20 @@ const markerStyle = {
   transform: 'translate(-50%, -50%)',
 };
 
-function Position({src}) {
+const Position = ({src}) => {
   return (
     <div style={markerStyle}>
       <img width="30" height="30" src={src} alt="marker" />
     </div>
   );
-}
+};
 
 const handleApiLoaded = (map, maps) => {
   map.data.loadGeoJson('/california-counties.geojson');
   // use map and maps objects
 };
 
-function Map(props) {
+const Map = (props) => {
   const [zoom, setZoom] = useState(6);
 
   if (props.coords) {
@@ -54,14 +53,12 @@ function Map(props) {
     );
   }
 
-  // if (!props.isGeolocationAvailable) {
-  //    return (
-  //        <div>Your browser does not support Geolocation</div>
-  //    )
-  // }
+  if (!props.isGeolocationAvailable) {
+    return <div>Your browser does not support Geolocation</div>;
+  }
 
   return <div>Geolocation is not enabled</div>;
-}
+};
 
 export default geolocated({
   positionOptions: {

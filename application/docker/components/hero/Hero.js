@@ -1,5 +1,4 @@
-/* eslint-disable quotes */
-import styles from "./Hero.module.css";
+import styles from './Hero.module.css';
 
 const Hero = () => {
   return (

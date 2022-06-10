@@ -1,12 +1,7 @@
-/* eslint-disable object-curly-spacing */
-/* eslint-disable quotes */
-/* eslint-disable max-len */
 /* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
-import React from "react";
-// import styles from "./Input.module.css";
+import React from 'react';
 
-function TextInput({ value, className, onTextChange, placeHolder, type }) {
+const TextInput = ({value, className, onTextChange, placeHolder, type}) => {
   const eventHandler = (event) => {
     onTextChange(event.target.value);
   };
@@ -20,9 +15,9 @@ function TextInput({ value, className, onTextChange, placeHolder, type }) {
       onChange={eventHandler}
     />
   );
-}
+};
 
-function InputWithChoice({
+const InputWithChoice = ({
   value,
   className,
   onTextChange,
@@ -30,7 +25,7 @@ function InputWithChoice({
   data,
   idData,
   type,
-}) {
+}) => {
   const eventHandler = (event) => {
     onTextChange(event.target.value);
   };
@@ -46,13 +41,13 @@ function InputWithChoice({
         onChange={eventHandler}
       />
       <datalist id={idData}>
-        {/* {data.map((data) => <option key={data.id} value={data.name}></option>)} */}
+        {data.map((data) => <option key={data.id} value={data.name}></option>)}
       </datalist>
     </div>
   );
-}
+};
 
-function MailTextInput({ value, className, onTextChange, placeHolder, type }) {
+const MailTextInput = ({value, className, onTextChange, placeHolder, type}) => {
   const eventHandler = (event) => {
     onTextChange(event.target.value);
   };
@@ -66,6 +61,6 @@ function MailTextInput({ value, className, onTextChange, placeHolder, type }) {
       onChange={eventHandler}
     />
   );
-}
+};
 
-export { TextInput, InputWithChoice, MailTextInput };
+export {TextInput, InputWithChoice, MailTextInput};

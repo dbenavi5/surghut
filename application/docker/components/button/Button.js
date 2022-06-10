@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
 import React from 'react';
 
-function Button({onClick, children, className, style}) {
+const Button = ({onClick, children, className, style}) => {
   return (
     <button
       style={style}
@@ -12,6 +11,6 @@ function Button({onClick, children, className, style}) {
       {children}
     </button>
   );
-}
+};
 
 export default Button;

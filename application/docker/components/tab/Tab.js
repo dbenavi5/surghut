@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
 import React from 'react';
 
 import TabData from './TabData';
 // import styles from './CSS/Button.module.css'
 
-function Tab({data, covid, fire}) {
+const Tab = ({data, covid, fire}) => {
   // //console.log("tab data ", data[0]);
 
   return (
@@ -47,6 +46,6 @@ function Tab({data, covid, fire}) {
       </table>
     </div>
   );
-}
+};
 
 export default Tab;

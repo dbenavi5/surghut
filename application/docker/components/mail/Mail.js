@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
 import React, {useState, useEffect} from 'react';
 // import {useAuth} from '../contexts/auth';
 
@@ -9,7 +8,7 @@ import Switch from '../switch/Switch';
 
 import api from '../../api/api';
 
-function MailItem({data}) {
+const MailItem = ({data}) => {
   const [show, setShow] = useState(false);
 
   return (
@@ -37,22 +36,21 @@ function MailItem({data}) {
       )}
     </div>
   );
-}
+};
 
 const Mail = ({sent}) => {
   const [mailReceived, setMailReceived] = useState([]);
   const [mailSent, setMailSent] = useState([]);
 
   useEffect(() => {
-    async function getMail() {
+    const getMail = async () => {
       const {data: mailsReceived} = await api.post('mailbox/mailReceived');
       setMailReceived(mailsReceived.mails);
       // console.log("mailReceived = ", mailsReceived)
-
       const {data: mailsSent} = await api.post('mailbox/mailSent');
       setMailSent(mailsSent.mails);
       // console.log("mailSent = ", mailsSent)
-    }
+    };
     getMail();
   }, []);
 

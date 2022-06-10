@@ -1,6 +1,4 @@
-/* eslint-disable max-len */
 /* eslint-disable no-unused-vars */
-/* eslint-disable require-jsdoc */
 /* eslint-disable no-undef */
 const db = require('../../../lib/db');
 const escape = require('sql-template-strings');
@@ -8,15 +6,15 @@ const escape = require('sql-template-strings');
 const nodemailer = require('nodemailer');
 
 // create the list of contact for the mail to send
-function createContact(mails) {
+const createContact = (mails) => {
   let result = '';
 
-  mails.forEach(function(data) {
+  mails.forEach((data) => {
     result = result + ',' + data.mail;
   });
 
   return result;
-}
+};
 
 module.exports = async (req, res) => {
   // create the mail api
@@ -55,7 +53,9 @@ module.exports = async (req, res) => {
     from: '"SurgeHut" <surgehut@outlook.fr>', // sender address (who sends)
     to: contact, // list of receivers (who receives)
     subject: `Alert surgeHut ${req.body.county}`, // Subject line
-    text: `The level of evacuation has been up to ${req.body.level} in ${req.body.county} `,
+    text:
+      `The level of evacuation has been up to 
+      ${req.body.level} in ${req.body.county} `,
   };
 
   // send the mail

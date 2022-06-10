@@ -1,11 +1,8 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable object-curly-spacing */
-/* eslint-disable quotes */
-/* eslint-disable require-jsdoc */
-import React from "react";
+import React from 'react';
 // import styles from './CSS/Button.module.css'
 
-function TabData({ data, covid, fire }) {
+const TabData = ({data, covid, fire}) => {
   // console.log("tab data ", data);
   return (
     <tr>
@@ -28,6 +25,6 @@ function TabData({ data, covid, fire }) {
       )}
     </tr>
   );
-}
+};
 
 export default TabData;

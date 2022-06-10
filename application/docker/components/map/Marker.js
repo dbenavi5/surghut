@@ -1,7 +1,4 @@
-/* eslint-disable max-len */
-/* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
 import React from 'react';
 
 const markerStyle = {
@@ -16,7 +13,7 @@ const markerStyleHover = {
   backgroundColor: 'rgba(140,140,140, 0.8)',
 };
 
-function Marker({data, covid, fire, $hover}) {
+const Marker = ({data, covid, fire, $hover}) => {
   if (!$hover) {
     return (
       <div style={markerStyle}>
@@ -59,6 +56,6 @@ function Marker({data, covid, fire, $hover}) {
       )}
     </div>
   );
-}
+};
 
 export default Marker;

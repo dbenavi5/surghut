@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable require-jsdoc */
 /* eslint-disable no-undef */
 const db = require('../../../lib/db');
 const escape = require('sql-template-strings');
@@ -7,15 +5,15 @@ const escape = require('sql-template-strings');
 const nodemailer = require('nodemailer');
 
 // create the list of contact for the mail to send
-function createContact(mails) {
+const createContact = (mails) => {
   let result = '';
 
-  mails.forEach(function(data) {
+  mails.forEach((data) => {
     result = result + ',' + data.mail;
   });
 
   return result;
-}
+};
 
 module.exports = async (req, res) => {
   // create the mail api
@@ -33,6 +31,7 @@ module.exports = async (req, res) => {
   });
 
   // sql request to update the county's level of alert in County database
+  // eslint-disable-next-line no-unused-vars
   const county = await db.query(escape`
     UPDATE  County C
     SET C.evacuation_level = 0
@@ -58,7 +57,7 @@ module.exports = async (req, res) => {
   };
 
   // send the mail
-  transporter.sendMail(mailOptions, function(error, info) {
+  transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       // console.log(error);
     } else {

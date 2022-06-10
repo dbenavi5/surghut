@@ -1,11 +1,8 @@
-/* eslint-disable object-curly-spacing */
-/* eslint-disable quotes */
 /* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
-import React from "react";
+import React from 'react';
 // import styles from './Switch.module.css';
 
-function Switch({ state, onChange, nameTrue, nameFalse }) {
+const Switch = ({state, onChange, nameTrue, nameFalse}) => {
   // //console.log("tab data ", data);
   return (
     <div>
@@ -25,6 +22,6 @@ function Switch({ state, onChange, nameTrue, nameFalse }) {
       </div>
     </div>
   );
-}
+};
 
 export default Switch;

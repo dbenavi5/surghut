@@ -1,9 +1,7 @@
-/* eslint-disable quotes */
-/* eslint-disable require-jsdoc */
-import Link from "next/link";
-import styles from "./styles/about.module.css";
+import Link from 'next/link';
+import styles from './styles/about.module.css';
 
-function About() {
+const About = () => {
   return (
     <div id={styles.about}>
       <div className="about container" id={styles.contain}>
@@ -37,6 +35,6 @@ function About() {
       </div>
     </div>
   );
-}
+};
 
 export default About;

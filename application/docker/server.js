@@ -1,9 +1,10 @@
+/* eslint-disable no-undef */
 const {createServer} = require('https');
 const {parse} = require('url');
 const next = require('next');
 const fs = require('fs');
 
-const port = parseInt(process.env.PORT, 10) || 4000;
+const port = parseInt(process.env.PORT, 10) || 3001;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({dev});
 const handle = app.getRequestHandler();
