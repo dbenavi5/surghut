@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
 /* eslint-disable no-undef */
 import React from 'react';
 import {ProtectRoute} from '../contexts/auth';
@@ -11,7 +10,7 @@ import {
 const db = require('../lib/db');
 const escape = require('sql-template-strings');
 
-function Checking({data}) {
+const Checking = ({data}) => {
   // console.log('data', data);
 
   return (
@@ -38,9 +37,9 @@ function Checking({data}) {
       </div>
     </ProtectRoute>
   );
-}
+};
 
-export async function getServerSideProps({req, query}) {
+export const getServerSideProps = async ({req, query}) => {
   const covid = await db.query(escape`
         SELECT *
         FROM Covid C
@@ -54,6 +53,6 @@ export async function getServerSideProps({req, query}) {
     `);
 
   return {props: {data: {covid, fire}}};
-}
+};
 
 export default Checking;

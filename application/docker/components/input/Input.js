@@ -41,7 +41,9 @@ const InputWithChoice = ({
         onChange={eventHandler}
       />
       <datalist id={idData}>
+        {/*
         {data.map((data) => <option key={data.id} value={data.name}></option>)}
+        */}
       </datalist>
     </div>
   );
