@@ -3,11 +3,11 @@ import Hero from '../components/hero/Hero';
 import {useState} from 'react';
 import Switch from '../components/switch/Switch';
 import Search from '../components/search/Search';
-import Map from '../components/map/Map';
-import Tab from '../components/tab/Tab';
-import Marker from '../components/map/Marker';
-const db = require('../lib/db');
-const escape = require('sql-template-strings');
+// import Map from '../components/map/Map';
+// import Tab from '../components/tab/Tab';
+// import Marker from '../components/map/Marker';
+// const db = require('../lib/db');
+// const escape = require('sql-template-strings');
 
 // eslint-disable-next-line react/prop-types
 const Index = ({data}) => {
@@ -39,7 +39,7 @@ const Index = ({data}) => {
         />
       </div>
 
-      {map ? (
+      {/* {map ? (
         <Map>
           {county.map((county) => (
             <Marker
@@ -54,19 +54,19 @@ const Index = ({data}) => {
         </Map>
       ) : (
         <Tab data={county} covid={covid} fire={fire} />
-      )}
+      )} */}
     </div>
   );
 };
 
-export const getServerSideProps = async ({req, query}) => {
-  const county = await db.query(escape`
-      SELECT *
-      FROM County
-  `);
+// export const getServerSideProps = async ({req, query}) => {
+//   const county = await db.query(escape`
+//       SELECT *
+//       FROM County
+//   `);
 
-  // console.log('county data = ', county);
-  return {props: {data: county}};
-};
+//   // console.log('county data = ', county);
+//   return {props: {data: county}};
+// };
 
 export default Index;
