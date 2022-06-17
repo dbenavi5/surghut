@@ -25,36 +25,21 @@ const Search = ({data, setResult}) => {
   };
 
   const mystyle = {
-    'position': 'relative',
-    'height': '36px',
-    'width': '36px',
-    'border': 'none',
-    'zIndex': 1,
-    'cursor': 'pointer',
-    'background': 'none',
-    ':hover': {
-      'color': 'white',
-      '::after': {
-        opacity: 1,
-        transform: 'scale(1)',
-      },
-    },
-    '::after': {
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      height: '100%',
-      borderRadius: 0,
-      zIndex: -1,
-      background: 'black',
-      transition: '0.2s ease',
-      transform: 'scale(0.6)',
-      opacity: 0,
-    },
+    position: 'relative',
+    height: '36px',
+    width: '36px',
+    border: 'none',
+    zIndex: 1,
+    cursor: 'pointer',
+    background: 'none',
   };
 
   return (
     <div id={styles.searchSection}>
+      <h1>Try out the interactive Google Maps</h1>
+      <h2>
+        Type in your county in the search bar to get your county information.
+      </h2>
       <div className={styles.container}>
         <Button
           style={mystyle}
