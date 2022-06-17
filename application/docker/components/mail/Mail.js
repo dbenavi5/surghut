@@ -2,7 +2,7 @@
 import React, {useState, useEffect} from 'react';
 // import {useAuth} from '../contexts/auth';
 
-import styles from './Mail.module.css';
+// import styles from './Mail.module.css';
 
 import Switch from '../switch/Switch';
 
@@ -12,8 +12,8 @@ const MailItem = ({data}) => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className={styles.mailForm}>
-      <div className="container">
+    <div className="container">
+      <div className="">
         <p>receiver : {data.receiver}</p>
         <p>sender : {data.sender}</p>
       </div>
