@@ -11,8 +11,8 @@ const Navbar = () => {
     const navbar = document.querySelector('.navbarSection.container');
     document.addEventListener('scroll', () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > 80) {
-        navbar.style.backgroundColor = '#29323c';
+      if (scrollPosition > 250) {
+        navbar.style.backgroundColor = 'black';
       } else {
         navbar.style.backgroundColor = 'transparent';
       }
