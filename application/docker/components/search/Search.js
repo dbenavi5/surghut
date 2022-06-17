@@ -25,13 +25,13 @@ const Search = ({data, setResult}) => {
   };
 
   const mystyle = {
-    position: 'relative',
-    height: '36px',
-    width: '36px',
-    border: 'none',
-    zIndex: 1,
-    cursor: 'pointer',
-    background: 'none',
+    'position': 'relative',
+    'height': '36px',
+    'width': '36px',
+    'border': 'none',
+    'zIndex': 1,
+    'cursor': 'pointer',
+    'background': 'none',
   };
 
   return (

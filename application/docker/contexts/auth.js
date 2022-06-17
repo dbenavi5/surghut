@@ -1,23 +1,20 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
 import React, {createContext, useState, useContext, useEffect} from 'react';
 import Cookies from 'js-cookie';
 import {useRouter} from 'next/router';
-// import {LoginForm} from '../components/form/Form';
-// import Navbar from '../components/navbar/Navbar';
 
 // api here is an axios instance which has the baseURL set according to the env.
 import api from '../api/api';
 
 const AuthContext = createContext({});
 
-export function AuthProvider({children}) {
+export const AuthProvider = ({children}) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 
   useEffect(() => {
-    async function loadUserFromCookies() {
+    const loadUserFromCookies = async () => {
       const token = Cookies.get('token');
       if (token) {
         // console.log('Got a token in the cookies, let\'s see if it is valid');
@@ -26,7 +23,7 @@ export function AuthProvider({children}) {
         if (data.profile.length === 1) setUser(data.profile[0]);
       }
       setLoading(false);
-    }
+    };
     loadUserFromCookies();
   }, []);
 
@@ -84,11 +81,11 @@ export function AuthProvider({children}) {
       {children}
     </AuthContext.Provider>
   );
-}
+};
 
 export const useAuth = () => useContext(AuthContext);
 
-export function ProtectRoute({children, accessLevel}) {
+export const ProtectRoute = ({children, accessLevel}) => {
   const {isAuthenticated, isLoading, user} = useAuth();
   const router = useRouter();
   // console.log("user ", user)
@@ -98,10 +95,10 @@ export function ProtectRoute({children, accessLevel}) {
   }
 
   if (isLoading || (!isAuthenticated && router.pathname !== '/login')) {
-    // router.push('/');
-    // window.location.pathname = '/login';
+    router.push('/');
+    window.location.pathname = '/login';
 
     return <></>;
   }
   return children;
-}
+};

@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 /* eslint-disable react/prop-types */
 import React, {useState} from 'react';
 import {MailTextInput, TextInput, InputWithChoice} from '../input/Input';
@@ -73,7 +74,7 @@ const CovidCaseForm = ({idData, dataCounty}) => {
   );
 };
 
-const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
+const ValidateCovidCaseForm = ({upload_time, county, nbCase, nbDeath}) => {
   const {user} = useAuth();
 
   const [result, setResult] = useState(null);
@@ -82,7 +83,7 @@ const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
     <div id="form">
       <div className="form container">
         <h1>Covid case form</h1>
-        <p>upload time : {uploadTime.replace('Z', '')}</p>
+        <p>upload time : {upload_time.replace('Z', '')}</p>
         <p>county : {county}</p>
         <p>Current number of case: {nbCase}</p>
         <p>Current number of death: {nbDeath}</p>
@@ -93,7 +94,7 @@ const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
             // console.log('new case covid fill');
             const fetchResult = await cancelCovidCase(
                 user,
-                uploadTime.replace('Z', ''),
+                upload_time.replace('Z', ''),
             );
             setResult(fetchResult);
           }}
@@ -106,7 +107,7 @@ const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
             // console.log('new case covid fill');
             const fetchResult = await validateCovidCase(
                 user,
-                uploadTime.replace('Z', ''),
+                upload_time.replace('Z', ''),
             );
             setResult(fetchResult);
           }}

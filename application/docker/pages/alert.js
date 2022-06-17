@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable require-jsdoc */
 /* eslint-disable no-undef */
 import React from 'react';
 import {ProtectRoute} from '../contexts/auth';
@@ -17,7 +16,7 @@ const escape = require('sql-template-strings');
 
 // Allows admin to enter a county and send a COVID or wildfire alert
 
-function Alert({data}) {
+const Alert = ({data}) => {
   return (
     <div>
       <AlertRegisterForm idData="County" dataCounty={data} />
@@ -27,17 +26,17 @@ function Alert({data}) {
       </ProtectRoute>
     </div>
   );
-}
+};
 
 // get all county information in the County database for this page
 
-export async function getServerSideProps({req, query}) {
+export const getServerSideProps = async ({req, query}) => {
   const county = await db.query(escape`
         SELECT *
         FROM County
     `);
 
   return {props: {data: county}};
-}
+};
 
 export default Alert;

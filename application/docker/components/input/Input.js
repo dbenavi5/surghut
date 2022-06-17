@@ -40,14 +40,22 @@ const InputWithChoice = ({
         value={value}
         onChange={eventHandler}
       />
-      <datalist id={idData}>
-        {data.map((data) => <option key={data.id} value={data.name}></option>)}
-      </datalist>
+      {/* <datalist id={idData}>
+        {data.map((data) => (
+          <option key={data.id} value={data.name}></option>
+        ))}
+      </datalist> */}
     </div>
   );
 };
 
-const MailTextInput = ({value, className, onTextChange, placeHolder, type}) => {
+const MailTextInput = ({
+  value,
+  className,
+  onTextChange,
+  placeHolder,
+  type,
+}) => {
   const eventHandler = (event) => {
     onTextChange(event.target.value);
   };

@@ -13,6 +13,8 @@ body {
   font-family: Poppins, sans-serif;
   font-size: 10px;
   scroll-behavior: smooth;
+  background-color: #313639;
+  color:white;
 }
 
 .container {

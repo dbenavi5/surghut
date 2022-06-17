@@ -20,12 +20,6 @@ const Hero = () => {
             public, however registered users can recieve updates and alerts of
             any new COVID-19 cases or emerging Wildfires base on you county.
           </p> */}
-          {/* <p>
-            Try out the interactive Google Maps
-            <br />
-            Type in your county in the search bar then click the search button
-            to get your county information.
-          </p> */}
         </div>
       </div>
     </div>

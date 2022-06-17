@@ -16,19 +16,29 @@ const About = () => {
           <h6>Meet the Team</h6>
           <ul>
             <li>
-              <Link href="/team/josue_carreon">Josue Carreon</Link>
+              <Link href="/team/josue_carreon">
+                <a>Josue Carreon</a>
+              </Link>
             </li>
             <li>
-              <Link href="/team/pierre_antoine">Pierre Antoine</Link>
+              <Link href="/team/pierre_antoine">
+                <a>Pierre Antoine</a>
+              </Link>
             </li>
             <li>
-              <Link href="/team/harsimran_nandhra">Harsimran Nandhra</Link>
+              <Link href="/team/harsimran_nandhra">
+                <a>Harsimran Nandhra</a>
+              </Link>
             </li>
             <li>
-              <Link href="/team/kevin_chen">Kevin Chen</Link>
+              <Link href="/team/kevin_chen">
+                <a>Kevin Chen</a>
+              </Link>
             </li>
             <li>
-              <Link href="/team/diana_benavides">Diana Benavides</Link>
+              <Link href="/team/diana_benavides">
+                <a>Diana Benavides</a>
+              </Link>
             </li>
           </ul>
         </div>
