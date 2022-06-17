@@ -6,6 +6,22 @@
     justify-content: center;
 }
 
+#searchSection h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#searchSection h2{
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 400;
+    padding: 20px 0;
+    text-align: center;
+}
+
 #searchSection .container{
     position:relative;
     width: 360px;
