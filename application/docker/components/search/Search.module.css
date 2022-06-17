@@ -1,25 +1,29 @@
 #searchSection {
-    min-height: 20vh;
+    min-height: 30vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 5rem;
 }
 
 #searchSection h1{
     text-transform: uppercase;
-    font-size: 2em;
-    font-weight: 500;
-    padding: 20px 0;
-    text-align: center;
+    font-size: 2rem;
+    font-weight:500;
+    width:100%;
+    text-align:center;
 }
 
 #searchSection h2{
     text-transform: uppercase;
-    font-size: 1.8em;
-    font-weight: 400;
-    padding: 20px 0;
-    text-align: center;
+    padding-top: 2rem;
+    color: lightgray;
+    font-size: 1.8rem;
+    font-weight:400;
+    width:100%;
+    text-align:center;
 }
 
 #searchSection .container{
