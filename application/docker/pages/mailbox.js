@@ -12,7 +12,7 @@ function MailBox() {
 
   return (
     <ProtectRoute>
-      <div>
+      <div className="container">
         <Switch
           state={mail}
           onChange={setMail}

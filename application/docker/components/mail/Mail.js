@@ -12,7 +12,7 @@ const MailItem = ({data}) => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="container">
+    <div className="">
       <div className="">
         <p>receiver : {data.receiver}</p>
         <p>sender : {data.sender}</p>
