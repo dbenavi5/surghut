@@ -24,11 +24,11 @@ const MailItem = ({data}) => {
         <Switch
           state={show}
           onChange={setShow}
-          nameTrue="Show"
-          nameFalse="Hide"
+          nameTrue="Open Mail"
+          nameFalse="Close Mail"
         />
       </div>
-      {show ? (
+      {!show ? (
         <div className="">
           <p>{data.message}</p>
         </div>
