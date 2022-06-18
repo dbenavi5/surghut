@@ -1,16 +1,38 @@
-#form{
-    position: relative;
-    margin: 100px auto;
-}
-
-#form .container{
-    overflow: hidden;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 400px;
-    min-height: 400px;
+#form {
+    min-height: 30vh;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    /* margin-top: 5rem; */
+}
+
+#form .container {
+    position:relative;
+    width: 80%;
+    height: 48px;
+    background: #1d2732;
+    border-radius:50px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-left: 5px;
+    transition: all 0.3s ease;
+    margin-top: 5rem;
+}
+
+#form .input {
+    padding-left: 48px;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid transparent;
+    color: #f2f2f2;
 }
