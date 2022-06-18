@@ -16,15 +16,15 @@ function MailBox() {
         <Switch
           state={mail}
           onChange={setMail}
-          nameTrue="mailbox"
-          nameFalse="send email"
+          nameTrue="Inbox"
+          nameFalse="Send Email"
         />
         {mail ? (
           <Switch
             state={sent}
             onChange={setSent}
-            nameTrue="sent"
-            nameFalse="received"
+            nameTrue="Sent"
+            nameFalse="Received"
           />
         ) : (
           <></>
