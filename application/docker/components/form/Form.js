@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import {MailTextInput, TextInput, InputWithChoice} from '../input/Input';
 import Button from '../button/Button';
-// import styles from './Form.module.css';
+import styles from './Form.module.css';
 
 import {useAuth} from '../../contexts/auth';
 import {
@@ -30,22 +30,25 @@ const CovidCaseForm = ({idData, dataCounty}) => {
   const {user} = useAuth();
 
   return (
-    <div id="form">
-      <div className="form container">
+    <div id={styles.form}>
+      <div className={styles.container}>
         <h1>Covid case form</h1>
         <TextInput
+          className={styles.input}
           type={'number'}
           value={newCase}
           placeHolder={'Enter number of covid cases'}
           onTextChange={setNewCase}
         />
         <TextInput
+          className={styles.input}
           type={'number'}
           value={newDeath}
           placeHolder={'Enter number of covid death cases'}
           onTextChange={setNewDeath}
         />
         <InputWithChoice
+          className={styles.inputWithChoice}
           data={dataCounty}
           idData={idData}
           value={county}
@@ -54,7 +57,7 @@ const CovidCaseForm = ({idData, dataCounty}) => {
         />
         {result ? <p>{result}</p> : <></>}
         <Button
-          className=""
+          className="button"
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await addCovidCase(
@@ -79,8 +82,8 @@ const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
   const [result, setResult] = useState(null);
 
   return (
-    <div id="form">
-      <div className="form container">
+    <div id={styles.form}>
+      <div cclassName={styles.container}>
         <h1>Covid case form</h1>
         <p>upload time : {uploadTime.replace('Z', '')}</p>
         <p>county : {county}</p>
@@ -88,7 +91,7 @@ const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
         <p>Current number of death: {nbDeath}</p>
         {result ? <p>{result}</p> : <></>}
         <Button
-          className=""
+          className="button"
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await cancelCovidCase(
@@ -101,7 +104,7 @@ const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
           Delete
         </Button>
         <Button
-          className=""
+          className="button"
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await validateCovidCase(
@@ -128,18 +131,18 @@ const FireCaseForm = ({idData, dataCounty}) => {
   // console.log(newCase);
 
   return (
-    <div id="form">
-      <div className="form container">
+    <div id={styles.form}>
+      <div className={styles.container}>
         <h1>Fire case form</h1>
         <TextInput
-          className=""
+          className={styles.input}
           type={'number'}
           value={newCase}
           placeHolder={'Enter number of fire case'}
           onTextChange={setNewCase}
         />
         <InputWithChoice
-          className=""
+          className={styles.inputWithChoice}
           data={dataCounty}
           idData={idData}
           value={county}
@@ -148,7 +151,7 @@ const FireCaseForm = ({idData, dataCounty}) => {
         />
         {result ? <p>{result}</p> : <></>}
         <Button
-          className=""
+          className="button"
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await addFireCase(user, newCase, county);
@@ -168,15 +171,15 @@ const ValidateFireCaseForm = ({upload_time, county, nbCase}) => {
   const [result, setResult] = useState(null);
 
   return (
-    <div id="form">
-      <div className="form container">
+    <div id={styles.form}>
+      <div className={styles.container}>
         <h1>Fire case form</h1>
         <p>upload time : {upload_time.replace('Z', '')}</p>
         <p>county : {county}</p>
         <p>Current number of case: {nbCase}</p>
         {result ? <p>{result}</p> : <></>}
         <Button
-          className=""
+          className="button"
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await cancelFiredCase(
@@ -189,7 +192,7 @@ const ValidateFireCaseForm = ({upload_time, county, nbCase}) => {
           Delete
         </Button>
         <Button
-          className=""
+          className="button"
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await validateFireCase(
@@ -215,25 +218,25 @@ const MailForm = () => {
   const {user} = useAuth();
 
   return (
-    <div id="form">
-      <div className="form container">
+    <div id={styles.form}>
+      <div className={styles.container}>
         <h1>Send a mail to a user</h1>
         <TextInput
-          className=""
+          className={styles.input}
           type={'text'}
           value={receiver}
           placeHolder={'Enter username of the receiver'}
           onTextChange={setReceiver}
         />
         <TextInput
-          className=""
+          className={styles.input}
           type={'text'}
           value={object}
           placeHolder={'enter the subject of your mail'}
           onTextChange={setObjet}
         />
         <MailTextInput
-          className=""
+          className={styles.inputMail}
           type={'text'}
           value={message}
           placeHolder={'enter the message of your mail'}
@@ -241,7 +244,7 @@ const MailForm = () => {
         />
         {result ? <p>{result}</p> : <></>}
         <Button
-          className=""
+          className="button"
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await sendMail(user, receiver, object, message);
@@ -266,18 +269,18 @@ const AlertRegisterForm = ({idData, dataCounty}) => {
   const [result, setResult] = useState(null);
 
   return (
-    <div id="form">
-      <div className="form container">
+    <div id={styles.form}>
+      <div className={styles.container}>
         <h1>Register your mail to receive alert from your county</h1>
         <TextInput
-          className=""
+          className={styles.input}
           type={'text'}
           value={mail}
           placeHolder={'Enter your mail'}
           onTextChange={setMail}
         />
         <InputWithChoice
-          className=""
+          className={styles.inputWithChoice}
           data={dataCounty}
           idData={idData}
           value={county}
@@ -286,7 +289,7 @@ const AlertRegisterForm = ({idData, dataCounty}) => {
         />
         {result ? <p>{result}</p> : <></>}
         <Button
-          className=""
+          className="button"
           onClick={async () => {
             // send the mail and county of the user in the Alert database
             const fetchResult = await registerAlert(mail, county);
@@ -312,11 +315,11 @@ const SendAlertForm = ({idData, dataCounty}) => {
   const {user} = useAuth(); // get information on the current user connected
 
   return (
-    <div id="form">
-      <div className="form container">
+    <div id={styles.form}>
+      <div className={styles.container}>
         <h1>Send a alert in a county</h1>
         <InputWithChoice
-          className=""
+          className={styles.inputWithChoice}
           data={dataCounty}
           idData={idData}
           value={county}
@@ -324,7 +327,7 @@ const SendAlertForm = ({idData, dataCounty}) => {
           onTextChange={setCounty}
         />
         <TextInput
-          className=""
+          className={styles.input}
           type={'number'}
           value={level}
           placeHolder={'Enter the new level of alert'}
@@ -332,7 +335,7 @@ const SendAlertForm = ({idData, dataCounty}) => {
         />
         {result ? <p>{result}</p> : <></>}
         <Button
-          className=""
+          className="button"
           onClick={async () => {
             // send a email to all user in the county concerned
             // and tell the alert level
@@ -359,11 +362,11 @@ const CancelAlertForm = ({idData, dataCounty}) => {
   const {user} = useAuth(); // get information on the current user connected
 
   return (
-    <div id="form">
-      <div className="form container">
+    <div id={styles.form}>
+      <div className={styles.container}>
         <h1>Cancel an alert in a county</h1>
         <InputWithChoice
-          className=""
+          className={styles.inputWithChoice}
           data={dataCounty}
           idData={idData}
           value={county}
@@ -372,7 +375,7 @@ const CancelAlertForm = ({idData, dataCounty}) => {
         />
         {result ? <p>{result}</p> : <></>}
         <Button
-          className=""
+          className="button"
           onClick={async () => {
             // send a email to all user in the county concerned
             const fetchResult = await cancelAlert(user, county);
