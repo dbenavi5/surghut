@@ -24,14 +24,14 @@ const Search = ({data, setResult}) => {
     setIsActive(!isActive);
   };
 
-  const mystyle = {
+  const buttonStyle = {
     position: 'relative',
     height: '36px',
     width: '36px',
     border: 'none',
     zIndex: 1,
     cursor: 'pointer',
-    background: 'none',
+    background: 'buttonStyle',
   };
 
   return (
@@ -43,7 +43,7 @@ const Search = ({data, setResult}) => {
       </h2>
       <div className={styles.container}>
         <Button
-          style={mystyle}
+          style={buttonStyle}
           onClick={() => {
             // eslint-disable-next-line new-cap
             GetCounty(data, text, setResult);
@@ -51,9 +51,9 @@ const Search = ({data, setResult}) => {
           }}
         >
           {isActive ? (
-            <AiOutlineClose color="#f2f2f2" size={18} />
+            <AiOutlineClose color="#1d2732" size={18} />
           ) : (
-            <AiOutlineSearch color="#f2f2f2" size={20} />
+            <AiOutlineSearch color="#1d2732" size={20} />
           )}
         </Button>
         <InputWithChoice

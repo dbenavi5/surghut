@@ -45,7 +45,7 @@
     left: 0;
     height: 100%;
     width: 0;
-    background-color: #468cec;
+    background-color: #dfff00;
     animation: reveal 1s ease;
     animation-delay: .3s;
 }
@@ -88,7 +88,7 @@
 
 @keyframes text_reveal_name {
     100% {
-        color: #468cec;
+        color: #dfff00;
     }
 }
 
