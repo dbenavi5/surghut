@@ -13,13 +13,13 @@ const MailItem = ({data}) => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className={styles.item}>
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <div className={styles.tabs}>
         <p>receiver : {data.receiver}</p>
         <p>sender : {data.sender}</p>
       </div>
       <p>sent at {data.upload_time}</p>
-      <div className="">
+      <div className={styles.object}>
         <p>object : {data.object}</p>
         <Switch
           state={show}
@@ -28,12 +28,12 @@ const MailItem = ({data}) => {
           nameFalse="Close Mail"
         />
       </div>
-      {!show ? (
-        <div className="">
+      {show ? (
+        <div className={styles.messageContainer}>
           <p>{data.message}</p>
         </div>
       ) : (
-        <>here</>
+        <></>
       )}
     </div>
   );
@@ -58,7 +58,7 @@ const Mail = ({sent}) => {
 
   if (sent) {
     return (
-      <div className='container'>
+      <div className=''>
         {mailSent.map((data) => (
           <MailItem key={data.upload_time} data={data} />
         ))}
@@ -66,7 +66,7 @@ const Mail = ({sent}) => {
     );
   } else {
     return (
-      <div className='container'>
+      <div className=''>
         {mailReceived.map((data) => (
           <MailItem key={data.upload_time} data={data} />
         ))}
