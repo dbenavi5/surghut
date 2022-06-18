@@ -315,8 +315,8 @@ const SendAlertForm = ({idData, dataCounty}) => {
   const {user} = useAuth(); // get information on the current user connected
 
   return (
-    <div id={styles.form}>
-      <div className={styles.container}>
+    <div id={styles.alertForm}>
+      <div className={'container'} id={styles.alertContainer}>
         <h1>Send a alert in a county</h1>
         <InputWithChoice
           className={styles.inputWithChoice}
@@ -335,7 +335,7 @@ const SendAlertForm = ({idData, dataCounty}) => {
         />
         {result ? <p>{result}</p> : <></>}
         <Button
-          className="button"
+          className={styles.alertBtn}
           onClick={async () => {
             // send a email to all user in the county concerned
             // and tell the alert level
@@ -343,7 +343,7 @@ const SendAlertForm = ({idData, dataCounty}) => {
             setResult(fetchResult);
           }}
         >
-          send
+          Send
         </Button>
       </div>
     </div>
@@ -362,8 +362,8 @@ const CancelAlertForm = ({idData, dataCounty}) => {
   const {user} = useAuth(); // get information on the current user connected
 
   return (
-    <div id={styles.form}>
-      <div className={styles.container}>
+    <div id={styles.alertForm}>
+      <div className={'container'} id={styles.alertContainer}>
         <h1>Cancel an alert in a county</h1>
         <InputWithChoice
           className={styles.inputWithChoice}
@@ -375,14 +375,14 @@ const CancelAlertForm = ({idData, dataCounty}) => {
         />
         {result ? <p>{result}</p> : <></>}
         <Button
-          className="button"
+          className={styles.alertBtn}
           onClick={async () => {
             // send a email to all user in the county concerned
             const fetchResult = await cancelAlert(user, county);
             setResult(fetchResult);
           }}
         >
-          send
+          Send
         </Button>
       </div>
     </div>
