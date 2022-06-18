@@ -17,7 +17,7 @@
     background: #1d2732;
 }
 
-.alertInput {
+.alertInput, .alertInputWithChoice {
     max-width: 30rem;
     height: 6rem;
     margin: 10px 0;
@@ -27,7 +27,30 @@
     color: #000C2F;
 }
 
-.inputWithChoice {
+#alertContain {
+    overflow: hidden;
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    min-height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.alertBtn{
+    position: relative;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+    background: #dfff00;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+/* .alertInputWithChoice {
     max-width: 30rem;
     height: 6rem;
     margin: 10px 0;
@@ -35,4 +58,4 @@
     font-size: 16px;
     padding: 0 5%;
     color: #000C2F;
-}
+} */

@@ -270,7 +270,7 @@ const AlertRegisterForm = ({idData, dataCounty}) => {
 
   return (
     <div id={styles.alertForm}>
-      <div className={'container'}>
+      <div className={'container'} id={styles.alertContainer}>
         <h1>Register your mail to receive alert from your county</h1>
         <TextInput
           className={styles.alertInput}
@@ -280,7 +280,7 @@ const AlertRegisterForm = ({idData, dataCounty}) => {
           onTextChange={setMail}
         />
         <InputWithChoice
-          className={styles.inputWithChoice}
+          className={styles.alertInputWithChoice}
           data={dataCounty}
           idData={idData}
           value={county}
@@ -289,14 +289,14 @@ const AlertRegisterForm = ({idData, dataCounty}) => {
         />
         {result ? <p>{result}</p> : <></>}
         <Button
-          className="button"
+          className={styles.alertBtn}
           onClick={async () => {
             // send the mail and county of the user in the Alert database
             const fetchResult = await registerAlert(mail, county);
             setResult(fetchResult);
           }}
         >
-          register
+          Register
         </Button>
       </div>
     </div>
