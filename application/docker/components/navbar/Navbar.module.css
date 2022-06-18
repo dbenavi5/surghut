@@ -28,7 +28,7 @@
 #navbarSection .navList ul {
     list-style: none;
     position: absolute;
-    background-color: rgb(31, 30, 30);
+    background-color: #161e26;
     width: 100vw;
     height: 100vh;
     left: 100%;
@@ -51,7 +51,7 @@
     font-weight: 500;
     letter-spacing: 0.2rem;
     text-decoration: none;
-    color: white;
+    color: #f2f2f2;
     text-transform: uppercase;
     padding: 20px;
     display: block;
@@ -76,7 +76,7 @@
 }
 
 #navbarSection .navList ul li:hover a {
-    color: #468cec;
+    color: #dfff00;
 }
 
 @media only screen and (min-width: 1200px) {

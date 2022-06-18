@@ -31,7 +31,8 @@ const Search = ({data, setResult}) => {
     border: 'none',
     zIndex: 1,
     cursor: 'pointer',
-    background: 'buttonStyle',
+    background: '#dfff00',
+    borderRadius: '50px',
   };
 
   return (
