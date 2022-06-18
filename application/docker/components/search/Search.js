@@ -51,9 +51,9 @@ const Search = ({data, setResult}) => {
           }}
         >
           {isActive ? (
-            <AiOutlineClose size={18} />
+            <AiOutlineClose color="#f2f2f2" size={18} />
           ) : (
-            <AiOutlineSearch size={20} />
+            <AiOutlineSearch color="#f2f2f2" size={20} />
           )}
         </Button>
         <InputWithChoice
