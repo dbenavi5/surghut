@@ -7,13 +7,14 @@ import React, {useState, useEffect} from 'react';
 import Switch from '../switch/Switch';
 
 import api from '../../api/api';
+import styles from './Mail.module.css';
 
 const MailItem = ({data}) => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="">
-      <div className="">
+    <div className={styles.item}>
+      <div className={styles.container}>
         <p>receiver : {data.receiver}</p>
         <p>sender : {data.sender}</p>
       </div>
@@ -41,6 +42,7 @@ const MailItem = ({data}) => {
 const Mail = ({sent}) => {
   const [mailReceived, setMailReceived] = useState([]);
   const [mailSent, setMailSent] = useState([]);
+  // const [deleteMail, setDeleteMail] = useState([]);
 
   useEffect(() => {
     const getMail = async () => {
@@ -64,7 +66,7 @@ const Mail = ({sent}) => {
     );
   } else {
     return (
-      <div>
+      <div className='container'>
         {mailReceived.map((data) => (
           <MailItem key={data.upload_time} data={data} />
         ))}
