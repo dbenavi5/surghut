@@ -1,9 +1,10 @@
-#form {
+/* alert page css */
+#alertForm {
     position: relative;
     margin: 100px auto;
 }
 
-#form .container {
+#alertForm .alertContainer {
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -15,16 +16,16 @@
     flex-direction: column;
 }
 
-#form .input {
-    /* padding-left: 48px; */
-    /* position: absolute; */
-    /* top: 0;
-    left: 0; */
+#alertForm .alertInput {
+    padding-left: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     background-color: transparent;
     outline: none;
-    font-size: 4rem;
-    border: 1px solid transparent;
+    font-size: 1.8rem;
+    border: 5px solid transparent;
     color: #f2f2f2;
 }
