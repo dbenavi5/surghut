@@ -57,7 +57,7 @@ const CovidCaseForm = ({idData, dataCounty}) => {
         />
         {result ? <p>{result}</p> : <></>}
         <Button
-          className="button"
+          className={styles.alertBtn}
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await addCovidCase(
@@ -83,7 +83,7 @@ const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
 
   return (
     <div id={styles.form}>
-      <div cclassName={styles.container}>
+      <div className={'container'}>
         <h1>Covid case form</h1>
         <p>upload time : {uploadTime.replace('Z', '')}</p>
         <p>county : {county}</p>
@@ -151,7 +151,7 @@ const FireCaseForm = ({idData, dataCounty}) => {
         />
         {result ? <p>{result}</p> : <></>}
         <Button
-          className="button"
+          className={styles.alertBtn}
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await addFireCase(user, newCase, county);
@@ -172,7 +172,7 @@ const ValidateFireCaseForm = ({upload_time, county, nbCase}) => {
 
   return (
     <div id={styles.form}>
-      <div className={styles.container}>
+      <div className={'container'}>
         <h1>Fire case form</h1>
         <p>upload time : {upload_time.replace('Z', '')}</p>
         <p>county : {county}</p>
