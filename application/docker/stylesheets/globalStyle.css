@@ -25,6 +25,12 @@ body {
   justify-content: center;
 }
 
+/* alert */
+.alert-container {
+  display: flex;
+  flex-direction:row
+}
+
 /* Branding */
 .brand h1 {
   font-size: 3rem;

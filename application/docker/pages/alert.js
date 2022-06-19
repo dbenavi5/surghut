@@ -19,7 +19,7 @@ const escape = require('sql-template-strings');
 
 function Alert({data}) {
   return (
-    <div className=''>
+    <div className='alert-container'>
       <AlertRegisterForm idData="County" dataCounty={data} />
       <ProtectRoute accessLevel={2}>
         <SendAlertForm idData="County2" dataCounty={data} />
