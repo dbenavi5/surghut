@@ -24,16 +24,16 @@ const Search = ({data, setResult}) => {
     setIsActive(!isActive);
   };
 
-  const buttonStyle = {
-    position: 'relative',
-    height: '36px',
-    width: '36px',
-    border: 'none',
-    zIndex: 1,
-    cursor: 'pointer',
-    background: '#dfff00',
-    borderRadius: '50px',
-  };
+  // const buttonStyle = {
+  //   position: 'relative',
+  //   height: '36px',
+  //   width: '36px',
+  //   border: 'none',
+  //   zIndex: 1,
+  //   cursor: 'pointer',
+  //   background: '#dfff00',
+  //   borderRadius: '50px',
+  // };
 
   return (
     <div id={styles.searchSection}>
@@ -44,7 +44,8 @@ const Search = ({data, setResult}) => {
       </h2>
       <div className={styles.container}>
         <Button
-          style={buttonStyle}
+          className={styles.searchBtn}
+          // style={buttonStyle}
           onClick={() => {
             // eslint-disable-next-line new-cap
             GetCounty(data, text, setResult);

@@ -1,7 +1,8 @@
 /* alert page css */
 #alertForm {
     position: relative;
-    margin: 100px auto;
+    margin-top:20px;
+    /* margin: 100px auto; */
 }
 
 #alertContainer h1{
