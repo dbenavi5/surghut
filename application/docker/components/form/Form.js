@@ -48,7 +48,7 @@ const CovidCaseForm = ({idData, dataCounty}) => {
           onTextChange={setNewDeath}
         />
         <InputWithChoice
-          className={styles.iinput}
+          className={styles.input}
           data={dataCounty}
           idData={idData}
           value={county}

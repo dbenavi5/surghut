@@ -32,6 +32,12 @@ body {
   margin: 110px auto;
 }
 
+.update-container {
+  display: flex;
+  flex-direction:column;
+  margin: 110px auto;
+}
+
 /* Branding */
 .brand h1 {
   font-size: 3rem;

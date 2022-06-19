@@ -24,17 +24,6 @@ const Search = ({data, setResult}) => {
     setIsActive(!isActive);
   };
 
-  // const buttonStyle = {
-  //   position: 'relative',
-  //   height: '36px',
-  //   width: '36px',
-  //   border: 'none',
-  //   zIndex: 1,
-  //   cursor: 'pointer',
-  //   background: '#dfff00',
-  //   borderRadius: '50px',
-  // };
-
   return (
     <div id={styles.searchSection}>
       <h1>Try out the interactive Google Maps</h1>
