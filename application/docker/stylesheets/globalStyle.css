@@ -29,7 +29,7 @@ body {
 .alert-container {
   display: flex;
   flex-direction:column;
-  margin: 150px auto;
+  margin: 110px auto;
 }
 
 /* Branding */
