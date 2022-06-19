@@ -271,7 +271,7 @@ const AlertRegisterForm = ({idData, dataCounty}) => {
   return (
     <div id={styles.alertForm}>
       <div className={'container'} id={styles.alertContainer}>
-        <h1>Register your mail to receive alert from your county</h1>
+        <h1>Register to receive alert of your county</h1>
         <TextInput
           className={styles.alertInput}
           type={'text'}
