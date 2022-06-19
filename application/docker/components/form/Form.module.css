@@ -1,7 +1,7 @@
 /* alert page css */
 #alertForm {
     position: relative;
-    margin: 10px auto;
+    /* margin: 10px auto; */
 }
 
 #alertContainer h1{
@@ -20,7 +20,7 @@
 }
 
 #alertContainer {
-  min-height: 60vh;
+  min-height: 20vh;
   width: 100%;
   display: flex;
   flex-direction: column;
