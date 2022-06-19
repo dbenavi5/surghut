@@ -1,15 +1,15 @@
 /* alert page css */
-#alertForm {
+#form {
     position: relative;
     margin: 100px auto;
 }
 
-#alertContainer h1 {
+#container h1 {
     text-transform: uppercase;
     font-size: 2rem;
 }
 
-.alertInput {
+.input {
     max-width: 30rem;
     height: 6rem;
     margin: 10px 0;
@@ -20,7 +20,7 @@
     background: #1d2732;
 }
 
-#alertContainer {
+#container {
     min-height: 20vh;
     width: 100%;
     display: flex;
@@ -30,7 +30,7 @@
     overflow: hidden;
 }
 
-.alertBtn {
+.btn {
     border: none;
     z-index: 1;
     cursor: pointer;
@@ -38,36 +38,4 @@
     padding: 20px 15px;
     text-transform: uppercase;
     font-size: 1.4rem;
-}
-
-/* case forms */
-#caseForm {
-    position: relative;
-    margin: 100px auto;
-}
-
-#caseContainer h1 {
-    text-transform: uppercase;
-    font-size: 2rem;
-}
-
-.caseInput {
-    max-width: 30rem;
-    height: 6rem;
-    margin: 10px 0;
-    border: 1px solid transparent;
-    font-size: 16px;
-    padding: 0 5%;
-    color: #f2f2f2;
-    background: #1d2732;
-}
-
-#caseContainer {
-    min-height: 20vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
 }
