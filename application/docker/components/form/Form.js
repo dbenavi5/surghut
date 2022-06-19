@@ -270,7 +270,7 @@ const AlertRegisterForm = ({idData, dataCounty}) => {
 
   return (
     <div id={styles.alertForm}>
-      <div className={styles.container1} id={styles.alertContainer}>
+      <div className={'container'} id={styles.alertContainer}>
         <h1>Register to receive alert of your county</h1>
         <TextInput
           className={styles.alertInput}
@@ -316,7 +316,7 @@ const SendAlertForm = ({idData, dataCounty}) => {
 
   return (
     <div id={styles.alertForm}>
-      <div className={styles.container1} id={styles.alertContainer}>
+      <div className={'container'} id={styles.alertContainer}>
         <h1>Send a alert in a county</h1>
         <InputWithChoice
           className={styles.alertInputWithChoice}
@@ -363,7 +363,7 @@ const CancelAlertForm = ({idData, dataCounty}) => {
 
   return (
     <div id={styles.alertForm}>
-      <div className={styles.container1} id={styles.alertContainer}>
+      <div className={'container'} id={styles.alertContainer}>
         <h1>Cancel an alert in a county</h1>
         <InputWithChoice
           className={styles.alertInputWithChoice}
