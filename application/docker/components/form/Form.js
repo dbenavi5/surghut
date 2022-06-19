@@ -30,25 +30,25 @@ const CovidCaseForm = ({idData, dataCounty}) => {
   const {user} = useAuth();
 
   return (
-    <div id={styles.form}>
-      <div className={styles.container}>
+    <div id={styles.caseForm}>
+      <div className={'container'} id={styles.caseContainer}>
         <h1>Covid case form</h1>
         <TextInput
-          className={styles.input}
+          className={styles.caseInput}
           type={'number'}
           value={newCase}
           placeHolder={'Enter number of covid cases'}
           onTextChange={setNewCase}
         />
         <TextInput
-          className={styles.input}
+          className={styles.caseInput}
           type={'number'}
           value={newDeath}
           placeHolder={'Enter number of covid death cases'}
           onTextChange={setNewDeath}
         />
         <InputWithChoice
-          className={styles.inputWithChoice}
+          className={styles.caseInput}
           data={dataCounty}
           idData={idData}
           value={county}
@@ -131,18 +131,18 @@ const FireCaseForm = ({idData, dataCounty}) => {
   // console.log(newCase);
 
   return (
-    <div id={styles.form}>
-      <div className={styles.container}>
+    <div id={styles.caseForm}>
+      <div className={'container'} id={styles.caseContainer}>
         <h1>Fire case form</h1>
         <TextInput
-          className={styles.input}
+          className={styles.caseInput}
           type={'number'}
           value={newCase}
           placeHolder={'Enter number of fire case'}
           onTextChange={setNewCase}
         />
         <InputWithChoice
-          className={styles.inputWithChoice}
+          className={styles.caseInput}
           data={dataCounty}
           idData={idData}
           value={county}
@@ -280,7 +280,7 @@ const AlertRegisterForm = ({idData, dataCounty}) => {
           onTextChange={setMail}
         />
         <InputWithChoice
-          className={styles.alertInputWithChoice}
+          className={styles.alertInput}
           data={dataCounty}
           idData={idData}
           value={county}
@@ -318,20 +318,20 @@ const SendAlertForm = ({idData, dataCounty}) => {
     <div id={styles.alertForm}>
       <div className={'container'} id={styles.alertContainer}>
         <h1>Send a alert in a county</h1>
-        <InputWithChoice
-          className={styles.alertInputWithChoice}
-          data={dataCounty}
-          idData={idData}
-          value={county}
-          placeHolder={'enter the name of the county'}
-          onTextChange={setCounty}
-        />
         <TextInput
           className={styles.alertInput}
           type={'number'}
           value={level}
           placeHolder={'Enter the new level of alert'}
           onTextChange={setLevel}
+        />
+        <InputWithChoice
+          className={styles.alertInput}
+          data={dataCounty}
+          idData={idData}
+          value={county}
+          placeHolder={'enter the name of the county'}
+          onTextChange={setCounty}
         />
         {result ? <p>{result}</p> : <></>}
         <Button
@@ -366,7 +366,7 @@ const CancelAlertForm = ({idData, dataCounty}) => {
       <div className={'container'} id={styles.alertContainer}>
         <h1>Cancel an alert in a county</h1>
         <InputWithChoice
-          className={styles.alertInputWithChoice}
+          className={styles.alertInput}
           data={dataCounty}
           idData={idData}
           value={county}
