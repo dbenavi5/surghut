@@ -4,21 +4,8 @@
     margin: 100px auto;
 }
 
-/* #alertContainer {
-    overflow: hidden;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 400px;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #1d2732;
-} */
-
 .container1 {
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
