@@ -39,12 +39,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
-/* overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
 
 .alertBtn{
     position: relative;
@@ -55,13 +51,3 @@
     padding: 20px 15px;
     text-transform: uppercase;
 }
-
-/* .alertInputWithChoice {
-    max-width: 30rem;
-    height: 6rem;
-    margin: 10px 0;
-    border: 1px solid black;
-    font-size: 16px;
-    padding: 0 5%;
-    color: #000C2F;
-} */
