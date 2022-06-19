@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 /* eslint-disable react/prop-types */
 import React, {useState} from 'react';
 import {MailTextInput, TextInput, InputWithChoice} from '../input/Input';
@@ -76,7 +77,7 @@ const CovidCaseForm = ({idData, dataCounty}) => {
   );
 };
 
-const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
+const ValidateCovidCaseForm = ({upload_time, county, nb_case, nb_death}) => {
   const {user} = useAuth();
 
   const [result, setResult] = useState(null);
@@ -85,10 +86,10 @@ const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
     <div id={'form'}>
       <div className={'container'}>
         <h1>Covid case form</h1>
-        <p>upload time : {uploadTime.replace('Z', '')}</p>
+        <p>upload time : {upload_time.replace('Z', '')}</p>
         <p>county : {county}</p>
-        <p>Current number of case: {nbCase}</p>
-        <p>Current number of death: {nbDeath}</p>
+        <p>Current number of case: {nb_case}</p>
+        <p>Current number of death: {nb_death}</p>
         {result ? <p>{result}</p> : <></>}
         <Button
           className="button"
@@ -96,7 +97,7 @@ const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
             // console.log('new case covid fill');
             const fetchResult = await cancelCovidCase(
                 user,
-                uploadTime.replace('Z', ''),
+                upload_time.replace('Z', ''),
             );
             setResult(fetchResult);
           }}
@@ -109,7 +110,7 @@ const ValidateCovidCaseForm = ({uploadTime, county, nbCase, nbDeath}) => {
             // console.log('new case covid fill');
             const fetchResult = await validateCovidCase(
                 user,
-                uploadTime.replace('Z', ''),
+                upload_time.replace('Z', ''),
             );
             setResult(fetchResult);
           }}
@@ -166,7 +167,7 @@ const FireCaseForm = ({idData, dataCounty}) => {
 };
 
 // eslint-disable-next-line camelcase
-const ValidateFireCaseForm = ({upload_time, county, nbCase}) => {
+const ValidateFireCaseForm = ({upload_time, county, nb_case}) => {
   const {user} = useAuth();
   const [result, setResult] = useState(null);
 
@@ -176,7 +177,7 @@ const ValidateFireCaseForm = ({upload_time, county, nbCase}) => {
         <h1>Fire case form</h1>
         <p>upload time : {upload_time.replace('Z', '')}</p>
         <p>county : {county}</p>
-        <p>Current number of case: {nbCase}</p>
+        <p>Current number of case: {nb_case}</p>
         {result ? <p>{result}</p> : <></>}
         <Button
           className="button"
