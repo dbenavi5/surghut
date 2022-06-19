@@ -8,13 +8,18 @@
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 400px;
-    min-height: 400px;
+    /* width: 400px;
+    min-height: 400px; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background: #1d2732;
+}
+
+.alertContainer h1{
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 .alertInput, .alertInputWithChoice {
@@ -28,15 +33,11 @@
 }
 
 #alertContainer {
-    overflow: hidden;
-    /* padding-top: 10px;
-    padding-bottom: 10px;
-    width: 400px;
-    min-height: 400px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .alertBtn{
@@ -45,9 +46,8 @@
     z-index: 1;
     cursor: pointer;
     background: #dfff00;
-    padding: 15px 10px;
+    padding: 20px 15px;
     text-transform: uppercase;
-    border-radius: 4px;
 }
 
 /* .alertInputWithChoice {

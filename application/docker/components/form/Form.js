@@ -319,7 +319,7 @@ const SendAlertForm = ({idData, dataCounty}) => {
       <div className={'container'} id={styles.alertContainer}>
         <h1>Send a alert in a county</h1>
         <InputWithChoice
-          className={styles.inputWithChoice}
+          className={styles.alertInputWithChoice}
           data={dataCounty}
           idData={idData}
           value={county}
@@ -327,7 +327,7 @@ const SendAlertForm = ({idData, dataCounty}) => {
           onTextChange={setCounty}
         />
         <TextInput
-          className={styles.input}
+          className={styles.alertInput}
           type={'number'}
           value={level}
           placeHolder={'Enter the new level of alert'}
@@ -366,7 +366,7 @@ const CancelAlertForm = ({idData, dataCounty}) => {
       <div className={'container'} id={styles.alertContainer}>
         <h1>Cancel an alert in a county</h1>
         <InputWithChoice
-          className={styles.inputWithChoice}
+          className={styles.alertInputWithChoice}
           data={dataCounty}
           idData={idData}
           value={county}
