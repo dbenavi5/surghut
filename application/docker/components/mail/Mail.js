@@ -26,6 +26,7 @@ const MailItem = ({data}) => {
           onChange={setShow}
           nameTrue="Open Mail"
           nameFalse="Close Mail"
+          className=''
         />
       </div>
       {show ? (

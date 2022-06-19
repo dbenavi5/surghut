@@ -28,8 +28,7 @@ const Search = ({data, setResult}) => {
     <div id={styles.searchSection}>
       <h1>Try out the interactive Google Maps</h1>
       <h2>
-        Type in your county in the search bar then click the search button to
-        get your county information.
+        Type in your county in the search bar to get your county information.
       </h2>
       <div className={styles.container}>
         <Button

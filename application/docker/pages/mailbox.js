@@ -18,6 +18,7 @@ function MailBox() {
           onChange={setMail}
           nameTrue="Inbox"
           nameFalse="Send Email"
+          className=''
         />
         {mail ? (
           <Switch
@@ -25,6 +26,7 @@ function MailBox() {
             onChange={setSent}
             nameTrue="Sent"
             nameFalse="Received"
+            className=''
           />
         ) : (
           <></>
