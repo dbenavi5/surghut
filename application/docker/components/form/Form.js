@@ -146,7 +146,7 @@ const FireCaseForm = ({idData, dataCounty}) => {
           data={dataCounty}
           idData={idData}
           value={county}
-          placeHolder={'enter the name the county'}
+          placeHolder={'Enter the county name'}
           onTextChange={setCounty}
         />
         {result ? <p>{result}</p> : <></>}
