@@ -12,7 +12,7 @@ const escape = require('sql-template-strings');
 function Update({ data }) {
   return (
     <ProtectRoute accessLevel={1}>
-      <div>
+      <div className='container'>
         <CovidCaseForm idData="Covid" dataCounty={data} />
         <FireCaseForm dataCounty={data} idData="Fire" />
       </div>
