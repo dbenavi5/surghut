@@ -1,22 +1,21 @@
 .switchContainer {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid #dfff00;
-    /* border-top-right-radius: 3px; */
 }
 
 .buttonActive {
     flex: 1;
     background-color: #161e26;
     padding: 10px 0px;
-    background-color: transparent;
     border: 1px solid #dfff00;
+    border-top-right-radius: 3px;
 }
 
 .buttonInactive {
     flex: 1;
     background-color: #1d2732;
     padding: 10px 0px;
+    border-top-right-radius: 3px;
 }
 
 .text {
