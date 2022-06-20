@@ -26,7 +26,6 @@ const Index = ({data}) => {
       <Search data={data} setResult={setCounty} />
       <div className={styles.container}>
         <Switch
-          className={ map ? styles.buttonActive : styles.buttonInactive}
           state={map}
           onChange={setMap}
           nameTrue="Map"
@@ -34,7 +33,6 @@ const Index = ({data}) => {
         />
 
         <Switch
-          className={ covid ? styles.buttonActive : styles.buttonInactive}
           state={covid}
           onChange={setCovid}
           nameTrue="COVID Cases : On"
@@ -42,7 +40,6 @@ const Index = ({data}) => {
         />
 
         <Switch
-          className={ fire ? styles.buttonActive : styles.buttonInactive}
           state={fire}
           onChange={setFire}
           nameTrue="Fire Cases : On"

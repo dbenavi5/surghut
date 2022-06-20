@@ -1,28 +1,26 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-// import styles from './Switch.module.css';
+import styles from './Switch.module.css';
 
-const Switch = ({state, className, onChange, nameTrue, nameFalse}) => {
+const Switch = ({state, onChange, nameTrue, nameFalse}) => {
   // //console.log("tab data ", data);
   return (
     <>
       <div
-        state={state}
-        className={className}
+        className={state ? styles.buttonActive : styles.buttonInactive}
         onClick={() => {
           onChange(true);
         }}
       >
-        <p>{nameTrue}</p>
+        <p className={styles.text}>{nameTrue}</p>
       </div>
       <div
-        state={state}
-        className={className}
+        className={state ? styles.buttonActive : styles.buttonInactive}
         onClick={() => {
           onChange(false);
         }}
       >
-        <p>{nameFalse}</p>
+        <p className={styles.text}>{nameFalse}</p>
       </div>
     </>
   );
