@@ -128,20 +128,20 @@ body {
 }
 
 /* Tabs */
-.data-table tr:nth-child(even){background-color: #f2f2f2;}
+.data-table tr:nth-child(even){background-color: #1d2732; color: #f2f2f2;}
 
-.data-table tr:hover {background-color: #ddd;}
+.data-table tr:hover {background-color: #1d2732;}
 
 .data-table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #380036;
+  background-color: #161e26;
   color: white;
 }
 
 .data-table td, .data-table th {
-  border: 1px solid #ddd;
+  /* border: 1px solid #f2f2f2; */
   padding: 8px;
 }
 
