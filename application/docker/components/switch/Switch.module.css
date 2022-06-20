@@ -5,15 +5,20 @@
 
 .buttonActive {
     flex: 1;
-    background-color: rgb(110, 110, 110);
-    padding: 10px 0px;;
+    background-color: #dfff00;
+    padding: 10px 0px;
 }
 
 .buttonInactive {
     flex: 1;
-    background-color: rgb(170, 170, 170);
-    padding: 10px 0px;}
+    background-color: #1d2732;;
+    padding: 10px 0px;
+    color: #f2f2f2;
+}
 
 .text {
     color: white;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
 }

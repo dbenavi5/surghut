@@ -15,7 +15,7 @@ const Switch = ({state, onChange, nameTrue, nameFalse}) => {
         <p className={styles.text}>{nameTrue}</p>
       </div>
       <div
-        className={state ? styles.buttonActive : styles.buttonInactive}
+        className={state ? styles.buttonInactive : styles.buttonActive}
         onClick={() => {
           onChange(false);
         }}
