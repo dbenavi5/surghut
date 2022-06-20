@@ -5,7 +5,7 @@ import styles from './Switch.module.css';
 const Switch = ({state, onChange, nameTrue, nameFalse}) => {
   // //console.log("tab data ", data);
   return (
-    <>
+    <div className={styles.switchContainer}>
       <div
         className={state ? styles.buttonActive : styles.buttonInactive}
         onClick={() => {
@@ -22,7 +22,7 @@ const Switch = ({state, onChange, nameTrue, nameFalse}) => {
       >
         <p className={styles.text}>{nameFalse}</p>
       </div>
-    </>
+    </div>
   );
 };
 

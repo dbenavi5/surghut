@@ -1,4 +1,4 @@
-.switch_container {
+.switchContainer {
     display: flex;
     width: 100%;
     border-bottom: 1px solid #dfff00;
@@ -9,15 +9,14 @@
     flex: 1;
     background-color: #161e26;
     padding: 10px 0px;
-    border-top-right-radius: 3px;
+    background-color: transparent;
+    border: 1px solid #dfff00;
 }
 
 .buttonInactive {
     flex: 1;
     background-color: #1d2732;
     padding: 10px 0px;
-    color: #f2f2f2;
-    border-top-right-radius: 3px;
 }
 
 .text {
