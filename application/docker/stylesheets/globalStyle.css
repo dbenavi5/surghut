@@ -14,7 +14,7 @@ body {
   font-size: 10px;
   scroll-behavior: smooth;
   background-color: #161e26;
-  color:#f2f2f2;
+  color: #f2f2f2;
 }
 
 .container {
@@ -28,14 +28,20 @@ body {
 /* alert */
 .alert-container {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   margin: 110px auto;
 }
 
 .update-container {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   margin: 110px auto;
+}
+
+/* switch tabs */
+.switch-container {
+  display: flex;
+  width: 100%;
 }
 
 /* Branding */

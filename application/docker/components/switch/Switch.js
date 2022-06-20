@@ -5,7 +5,7 @@ import React from 'react';
 const Switch = ({state, className, onChange, nameTrue, nameFalse}) => {
   // //console.log("tab data ", data);
   return (
-    <div className={'switch-container'}>
+    <>
       <div
         state={state}
         className={className}
@@ -13,7 +13,7 @@ const Switch = ({state, className, onChange, nameTrue, nameFalse}) => {
           onChange(true);
         }}
       >
-        <p className={className}>{nameTrue}</p>
+        <p>{nameTrue}</p>
       </div>
       <div
         state={state}
@@ -22,9 +22,9 @@ const Switch = ({state, className, onChange, nameTrue, nameFalse}) => {
           onChange(false);
         }}
       >
-        <p className={className}>{nameFalse}</p>
+        <p>{nameFalse}</p>
       </div>
-    </div>
+    </>
   );
 };
 

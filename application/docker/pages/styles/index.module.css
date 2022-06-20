@@ -1,3 +1,22 @@
-.container{
+.container {
     display: flex;
+    width: 100%;
+}
+
+.switch {
+    padding: 10px 10px;
+    border: 1px solid white;
+    font-size: 14px;
+}
+
+.buttonActive {
+    flex: 1;
+    background-color: blue;
+    padding: 10px 0px;
+}
+
+.buttonInactive {
+    flex: 1;
+    background-color: red;
+    padding: 10px 0px;
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 import Hero from '../components/hero/Hero';
 import {useState} from 'react';
@@ -17,6 +18,7 @@ const Index = ({data}) => {
   const [map, setMap] = useState(true);
   const [covid, setCovid] = useState(true);
   const [fire, setFire] = useState(true);
+  // const [tab, setTab] = useState('');
   // //console.log("props index ", data[0]);
   return (
     <div className={styles.index}>
@@ -24,7 +26,7 @@ const Index = ({data}) => {
       <Search data={data} setResult={setCounty} />
       <div className={styles.container}>
         <Switch
-          className={styles.switch}
+          className={ map ? styles.buttonActive : styles.buttonInactive}
           state={map}
           onChange={setMap}
           nameTrue="Map"
@@ -32,7 +34,7 @@ const Index = ({data}) => {
         />
 
         <Switch
-          className={styles.switch}
+          className={ covid ? styles.buttonActive : styles.buttonInactive}
           state={covid}
           onChange={setCovid}
           nameTrue="COVID Cases : On"
@@ -40,7 +42,7 @@ const Index = ({data}) => {
         />
 
         <Switch
-          className={styles.switch}
+          className={ fire ? styles.buttonActive : styles.buttonInactive}
           state={fire}
           onChange={setFire}
           nameTrue="Fire Cases : On"
