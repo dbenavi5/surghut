@@ -24,7 +24,7 @@ const Index = ({data}) => {
     <div className={styles.index}>
       <Hero />
       <Search data={data} setResult={setCounty} />
-      <div className={styles.container}>
+      <div className={styles.indexContainer}>
         <Switch
           state={map}
           onChange={setMap}
