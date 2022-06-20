@@ -3,7 +3,7 @@
     width: 100%;
 }
 
-.buttonActive {
+/* .buttonActive {
     flex: 1;
     background-color: #161e26;
     padding: 10px 0px;
@@ -18,7 +18,7 @@
     padding: 10px 0px;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-}
+} */
 
 .text {
     color: white;

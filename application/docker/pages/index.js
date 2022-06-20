@@ -26,6 +26,7 @@ const Index = ({data}) => {
       <Search data={data} setResult={setCounty} />
       <div className={styles.indexContainer}>
         <Switch
+          className={map ? styles.buttonActive : styles.buttonInactive}
           state={map}
           onChange={setMap}
           nameTrue="Map"
