@@ -2,14 +2,14 @@
 import React from 'react';
 
 import TabData from './TabData';
-// import styles from './CSS/Button.module.css'
+import styles from './Tab.module.css';
 
 const Tab = ({data, covid, fire}) => {
   // //console.log("tab data ", data[0]);
 
   return (
     <div>
-      <table className="data-table">
+      <table className={styles.dataTable}>
         <thead>
           <tr>
             <th colSpan="1">Name</th>
