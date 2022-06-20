@@ -6,21 +6,21 @@ const TabData = ({data, covid, fire}) => {
   // console.log("tab data ", data);
   return (
     <tr>
-      <td style={{fontSize: '1.2rem', textTransform: 'uppercase'}}>
+      <td style={{fontSize: '1.2rem'}}>
         {data.name}
       </td>
       {covid ? (
         <>
-          <td style={{fontSize: '1rem'}}>{data.covid_case}</td>
-          <td style={{fontSize: '1rem'}}>{data.covid_death}</td>
+          <td style={{fontSize: '1.2rem'}}>{data.covid_case}</td>
+          <td style={{fontSize: '1.2rem'}}>{data.covid_death}</td>
         </>
       ) : (
         <></>
       )}
       {fire ? (
         <>
-          <td style={{fontSize: '1rem'}}>{data.fire_case}</td>
-          <td style={{fontSize: '1rem'}}>{data.evacuation_level}</td>
+          <td style={{fontSize: '1.2rem'}}>{data.fire_case}</td>
+          <td style={{fontSize: '1.2rem'}}>{data.evacuation_level}</td>
         </>
       ) : (
         <></>
