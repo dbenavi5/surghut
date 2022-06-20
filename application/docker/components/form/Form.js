@@ -69,6 +69,7 @@ const CovidCaseForm = ({idData, dataCounty}) => {
             );
             setResult(fetchResult);
           }}
+          aria-label='Send Covid Case'
         >
           Send
         </Button>
@@ -101,6 +102,7 @@ const ValidateCovidCaseForm = ({upload_time, county, nb_case, nb_death}) => {
             );
             setResult(fetchResult);
           }}
+          aria-label="Delete Covid Case Button"
         >
           Delete
         </Button>
@@ -114,6 +116,7 @@ const ValidateCovidCaseForm = ({upload_time, county, nb_case, nb_death}) => {
             );
             setResult(fetchResult);
           }}
+          aria-label="Validate Covid Case Button"
         >
           Validate
         </Button>
@@ -189,6 +192,7 @@ const ValidateFireCaseForm = ({upload_time, county, nb_case}) => {
             );
             setResult(fetchResult);
           }}
+          aria-label='Delete Fire Case'
         >
           Delete
         </Button>
@@ -202,6 +206,7 @@ const ValidateFireCaseForm = ({upload_time, county, nb_case}) => {
             );
             setResult(fetchResult);
           }}
+          aria-label='Validate Fire Case'
         >
           Validate
         </Button>
@@ -251,8 +256,9 @@ const MailForm = () => {
             const fetchResult = await sendMail(user, receiver, object, message);
             setResult(fetchResult);
           }}
+          aria-label='Send Mail'
         >
-          send
+          Send
         </Button>
       </div>
     </div>
@@ -296,6 +302,7 @@ const AlertRegisterForm = ({idData, dataCounty}) => {
             const fetchResult = await registerAlert(mail, county);
             setResult(fetchResult);
           }}
+          aria-label='Alert Resgister'
         >
           Register
         </Button>
@@ -343,6 +350,7 @@ const SendAlertForm = ({idData, dataCounty}) => {
             const fetchResult = await sendAlert(user, county, level);
             setResult(fetchResult);
           }}
+          aria-label='Alert Send'
         >
           Send
         </Button>
@@ -382,6 +390,7 @@ const CancelAlertForm = ({idData, dataCounty}) => {
             const fetchResult = await cancelAlert(user, county);
             setResult(fetchResult);
           }}
+          aria-label='Alert Cancel'
         >
           Send
         </Button>

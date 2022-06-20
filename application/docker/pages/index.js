@@ -6,6 +6,8 @@ import Search from '../components/search/Search';
 import Map from '../components/map/Map';
 import Tab from '../components/tab/Tab';
 import Marker from '../components/map/Marker';
+import styles from './styles/index.module.css';
+
 const db = require('../lib/db');
 const escape = require('sql-template-strings');
 
@@ -17,13 +19,20 @@ const Index = ({data}) => {
   const [fire, setFire] = useState(true);
   // //console.log("props index ", data[0]);
   return (
-    <div>
+    <div className={styles.index}>
       <Hero />
       <Search data={data} setResult={setCounty} />
-      <div className="">
-        <Switch state={map} onChange={setMap} nameTrue="Map" nameFalse="Tab" />
+      <div className={styles.container}>
+        <Switch
+          className={styles.switch}
+          state={map}
+          onChange={setMap}
+          nameTrue="Map"
+          nameFalse="Tab"
+        />
 
         <Switch
+          className={styles.switch}
           state={covid}
           onChange={setCovid}
           nameTrue="COVID Cases : On"
@@ -31,6 +40,7 @@ const Index = ({data}) => {
         />
 
         <Switch
+          className={styles.switch}
           state={fire}
           onChange={setFire}
           nameTrue="Fire Cases : On"

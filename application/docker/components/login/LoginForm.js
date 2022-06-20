@@ -33,6 +33,7 @@ const LoginForm = () => {
             // console.log('login');
             login(pseudo, password);
           }}
+          aria-label="Login Button"
         >
           Sign In
         </Button>

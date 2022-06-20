@@ -13,6 +13,7 @@ export default class MyDocument extends Document {
     // //console.log(GA_TRACKING_ID);
     return (
       <Html lang="en">
+        <head><title>SurgHut</title></head>
         <Head>
           {/* <title>SurgeHut</title> */}
           <meta

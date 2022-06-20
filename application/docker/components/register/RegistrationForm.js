@@ -43,6 +43,7 @@ const RegistrationForm = () => {
             // console.log('login');
             register(pseudo, mail, password);
           }}
+          aria-label="Sign Up Button"
         >
           Sign Up
         </Button>

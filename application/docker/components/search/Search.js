@@ -39,6 +39,7 @@ const Search = ({data, setResult}) => {
             GetCounty(data, text, setResult);
             _toggleSearch();
           }}
+          aria-label="Search Button"
         >
           {isActive ? (
             <AiOutlineClose color="#1d2732" size={18} />
