@@ -21,12 +21,11 @@ const Index = ({data}) => {
   // const [tab, setTab] = useState('');
   // //console.log("props index ", data[0]);
   return (
-    <div className={styles.index}>
+    <div>
       <Hero />
       <Search data={data} setResult={setCounty} />
       <div className={styles.indexContainer}>
         <Switch
-          className={map ? styles.buttonActive : styles.buttonInactive}
           state={map}
           onChange={setMap}
           nameTrue="Map"

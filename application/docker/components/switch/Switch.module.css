@@ -3,22 +3,20 @@
     width: 100%;
 }
 
-/* .buttonActive {
+.buttonActive {
     flex: 1;
     background-color: #161e26;
     padding: 10px 0px;
     border: 1px solid #dfff00;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+    border-radius: 10px 100px / 120px;
 }
 
 .buttonInactive {
     flex: 1;
     background-color: #1d2732;
     padding: 10px 0px;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-} */
+    border-radius: 10px 100px / 120px;
+}
 
 .text {
     color: white;
