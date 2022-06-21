@@ -84,8 +84,8 @@ const ValidateCovidCaseForm = ({upload_time, county, nb_case, nb_death}) => {
   const [result, setResult] = useState(null);
 
   return (
-    <div id={'form'}>
-      <div className={'container'}>
+    <div id={styles.form}>
+      <div className={'container'} id={styles.container}>
         <h1>Covid case form</h1>
         <p>upload time : {upload_time.replace('Z', '')}</p>
         <p>county : {county}</p>
@@ -93,7 +93,7 @@ const ValidateCovidCaseForm = ({upload_time, county, nb_case, nb_death}) => {
         <p>Current number of death: {nb_death}</p>
         {result ? <p>{result}</p> : <></>}
         <Button
-          className="button"
+          className={styles.btn}
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await cancelCovidCase(
@@ -107,7 +107,7 @@ const ValidateCovidCaseForm = ({upload_time, county, nb_case, nb_death}) => {
           Delete
         </Button>
         <Button
-          className="button"
+          className={styles.btn}
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await validateCovidCase(
@@ -175,15 +175,15 @@ const ValidateFireCaseForm = ({upload_time, county, nb_case}) => {
   const [result, setResult] = useState(null);
 
   return (
-    <div id={'form'}>
-      <div className={'container'}>
+    <div id={styles.form}>
+      <div className={'container'} id={styles.container}>
         <h1>Fire case form</h1>
         <p>upload time : {upload_time.replace('Z', '')}</p>
         <p>county : {county}</p>
         <p>Current number of case: {nb_case}</p>
         {result ? <p>{result}</p> : <></>}
         <Button
-          className="button"
+          className={styles.btn}
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await cancelFiredCase(
@@ -197,7 +197,7 @@ const ValidateFireCaseForm = ({upload_time, county, nb_case}) => {
           Delete
         </Button>
         <Button
-          className="button"
+          className={styles.btn}
           onClick={async () => {
             // console.log('new case covid fill');
             const fetchResult = await validateFireCase(

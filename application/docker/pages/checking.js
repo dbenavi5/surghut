@@ -16,7 +16,7 @@ function Checking({data}) {
 
   return (
     <ProtectRoute accessLevel={2}>
-      <div className='container'>
+      <div className='alert-container'>
         {data.covid.map((data) => (
           <ValidateCovidCaseForm
             key={data.upload_time}
